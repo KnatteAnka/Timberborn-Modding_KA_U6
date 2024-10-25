@@ -1,5 +1,14 @@
 # Timberborn modding tools and examples
 
+See: [Devs Timberborn Modding](https://github.com/mechanistry/timberborn-modding/tree/main) for more information and setup
+
+# Translation
+
+Preferd way is for a translator to create there own mod to tranlsate mods
+just add edited mods as optional mods in manifest to be loaded after.
+to see what name file should have you can ask in discord or check ripped base files.
+[Example](https://mod.io/g/timberborn/m/nederlands-taalpakket)
+
 ## Important: version compatibility note
 
 This project requires Timberborn in version <b>0.6.0.0</b> or higher, also known as <b>Update 6</b>. This means that for the time being it is only compatible with the experimental version of the game.
