@@ -1,0 +1,13 @@
+{
+  "Name": "EvenMorePaths",
+  "Version": "1.0.0",
+  "Id": "KnatteAnka.EvenMorePaths",
+  "MinimumGameVersion": "0.6.5.0",
+  "Description": "This mod adds Adds even More paths to Mod: more Path",
+  "RequiredMods": [
+  {
+	"Id": "Tobbert.MorePaths",
+	"MinimumVersion": "3.0.1"
+  }
+  ]
+}

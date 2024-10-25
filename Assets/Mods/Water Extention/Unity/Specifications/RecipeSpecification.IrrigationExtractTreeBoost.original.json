@@ -1,0 +1,24 @@
+{
+  "Id": "IrrigationExtractTreeBoost",
+  "DisplayLocKey": "Knatte.WE_IrrigationExtractFuel.DisplayName",
+  "CycleDurationInHours": 3.2,
+  "CyclesCapacity": 45,
+  "Ingredients": [
+    {
+      "Good": {
+        "Id": "Water"
+      },
+      "Amount": 1
+    }
+  ],
+  "Products": [
+    
+  ],
+  "ProducedSciencePoints": 0,
+  "Fuel": {
+    "Id": "Extract"
+  },
+  "CyclesFuelLasts": 6,
+  "FuelCapacity": 15,
+  "Icon": "knatte.waterextention/knatte_waterextention/IrrigationExtract"
+}

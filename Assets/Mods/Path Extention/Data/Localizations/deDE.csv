@@ -1,0 +1,73 @@
+ID,Text,Comment
+KnatteTobbert.Tunnel_1.DisplayName,Tunnel 1x1,-
+KnatteTobbert.Tunnel_2.DisplayName,Tunnel 2x1,-
+KnatteTobbert.Tunnel_3.DisplayName,Tunnel 3x1,-
+KnatteTobbert.Tunnel_4.DisplayName,Tunnel 4x1,-
+KnatteTobbert.Tunnel_5.DisplayName,Tunnel 5x1,-
+KnatteTobbert.Tunnel_6.DisplayName,Tunnel 6x1,-
+KnatteTobbert.Tunnel_7.DisplayName,Tunnel 7x1,-
+KnatteTobbert.Tunnel_8.DisplayName,Tunnel 8x1,-
+KnatteTobbert.Tunnel_9.DisplayName,Tunnel 9x1,-
+KnatteTobbert.Tunnel_1L.DisplayName,Deich-Tunnel,-
+KnatteTobbert.Tunnel_1L.Description,Ermöglicht Bibern die Durchquerung von Deichen.,-
+KnatteTobbert.Tunnel.Description,Ermöglicht Bibern die Durchquerung von Bergen.,-
+KnatteTobbert.Tunnel.FlavorDiscription,"\u201EDo you know how hard it is to Model and Texture?\u201C
+(Wisst Ihr, wie schwer es ist,
+zu modellieren und zu texturieren?) \u2013 Knatte_Anka",-
+KnatteTobbert.CategoryTunnel.DisplayName,Tunnels,-
+KnatteTobbert.CategoryTunnel.Description,Tunnels durch die Berge.,-
+KnatteTobbert.CategorySBridges.DisplayName,Metallbrücken,-
+KnatteTobbert.CategorySBridges.Description,Brücke zwischen Bergen., Momentan nicht verwendet
+KnatteTobbert.CategorySuspensionBridges.DisplayName,Hängebrücken,-
+KnatteTobbert.Bridge_1.DisplayName,Metallbrücke 1x1,-
+KnatteTobbert.Bridge_2.DisplayName,Metallbrücke 2x1,-
+KnatteTobbert.Bridge_3.DisplayName,Metallbrücke 3x1,-
+KnatteTobbert.Bridge_4.DisplayName,Metallbrücke 4x1,-
+KnatteTobbert.Bridge_5.DisplayName,Metallbrücke 5x1,-
+KnatteTobbert.Bridge_6.DisplayName,Metallbrücke 6x1,-
+KnatteTobbert.Bridge_7.DisplayName,Metallbrücke 7x1,-
+KnatteTobbert.Bridge_8.DisplayName,Metallbrücke 8x1,-
+KnatteTobbert.Bridge_9.DisplayName,Metallbrücke 9x1,-
+KnatteTobbert.Bridge_10.DisplayName,Metallbrücke 10x1,-
+KnatteTobbert.Bridge.Description,"Erlaubt Pfade, Antriebswellen und Züge zwischen Bergen.",-
+KnatteTobbert.BridgeF.Description,"Erlaubt Pfade, Antriebswellen und Züge zwischen Bergen.
+Komplette Brücke mit Anfang und Ende.",-
+KnatteTobbert.Bridge.FlavorDiscription,Tschu-tschu!,-
+Knatte.SmallGate.DisplayName,Bezirkstor,-
+Knatte.SmallGate.Description,"Gleicht Gütermengen zwischen zwei angrenzenden Bezirken aus. Jede Seite des Tors hat einen Arbeiter, der dafür sorgt, dass die Waren vom Bezirkstor an den Rest des Bezirks weiterverteilt werden.",-
+Knatte.SmallGate.FlavorDescription,Mit Update 4 entfernter Grundspielgegenstand wird wiederverwendet.,-
+Knatte.DecoSmallGate.DisplayName,Torbogen U3,-
+Knatte.DecoSmallGate.Description,Dekoration Torbogen aus Update 3,-
+Knatte.MetalPillar.DisplayName,Metallpfeiler,-
+Knatte.MetalPillars.DisplayName,Metallpfeiler mit Strebe,-
+Knatte.MetalPillar.Description,Lass es höher werden.,-
+Knatte.MetalPillar.FlavorDescription,\u201ELass uns einen Platz abstecken!\u201C \u2013 Fleißige Biber,-
+Knatte.MetalPlatform.DisplayName,Metallplattform,-
+Knatte.MetalPlatform.Description,Eine Plattform mit 4 Stützpfeilern.,-
+Knatte.MetalPlatform.FlavorDescription,„Dieser Tisch sah im Katalog kleiner aus.“ – Oma Mangonella,Base game text
+Knatte.MetalPlatform5x3.DisplayName,Metallplattform 5x3,
+Knatte.MiddleOverhang3x1.DisplayName,Metallüberhang 3x1,
+Knatte.MiddleOverhang4x1.DisplayName,Metallüberhang 4x1,
+Knatte.MiddleOverhang5x1.DisplayName,Metallüberhang 5x1,
+Knatte.MiddleOverhang7x1.DisplayName,Metallüberhang 7x1,
+Knatte.MiddleOverhang.Description,"Eine auf zwei Seiten herausragende Plattform, die als Brücke oder Fundament für andere Gebäude dienen kann.
+Die goldene Markierung ist der Standort des Pfeilers.",
+Knatte.MiddleOverhang.FlavorDescription,Auf welche Seite wollen Sie gehen?,
+Knatte.ArcOverhang3x1.DisplayName,Metallbogen 3x1,
+Knatte.ArcOverhang4x1.DisplayName,Metallbogen 4x1,
+Knatte.ArcOverhang5x1.DisplayName,Metallbogen 5x1,
+Knatte.ArcOverhang6x1.DisplayName,Metallbogen 6x1,
+Knatte.ArcOverhang.Description,Metallbogen mit Pfeiler auf beiden Seiten.,
+Knatte.ArcOverhang.FlavorDescription,„Schau schau ein Bogen.“ – ein Biberjunges,
+Knatte.Aque_MetalBigPillarBase.DisplayName,Aquäduktsäule Fuß,
+Knatte.Aque_MetalBigPillarMid.DisplayName,Aquäduktsäule Mitte,
+Knatte.Aque_MetalBigPillarTop.DisplayName,Aquäduktsäule Kopf,
+Knatte.Aque_MetalBigPillar.Description,"Aquäduktsäule in mehrere Teile zerlegt, so dass sie in beliebiger Höhe gebaut werden kann.
+Im Kopfteil können Plattformen und Überhänge eingebaut werden.",
+Knatte.Aque_MetalBigPillar.FlavorDescription,„Dieser Tisch sah im Katalog kleiner aus.“ – Oma Mangonella,Base game text
+Knatte.MetalBigPillarBase.DisplayName,Metallsäule Fuß,
+Knatte.MetalBigPillarMid.DisplayName,Metallsäule Mitte,
+Knatte.MetalBigPillarTop.DisplayName,Metallsäule Kopf,
+Knatte.MetalBigPillar.Description,"Metallsäule aus älterer Version des Spiels in mehrere Teile zerlegt, so dass sie in beliebiger Höhe gebaut werden kann.
+Im Kopfteil können Plattformen und Überhänge eingebaut werden.",
+Knatte.MetalBigPillar.FlavorDescription,„Dieser Tisch sah im Katalog kleiner aus.“ – Oma Mangonella,Base game text

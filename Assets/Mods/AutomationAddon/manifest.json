@@ -1,0 +1,13 @@
+{
+  "Name": "Automation_Addon",
+  "Version": "1.0.0",
+  "Id": "KnatteAnka.Automation_Addon",
+  "MinimumGameVersion": "0.0.0.0",
+  "Description": "This mod few more automations",
+  "RequiredMods": [
+	{
+		"Id": "Timberborn.IgorZ.Automation",
+		"MinimumVersion": "1.2.2"
+	}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Name": "MoreGroups",
+  "Version": "2.0.9",
+  "Id": "KnatteAnka.MoreGroups",
+  "MinimumGameVersion": "0.6.0.0",
+  "Description": "This mod Groups upp alot of items thanks to Timberapi",
+  "RequiredMods": [
+  {
+	"Id": "TimberApi",
+	"MinimumVersion": "0.7.0.1"
+  }
+  ]
+}

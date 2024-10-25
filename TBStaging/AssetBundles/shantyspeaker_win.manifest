@@ -1,0 +1,77 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.4f1
+CRC: 3415817189
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 56eeb3be1e3c9c65823cac9cadd55531
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b58a717f33a22f85500efc27c6a25ee3
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c7e875ee9a63f1f2638748d4d38f99f2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1800879565, guid: 0ddc39fbde65f9d729893d0e841bc4e9, type: 3}
+- Class: 114
+  Script: {fileID: -871492198, guid: 0ddc39fbde65f9d729893d0e841bc4e9, type: 3}
+- Class: 114
+  Script: {fileID: -1942782917, guid: e411f370ff9218aecea3afcfd2179be1, type: 3}
+- Class: 114
+  Script: {fileID: 1163566474, guid: d9b5c890a315a9bc831f30b61b19bb45, type: 3}
+- Class: 114
+  Script: {fileID: 58535385, guid: 7fa65a93ec383c591ff0c3f5b2e75c08, type: 3}
+- Class: 114
+  Script: {fileID: -790041461, guid: 5c21feef08e31abac3e1b0eb5dafa121, type: 3}
+- Class: 114
+  Script: {fileID: -460516431, guid: 5c21feef08e31abac3e1b0eb5dafa121, type: 3}
+- Class: 114
+  Script: {fileID: -1115175677, guid: 0d3c5cf5f998e91e7181d04674fa5aed, type: 3}
+- Class: 114
+  Script: {fileID: -731835049, guid: 0d3c5cf5f998e91e7181d04674fa5aed, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Timberborn.BlockSystem
+  ClassName: Timberborn.BlockSystem.BlockSpecification
+- AssemblyName: Timberborn.BlockSystem
+  ClassName: Timberborn.BlockSystem.BlocksSpecification
+- AssemblyName: Timberborn.BlockSystem
+  ClassName: Timberborn.BlockSystem.CustomPivotSpecification
+- AssemblyName: Timberborn.BlockSystem
+  ClassName: Timberborn.BlockSystem.EntranceBlockSpecification
+- AssemblyName: Timberborn.Goods
+  ClassName: Timberborn.Goods.GoodAmountSpecification
+- AssemblyName: Timberborn.TimbermeshEditorTools
+  ClassName: Timberborn.TimbermeshEditorTools.NodeAnimationMetadata
+- AssemblyName: Timberborn.TimbermeshEditorTools
+  ClassName: Timberborn.TimbermeshEditorTools.NodeMetadata
+Assets:
+- Assets/Mods/ShantySpeaker/AssetBundles/Resources/Buildings/Decorations/ShantySpeaker/ShantySpeakerIcon.png
+- Assets/Mods/ShantySpeaker/AssetBundles/Resources/Buildings/Decorations/ShantySpeaker/ShantySpeaker.IronTeeth.prefab
+- Assets/Mods/ShantySpeaker/AssetBundles/Resources/Buildings/Decorations/ShantySpeaker/ShantySpeaker.IronTeeth.Model.timbermesh
+Dependencies: []
