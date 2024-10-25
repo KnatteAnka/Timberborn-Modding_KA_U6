@@ -1,5 +1,7 @@
 # Timberborn modding tools and examples
 
+See: [Devs Timberborn Modding](https://github.com/mechanistry/timberborn-modding/tree/main) for more information and setup
+
 ## Important: version compatibility note
 
 This project requires Timberborn in version <b>0.6.0.0</b> or higher, also known as <b>Update 6</b>. This means that for the time being it is only compatible with the experimental version of the game.
