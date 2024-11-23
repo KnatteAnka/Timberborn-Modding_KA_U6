@@ -1,6 +1,5 @@
-2.0.11  
-* Update DE Translation by Juf816
-* Fix crash from game update 0.6.5.0
+2.0.12  
+* Allow 7-10 long bridges to Build of each other for a really long bridge
 
 ---
 MinimumGameVersion: 0.6.4.0

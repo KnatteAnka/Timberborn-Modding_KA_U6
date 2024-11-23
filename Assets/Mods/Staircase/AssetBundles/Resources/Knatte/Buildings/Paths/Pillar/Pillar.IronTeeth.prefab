@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 941027746681401529}
+  - {fileID: 2298752814326115639}
   m_Father: {fileID: 1226888942004063654}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1919459940422844353
@@ -61,9 +61,54 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6309173648807573335}
+  - {fileID: 6869665209889154700}
   m_Father: {fileID: 8822117568416498058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3252525235400917827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2298752814326115639}
+  - component: {fileID: 7715119503579955381}
+  m_Layer: 0
+  m_Name: Model
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2298752814326115639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3252525235400917827}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2859508751126110377}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7715119503579955381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3252525235400917827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _modelName: Knatte\Model\Pillar.IronTeeth.Model
 --- !u!1 &5184050673004077736
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +206,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.3, y: 1, z: 0.2}
+  m_Size: {x: 0.2, y: 1, z: 0.2}
   m_Center: {x: 0.1, y: 0.5, z: 0.9}
 --- !u!65 &4692494546734044223
 BoxCollider:
@@ -274,8 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabName: Pillar.IronTeeth
-  _backwardCompatiblePrefabNames:
-  - Pillar.Ironteeth
+  _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
   _disablingFeatureToggle: 
 --- !u!114 &5884080431678456959
@@ -357,52 +401,7 @@ MonoBehaviour:
   _descriptionLocKey: Knatte.Pillar.Description
   _flavorDescriptionLocKey: Knatte.Pillar.FlavorDescription
   _imagePath: Knatte/StaircaseIcons/Pillar
---- !u!1 &8284974350942949724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 941027746681401529}
-  - component: {fileID: 6323302903138549353}
-  m_Layer: 0
-  m_Name: Model
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &941027746681401529
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284974350942949724}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2859508751126110377}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6323302903138549353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284974350942949724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _modelName: Knatte\Model\Pillar.IronTeeth.Model
---- !u!1001 &8103684065421983943
+--- !u!1001 &8695700626863804700
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -475,9 +474,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f81da8983c54e42ab4f8ad9d5d2338, type: 3}
---- !u!4 &6309173648807573335 stripped
+--- !u!4 &6869665209889154700 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
     type: 3}
-  m_PrefabInstance: {fileID: 8103684065421983943}
+  m_PrefabInstance: {fileID: 8695700626863804700}
   m_PrefabAsset: {fileID: 0}

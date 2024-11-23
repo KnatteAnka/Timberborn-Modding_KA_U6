@@ -118,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
-  
+  _finishedUncoveredModelName: 
   _constructionModeModel: 0
 --- !u!114 &114408869611805746
 MonoBehaviour:
@@ -187,7 +187,7 @@ MonoBehaviour:
   _layout: 2
   _customPivot:
     _hasCustomPivot: 1
-    _coordinates: {x: 0.5, y: 0.5, z: 0}
+    _coordinates: {x: 1, y: 0.5, z: 0}
   _devModeTool: 0
 --- !u!114 &114992758732514604
 MonoBehaviour:

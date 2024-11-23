@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 3093453441475317345}
   - component: {fileID: 8512994120160220007}
   - component: {fileID: 1725829603050634921}
+  - component: {fileID: 4481643431662304081}
   m_Layer: 0
   m_Name: IrrigationTowerV2.Folktails
   m_TagString: Untagged
@@ -395,6 +396,19 @@ MonoBehaviour:
   _maxHeight: 2.77
   _good: Water
   _nonLinearity: 0
+--- !u!114 &4481643431662304081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035958969740901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -336672817, guid: 9d9a15fd937d3c3e3eda286523371813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _labelLocKey: Knatte.IrrigationTower.Header
 --- !u!1 &1143749292812006
 GameObject:
   m_ObjectHideFlags: 0

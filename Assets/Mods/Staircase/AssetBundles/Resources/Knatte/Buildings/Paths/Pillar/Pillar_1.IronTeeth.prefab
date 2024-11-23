@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8295136513623538353}
+  - {fileID: 4895389376962236672}
   m_Father: {fileID: 8822117568416498058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5184050673004077736
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1226888942004063654}
-  - component: {fileID: 7783772431258712070}
+  - component: {fileID: 4248703950291102293}
   m_Layer: 0
   m_Name: '#Finished'
   m_TagString: Untagged
@@ -62,10 +62,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6062380772991448448}
+  - {fileID: 72492507774481573}
   m_Father: {fileID: 8822117568416498058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &7783772431258712070
+--- !u!136 &4248703950291102293
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,7 +178,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabName: Pillar_1.IronTeeth
-  _backwardCompatiblePrefabNames: []
+  _backwardCompatiblePrefabNames:
+  - Pillar_1.Folktail
   _requiredFeatureToggle: 
   _disablingFeatureToggle: 
 --- !u!114 &5884080431678456959
@@ -260,7 +261,7 @@ MonoBehaviour:
   _descriptionLocKey: Knatte.Pillar_X.Description
   _flavorDescriptionLocKey: Knatte.Pillar_X.FlavorDescription
   _imagePath: Knatte/StaircaseIcons/Pillar_1
---- !u!1 &8212030647731889707
+--- !u!1 &6663696907958831941
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,8 +269,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6062380772991448448}
-  - component: {fileID: 3860193604997144134}
+  - component: {fileID: 72492507774481573}
+  - component: {fileID: 3718236066121595477}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -277,35 +278,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6062380772991448448
+--- !u!4 &72492507774481573
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8212030647731889707}
+  m_GameObject: {fileID: 6663696907958831941}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1226888942004063654}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3860193604997144134
+--- !u!114 &3718236066121595477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8212030647731889707}
+  m_GameObject: {fileID: 6663696907958831941}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _modelName: Knatte\Model\Pillar_1.IronTeeth.Model
---- !u!1001 &6117752021240089889
+--- !u!1001 &893336527800395187
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -313,74 +314,69 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1120566779965135118}
     m_Modifications:
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5975230160972065334, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+    - target: {fileID: 9083656057508190316, guid: 2ea52109be5df1044bc2514e4c3d5510,
         type: 3}
       propertyPath: m_Name
-      value: ConstructionSite1x1
+      value: ConstructionSite1x1Top
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 12f81da8983c54e42ab4f8ad9d5d2338, type: 3}
---- !u!4 &8295136513623538353 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 2ea52109be5df1044bc2514e4c3d5510, type: 3}
+--- !u!4 &4895389376962236672 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2880229779659208592, guid: 12f81da8983c54e42ab4f8ad9d5d2338,
+  m_CorrespondingSourceObject: {fileID: 5731444488575022259, guid: 2ea52109be5df1044bc2514e4c3d5510,
     type: 3}
-  m_PrefabInstance: {fileID: 6117752021240089889}
+  m_PrefabInstance: {fileID: 893336527800395187}
   m_PrefabAsset: {fileID: 0}

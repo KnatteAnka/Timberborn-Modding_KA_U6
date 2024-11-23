@@ -1,50 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &419565007314266227
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2994137070952963931}
-  - component: {fileID: 8896977107370714022}
-  m_Layer: 0
-  m_Name: Levee Top
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2994137070952963931
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419565007314266227}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5670923730622954677}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8896977107370714022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419565007314266227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _modelName: Knatte/Model/Levee1xSlope.Folktails.Model
 --- !u!1 &1739057750145108908
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,8 +31,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2994137070952963931}
+  m_Children: []
   m_Father: {fileID: 1226888942004063654}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6506519893957782224
@@ -271,7 +225,6 @@ MonoBehaviour:
   _scienceCost: 130
   _placeFinished: 0
   _finishableWithBeaversOnSite: 0
-  _path: 0
   _drawRangeBoundsOnIt: 0
 --- !u!114 &-7649065410785155790
 MonoBehaviour:
@@ -392,7 +345,7 @@ MonoBehaviour:
   _displayNameLocKey: Knatte.SlopeW_1.DisplayName
   _descriptionLocKey: Knatte.SlopeW.Description
   _flavorDescriptionLocKey: Knatte.SlopeW.FlavorDescription
-  _imagePath: 'Knatte/DamDecorationIcon/SlopeW'
+  _imagePath: Knatte/DamDecorationIcon/SlopeW
 --- !u!114 &-7815314270507335784
 MonoBehaviour:
   m_ObjectHideFlags: 0

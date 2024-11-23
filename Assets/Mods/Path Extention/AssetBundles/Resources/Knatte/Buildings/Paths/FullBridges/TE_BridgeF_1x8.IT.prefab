@@ -133,7 +133,6 @@ MonoBehaviour:
   _scienceCost: 2800
   _placeFinished: 0
   _finishableWithBeaversOnSite: 1
-  _path: 0
   _drawRangeBoundsOnIt: 1
 --- !u!114 &-7649065410785155790
 MonoBehaviour:
@@ -304,7 +303,7 @@ MonoBehaviour:
     - _matterBelow: 3
       _legacyOccupation: 2
       _useNewOccupation: 1
-      _occupations: 12
+      _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
   _entrance:
@@ -348,7 +347,7 @@ MonoBehaviour:
   _displayNameLocKey: KnatteTobbert.Bridge_8.DisplayName
   _descriptionLocKey: KnatteTobbert.BridgeF.Description
   _flavorDescriptionLocKey: KnatteTobbert.Bridge.FlavorDiscription
-  _imagePath: 'Knatte/PathExtentionIcon/TE_FBridge_8'
+  _imagePath: Knatte/PathExtentionIcon/TE_FBridge_8
 --- !u!1001 &1369424007429670928
 PrefabInstance:
   m_ObjectHideFlags: 0

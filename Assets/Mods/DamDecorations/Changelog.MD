@@ -1,7 +1,5 @@
-3.0.8 
-* Fix Square decoration cube and double Inverted slope 
-* Note Water Extention need to be updated to 2.2.0+ at the same time if used! 
-  Same mesh is used by both and its move its location
+3.1.1 
+* fix IronTeeth crashing
 
 
 ---

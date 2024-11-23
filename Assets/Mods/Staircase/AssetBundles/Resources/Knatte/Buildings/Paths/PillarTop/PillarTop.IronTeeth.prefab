@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 4176265116769693908}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -241,19 +241,7 @@ MonoBehaviour:
   _noAutoWalls: 0
   _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _addedEdges:
-  - _start: {x: 0, y: 0, z: 1}
-    _end: {x: -1, y: 0, z: 1}
-    _isTwoWay: 0
-  - _start: {x: 0, y: 0, z: 1}
-    _end: {x: 1, y: 0, z: 1}
-    _isTwoWay: 0
-  - _start: {x: 0, y: 0, z: 1}
-    _end: {x: 0, y: -1, z: 1}
-    _isTwoWay: 0
-  - _start: {x: 0, y: 0, z: 1}
-    _end: {x: 0, y: 1, z: 1}
-    _isTwoWay: 0
+  _addedEdges: []
 --- !u!114 &5829348106573228464
 MonoBehaviour:
   m_ObjectHideFlags: 0

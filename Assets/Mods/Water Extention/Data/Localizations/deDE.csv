@@ -4,6 +4,7 @@ Knatte.WE_IrrigationFuel.DisplayName,Bewässerung,
 Knatte.IrrigationTower.DisplayName,Bewässerungsturm,-
 Knatte.IrrigationTower.Description,"Bewässert umliegende Fläche.
 Verbraucht kein Wasser für Flächen, die nicht bewässert werden können.",
+Knatte.IrrigationTower.Header,Irrigation Mode:,untranslated
 Knatte.IrrigationTower.FlavorDescription,"Da weniger als ein Drittel der Erde mit Wasser bedeckt ist, wurde die Bewässerung zu einem Muss.","Das Spiel findet auf der Erde statt, die sich in ein trockenes Ödland verwandelt hat."
 Knatte.IrrigationTowerV2_FT.DisplayName,Effizienter Bewässerungsturm,-
 Knatte.IrrigationTowerV2_FT.Description,"Bewässert mehr umliegende Fläche und kann das Wachstum von Bäumen mit Extrakt fördern.
@@ -113,3 +114,13 @@ Knatte.Aqueduct_Wall2.FlavorDescription,Aufzufüllen,
 Knatte.TurbineSmall.DisplayName,Kleine Turbine,
 Knatte.TurbineSmall.Description,"Eine kleine Turbine die Energie erzeugt, falls die Antriebswelle in Fließrichtung zeigt. ",
 Knatte.TurbineSmall.FlavorDescription,Danke 99Cent und Ymerzeru für die Inspiration,
+Knatte.Aqueduct_Wall3.DisplayName,"Offset 
+Aqueduct Wall",
+Knatte.Aqueduct_Wall3.Description,Block water from enter the same block as wall,
+Knatte.Aqueduct_Wall4.DisplayName,"Double offset 
+Aqueduct Wall",
+Knatte.Aqueduct_Wall4.Description,Block water from enter the same block as wall,
+Knatte.Aqueduct_Wall_OffDec.DisplayName,"Offset 
+Aqueduct Wall Dummy",
+Knatte.Aqueduct_Wall_OffDec2.DisplayName,"Offset Double
+Aqueduct Wall Dummy",

@@ -1,8 +1,5 @@
-2.1.9
-* Add uncovered State to Staircase Platform
-* Add uncovered State to Pillars
-* Update French translation by Erazil
-* Fix pillar creating paths where it should not
+2.2.2
+* Fix offset model for Pillar top and 2x2 platform
 
 ---
 MinimumGameVersion: 0.6.3.1

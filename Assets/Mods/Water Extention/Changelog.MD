@@ -1,6 +1,6 @@
-2.2.2 
-* Fix: Remove broken Irrigation towers and Timbercommon Requirement
-They will be added to a separate mod when Timbercommon works again
+2.2.4 
+* Fix: better toggle for FT tier 2 irrigation tower
+* Fix: crash on basic FT irrigation tower
 
 ---
 MinimumGameVersion: 0.6.4.0

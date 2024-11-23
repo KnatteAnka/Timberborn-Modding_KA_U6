@@ -4,6 +4,7 @@ Knatte.WE_IrrigationFuel.DisplayName,Irrigation,
 Knatte.IrrigationTower.DisplayName,Irrigation Tower,-
 Knatte.IrrigationTower.Description,"Irrigates land around it.
 Does not use water for tiles that it can't Irrigate",
+Knatte.IrrigationTower.Header,Irrigation Mode:,untranslated
 Knatte.IrrigationTower.FlavorDescription,"With less than a third of Earth covered in water, irrigation became a must.",The game is set on Earth turned into a dry wasteland.
 Knatte.IrrigationTowerV2_FT.DisplayName,Efficient Irrigation Tower,-
 Knatte.IrrigationTowerV2_FT.Description,"Irrigates More land around it and can boost tree growth with extract.
@@ -107,3 +108,13 @@ Knatte.Aqueduct_Wall2.FlavorDescription,To be filled,
 Knatte.TurbineSmall.DisplayName,Turbine Small,
 Knatte.TurbineSmall.Description,A small turbine that generates power in the same direction as the shaft,
 Knatte.TurbineSmall.FlavorDescription,Thanks 99Cent and Ymerzeru for inspiration,
+Knatte.Aqueduct_Wall3.DisplayName,"Offset 
+Aqueduct Wall",
+Knatte.Aqueduct_Wall3.Description,Block water from enter the same block as wall,
+Knatte.Aqueduct_Wall4.DisplayName,"Double offset 
+Aqueduct Wall",
+Knatte.Aqueduct_Wall4.Description,Block water from enter the same block as wall,
+Knatte.Aqueduct_Wall_OffDec.DisplayName,"Offset 
+Aqueduct Wall Dummy",
+Knatte.Aqueduct_Wall_OffDec2.DisplayName,"Offset Double
+Aqueduct Wall Dummy",

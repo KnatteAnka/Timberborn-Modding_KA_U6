@@ -1,6 +1,6 @@
 {
   "Name": "MoreGroups",
-  "Version": "2.0.9",
+  "Version": "2.2.3",
   "Id": "KnatteAnka.MoreGroups",
   "MinimumGameVersion": "0.6.0.0",
   "Description": "This mod Groups upp alot of items thanks to Timberapi",
@@ -8,6 +8,29 @@
   {
 	"Id": "TimberApi",
 	"MinimumVersion": "0.7.0.1"
+  }
+  ],
+  "OptionalMods": [
+  {
+    "Id": "Lapantouflemagic.Logstairs"
+  },
+  {
+    "Id": "MoreBombs"
+  },
+  {
+    "Id": "KnatteAnka.waterextention"
+  },
+  {
+    "Id": "KnatteAnka.Staircase"
+  },
+  {
+    "Id": "KnatteAnka.Path_extention"
+  },
+  {
+    "Id": "alin.dirt"
+  },
+  {
+    "Id": "Timberborn.OldGopher.Pipe"
   }
   ]
 }
