@@ -1,9 +1,10 @@
-2.2.2
-* Fix offset model for Pillar top and 2x2 platform
+3.0.3
+* Fix Timberapi compability problem
+
 
 ---
-MinimumGameVersion: 0.6.3.1
-MaximumGameVersion: 0.6.9.9
+MinimumGameVersion: 0.6.1.0
+MaximumGameVersion: 0.7.1.9
 ---
 
 Todo:

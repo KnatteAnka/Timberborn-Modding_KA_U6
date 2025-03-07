@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4229445377929773}
   - component: {fileID: 65789376114023682}
   - component: {fileID: 8963699358247881778}
+  - component: {fileID: 6216515616656217634}
   m_Layer: 0
   m_Name: '#Finished'
   m_TagString: Untagged
@@ -55,7 +56,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1.5, z: 0.4}
-  m_Center: {x: 0.5, y: 0.75, z: 1}
+  m_Center: {x: 0.5, y: 0.75, z: 0.5}
 --- !u!65 &8963699358247881778
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75,8 +76,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.2, z: 1.2}
-  m_Center: {x: 0.5, y: 0.1, z: 1}
+  m_Size: {x: 0.2, y: 0.2, z: 1.2}
+  m_Center: {x: 0.1, y: 0.1, z: 0.5}
+--- !u!65 &6216515616656217634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042949384862076}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.2, z: 1.2}
+  m_Center: {x: 0.9, y: 0.1, z: 0.5}
 --- !u!1 &1142826321809456
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,6 +115,7 @@ GameObject:
   - component: {fileID: 114674205832928493}
   - component: {fileID: 114064345589702851}
   - component: {fileID: 7809840741100818090}
+  - component: {fileID: 9209610709846493626}
   m_Layer: 0
   m_Name: DecoSmallGate.Folktails
   m_TagString: Untagged
@@ -126,9 +149,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -790041461, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
+  m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: DistrictCrossing
   _loopingSoundName: 
   _buildingCost:
@@ -137,7 +161,6 @@ MonoBehaviour:
   _scienceCost: 10
   _placeFinished: 0
   _finishableWithBeaversOnSite: 0
-  _path: 0
   _drawRangeBoundsOnIt: 0
 --- !u!114 &114040667243179713
 MonoBehaviour:
@@ -151,10 +174,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &114123208689120829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,9 +190,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -731835049, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
+  m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: DecoSmallGate.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -180,24 +207,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1800879565, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 1, y: 1, z: 2}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: 38
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 34
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -213,9 +245,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -871492198, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: Paths
   _toolOrder: 12
   _toolShape: 0
@@ -223,7 +256,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 0
     _coordinates: {x: 0.5, y: 0, z: 0}
-  _devModeTool: 1
+  _devModeTool: 0
 --- !u!114 &114064345589702851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,10 +269,11 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.DecoSmallGate.DisplayName
   _descriptionLocKey: Knatte.DecoSmallGate.Description
   _flavorDescriptionLocKey: Knatte.DecoSmallGate.FlavorDescription
-  _imagePath: 'Knatte/PathExtentionIcon/DistrictGateIcon'
+  _imagePath: Knatte/PathExtentionIcon/DistrictGateIcon
 --- !u!114 &7809840741100818090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +286,37 @@ MonoBehaviour:
   m_Script: {fileID: 1450662694, guid: 29eaa40b4060cf7ad824e7ba409cdd9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
+--- !u!114 &9209610709846493626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142826321809456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
+  _noAutoWalls: 0
+  _generateFloorsOnStackable: 1
+  _blockAllEdges: 0
+  _edgeGroups:
+  - _cost: 1
+    _group:
+      _useGroup: 0
+      _groupName: 
+    _isPath: 0
+    _addedEdges:
+    - _start: {x: 0, y: 0, z: 0}
+      _end: {x: 0, y: 1, z: 0}
+      _isTwoWay: 0
+    - _start: {x: 0, y: 0, z: 0}
+      _end: {x: 0, y: -1, z: 0}
+      _isTwoWay: 0
+  _unblockedCoordinates: []
 --- !u!1 &1611232509961324
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,13 +1,13 @@
-2.2.3
-* Update Emberpelts support
-* Update Pipes support
-* Update 2 tall storage support
-* Prepare for Logstairs update
+3.0.1
+* Reorder some Metalplatforms
+* Add Emberpelt Flat Floodgate to Floodgate group
+
+Thanks Juf0816 for the help
 
 
 ---
 MinimumGameVersion: 0.6.0.0
-MaximumGameVersion: 0.6.9.9
+MaximumGameVersion: 0.7.9.9
 ---
 
 

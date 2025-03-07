@@ -1,13 +1,13 @@
 {
   "Name": "Staircase",
-  "Version": "2.2.2",
+  "Version": "3.0.3",
   "Id": "KnatteAnka.Staircase",
-  "MinimumGameVersion": "0.6.6.0",
+  "MinimumGameVersion": "0.7.1.0",
   "Description": "This mod adds a few different staircases and pillars",
   "RequiredMods": [
   {
 	"Id": "KnatteAnka.Materials",
-	"MinimumVersion": "1.0.2"
+	"MinimumVersion": "2.0.0"
   }
   ]
 }

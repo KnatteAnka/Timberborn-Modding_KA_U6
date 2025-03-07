@@ -1,5 +1,5 @@
-3.1.1 
-* fix IronTeeth crashing
+3.1.2 
+* Add Inverted Slope Turn
 
 
 ---

@@ -10,6 +10,7 @@ set /P DevmodeEn="Disable DevMode(Y/N): "
 
 Echo ------------------------------------------------------------------------------------
 echo {>Base.json
+echo   "ToolSpec": {>>Base.json
 
 if /I %DevmodeEn% == Y (
 	echo    "GroupId": "Subgroup_%Menyitem%",>>Base.json
@@ -17,6 +18,7 @@ if /I %DevmodeEn% == Y (
 )else (
 	echo    "GroupId": "Subgroup_%Menyitem%">>Base.json
 )
+echo }>>Base.json
 echo }>>Base.json
 
 Echo ------------------------------------------------------------------------------------

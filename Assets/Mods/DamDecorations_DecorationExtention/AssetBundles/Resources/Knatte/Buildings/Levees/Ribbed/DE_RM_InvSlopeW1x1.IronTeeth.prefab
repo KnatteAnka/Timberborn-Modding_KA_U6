@@ -245,7 +245,6 @@ GameObject:
   - component: {fileID: 5829348106573228464}
   - component: {fileID: 5860367570422035011}
   - component: {fileID: 2088881534276268686}
-  - component: {fileID: -7815314270507335784}
   - component: {fileID: 7735679501854572773}
   - component: {fileID: 2701270244115901286}
   - component: {fileID: 962443778904787573}
@@ -284,9 +283,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -790041461, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
+  m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: Default
   _loopingSoundName: 
   _buildingCost:
@@ -310,10 +310,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &3336333753966047806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,9 +326,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -731835049, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
+  m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: DE_RM_InvSlopeW1x1.IronTeeth
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -339,13 +343,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 406104335, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
+  m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _addedEdges: []
+  _edgeGroups: []
+  _unblockedCoordinates: []
 --- !u!114 &5829348106573228464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,24 +361,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1800879565, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 2, y: 1, z: 1}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: 4
       _stackable: 1
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -388,9 +399,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -871492198, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: DE_RM_BW_Levee
   _toolOrder: 100
   _toolShape: 0
@@ -411,26 +423,11 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.DE_RMInvSlopeW1x1.DisplayName
   _descriptionLocKey: Knatte.DE_RMInvSlopeW.Description
   _flavorDescriptionLocKey: Knatte.DE_RMInvSlopeW..FlavorDescription
   _imagePath: Knatte/DecorationExtentionicon/InvSlopeW1x1
---- !u!114 &-7815314270507335784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574067095167738340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 406104335, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _noAutoWalls: 0
-  _generateFloorsOnStackable: 1
-  _blockAllEdges: 0
-  _addedEdges: []
 --- !u!114 &7735679501854572773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: -1668926802, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _coordinates:
   - {x: 0, y: 0}
 --- !u!114 &2701270244115901286
@@ -457,6 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 1412436833, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _height: 1
 --- !u!114 &962443778904787573
 MonoBehaviour:
@@ -470,6 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: -1609027235, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _obstacles:
   - {x: 1, y: 0, z: 1}
 --- !u!114 &3102639230530943599
@@ -481,9 +481,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1486949439, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
+  m_Script: {fileID: 803963638, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &-4381682830103732871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: -2133346401, guid: d4892fa5f0f35cbe7bba4fc3d70e63dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _blockAboveMoisture: 1
   _blockFullMoisture: 0
   _blockContamination: 1

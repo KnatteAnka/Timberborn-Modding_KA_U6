@@ -147,7 +147,6 @@ GameObject:
   - component: {fileID: 5829348106573228464}
   - component: {fileID: 5860367570422035011}
   - component: {fileID: 2088881534276268686}
-  - component: {fileID: -7815314270507335784}
   - component: {fileID: 7735679501854572773}
   - component: {fileID: 2701270244115901286}
   m_Layer: 0
@@ -183,9 +182,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -790041461, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
+  m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: Default
   _loopingSoundName: 
   _buildingCost:
@@ -194,7 +194,6 @@ MonoBehaviour:
   _scienceCost: 170
   _placeFinished: 0
   _finishableWithBeaversOnSite: 0
-  _path: 0
   _drawRangeBoundsOnIt: 0
 --- !u!114 &-7649065410785155790
 MonoBehaviour:
@@ -208,10 +207,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &3336333753966047806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,9 +223,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -731835049, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
+  m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: DD_InvCornerW2X.Emberpelts
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -237,13 +240,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 406104335, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
+  m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _addedEdges: []
+  _edgeGroups:
+  - _cost: 1
+    _group:
+      _useGroup: 0
+      _groupName: 
+    _isPath: 1
+    _addedEdges: []
+  _unblockedCoordinates: []
 --- !u!114 &5829348106573228464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,24 +264,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1800879565, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 1, y: 1, z: 2}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 23
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 4
       _useNewOccupation: 1
       _occupations: 19
       _stackable: 1
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -286,9 +302,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -871492198, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: DD_BW_Levee
   _toolOrder: 65
   _toolShape: 0
@@ -309,26 +326,11 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.InvCornerW2X.DisplayName
   _descriptionLocKey: Knatte.InvCornerW2X.Description
   _flavorDescriptionLocKey: Knatte.InvCornerW2X.FlavorDescription
-  _imagePath: 'Knatte/DamDecorationIcon/InvCornerW2X'
---- !u!114 &-7815314270507335784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5574067095167738340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 406104335, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _noAutoWalls: 0
-  _generateFloorsOnStackable: 1
-  _blockAllEdges: 0
-  _addedEdges: []
+  _imagePath: Knatte/DamDecorationIcon/InvCornerW2X
 --- !u!114 &7735679501854572773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,6 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: -1668926802, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _coordinates:
   - {x: 0, y: 0}
 --- !u!114 &2701270244115901286
@@ -355,6 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 1412436833, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _height: 2
 --- !u!1001 &3547251826651391467
 PrefabInstance:

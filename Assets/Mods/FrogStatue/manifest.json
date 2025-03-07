@@ -1,9 +1,13 @@
 {
   "Name": "Frog Statue",
-  "Version": "2.0.5",
+  "Version": "3.1.0",
   "Id": "KnatteAnka.frogstatue",
-  "MinimumGameVersion": "0.6.0.0",
+  "MinimumGameVersion": "0.7.1.0",
   "Description": "Who does not want a Frog statue to pray for rain",
   "RequiredMods": [
+  {
+	"Id": "KnatteAnka.Materials",
+	"MinimumVersion": "2.1.0"
+  }
   ]
 }

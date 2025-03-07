@@ -1,18 +1,21 @@
 {
   "Name": "Path Extention",
-  "Version": "2.0.12",
+  "Version": "3.0.1",
   "Id": "KnatteAnka.Path_extention",
-  "MinimumGameVersion": "0.6.0.0",
+  "MinimumGameVersion": "0.7.1.0",
   "Description": "This is a collection of buildings that Extends how far you get with Paths. by adding Brides and Tunnels also adds a smaller District gate https://mod.io/g/timberborn/m/path-extention",
   "RequiredMods": [
   {
 	"Id": "KnatteAnka.Materials",
-	"MinimumVersion": "1.0.2"
+	"MinimumVersion": "2.0.0"
   }
   ],
   "OptionalMods": [
-  {
-	"Id": "TimberApi"
-  }
+	{
+		"Id": "Emberpelts"
+    },
+	{
+		"Id": "TimberApi"
+	}
   ]
 }

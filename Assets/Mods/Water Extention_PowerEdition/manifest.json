@@ -1,0 +1,13 @@
+{
+  "Name": "Water Extention PowerEdition",
+  "Version": "1.0.2",
+  "Id": "KnatteAnka.waterextention.PowerEdition",
+  "MinimumGameVersion": "0.7.1.0",
+  "Description": "This mod adds a 2 Powered levees, Turbine and Big waterwheel with levee exported from Water Extention",
+  "RequiredMods": [
+  {
+	"Id": "KnatteAnka.Materials",
+	"MinimumVersion": "2.0.0"
+  }
+  ]
+}

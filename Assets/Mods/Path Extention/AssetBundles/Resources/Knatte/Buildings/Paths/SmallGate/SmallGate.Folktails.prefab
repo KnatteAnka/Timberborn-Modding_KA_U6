@@ -137,9 +137,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -790041461, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
+  m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: DistrictCrossing
   _loopingSoundName: 
   _buildingCost:
@@ -150,7 +151,6 @@ MonoBehaviour:
   _scienceCost: 50
   _placeFinished: 0
   _finishableWithBeaversOnSite: 0
-  _path: 0
   _drawRangeBoundsOnIt: 0
 --- !u!114 &114040667243179713
 MonoBehaviour:
@@ -164,10 +164,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &114123208689120829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,9 +180,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -731835049, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
+  m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: SmallGate.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -193,24 +197,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1800879565, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 1, y: 1, z: 2}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 19
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 1
     _coordinates: {x: 0, y: -1, z: 0}
@@ -226,9 +235,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -871492198, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: DistrictManagement
   _toolOrder: 39
   _toolShape: 0
@@ -249,6 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 535159108, guid: 3740545266a973c28343f0f6ae5c89a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _coordinateOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &114064345589702851
 MonoBehaviour:
@@ -262,10 +273,11 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.SmallGate.DisplayName
   _descriptionLocKey: Knatte.SmallGate.Description
   _flavorDescriptionLocKey: Knatte.SmallGate.FlavorDescription
-  _imagePath: 'Knatte/PathExtentionIcon/DistrictGateIcon'
+  _imagePath: Knatte/PathExtentionIcon/DistrictGateIcon
 --- !u!114 &114004861015822547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,9 +287,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1794062130, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
+  m_Script: {fileID: 1475725842, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _localAccess: {x: 0.5, y: 0, z: 1}
   _forceOneFinalAccess: 0
 --- !u!114 &114841913223938580
@@ -289,9 +302,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1496982017, guid: 71874a96862cca0445075c2f72e705bf, type: 3}
+  m_Script: {fileID: 413955577, guid: 71874a96862cca0445075c2f72e705bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _maxWorkers: 1
   _defaultWorkers: 1
   _defaultWorkerType: Beaver
@@ -308,9 +322,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 403710568, guid: 1c9dcb73a22bc8ced3d59cfdd1775b1c, type: 3}
+  m_Script: {fileID: 151550540, guid: 1c9dcb73a22bc8ced3d59cfdd1775b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &6824762940226186388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,9 +335,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -730909465, guid: bcb85dd25e41826ab5a7dea12cff2430, type: 3}
+  m_Script: {fileID: -904470794, guid: bcb85dd25e41826ab5a7dea12cff2430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _operatingState: 0
   _limitedCapacityFinished: 0
   _capacityFinished: 0
@@ -339,9 +355,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1919928859, guid: ae17e402790c3a9884e91fc31aa0c578, type: 3}
+  m_Script: {fileID: 873244395, guid: ae17e402790c3a9884e91fc31aa0c578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &114498136491533205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,9 +368,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -598504670, guid: 6e68475ee52ce568acbd493b99ce126d, type: 3}
+  m_Script: {fileID: -1839023324, guid: 6e68475ee52ce568acbd493b99ce126d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &114327427461297941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,10 +381,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 9237227, guid: dd1baa4f323651ee41781eb84b2b1960, type: 3}
+  m_Script: {fileID: -1219910101, guid: dd1baa4f323651ee41781eb84b2b1960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slotSpecifications:
+  _componentCache: {fileID: 0}
+  _slotSpecs:
   - _slotKeyword: Entrance
     _animation: Sitting
     _inanimate: 0
@@ -384,6 +403,10 @@ MonoBehaviour:
   m_Script: {fileID: -455950880, guid: 71874a96862cca0445075c2f72e705bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
+  _enterable: {fileID: 0}
+  _workplace: {fileID: 0}
+  _slotManager: {fileID: 0}
 --- !u!114 &114670459878821236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: -222538089, guid: 71874a96862cca0445075c2f72e705bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _workerBonuses:
   - _bonusId: CarryingCapacity
     _multiplierDelta: 1
@@ -411,6 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 59574725, guid: 4ed0189b1e1d234e361262ab78b6f74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _driveway: 6
   _hasCustomCoordinates: 1
   _customCoordinates: {x: 0, y: -1, z: 0}
@@ -425,19 +450,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142826321809456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 406104335, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
+  m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
-  _generateFloorsOnStackable: 0
+  _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _addedEdges:
-  - _start: {x: 0, y: 0, z: 0}
-    _end: {x: 0, y: -1, z: 0}
-    _isTwoWay: 0
-  - _start: {x: 0, y: 0, z: 0}
-    _end: {x: 0, y: 1, z: 0}
-    _isTwoWay: 0
+  _edgeGroups:
+  - _cost: 1
+    _group:
+      _useGroup: 0
+      _groupName: 
+    _isPath: 0
+    _addedEdges:
+    - _start: {x: 0, y: 0, z: 0}
+      _end: {x: 0, y: 1, z: 0}
+      _isTwoWay: 0
+    - _start: {x: 0, y: 0, z: 0}
+      _end: {x: 0, y: -1, z: 0}
+      _isTwoWay: 0
+  _unblockedCoordinates: []
 --- !u!1 &1611232509961324
 GameObject:
   m_ObjectHideFlags: 0

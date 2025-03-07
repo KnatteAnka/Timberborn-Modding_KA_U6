@@ -174,9 +174,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065582776437103274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -790041461, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
+  m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: Default
   _loopingSoundName: 
   _buildingCost:
@@ -200,10 +201,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &2558518350492525213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,9 +217,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065582776437103274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -731835049, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
+  m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: StaircaseLog.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -229,22 +234,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065582776437103274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 406104335, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
+  m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 0
   _blockAllEdges: 0
-  _addedEdges:
-  - _start: {x: 0, y: 0, z: 0}
-    _end: {x: 0, y: -1, z: 0}
-    _isTwoWay: 0
-  - _start: {x: 0, y: 0, z: 0}
-    _end: {x: 0, y: 0, z: 1}
-    _isTwoWay: 1
-  - _start: {x: 0, y: 0, z: 1}
-    _end: {x: 1, y: 0, z: 1}
-    _isTwoWay: 0
+  _edgeGroups:
+  - _cost: 1
+    _group:
+      _useGroup: 0
+      _groupName: 
+    _isPath: 1
+    _addedEdges:
+    - _start: {x: 0, y: 0, z: 0}
+      _end: {x: 0, y: -1, z: 0}
+      _isTwoWay: 0
+    - _start: {x: 0, y: 0, z: 1}
+      _end: {x: 1, y: 0, z: 1}
+      _isTwoWay: 0
+  - _cost: 0.4
+    _group:
+      _useGroup: 0
+      _groupName: 
+    _isPath: 1
+    _addedEdges:
+    - _start: {x: 0, y: 0, z: 0}
+      _end: {x: 0, y: 0, z: 1}
+      _isTwoWay: 1
+  _unblockedCoordinates: []
 --- !u!114 &1507765214606318035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,9 +273,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065582776437103274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1800879565, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _blocksSpecification:
     _size: {x: 1, y: 1, z: 2}
     _blockSpecifications:
@@ -266,12 +286,16 @@ MonoBehaviour:
       _occupations: 54
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 19
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -287,10 +311,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065582776437103274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -871492198, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _toolGroupId: Paths
+  _componentCache: {fileID: 0}
+  _toolGroupId: SubGroup_Paths2
   _toolOrder: 24
   _toolShape: 0
   _layout: 0
@@ -310,6 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: KnatteTobbert.StaircaseLog.DisplayName
   _descriptionLocKey: 
   _flavorDescriptionLocKey: KnatteTobbert.StaircaseLog.FlavorDiscription
@@ -323,9 +349,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065582776437103274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -748958038, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
+  m_Script: {fileID: -923837550, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &4545584036834696040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,6 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 437054131, guid: 644c1295076bbdbb604b7f96aa6be9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _progressThresholds:
   - 0.1
   - 0.5
@@ -350,9 +378,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065582776437103274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1589985441, guid: 4ed0189b1e1d234e361262ab78b6f74b, type: 3}
+  m_Script: {fileID: -1146001497, guid: 4ed0189b1e1d234e361262ab78b6f74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
+  _mainPathCoordinates: {x: 0, y: 0, z: 0}
 --- !u!1 &3991673938325257461
 GameObject:
   m_ObjectHideFlags: 0
