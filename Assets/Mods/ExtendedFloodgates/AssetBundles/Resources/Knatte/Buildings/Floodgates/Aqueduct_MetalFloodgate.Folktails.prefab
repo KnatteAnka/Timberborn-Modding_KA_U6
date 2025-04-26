@@ -112,9 +112,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1091995799021445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -790041461, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
+  m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: Floodgate
   _loopingSoundName: 
   _buildingCost:
@@ -123,7 +124,7 @@ MonoBehaviour:
   - _goodId: Gear
     _amount: 4
   - _goodId: TreatedPlank
-    _amount: 2
+    _amount: 1
   - _goodId: MetalBlock
     _amount: 3
   _scienceCost: 500
@@ -142,10 +143,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: '#FinishedUncovered'
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &1866021524135529431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,9 +159,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1091995799021445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -731835049, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
+  m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: Aqueduct_MetalFloodgate.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -171,24 +176,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 1091995799021445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1800879565, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 1, y: 1, z: 2}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: 62
       _stackable: 1
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: 51
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -204,13 +212,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1091995799021445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 406104335, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
+  m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 0
   _blockAllEdges: 0
-  _addedEdges: []
+  _edgeGroups: []
+  _unblockedCoordinates: []
 --- !u!114 &114024082507295035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,9 +230,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1091995799021445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -871492198, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: SubGroup_AqueductFloodGate
   _toolOrder: 47
   _toolShape: 0
@@ -230,6 +241,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 0
     _coordinates: {x: 0, y: 0, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &3277448849947450466
 MonoBehaviour:
@@ -243,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 1773381451, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _maxHeight: 1
 --- !u!114 &-5907457755110871996
 MonoBehaviour:
@@ -256,6 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: -1668926802, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _coordinates:
   - {x: 0, y: 0}
 --- !u!114 &3997178708031228595
@@ -270,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: -968648488, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _gateName: '#Floodgate1x1Misc'
 --- !u!114 &6761307141754942263
 MonoBehaviour:
@@ -283,8 +298,10 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.Aqueduct_MetalFloodgate.DisplayName
   _descriptionLocKey: Knatte.Aqueduct_MetalFloodgate.Description
+  _flavorDescriptionLocKey: 
   _imagePath: knatte/ExtendedFloodgateIcons/Floodgate
 --- !u!114 &1920501881713648251
 MonoBehaviour:
@@ -298,6 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: -1609027235, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _obstacles:
   - {x: 0, y: 0, z: 0}
 --- !u!114 &4951685599925887592
@@ -312,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: -2133346401, guid: d4892fa5f0f35cbe7bba4fc3d70e63dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _blockAboveMoisture: 1
   _blockFullMoisture: 0
   _blockContamination: 1
@@ -327,6 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 437054131, guid: 644c1295076bbdbb604b7f96aa6be9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _progressThresholds:
   - 0
 --- !u!1 &1738874109219057

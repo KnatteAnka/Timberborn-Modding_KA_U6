@@ -1,5 +1,5 @@
-2.1.0
-* Add new material 1KA_Red
+3.0.0
+* Update for U7
 
 ---
 MinimumGameVersion: 0.6.1.5

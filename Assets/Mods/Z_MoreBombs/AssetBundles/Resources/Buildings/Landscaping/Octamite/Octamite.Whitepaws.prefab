@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4981822759137940454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165713771517178581, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 169289752301520989, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Octamite.Whitepaws
+      objectReference: {fileID: 0}
+    - target: {fileID: 273330839788856204, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: _buildingCost.Array.data[1]._goodId
+      value: Nitroglycerin
+      objectReference: {fileID: 0}
+    - target: {fileID: 273352653453977337, guid: 49aa1a675577ccae3b368f9162b1d8a3,
+        type: 3}
+      propertyPath: _prefabName
+      value: Octamite.Whitepaws
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 49aa1a675577ccae3b368f9162b1d8a3, type: 3}

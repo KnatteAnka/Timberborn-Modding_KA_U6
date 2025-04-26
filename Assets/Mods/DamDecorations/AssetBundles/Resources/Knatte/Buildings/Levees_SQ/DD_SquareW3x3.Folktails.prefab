@@ -865,6 +865,7 @@ MonoBehaviour:
   m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: Default
   _loopingSoundName: 
   _buildingCost:
@@ -888,10 +889,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: '#FinishedUncovered'
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &3336333753966047806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,6 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: DD_SquareW3x3.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -920,16 +925,12 @@ MonoBehaviour:
   m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _edgeGroups:
-  - _cost: 1
-    _group:
-      _useGroup: 0
-      _groupName: 
-    _isPath: 1
-    _addedEdges: []
+  _edgeGroups: []
+  _unblockedCoordinates: []
 --- !u!114 &5829348106573228464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -942,63 +943,73 @@ MonoBehaviour:
   m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 3, y: 1, z: 3}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -1017,6 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: DD_BW_LeveeSQ
   _toolOrder: 41
   _toolShape: 0
@@ -1024,6 +1036,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 1
     _coordinates: {x: 0.5, y: 0.5, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &2088881534276268686
 MonoBehaviour:
@@ -1037,6 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.Square3W.DisplayName
   _descriptionLocKey: Knatte.SquareW.Description
   _flavorDescriptionLocKey: Knatte.SquareW.FlavorDescription
@@ -1053,6 +1067,7 @@ MonoBehaviour:
   m_Script: {fileID: -1668926802, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _coordinates:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
@@ -1069,6 +1084,7 @@ MonoBehaviour:
   m_Script: {fileID: 1412436833, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _height: 3
 --- !u!114 &5492193566594971185
 MonoBehaviour:
@@ -1082,6 +1098,7 @@ MonoBehaviour:
   m_Script: {fileID: 437054131, guid: 644c1295076bbdbb604b7f96aa6be9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _progressThresholds:
   - 0
   - 0.33

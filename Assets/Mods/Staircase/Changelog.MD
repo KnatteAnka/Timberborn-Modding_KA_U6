@@ -1,5 +1,5 @@
-3.0.3
-* Fix Timberapi compability problem
+3.0.4
+* Fix U7.2 update
 
 
 ---

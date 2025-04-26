@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: Default
   _loopingSoundName: 
   _buildingCost:
@@ -274,10 +275,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &3336333753966047806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,6 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: DE_RM_Slope3x.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -306,25 +311,33 @@ MonoBehaviour:
   m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 0
   _blockAllEdges: 0
-  _addedEdges:
-  - _start: {x: 0, y: 0, z: 0}
-    _end: {x: 0, y: 1, z: 0}
-    _isTwoWay: 0
-  - _start: {x: 0, y: 0, z: 0}
-    _end: {x: 0, y: 0, z: 1}
-    _isTwoWay: 1
-  - _start: {x: 0, y: 0, z: 1}
-    _end: {x: 0, y: 0, z: 2}
-    _isTwoWay: 1
-  - _start: {x: 0, y: 0, z: 2}
-    _end: {x: 0, y: 0, z: 3}
-    _isTwoWay: 1
-  - _start: {x: 0, y: 0, z: 3}
-    _end: {x: 0, y: -1, z: 3}
-    _isTwoWay: 0
+  _edgeGroups:
+  - _cost: 1
+    _group:
+      _useGroup: 0
+      _groupName: 
+    _isPath: 1
+    _addedEdges:
+    - _start: {x: 0, y: 0, z: 0}
+      _end: {x: 0, y: 1, z: 0}
+      _isTwoWay: 0
+    - _start: {x: 0, y: 0, z: 0}
+      _end: {x: 0, y: 0, z: 1}
+      _isTwoWay: 1
+    - _start: {x: 0, y: 0, z: 1}
+      _end: {x: 0, y: 0, z: 2}
+      _isTwoWay: 1
+    - _start: {x: 0, y: 0, z: 2}
+      _end: {x: 0, y: 0, z: 3}
+      _isTwoWay: 1
+    - _start: {x: 0, y: 0, z: 3}
+      _end: {x: 0, y: -1, z: 3}
+      _isTwoWay: 0
+  _unblockedCoordinates: []
 --- !u!114 &5829348106573228464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,27 +350,31 @@ MonoBehaviour:
   m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 1, y: 1, z: 3}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 54
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 54
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 4
       _useNewOccupation: 1
       _occupations: 50
       _stackable: 0
       _occupyAllBelow: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -376,6 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: DE_RM_BW_Dec1
   _toolOrder: 220
   _toolShape: 0
@@ -383,6 +401,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 0
     _coordinates: {x: 0, y: 0, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &2088881534276268686
 MonoBehaviour:
@@ -396,6 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.DE_RMSlope3X.DisplayName
   _descriptionLocKey: Knatte.DE_RMSlope3X.Description
   _flavorDescriptionLocKey: Knatte.DE_RMSlope3X.FlavorDescription
@@ -412,7 +432,8 @@ MonoBehaviour:
   m_Script: {fileID: 459098212, guid: 75be7af0b34ada5bff62a949a3c4181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _effectSpecifications:
+  _componentCache: {fileID: 0}
+  _effects:
   - _needId: BlockDecoration
     _pointsPerHour: 0.2
     _satisfyToMaxValue: 0
@@ -425,10 +446,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1115272012, guid: 75be7af0b34ada5bff62a949a3c4181d, type: 3}
+  m_Script: {fileID: -1222417671, guid: 75be7af0b34ada5bff62a949a3c4181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _effectRadius: 1
+  _componentCache: {fileID: 0}
+  _started: 0
+  _buildingSounds: {fileID: 0}
+  _blockableBuilding: {fileID: 0}
+  _blockObjectRange: {fileID: 0}
+  _mechanicalBuilding: {fileID: 0}
+  _prefabSpec: {fileID: 0}
+  _rangedEffectApplier: {fileID: 0}
+  _rangedEffectBuildingSpec: {fileID: 0}
+  _wasActive: 0
 --- !u!1001 &4114884058959730908
 PrefabInstance:
   m_ObjectHideFlags: 0

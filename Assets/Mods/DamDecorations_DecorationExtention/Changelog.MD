@@ -1,10 +1,9 @@
-3.0.3 
-* Fix 3 high smooth levee to use correct model
-* Add Aqueduct levees to Emberpelt
+4.0.0 
+* Add U7 version
 
 ---
 MinimumGameVersion: 0.6.3.1
-MaximumGameVersion: 0.6.9.9
+MaximumGameVersion: 0.7.9.9
 ---
 
 # Todo:

@@ -23,7 +23,7 @@ echo }>>Base.json
 
 Echo ------------------------------------------------------------------------------------
 
-set Prefix=ToolSpecification.
+set Prefix=Tool.
 set Suffix=.optional.json
 
 echo Faction to Create?

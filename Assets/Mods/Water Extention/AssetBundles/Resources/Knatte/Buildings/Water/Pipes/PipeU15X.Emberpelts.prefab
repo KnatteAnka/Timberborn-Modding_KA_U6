@@ -802,7 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _modelName: Knatte/ModelConstructionStage/PipePump.Folktails.ConstructionStage0.Model
+  _modelName: Knatte/ModelConstructionStage/PipePump.Emberpelts.ConstructionStage0.Model
 --- !u!1 &2625803879485640561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waterInputCoordinates: {x: 0, y: 0, z: 0}
   _maxDepth: 1
-  _pipeSegmentPrefabName: WaterPumpPipeSegment.Emberpelts
+  _pipeSegmentPrefabPath: Knatte\Buildings\Water\DeepSeePipeSegment.Common
   _pipeParentName: '#Finished'
 --- !u!114 &-7835858411268337710
 MonoBehaviour:
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _modelName: Knatte/ModelConstructionStage/PipePump.Folktails.ConstructionStage1.Model
+  _modelName: Knatte/ModelConstructionStage/PipePump.Emberpelts.ConstructionStage1.Model
 --- !u!1 &3829032145642342719
 GameObject:
   m_ObjectHideFlags: 0

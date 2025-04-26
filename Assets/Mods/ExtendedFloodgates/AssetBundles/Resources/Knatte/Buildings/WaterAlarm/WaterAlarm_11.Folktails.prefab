@@ -238,7 +238,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1782758416770236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -790041461, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
+  m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _selectionSoundName: Default
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1782758416770236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -731835049, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
+  m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabName: WaterAlarm_11.Folktails
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1782758416770236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1800879565, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _blocksSpecification:
@@ -460,7 +460,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1782758416770236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -871492198, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
+  m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _toolGroupId: Water
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1782758416770236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -170773823, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
+  m_Script: {fileID: 1477343039, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _maxWaterLevel: 11
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1782758416770236}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 2112321450, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
+  m_Script: {fileID: 1791524051, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _waterCoordinates: {x: 0, y: 0, z: 0}

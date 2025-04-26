@@ -1,0 +1,24 @@
+{
+  "RecipeSpec": {
+  "Id": "BigBadWater",
+  "DisplayLocKey": "Good.Badwater.PluralDisplayName",
+  "CycleDurationInHours": 0.66,
+  "CyclesCapacity": 30,
+  "Ingredients": [
+  ],
+  "Products": [
+    {
+      "Good": {
+        "Id": "Badwater"
+      },
+      "Amount": 15
+    }
+  ],
+  "ProducedSciencePoints": 0,
+  "Fuel": {
+    "Id": "PineResin"
+  },
+  "CyclesFuelLasts": 5,
+  "FuelCapacity": 30,
+  "Icon": "Sprites/Goods/BadwaterIcon"
+}}

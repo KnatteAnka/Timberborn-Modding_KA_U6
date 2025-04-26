@@ -296,13 +296,7 @@ MonoBehaviour:
   _noAutoWalls: 0
   _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _edgeGroups:
-  - _cost: 1
-    _group:
-      _useGroup: 0
-      _groupName: 
-    _isPath: 1
-    _addedEdges: []
+  _edgeGroups: []
   _unblockedCoordinates: []
 --- !u!114 &5829348106573228464
 MonoBehaviour:
@@ -326,7 +320,6 @@ MonoBehaviour:
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
@@ -334,7 +327,6 @@ MonoBehaviour:
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
@@ -342,7 +334,6 @@ MonoBehaviour:
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
   _entrance:
     _hasEntrance: 0
@@ -370,6 +361,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 1
     _coordinates: {x: 0.5, y: 0.5, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &2088881534276268686
 MonoBehaviour:

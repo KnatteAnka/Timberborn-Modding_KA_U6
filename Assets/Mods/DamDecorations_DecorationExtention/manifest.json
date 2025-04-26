@@ -1,17 +1,13 @@
 {
   "Name": "DamDecorations_DecorationExtention",
-  "Version": "3.0.3",
+  "Version": "4.0.0",
   "Id": "KnatteAnka.damdecoration_decorationextention",
-  "MinimumGameVersion": "0.6.5.0",
+  "MinimumGameVersion": "0.7.3.0",
   "Description": "This mod Adds some more Dam Decorations, To beautify the Dam and City, Most don't act as Leeves! only Decoration",
   "RequiredMods": [
   {
-	"Id": "KnatteAnka.damdecoration",
-	"MinimumVersion": "0.3.0.0"
-  },
-  {
 	"Id": "KnatteAnka.Materials",
-	"MinimumVersion": "1.0.2"
+	"MinimumVersion": "2.1.0"
   },
   {
 	"Id": "TimberApi",
@@ -19,6 +15,9 @@
   }
   ],
   "OptionalMods": [
+  {
+	"Id": "KnatteAnka.damdecoration"
+  },
   {
     "Id": "Emberpelts"
   },

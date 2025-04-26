@@ -226,7 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
   _noAutoWalls: 0
-  _generateFloorsOnStackable: 1
+  _generateFloorsOnStackable: 0
   _blockAllEdges: 0
   _edgeGroups: []
   _unblockedCoordinates: []
@@ -252,7 +252,6 @@ MonoBehaviour:
       _occupations: 54
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 4
@@ -260,7 +259,6 @@ MonoBehaviour:
       _occupations: 54
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 4
@@ -268,7 +266,6 @@ MonoBehaviour:
       _occupations: 50
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
   _entrance:
     _hasEntrance: 0
@@ -296,6 +293,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 0
     _coordinates: {x: 0, y: 0, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &2088881534276268686
 MonoBehaviour:
@@ -327,7 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
-  _effectSpecs:
+  _effects:
   - _needId: BlockDecoration
     _pointsPerHour: 0.2
     _satisfyToMaxValue: 0
@@ -340,7 +338,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5574067095167738340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1115272012, guid: 75be7af0b34ada5bff62a949a3c4181d, type: 3}
+  m_Script: {fileID: -1222417671, guid: 75be7af0b34ada5bff62a949a3c4181d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}

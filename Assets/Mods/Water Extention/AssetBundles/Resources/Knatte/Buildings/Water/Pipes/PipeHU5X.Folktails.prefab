@@ -952,6 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: MechanicalFluidPump
   _loopingSoundName: 
   _buildingCost:
@@ -977,10 +978,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &2098722114774356615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,6 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: PipeHU5X.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -1009,117 +1014,154 @@ MonoBehaviour:
   m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 1, y: 9, z: 2}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 3
       _legacyOccupation: 7
       _useNewOccupation: 1
       _occupations: 19
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 0
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 19
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 0
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 19
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 23
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
       _useNewOccupation: 1
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
       _useNewOccupation: 1
       _occupations: 19
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -1138,6 +1180,7 @@ MonoBehaviour:
   m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: SubGroup_WE_PipeU
   _toolOrder: 506
   _toolShape: 0
@@ -1158,6 +1201,7 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.PipeHU5X.DisplayName
   _descriptionLocKey: Knatte.PipeHU.Description
   _flavorDescriptionLocKey: 
@@ -1174,6 +1218,7 @@ MonoBehaviour:
   m_Script: {fileID: 166878786, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _waterPerSecond: 0.6
 --- !u!114 &494188737713151965
 MonoBehaviour:
@@ -1187,6 +1232,7 @@ MonoBehaviour:
   m_Script: {fileID: 1672878266, guid: a01d35f43886f4b46e413d3c2ea20811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &9221514896102443353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1199,6 +1245,7 @@ MonoBehaviour:
   m_Script: {fileID: 484218558, guid: a01d35f43886f4b46e413d3c2ea20811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _powerOutput: 0
   _powerInput: 300
   _isShaft: 0
@@ -1211,9 +1258,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3149060016945688345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-   m_Script: {fileID: -1587067794, guid: 6db671ca2a10521151a0623ea7cc13c9, type: 3}
+  m_Script: {fileID: -1587067794, guid: 6db671ca2a10521151a0623ea7cc13c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _connectableBlocks:
   - _coordinates: {x: 0, y: 1, z: 0}
     _connectableDirections: -1
@@ -1235,6 +1283,7 @@ MonoBehaviour:
   m_Script: {fileID: 1751046711, guid: b5b585a072a703d32743ea54a035c96c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _minSpeedMultiplier: 0
 --- !u!114 &2299307900570020136
 MonoBehaviour:
@@ -1248,6 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: -1429248724, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _waterCoordinates: {x: 0, y: 8, z: 2}
 --- !u!114 &717426634683040980
 MonoBehaviour:
@@ -1261,6 +1311,7 @@ MonoBehaviour:
   m_Script: {fileID: -1668926802, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _coordinates:
   - {x: 0, y: 1}
   - {x: 0, y: 7}
@@ -1276,6 +1327,7 @@ MonoBehaviour:
   m_Script: {fileID: 1412436833, guid: 915d565361ffc0071cb972b12ad62c80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _height: 2
 --- !u!114 &5933972210660199332
 MonoBehaviour:
@@ -1289,9 +1341,10 @@ MonoBehaviour:
   m_Script: {fileID: 1351926144, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _waterInputCoordinates: {x: 0, y: 0, z: 0}
   _maxDepth: 1
-  _pipeSegmentPrefabName: WaterPumpPipeSegment.Folktails
+  _pipeSegmentPrefabPath: Knatte\Buildings\Water\DeepSeePipeSegment.Common
   _pipeParentName: '#Finished'
 --- !u!114 &3215702009056227599
 MonoBehaviour:
@@ -1305,6 +1358,7 @@ MonoBehaviour:
   m_Script: {fileID: 1049139611, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _attachmentIds:
   - Water.WE_Pipe5XH
 --- !u!114 &-7341291812644674034
@@ -1319,6 +1373,7 @@ MonoBehaviour:
   m_Script: {fileID: 1859189143, guid: b0c4545210a508c255e4ebd4a145ed71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _attachmentId: Water.WE_Pipe5XH
 --- !u!114 &-8277054376799800496
 MonoBehaviour:
@@ -1332,10 +1387,12 @@ MonoBehaviour:
   m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _addedEdges: []
+  _edgeGroups: []
+  _unblockedCoordinates: []
 --- !u!114 &-3180690869450504888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1348,6 +1405,7 @@ MonoBehaviour:
   m_Script: {fileID: 437054131, guid: 644c1295076bbdbb604b7f96aa6be9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _progressThresholds:
   - 0
   - 0.4
@@ -2233,7 +2291,7 @@ Transform:
   m_GameObject: {fileID: 6042735233976802983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 6}
+  m_LocalPosition: {x: -9, y: -2, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

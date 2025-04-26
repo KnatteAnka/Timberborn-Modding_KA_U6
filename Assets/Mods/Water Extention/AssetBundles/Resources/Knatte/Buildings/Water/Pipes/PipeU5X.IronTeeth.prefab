@@ -2695,7 +2695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waterInputCoordinates: {x: 0, y: 0, z: 0}
   _maxDepth: 1
-  _pipeSegmentPrefabName: DeepWaterPumpPipeSegment.IronTeeth
+  _pipeSegmentPrefabPath: Knatte\Buildings\Water\DeepSeePipeSegment.Common
   _pipeParentName: '#Finished'
 --- !u!114 &-2298496207515636436
 MonoBehaviour:

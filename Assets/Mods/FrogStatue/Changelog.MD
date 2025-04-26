@@ -1,5 +1,5 @@
-3.1.0
-* Add emberpelt support, Let the Frog burn
+3.1.1
+* Fix U7.2
 
 ---
 MinimumGameVersion: 0.6.1.0

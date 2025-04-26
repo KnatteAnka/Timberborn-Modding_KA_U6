@@ -1,8 +1,8 @@
-1.0.2
-* Fix U7
-* Fix Folktails Turbine constructionsite
+1.0.3
+* Fix U7.2
+
 
 ---
-MinimumGameVersion: 0.7.1.0
+MinimumGameVersion: 0.7.2.0
 MaximumGameVersion: 0.7.1.9
 ---

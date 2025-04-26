@@ -1,13 +1,13 @@
 {
   "Name": "ExtendedFloodgates",
-  "Version": "1.0.4",
+  "Version": "2.0.1",
   "Id": "KnatteAnka.ExtendedFloodgates",
-  "MinimumGameVersion": "0.6.7.0",
+  "MinimumGameVersion": "0.7.3.0",
   "Description": "A collection of Floodgates and accessories more info: https://mod.io/g/timberborn/m/extended-floodgates",
   "RequiredMods": [
   {
 	"Id": "KnatteAnka.Materials",
-	"MinimumVersion": "1.0.2"
+	"MinimumVersion": "2.1.0"
   },
   {
 	"Id": "TimberApi",

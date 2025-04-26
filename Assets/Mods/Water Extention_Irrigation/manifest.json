@@ -1,22 +1,18 @@
 {
   "Name": "Water Extention Irrigation Towers",
-  "Version": "1.0.1",
+  "Version": "2.0.0",
   "Id": "KnatteAnka.waterextention.IrrigationTowers",
-  "MinimumGameVersion": "0.6.6.0",
+  "MinimumGameVersion": "0.7.1.0",
   "Description": "This mod adds Items to help move water around, Example Pipes and pumps to have mover controll of water level",
   "ModIOID":"2410526",
   "RequiredMods": [
 	{
 		"Id": "KnatteAnka.Materials",
-		"MinimumVersion": "1.0.2"
-	},
-	{
-		"Id": "KnatteAnka.waterextention",
-		"MinimumVersion": "2.2.2"
+		"MinimumVersion": "2.1.0"
 	},
 	{
 		"Id": "Timberborn.IgorZ.TimberCommons",
-		"MinimumVersion": "1.8.3"
+		"MinimumVersion": "1.11.0"
 	}
   ],
   "OptionalMods": [

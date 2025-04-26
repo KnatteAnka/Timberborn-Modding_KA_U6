@@ -345,12 +345,13 @@ GameObject:
   - component: {fileID: 7715849093852715622}
   - component: {fileID: 2759076214884578759}
   - component: {fileID: 247706335078933622}
-  - component: {fileID: 329428057712811869}
   - component: {fileID: 5426390283170881375}
   - component: {fileID: 6837767238248169677}
   - component: {fileID: 2276100138731446109}
   - component: {fileID: 4151290134248020324}
   - component: {fileID: 8919495757841254429}
+  - component: {fileID: 522341109956566707}
+  - component: {fileID: -103991947406704282}
   m_Layer: 0
   m_Name: DeepSeeWaterPump.Folktails
   m_TagString: Untagged
@@ -387,6 +388,7 @@ MonoBehaviour:
   m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: WaterPump
   _loopingSoundName: WaterPump
   _buildingCost:
@@ -412,10 +414,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &4056980072773574081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 413955577, guid: 71874a96862cca0445075c2f72e705bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _maxWorkers: 1
   _defaultWorkers: 1
   _defaultWorkerType: Bot
@@ -445,6 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 279545971, guid: 9d9a15fd937d3c3e3eda286523371813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _productionRecipeIds:
   - BigWater
 --- !u!114 &4473425510469436803
@@ -456,9 +463,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071666690282765763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1933283616, guid: 9d9a15fd937d3c3e3eda286523371813, type: 3}
+  m_Script: {fileID: 1796300005, guid: 9d9a15fd937d3c3e3eda286523371813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &5987633987238379975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -471,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: -904470794, guid: bcb85dd25e41826ab5a7dea12cff2430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _operatingState: 0
   _limitedCapacityFinished: 0
   _capacityFinished: 0
@@ -490,6 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: DeepSeeWaterPump.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -503,9 +513,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071666690282765763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -455950880, guid: 71874a96862cca0445075c2f72e705bf, type: 3}
+  m_Script: {fileID: -747059159, guid: 71874a96862cca0445075c2f72e705bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &8185452229906373099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +529,8 @@ MonoBehaviour:
   m_Script: {fileID: -1219910101, guid: dd1baa4f323651ee41781eb84b2b1960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _slotSpecifications:
+  _componentCache: {fileID: 0}
+  _slotSpecs:
   - _slotKeyword: Entrance
     _animation: Sitting
     _inanimate: 0
@@ -536,81 +548,106 @@ MonoBehaviour:
   m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 2, y: 3, z: 2}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: 23
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: 23
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 8
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 8
       _useNewOccupation: 1
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 8
       _useNewOccupation: 1
       _occupations: 11
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 8
       _useNewOccupation: 1
       _occupations: 11
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 8
       _useNewOccupation: 1
       _occupations: 3
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 8
       _useNewOccupation: 1
       _occupations: 3
       _stackable: 0
       _occupyAllBelow: 0
+      _optionallyUnderground: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 1
     _coordinates: {x: 1, y: -1, z: 0}
@@ -629,10 +666,12 @@ MonoBehaviour:
   m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _addedEdges: []
+  _edgeGroups: []
+  _unblockedCoordinates: []
 --- !u!114 &3191907760643947011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -645,6 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 1475725842, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _localAccess: {x: 1.5, y: 0, z: 0.4}
   _forceOneFinalAccess: 0
 --- !u!114 &6837356298163037667
@@ -659,6 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: Water
   _toolOrder: 12
   _toolShape: 0
@@ -679,6 +720,7 @@ MonoBehaviour:
   m_Script: {fileID: -1839023324, guid: 6e68475ee52ce568acbd493b99ce126d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &1857650337117290801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,6 +733,7 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.DeepSeaPump.DisplayName
   _descriptionLocKey: Knatte.DeepSeaPump.Description
   _flavorDescriptionLocKey: Knatte.DeepSeaPump.FlavorDescription
@@ -704,9 +747,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071666690282765763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1700995066, guid: 9d9a15fd937d3c3e3eda286523371813, type: 3}
+  m_Script: {fileID: -813592589, guid: 9d9a15fd937d3c3e3eda286523371813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &-2462391752948158073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,9 +760,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071666690282765763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 58764704, guid: cd0eb85e091d3abba5b77d6374ac6ef3, type: 3}
+  m_Script: {fileID: -1701114299, guid: cd0eb85e091d3abba5b77d6374ac6ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &7715849093852715622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +776,7 @@ MonoBehaviour:
   m_Script: {fileID: 1672878266, guid: a01d35f43886f4b46e413d3c2ea20811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &2759076214884578759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,9 +786,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071666690282765763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-   m_Script: {fileID: -1587067794, guid: 6db671ca2a10521151a0623ea7cc13c9, type: 3}
+  m_Script: {fileID: -1587067794, guid: 6db671ca2a10521151a0623ea7cc13c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _connectableBlocks:
   - _coordinates: {x: 0, y: 0, z: 1}
     _connectableDirections: 10
@@ -768,22 +815,10 @@ MonoBehaviour:
   m_Script: {fileID: 484218558, guid: a01d35f43886f4b46e413d3c2ea20811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _powerOutput: 0
   _powerInput: 400
   _isShaft: 0
---- !u!114 &329428057712811869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2071666690282765763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 824116638, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxFloodedHeight: 50
 --- !u!114 &5426390283170881375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,6 +831,7 @@ MonoBehaviour:
   m_Script: {fileID: -222538089, guid: 71874a96862cca0445075c2f72e705bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _workerBonuses:
   - _bonusId: CarryingCapacity
     _multiplierDelta: 1
@@ -811,9 +847,10 @@ MonoBehaviour:
   m_Script: {fileID: 1351926144, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _waterInputCoordinates: {x: 0, y: 2, z: 0}
   _maxDepth: 1
-  _pipeSegmentPrefabName: DeepSeePipeSegment.Folktails
+  _pipeSegmentPrefabPath: Knatte\Buildings\Water\DeepSeePipeSegment.Common
   _pipeParentName: '#Finished'
 --- !u!114 &2276100138731446109
 MonoBehaviour:
@@ -827,6 +864,7 @@ MonoBehaviour:
   m_Script: {fileID: 1672878266, guid: a01d35f43886f4b46e413d3c2ea20811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &4151290134248020324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,9 +874,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071666690282765763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1327350266, guid: 603f82a4140498c516499d72a9d347b6, type: 3}
+  m_Script: {fileID: 1779574170, guid: 603f82a4140498c516499d72a9d347b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!114 &8919495757841254429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,12 +890,39 @@ MonoBehaviour:
   m_Script: {fileID: 437054131, guid: 644c1295076bbdbb604b7f96aa6be9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _progressThresholds:
   - 0
   - 0.4
   - 0.65
   - 0.85
   - 0.9
+--- !u!114 &522341109956566707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071666690282765763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -329412848, guid: f52221e1b73d7a1af6ce63101ea50e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
+--- !u!114 &-103991947406704282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071666690282765763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1551590166, guid: 603f82a4140498c516499d72a9d347b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!1 &2313618697860427386
 GameObject:
   m_ObjectHideFlags: 0
