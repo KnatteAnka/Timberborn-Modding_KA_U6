@@ -520,7 +520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
   _noAutoWalls: 0
-  _generateFloorsOnStackable: 0
+  _generateFloorsOnStackable: 1
   _blockAllEdges: 0
   _edgeGroups: []
   _unblockedCoordinates: []
@@ -546,7 +546,6 @@ MonoBehaviour:
       _occupations: 12
       _stackable: 1
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
   _entrance:
     _hasEntrance: 0
@@ -574,6 +573,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 0
     _coordinates: {x: 0, y: 0, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &2088881534276268686
 MonoBehaviour:
