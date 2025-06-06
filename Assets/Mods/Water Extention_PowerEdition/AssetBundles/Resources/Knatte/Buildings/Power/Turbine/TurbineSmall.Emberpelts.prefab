@@ -264,16 +264,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1185779073106326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -979173865, guid: a01d35f43886f4b46e413d3c2ea20811, type: 3}
+  m_Script: {fileID: 808986059, guid: a01d35f43886f4b46e413d3c2ea20811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
   _transputSpecifications:
-  - _offset: {x: 0, y: 0, z: 0}
-    _direction3D: 0
+  - _coordinates: {x: 0, y: 0, z: 0}
+    _directions: 1
     _reverseRotation: 1
-  - _offset: {x: 0, y: 0, z: 0}
-    _direction3D: 2
+  - _coordinates: {x: 0, y: 0, z: 0}
+    _directions: 4
     _reverseRotation: 0
 --- !u!114 &114334826382413018
 MonoBehaviour:

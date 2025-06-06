@@ -1,5 +1,6 @@
-3.0.4
-* Fix U7.2 update
+7.0.0
+* Switched to have first digit in version to supported game version
+* Suppress an error message for SpiralStaircase and log staircase
 
 
 ---

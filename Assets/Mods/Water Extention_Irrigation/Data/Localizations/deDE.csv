@@ -1,0 +1,23 @@
+ID,Text,Comment
+Knatte.WE_IrrigationExtractFuel.DisplayName,Bewässerung mit Baumwachstumsförderung,
+Knatte.WE_IrrigationFuel.DisplayName,Bewässerung,
+Knatte.IrrigationTower.DisplayName,Bewässerungsturm,-
+Knatte.IrrigationTower.Description,"Bewässert umliegende Fläche.
+Verbraucht kein Wasser für Flächen, die nicht bewässert werden können.",
+Knatte.IrrigationTower.Header,Irrigation Mode:,untranslated
+Knatte.IrrigationTower.FlavorDescription,"Da weniger als ein Drittel der Erde mit Wasser bedeckt ist, wurde die Bewässerung zu einem Muss.","Das Spiel findet auf der Erde statt, die sich in ein trockenes Ödland verwandelt hat."
+Knatte.IrrigationTowerV2_FT.DisplayName,Effizienter Bewässerungsturm,-
+Knatte.IrrigationTowerV2_FT.Description,"Bewässert mehr umliegende Fläche und kann das Wachstum von Bäumen mit Extrakt fördern.
+Verbraucht kein Wasser für Flächen, die nicht bewässert werden können.",
+Knatte.IrrigationTowerV2_IT.DisplayName,Energiebetriebener Bewässerungsturm,-
+Knatte.IrrigationTowerV2_IT.Description,"Bewässert umliegende Fläche, ohne dass ein Arbeiter benötigt wird. Für mehr Wasserverbrauch stoppt es auch Kontaminierung.
+Verbraucht kein Wasser für Flächen, die nicht bewässert werden können.",
+Knatte.IrrigationTowerV2.FlavorDescription,"Da weniger als ein Drittel der Erde mit Wasser bedeckt ist, wurde die Bewässerung zu einem Muss.","Das Spiel findet auf der Erde statt, die sich in ein trockenes Ödland verwandelt hat."
+Knatte.BigIrrigationTower.DisplayName,Großer Bewässerungsturm,-
+Knatte.BigIrrigationTowerIT.Description,"Irrigates even More land around it for less Water. 
+Pipes is the starting point of irrigation.
+Does not use water for tiles that it cant Irrigate",
+Knatte.BigIrrigationTowerFT.Description,"Irrigates even More land around it for less Water. 
+Pipes is the starting point of irrigation.
+Does not use water for tiles that it cant Irrigate",
+Knatte.BigIrrigationTower.FlavorDescription,"Tropf, tropf, Wassertropfen.",-

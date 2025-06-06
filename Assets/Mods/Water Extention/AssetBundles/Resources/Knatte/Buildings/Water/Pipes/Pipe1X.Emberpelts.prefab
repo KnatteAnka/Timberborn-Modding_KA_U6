@@ -1246,10 +1246,9 @@ MonoBehaviour:
     - _matterBelow: 3
       _legacyOccupation: 7
       _useNewOccupation: 1
-      _occupations: 23
+      _occupations: 55
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 1
       _legacyOccupation: 0
@@ -1257,23 +1256,20 @@ MonoBehaviour:
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
       _useNewOccupation: 1
-      _occupations: 19
+      _occupations: 50
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
       _useNewOccupation: 1
-      _occupations: 23
+      _occupations: 51
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
@@ -1281,7 +1277,6 @@ MonoBehaviour:
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 1
@@ -1289,7 +1284,6 @@ MonoBehaviour:
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
   _entrance:
     _hasEntrance: 0
@@ -1317,6 +1311,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 1
     _coordinates: {x: 0, y: 1, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &6701407408757928782
 MonoBehaviour:
@@ -1387,15 +1382,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6035574211607761949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1587067794, guid: 6db671ca2a10521151a0623ea7cc13c9, type: 3}
+  m_Script: {fileID: 808986059, guid: a01d35f43886f4b46e413d3c2ea20811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
-  _connectableBlocks:
+  _transputSpecs:
   - _coordinates: {x: 0, y: 1, z: 0}
-    _connectableDirections: -1
+    _directions: -1
   - _coordinates: {x: 0, y: 1, z: 1}
-    _connectableDirections: -1
+    _directions: -1
 --- !u!114 &4887357399888630629
 MonoBehaviour:
   m_ObjectHideFlags: 0

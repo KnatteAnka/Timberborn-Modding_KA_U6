@@ -347,7 +347,6 @@ MonoBehaviour:
       _occupations: -1
       _stackable: 1
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
   _entrance:
     _hasEntrance: 0
@@ -374,7 +373,8 @@ MonoBehaviour:
   _layout: 1
   _customPivot:
     _hasCustomPivot: 0
-    _coordinates: {x: 0, y: 0, z: 0}
+    _coordinates: {x: 0, y: 3, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &2088881534276268686
 MonoBehaviour:

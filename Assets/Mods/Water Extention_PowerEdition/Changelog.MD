@@ -1,5 +1,7 @@
-1.0.3
-* Fix U7.2
+7.0.0
+* Switched to have first digit in version to supported game version
+* Cleanup Loc files to only have relevant info for this mod
+* Fix U7.9 crash
 
 
 ---

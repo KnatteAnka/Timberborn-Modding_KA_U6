@@ -1,6 +1,5 @@
-4.0.1 
-* Fix bug in emberpelts file
-* Add U7 version
+7.0.1
+* Add Greedy Ember support
 
 
 ---

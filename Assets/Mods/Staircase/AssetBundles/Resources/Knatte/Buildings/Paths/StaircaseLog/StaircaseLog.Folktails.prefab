@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 3155513017021987746}
   - component: {fileID: 4545584036834696040}
   - component: {fileID: 3009508143096359969}
+  - component: {fileID: 853557248461406127}
   m_Layer: 0
   m_Name: StaircaseLog.Folktails
   m_TagString: Untagged
@@ -277,16 +278,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
-  _blocksSpecification:
+  _blocksSpec:
     _size: {x: 1, y: 1, z: 2}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 7
       _useNewOccupation: 1
       _occupations: 54
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 3
@@ -294,7 +294,6 @@ MonoBehaviour:
       _occupations: 19
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
   _entrance:
     _hasEntrance: 0
@@ -322,6 +321,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 0
     _coordinates: {x: 0.75, y: 0.25, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &5714707437738404375
 MonoBehaviour:
@@ -383,6 +383,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
   _mainPathCoordinates: {x: 0, y: 0, z: 0}
+--- !u!114 &853557248461406127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065582776437103274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1427448866, guid: 4ce8c16df7521fd0d2784160caac521d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
 --- !u!1 &3991673938325257461
 GameObject:
   m_ObjectHideFlags: 0
