@@ -1,5 +1,6 @@
-7.0.1 
-* Updated for U7 and is now totaly standalone mod
+7.0.2 
+* Add Greedy Ember support
+* Add Emberpelt support
 
 ---
 MinimumGameVersion: 0.6.4.0

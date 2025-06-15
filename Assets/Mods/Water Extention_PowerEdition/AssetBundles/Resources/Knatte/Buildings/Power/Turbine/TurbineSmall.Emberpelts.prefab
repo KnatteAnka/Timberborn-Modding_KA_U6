@@ -222,16 +222,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
-  _blocksSpecification:
+  _blocksSpec:
     _size: {x: 1, y: 1, z: 1}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 0
       _useNewOccupation: 1
       _occupations: 50
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
   _entrance:
     _hasEntrance: 0
@@ -268,13 +267,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
-  _transputSpecifications:
+  _transputSpecs:
   - _coordinates: {x: 0, y: 0, z: 0}
     _directions: 1
     _reverseRotation: 1
   - _coordinates: {x: 0, y: 0, z: 0}
     _directions: 4
     _reverseRotation: 0
+  _ignoreRotation: 0
 --- !u!114 &114334826382413018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,7 +327,8 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 0
     _coordinates: {x: 2.5, y: 0.5, z: 0}
-  _devModeTool: 1
+  _canBeAttachedToTerrainSide: 0
+  _devModeTool: 0
 --- !u!114 &114024330776487130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,7 +457,7 @@ Transform:
   m_GameObject: {fileID: 1593365003127622}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -489,7 +490,7 @@ Transform:
   m_GameObject: {fileID: 1049586253755574330}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -540,7 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _modelName: Knatte/Model/TurbineBase.Folktails.Model
+  _modelName: Knatte/Model/TurbineBase.Emberpelts.Model
 --- !u!1 &2515624767170967951
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _modelName: Knatte/Model/TurbineBase.Folktails.Model
+  _modelName: Knatte/Model/TurbineBase.Emberpelts.Model
 --- !u!65 &8171861730653997750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -652,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: -1942782917, guid: 40833514e55bcf2135fbcf9411078554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _modelName: Knatte/Model/TurbineBlades.Folktails.Model
+  _modelName: Knatte/Model/TurbineBlades.Emberpelts.Model
 --- !u!1001 &466980155208542083
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,7 +1,5 @@
-7.0.1 
-* Cleanup Loc files to only have relevant info for this mod
-* Fix for U7.9
-* Updated prices for Aqueduct floors bigger is cheaper
+7.0.2 
+* Add Greedy Ember support
 
 
 ---

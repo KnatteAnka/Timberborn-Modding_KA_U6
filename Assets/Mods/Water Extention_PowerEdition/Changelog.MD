@@ -1,10 +1,8 @@
-7.0.0
-* Switched to have first digit in version to supported game version
-* Cleanup Loc files to only have relevant info for this mod
-* Fix U7.9 crash
+7.0.2
+* Fix missing Turbine for Greedy Ember and Emberpelts
 
 
 ---
 MinimumGameVersion: 0.7.2.0
-MaximumGameVersion: 0.7.1.9
+MaximumGameVersion: 0.7.9.9
 ---

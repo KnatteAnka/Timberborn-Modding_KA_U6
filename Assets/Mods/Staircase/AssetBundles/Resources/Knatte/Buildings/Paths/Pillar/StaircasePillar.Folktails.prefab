@@ -84,11 +84,12 @@ MonoBehaviour:
   m_Script: {fileID: -579399493, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _selectionSoundName: Default
   _loopingSoundName: 
   _buildingCost:
-  - _goodId: Log
-    _amount: 1
+  - _goodId: Plank
+    _amount: 4
   _scienceCost: 190
   _placeFinished: 0
   _finishableWithBeaversOnSite: 0
@@ -105,10 +106,13 @@ MonoBehaviour:
   m_Script: {fileID: 1596376676, guid: 1bd6ccb667024f9c2b77daf7f62a4eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _finishedModelName: '#Finished'
   _unfinishedModelName: '#Unfinished'
   _finishedUncoveredModelName: 
+  _undergroundModelName: 
   _constructionModeModel: 0
+  _undergroundModelDepth: 0
 --- !u!114 &2079100082245757164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 1566945626, guid: b5f268a4cb31a93ed707a95d3a502b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _prefabName: StaircasePillar.Folktails
   _backwardCompatiblePrefabNames: []
   _requiredFeatureToggle: 
@@ -137,10 +142,12 @@ MonoBehaviour:
   m_Script: {fileID: -1925074215, guid: 79523a2b71f4fae881a60ad2e723d456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 1
   _blockAllEdges: 0
-  _addedEdges: []
+  _edgeGroups: []
+  _unblockedCoordinates: []
 --- !u!114 &319040251225182605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,15 +160,17 @@ MonoBehaviour:
   m_Script: {fileID: 447443988, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blocksSpecification:
+  _componentCache: {fileID: 0}
+  _blocksSpec:
     _size: {x: 1, y: 1, z: 1}
-    _blockSpecifications:
+    _blockSpecs:
     - _matterBelow: 1
       _legacyOccupation: 6
       _useNewOccupation: 1
       _occupations: 8
       _stackable: 1
       _occupyAllBelow: 0
+      _underground: 0
   _entrance:
     _hasEntrance: 0
     _coordinates: {x: 0, y: 0, z: 0}
@@ -180,6 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: -1706396145, guid: c1ff95bb5ae0e8b420075ec58add6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _toolGroupId: SubGroup_Paths2
   _toolOrder: 60
   _toolShape: 0
@@ -187,6 +197,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 0
     _coordinates: {x: 0, y: 0, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 0
 --- !u!114 &3622442183108798477
 MonoBehaviour:
@@ -200,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 652365310, guid: b6b9d4cc3090b6fceb2eb6438dd271f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _componentCache: {fileID: 0}
   _displayNameLocKey: Knatte.StaircasePillar.DisplayName
   _descriptionLocKey: Knatte.StaircasePillar.Description
   _flavorDescriptionLocKey: Knatte.StaircasePillar.FlavorDescription

@@ -1,5 +1,6 @@
-4.0.0 
-* Add U7 version
+7.0.0 
+* Switched to have first digit in version to supported game version
+* Add Greedy Ember support
 
 ---
 MinimumGameVersion: 0.6.3.1

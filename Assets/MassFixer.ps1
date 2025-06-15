@@ -39,18 +39,22 @@ Write-host -- Starting Mass replacer        --
 Write-host -----------------------------------
 
 
-
 if ($OldGUIDImp -ne $null){
+	Write-Host Old GUID replaced
     $OldGUID = $OldGUIDImp
+}
+if ($NewGUIDImp -ne $null){
+	Write-Host New GUID replaced
     $NewGUID = $NewGUIDImp
-    if ($FileSufixImp -ne $null){
-     $FileSufix = $FileSufixImp
-     }
-    Write-Host External input
+}
+if ($FileSufixImp -ne $null){
+	Write-Host FileSufix replaced
+    $FileSufix = $FileSufixImp
+}
+    
     #pause
-}else{
 
-
+if ($CurrentDir -ne $PSScriptRoot){
     Write-Host Select folder
     #pause
     $Subfolders = Get-ChildItem -Path $CurrentDir
