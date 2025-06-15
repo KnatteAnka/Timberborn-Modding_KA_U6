@@ -7,7 +7,7 @@ $NewGUID = @("m_Shader: {fileID: -6465566751694194690, guid: f8dcdce8e5ef2d4439f
 # ------------------ Real code below ------------------------
 
 $FileSufixMaterial = ".\*.mat"
-$DirMaterialsToFix=$null
+$DirMaterialsToFix=$PSScriptRoot
 
 
 

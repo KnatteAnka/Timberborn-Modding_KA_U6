@@ -40,21 +40,21 @@ Write-host -----------------------------------
 
 
 if ($OldGUIDImp -ne $null){
-	Write-Host Old GUID replaced
+	Write-Host Old GUID replaced 
     $OldGUID = $OldGUIDImp
 }
 if ($NewGUIDImp -ne $null){
-	Write-Host New GUID replaced
+	Write-Host New GUID replaced 
     $NewGUID = $NewGUIDImp
 }
 if ($FileSufixImp -ne $null){
-	Write-Host FileSufix replaced
+	Write-Host FileSufix replaced $FileSufixImp
     $FileSufix = $FileSufixImp
 }
     
     #pause
 
-if ($CurrentDir -ne $PSScriptRoot){
+if ($CurrentDir -eq $PSScriptRoot){
     Write-Host Select folder
     #pause
     $Subfolders = Get-ChildItem -Path $CurrentDir
