@@ -1,5 +1,6 @@
-3.0.0
-* Update for U7
+7.0.0
+* Switched to have first digit in version to supported game version
+* Switched to base game shaders
 
 ---
 MinimumGameVersion: 0.6.1.5
