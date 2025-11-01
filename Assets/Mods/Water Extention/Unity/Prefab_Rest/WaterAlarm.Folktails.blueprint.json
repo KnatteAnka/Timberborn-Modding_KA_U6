@@ -1,0 +1,234 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "ScrapMetal",
+        "Amount": 3
+      },
+      {
+        "Id": "Plank",
+        "Amount": 6
+      }
+    ],
+    "ScienceCost": 200,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "TemplateSpec": {
+    "TemplateName": "WaterAlarm.Folktails",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 3
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "FullExceptCorners",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptCorners",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptCorners",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Water",
+    "ToolOrder": 301,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "StreamGauge": {
+    "Started": false,
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "StreamGaugeAnimationController": {
+      "InstanceID": 0
+    },
+    "StreamGaugeSpec": {
+      "InstanceID": 0
+    },
+    "Coordinates": {
+      "X": 0,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "StreamGaugeAnimationController": {
+    "StreamGaugeAnimationControllerSpec": {
+      "InstanceID": 0
+    },
+    "Marker": {
+      "InstanceID": 0
+    }
+  },
+  "TickableWaterBuilding": {
+    "Started": false,
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockableBuilding": {
+      "InstanceID": 0
+    },
+    "TickableWaterBuildingSpec": {
+      "InstanceID": 0
+    },
+    "HasWater": true
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.05,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.5,
+              "Y": 0.1,
+              "Z": 0.5
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 1.6,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.299999952,
+              "Y": 3.2,
+              "Z": 0.299999952
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "DepthMarker": {
+          "Children": {
+            "#DepthSlider1_Misc": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.5,
+                  "Y": 0.0,
+                  "Z": 0.5
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            },
+            "StreamGauge.Folktails": {}
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1": {
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.05,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.1,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          },
+          "Children": {
+            "ConstructionSite1x1#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+            }
+          }
+        }
+      }
+    }
+  }
+}

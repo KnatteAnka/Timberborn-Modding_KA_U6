@@ -1,0 +1,188 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Log",
+        "Amount": 8
+      },
+      {
+        "Id": "ScrapMetal",
+        "Amount": 2
+      }
+    ],
+    "ScienceCost": 95,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "DE_RM_CornerSlope2x.Folktails",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": false,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "BottomAndFloor",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Top, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Floor",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "DE_RM_BW_Dec1",
+    "ToolOrder": 130,
+    "ToolShape": "Square",
+    "Layout": "Rectangle",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.DE_RMCornerSlope2X.DisplayName",
+    "DescriptionLocKey": "Knatte.DE_RMCornerSlope2X.Description",
+    "FlavorDescriptionLocKey": "Knatte.DE_RMCornerSlope2X.FlavorDescription",
+    "Icon": "Knatte/DecorationExtentionicon/CornerSlope_2"
+  },
+  "ContinuousEffectBuildingSpec": {
+    "Effects": [
+      {
+        "NeedId": "BlockDecoration",
+        "PointsPerHour": 0.20000000298023224,
+        "SatisfyToMaxValue": false
+      }
+    ]
+  },
+  "RangedEffectBuildingSpec": {
+    "EffectRadius": 0
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "Colider": {
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.15,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.3,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 1.15,
+                  "Z": 0.2
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 1.7,
+                  "Z": 0.4
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.8,
+                  "Y": 1.15,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 0.4,
+                  "Y": 1.7,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.85,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 0.5,
+                  "Y": 1.0,
+                  "Z": 0.5
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "DE_RM_Levee Top": {
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/DE_RM_Levee2xInvSquareCorner.Folktails.Model"
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1 1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        }
+      }
+    }
+  }
+}

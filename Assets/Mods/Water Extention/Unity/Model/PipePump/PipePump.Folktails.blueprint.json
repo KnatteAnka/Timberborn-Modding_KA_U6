@@ -1,0 +1,69 @@
+{
+  "TransformSpec": {
+    "Position": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 1.0
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 1.0
+    }
+  },
+  "CollidersSpec": {
+    "BoxColliders": [],
+    "SphereColliders": [],
+    "CapsuleColliders": [
+      {
+        "Center": {
+          "X": 0.5,
+          "Y": 0.5,
+          "Z": -0.5
+        },
+        "Radius": 0.5,
+        "Height": 2.0,
+        "Direction": "Y"
+      },
+      {
+        "Center": {
+          "X": 0.5,
+          "Y": 1.5,
+          "Z": -0.5
+        },
+        "Radius": 0.3,
+        "Height": 1.3,
+        "Direction": "Y"
+      }
+    ]
+  },
+  "Children": {
+    "PumpAnimated": {
+      "TransformSpec": {
+        "Position": {
+          "X": -8.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "TimbermeshSpec": {
+        "Model": "Knatte/Model/PipePump.Folktails.Model"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "TransformSpec": {
+    "Position": {
+      "X": 0.0,
+      "Y": 1.0,
+      "Z": 0.0
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 180.000015,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 1.0
+    }
+  },
+  "Children": {
+    "Start_L_V5": {},
+    "Start_R_V5": {},
+    "Plank#nested": {
+      "BlueprintPath": "Mods/Path Extention/PrefabModuls/Plank.blueprint"
+    }
+  }
+}

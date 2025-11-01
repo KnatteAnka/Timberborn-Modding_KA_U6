@@ -1,0 +1,800 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 15
+      },
+      {
+        "Id": "Gear",
+        "Amount": 10
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 30
+      }
+    ],
+    "ScienceCost": 800,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "IndustWaterTank.IT",
+    "BackwardCompatibleTemplateNames": [
+      "IndustWaterTank.Folktails"
+    ],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 3,
+        "Y": 3,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "TopAndBottom",
+          "UseNewOccupation": true,
+          "Occupations": "Top, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "BottomAndFloor",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": true,
+      "Coordinates": {
+        "X": 1,
+        "Y": -1,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": true
+  },
+  "BuildingAccessibleSpec": {
+    "LocalAccess": {
+      "X": 1.5,
+      "Y": 0.0,
+      "Z": 0.27000001072883606
+    },
+    "ForceOneFinalAccess": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Storage",
+    "ToolOrder": 71,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.IndWaterTank.DisplayName",
+    "DescriptionLocKey": "Knatte.IndWaterTank.Description",
+    "FlavorDescriptionLocKey": "",
+    "Icon": "Knatte/WaterExtentionIcon/IndTankIcon"
+  },
+  "TransputProviderSpec": {
+    "TransputSpecs": [
+      {
+        "Coordinates": {
+          "X": 1,
+          "Y": 0,
+          "Z": 0
+        },
+        "Directions": "-1",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 1,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 2,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 1,
+          "Y": 2,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 2,
+          "Y": 1,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 2,
+          "Y": 2,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 1,
+          "Z": 1
+        },
+        "Directions": "Top",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 2,
+          "Z": 1
+        },
+        "Directions": "Top",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 1,
+          "Y": 1,
+          "Z": 1
+        },
+        "Directions": "Top",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 1,
+          "Y": 2,
+          "Z": 1
+        },
+        "Directions": "Top",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 2,
+          "Y": 1,
+          "Z": 1
+        },
+        "Directions": "Top",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 2,
+          "Y": 2,
+          "Z": 1
+        },
+        "Directions": "Top",
+        "ReverseRotation": false
+      }
+    ],
+    "IgnoreRotation": false
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "StockpileSpec": {
+    "MaxCapacity": 800,
+    "WhitelistedGoodType": "Liquid"
+  },
+  "EnterableSpec": {
+    "OperatingState": "Finished",
+    "LimitedCapacityFinished": false,
+    "CapacityFinished": 0,
+    "LimitedCapacityUnfinished": false,
+    "CapacityUnfinished": 0
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0,
+      0.40000000596046448,
+      0.75,
+      0.89999997615814209
+    ]
+  },
+  "Children": {
+    "#Finished": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 1.5,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "Size": {
+              "X": 2.8,
+              "Y": 2.0,
+              "Z": 1.7
+            }
+          },
+          {
+            "Center": {
+              "X": 1.5,
+              "Y": 0.1,
+              "Z": 1.0
+            },
+            "Size": {
+              "X": 2.9,
+              "Y": 0.2,
+              "Z": 1.9
+            }
+          },
+          {
+            "Center": {
+              "X": 1.5,
+              "Y": 0.5,
+              "Z": -0.4
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.2
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Model": {
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/IndustWaterTank.IronTeeth.Model"
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "Children": {
+        "ConstructionSite": {
+          "Children": {
+            "ConstructionSite3x2#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite3x2.blueprint"
+            },
+            "ConstructionSite1x1#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint",
+              "Modification": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": -1.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "ConstructionSite1x1 (1)#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint",
+              "Modification": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": -1.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              }
+            },
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/IndustWaterTank.IronTeeth.ConstructionStage0.Model"
+              }
+            },
+            "Coliders2": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.07,
+                      "Y": 0.5,
+                      "Z": -0.94
+                    },
+                    "Size": {
+                      "X": 0.12,
+                      "Y": 1.0,
+                      "Z": 0.12
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.94,
+                      "Y": 0.5,
+                      "Z": -0.94
+                    },
+                    "Size": {
+                      "X": 0.12,
+                      "Y": 1.0,
+                      "Z": 0.12
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Coliders": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 0.06,
+                      "Z": 1.0
+                    },
+                    "Size": {
+                      "X": 3.0,
+                      "Y": 0.12,
+                      "Z": 2.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.15,
+                      "Y": 1.0,
+                      "Z": 0.15
+                    },
+                    "Size": {
+                      "X": 0.2,
+                      "Y": 1.8,
+                      "Z": 0.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 2.85,
+                      "Y": 1.0,
+                      "Z": 0.15
+                    },
+                    "Size": {
+                      "X": 0.2,
+                      "Y": 1.8,
+                      "Z": 0.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.15,
+                      "Y": 1.0,
+                      "Z": 1.85
+                    },
+                    "Size": {
+                      "X": 0.2,
+                      "Y": 1.8,
+                      "Z": 0.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 2.85,
+                      "Y": 1.0,
+                      "Z": 1.85
+                    },
+                    "Size": {
+                      "X": 0.2,
+                      "Y": 1.8,
+                      "Z": 0.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage1": {
+          "Children": {
+            "ConstructionSite1x1 (1)#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint",
+              "Modification": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 1.0,
+                    "Y": 0.0,
+                    "Z": -1.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              }
+            },
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/IndustWaterTank.IronTeeth.ConstructionStage1.Model"
+              }
+            },
+            "Coliders2": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.07,
+                      "Y": 0.5,
+                      "Z": -0.94
+                    },
+                    "Size": {
+                      "X": 0.12,
+                      "Y": 1.0,
+                      "Z": 0.12
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.94,
+                      "Y": 0.5,
+                      "Z": -0.94
+                    },
+                    "Size": {
+                      "X": 0.12,
+                      "Y": 1.0,
+                      "Z": 0.12
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    },
+                    "Size": {
+                      "X": 2.8,
+                      "Y": 2.0,
+                      "Z": 1.7
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage2": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/IndustWaterTank.IronTeeth.ConstructionStage2.Model"
+              }
+            },
+            "Coliders3": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 0.5,
+                      "Z": -0.4
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    },
+                    "Size": {
+                      "X": 2.8,
+                      "Y": 2.0,
+                      "Z": 1.7
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage3": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/IndustWaterTank.IronTeeth.ConstructionStage3.Model"
+              }
+            },
+            "Coliders3": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 0.5,
+                      "Z": -0.4
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    },
+                    "Size": {
+                      "X": 2.8,
+                      "Y": 2.0,
+                      "Z": 1.7
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

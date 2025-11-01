@@ -1,0 +1,167 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Log",
+        "Amount": 2
+      },
+      {
+        "Id": "ScrapMetal",
+        "Amount": 2
+      }
+    ],
+    "ScienceCost": 50,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": true,
+    "DrawRangeBoundsOnIt": false
+  },
+  "TemplateSpec": {
+    "TemplateName": "DE_SM_SQCorner.Folktails",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "BottomAndFloor",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "DE_SM_BW_Dec1",
+    "ToolOrder": 12,
+    "ToolShape": "Square",
+    "Layout": "Rectangle",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.DE_SMSQCorner.DisplayName",
+    "DescriptionLocKey": "Knatte.DE_SMSQCorner.Description",
+    "FlavorDescriptionLocKey": "Knatte.DE_SMSQCorner.FlavorDescription",
+    "Icon": "Knatte/DecorationExtentionicon/SQCorner"
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "ContinuousEffectBuildingSpec": {
+    "Effects": [
+      {
+        "NeedId": "BlockDecoration",
+        "PointsPerHour": 0.20000000298023224,
+        "SatisfyToMaxValue": false
+      }
+    ]
+  },
+  "RangedEffectBuildingSpec": {
+    "EffectRadius": 1
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "DE_SM_Levee Top": {
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/DE_SM_Levee1xSquareCorner.Folktails.Model"
+          }
+        },
+        "Colider": {
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.15,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.3,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.7,
+                  "Y": 0.45,
+                  "Z": 0.3
+                },
+                "Size": {
+                  "X": 0.6,
+                  "Y": 0.3,
+                  "Z": 0.6008237
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.85,
+                  "Y": 0.8,
+                  "Z": 0.15
+                },
+                "Size": {
+                  "X": 0.3,
+                  "Y": 0.4,
+                  "Z": 0.3
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1 1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        }
+      }
+    }
+  }
+}

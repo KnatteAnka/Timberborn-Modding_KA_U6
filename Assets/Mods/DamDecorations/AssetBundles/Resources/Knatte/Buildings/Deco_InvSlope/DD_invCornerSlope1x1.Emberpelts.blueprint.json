@@ -1,0 +1,445 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 9
+      },
+      {
+        "Id": "Log",
+        "Amount": 4
+      }
+    ],
+    "ScienceCost": 165,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "DD_invCornerSlope1x1.Emberpelts",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [
+      {
+        "Cost": 1.0,
+        "Group": {
+          "UseGroup": false,
+          "GroupName": ""
+        },
+        "IsPath": true,
+        "AddedEdges": []
+      }
+    ],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 2,
+        "Y": 2,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "Top, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "Top, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "DD_BW_Dec2",
+    "ToolOrder": 229,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 1.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.InvCornerSlope.DisplayName",
+    "DescriptionLocKey": "Knatte.InvCornerSlope.Description",
+    "FlavorDescriptionLocKey": "Knatte.InvCornerSlope.FlavorDescription",
+    "Icon": "Knatte/DamDecorationIcon/DoubleInvSlope"
+  },
+  "ContinuousEffectBuildingSpec": {
+    "Effects": [
+      {
+        "NeedId": "BlockDecoration",
+        "PointsPerHour": 0.20000000298023224,
+        "SatisfyToMaxValue": false
+      }
+    ]
+  },
+  "RangedEffectBuildingSpec": {
+    "EffectRadius": 1
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0
+    ]
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "Colider1": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.9999994,
+              "Z": -3.1888485E-06
+            },
+            "Rotation": {
+              "X": 90.0,
+              "Y": 89.99999,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.82,
+                  "Z": 0.15
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.36,
+                  "Z": 0.3
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.48,
+                  "Z": 0.3
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.32,
+                  "Z": 0.6
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.16,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.32,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "Levee Top (1)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -1.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/Levee1x1Top.Emberpelts.Model"
+          }
+        },
+        "Levee InvSlope": {
+          "TransformSpec": {
+            "Position": {
+              "X": -10.0,
+              "Y": -1.00000489,
+              "Z": 5.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/Levee1x1InvSlope.Emberpelts.Model"
+          }
+        },
+        "Levee InvSlope (1)": {
+          "TransformSpec": {
+            "Position": {
+              "X": -4.0,
+              "Y": -1.0,
+              "Z": -10.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 270.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/Levee1x1InvSlope.Emberpelts.Model"
+          }
+        },
+        "Colider3": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.999998,
+              "Y": 1.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 90.0,
+              "Y": 359.978424,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.82,
+                  "Z": 0.15
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.36,
+                  "Z": 0.3
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.48,
+                  "Z": 0.3
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.32,
+                  "Z": 0.6
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.16,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.32,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "Colider": {
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.5,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/Levee.Emberpelts.ConstructionStage0.Model"
+              }
+            },
+            "Collider": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 0.12,
+                      "Z": 0.5
+                    },
+                    "Size": {
+                      "X": 2.0,
+                      "Y": 0.24,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.05,
+                      "Y": 0.5,
+                      "Z": 0.05
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.8,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.95,
+                      "Y": 0.5,
+                      "Z": 0.05
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.8,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.95,
+                      "Y": 0.5,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.8,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.05,
+                      "Y": 0.5,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.8,
+                      "Z": 0.1
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

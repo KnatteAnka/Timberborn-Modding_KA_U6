@@ -1,0 +1,46 @@
+{
+  "TransformSpec": {
+    "Position": {
+      "X": 0.0,
+      "Y": 1.0,
+      "Z": 0.0
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 180.000015,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 1.0
+    }
+  },
+  "Children": {
+    "Start.Model": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "TimbermeshSpec": {
+        "Model": "Knatte/Model/Bridge.Start.Model"
+      }
+    },
+    "Plank.IT#nested": {
+      "BlueprintPath": "Mods/Path Extention/PrefabModuls/Plank.IT.blueprint"
+    }
+  }
+}

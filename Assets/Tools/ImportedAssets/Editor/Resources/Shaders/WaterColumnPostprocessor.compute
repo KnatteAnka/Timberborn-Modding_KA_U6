@@ -1,0 +1,536 @@
+﻿#pragma kernel ProcessColumns
+#pragma kernel FindBestProperties
+#pragma kernel BreakCornerLinks
+#pragma kernel BreakCornerLinksReversed
+#pragma kernel CalculateHeights
+#pragma kernel FindWaterfalls
+#include "WaterUtils.cginc"
+#include "WaterSettings.cginc"
+#include "WaterVertexParameters.cginc"
+
+// Raw input data from water simulation and world structure (columns, link barriers and flow limits).
+Texture2DArray InDepths;
+Texture2DArray InColumns;
+Texture2DArray InOutflows;
+Texture2DArray InContaminations;
+Texture2DArray InLinkBarriers;
+Texture2DArray InFlowLimits;
+
+// Read-only buffers with water data processed by previous kernels.
+Texture2DArray OutWaterDataBuffer;
+Texture2DArray OutEdgeLinksBuffer;
+Texture2DArray OutCornerLinksBuffer;
+Texture2DArray OutHeightsBuffer;
+
+// Write-only buffers with data processed by kernels - to be used by vertex shader.
+RWTexture2DArray<float4> OutWaterData;
+RWTexture2DArray<float4> OutEdgeLinks;
+RWTexture2DArray<float4> OutCornerLinks;
+RWTexture2DArray<float2> OutOutflows;
+RWTexture2DArray<float> OutContaminations;
+RWTexture2DArray<float> OutHeights;
+RWTexture2DArray<float> OutWaterfalls;
+RWTexture2DArray<float4> OutSkirts;
+RWTexture2DArray<float4> OutBaseCornerLinks;
+
+// Read and write buffers for breaking corner links - used for temporary data storage between
+// BreakCornerLinks and BreakCornerLinksReversed kernels.
+Texture2DArray BrokenCornerLinksBuffer;
+RWTexture2DArray<int> BrokenCornerLinks;
+
+float MaxIndex;
+
+// ReSharper disable once CppParameterMayBeConst
+inline InData GetInData(float3 uv) {
+  const float depth = InDepths[uv].x;
+  const int2 columns = InColumns[uv].xy;
+  const float2 linkBarrier = InLinkBarriers[uv].xy;
+  const float flowLimit = InFlowLimits[uv].x;
+  const float2 outflow = InOutflows[uv].xy;
+  return CreateInData(depth, columns.x, columns.y, linkBarrier, flowLimit, outflow);
+}
+
+// ReSharper disable once CppParameterMayBeConst
+inline OutData GetOutData(float3 uv) {
+  float4 data = OutWaterDataBuffer[uv];
+  return CreateOutData(data.x, data.y, data.z);
+}
+
+inline float3 GetOutflowIfHigher(float3 uv, float2 bestOutflow, float bestHeight) {
+  float3 result = float3(bestOutflow, bestHeight);
+  if (uv.z >= 0) {
+    const OutData neighborData = GetOutData(uv);
+    if (neighborData.Depth > 0 && neighborData.Height > bestHeight) {
+      result = float3(InOutflows[uv].xy, neighborData.Height);
+    }
+  }
+  return result;
+}
+
+inline void FindBestOutflows(const float2 uv,
+                             const int4 edgeLinks,
+                             const float3 selfUv,
+                             const OutData selfData) {
+  const float2 selfOutflow = InOutflows[selfUv].xy;
+  if (selfData.Depth > 0) {
+    float3 result = float3(selfOutflow, selfData.Height);
+    result = GetOutflowIfHigher(float3(uv + float2(0, 1), edgeLinks.x), result.xy, result.z);
+    result = GetOutflowIfHigher(float3(uv + float2(-1, 0), edgeLinks.y), result.xy, result.z);
+    result = GetOutflowIfHigher(float3(uv + float2(0, -1), edgeLinks.z), result.xy, result.z);
+    result = GetOutflowIfHigher(float3(uv + float2(1, 0), edgeLinks.w), result.xy, result.z);
+
+    const float heightDifference = clamp(result.z - selfData.Height, 0, 1);
+    OutOutflows[selfUv] = lerp(selfOutflow, result.xy, heightDifference);
+  } else {
+    OutOutflows[selfUv] = 0;
+  }
+}
+
+inline float2 GetContaminationIfHigher(float3 uv, float bestContamination, float bestHeight) {
+  float2 result = float2(bestContamination, bestHeight);
+  if (uv.z >= 0) {
+    const OutData neighborData = GetOutData(uv);
+    if (neighborData.Depth > 0 && neighborData.Height > bestHeight) {
+      result = float2(InContaminations[uv].x, neighborData.Height);
+    }
+  }
+  return result;
+}
+
+inline void FindBestContamination(const float2 uv,
+                                  const int4 edgeLinks,
+                                  const int4 cornerLinks,
+                                  const float3 selfUv,
+                                  const OutData selfData) {
+  const float selfContamination = InContaminations[selfUv].x;
+  float2 result = float2(selfContamination, selfData.Height);
+  result = GetContaminationIfHigher(float3(uv + float2(0, 1), edgeLinks.x), result.x, result.y);
+  result = GetContaminationIfHigher(float3(uv + float2(-1, 0), edgeLinks.y), result.x, result.y);
+  result = GetContaminationIfHigher(float3(uv + float2(0, -1), edgeLinks.z), result.x, result.y);
+  result = GetContaminationIfHigher(float3(uv + float2(1, 0), edgeLinks.w), result.x, result.y);
+  result = GetContaminationIfHigher(float3(uv + float2(-1, 1), cornerLinks.x), result.x, result.y);
+  result = GetContaminationIfHigher(float3(uv + float2(1, 1), cornerLinks.y), result.x, result.y);
+  result = GetContaminationIfHigher(float3(uv + float2(-1, -1), cornerLinks.z), result.x, result.y);
+  result = GetContaminationIfHigher(float3(uv + float2(1, -1), cornerLinks.w), result.x, result.y);
+
+  const float heightDifference = clamp(result.y - selfData.Height, 0, 1);
+  OutContaminations[selfUv] = lerp(selfContamination, result.x, heightDifference);
+}
+
+[numthreads(8, 8, 1)]
+void ProcessColumns(uint3 id : SV_DispatchThreadID) {
+  const float2 coords = id.xy;
+  const int maxIndex = (int)MaxIndex;
+
+  int4 edgeLinks = -1; // Top, Left, Bottom, Right
+  int4 cornerLinks = -1; // TopLeft, TopRight, BottomLeft, BottomRight 
+  int4 sideIndexCounter = 0;
+  int4 counterAtBestEdgeLink = 0;
+
+  // Iterate all columns and create both edge and corner links. Each link is available only if
+  // neighboring water column is within the same height range (between self Floor and Ceiling) and
+  // has less water than self Ceiling. Additional map is also used to determine whether link can be
+  // created (e.g. Sluice blocks some of them it). Link is determined by column index, -1 if no link
+  // is available. Also determine if side skirts should be shown - either if there are more than one
+  // edge links (which means that there's a visible gap between neighbor and self) or if there is
+  // no edge link at all. Clear column when we're at the top, to avoid reading from random memory locations
+  // when checking water level in column above (if we're already at max column). This is required for proper
+  // calculation of side skirts during rendering phase.
+  [loop]
+  for (int selfIndex = 0; selfIndex <= maxIndex; selfIndex++) {
+    const float3 selfUv = float3(coords, selfIndex);
+    if (selfIndex == maxIndex) {
+      OutWaterData[selfUv] = 0;
+      OutEdgeLinks[selfUv] = -1;
+      OutBaseCornerLinks[selfUv] = -1;
+      OutCornerLinks[selfUv] = -1;;
+      OutSkirts[selfUv] = 0;
+    } else {
+      const InData selfData = GetInData(selfUv);
+      const int floor = selfData.Floor;
+      const int ceiling = selfData.Ceiling;
+
+      [loop]
+      for (int columnIndex = 0; columnIndex < maxIndex; columnIndex++) {
+        const InData topData = GetInData(float3(coords + float2(0, 1), columnIndex));
+        if (topData.Floor < ceiling && topData.Ceiling > floor) {
+          sideIndexCounter.x++;
+          if (topData.Depth > 0 && topData.Height <= ceiling && topData.CanLinkBottom) {
+            edgeLinks.x = columnIndex;
+            counterAtBestEdgeLink.x = sideIndexCounter.x;
+          }
+        }
+        const InData leftData = GetInData(float3(coords + float2(-1, 0), columnIndex));
+        if (coords.x != 0 && leftData.Floor < ceiling && leftData.Ceiling > floor) {
+          sideIndexCounter.y++;
+          if (leftData.Depth > 0 && leftData.Height <= ceiling && leftData.CanLinkRight) {
+            edgeLinks.y = columnIndex;
+            counterAtBestEdgeLink.y = sideIndexCounter.y;
+          }
+        }
+        const InData bottomData = GetInData(float3(coords + float2(0, -1), columnIndex));
+        if (coords.y != 0 && bottomData.Floor < ceiling && bottomData.Ceiling > floor) {
+          sideIndexCounter.z++;
+          if (bottomData.Depth > 0 && bottomData.Height <= ceiling && bottomData.CanLinkTop) {
+            edgeLinks.z = columnIndex;
+            counterAtBestEdgeLink.z = sideIndexCounter.z;
+          }
+        }
+        const InData rightData = GetInData(float3(coords + float2(1, 0), columnIndex));
+        if (rightData.Floor < ceiling && rightData.Ceiling > floor) {
+          sideIndexCounter.w++;
+          if (rightData.Depth > 0 && rightData.Height <= ceiling && rightData.CanLinkLeft) {
+            edgeLinks.w = columnIndex;
+            counterAtBestEdgeLink.w = sideIndexCounter.w;
+          }
+        }
+
+        const InData topLeftData = GetInData(float3(coords + float2(-1, 1), columnIndex));
+        if (topLeftData.Floor < ceiling && topLeftData.Ceiling > floor
+          && topLeftData.Depth > 0 && topLeftData.Height <= ceiling
+          && topLeftData.CanLinkBottom && topLeftData.CanLinkRight) {
+          cornerLinks.x = columnIndex;
+          }
+        const InData topRightData = GetInData(float3(coords + float2(1, 1), columnIndex));
+        if (topRightData.Floor < ceiling && topRightData.Ceiling > floor
+          && topRightData.Depth > 0 && topRightData.Height <= ceiling
+          && topRightData.CanLinkBottom && topRightData.CanLinkLeft) {
+          cornerLinks.y = columnIndex;
+          }
+        const InData bottomLeftData = GetInData(float3(coords + float2(-1, -1), columnIndex));
+        if (bottomLeftData.Floor < ceiling && bottomLeftData.Ceiling > floor
+          && bottomLeftData.Depth > 0 && bottomLeftData.Height <= ceiling
+          && bottomLeftData.CanLinkTop && bottomLeftData.CanLinkRight) {
+          cornerLinks.z = columnIndex;
+          }
+        const InData bottomRightData = GetInData(float3(coords + float2(1, -1), columnIndex));
+        if (bottomRightData.Floor < ceiling && bottomRightData.Ceiling > floor
+          && bottomRightData.Depth > 0 && bottomRightData.Height <= ceiling
+          && bottomRightData.CanLinkTop && bottomRightData.CanLinkLeft) {
+          cornerLinks.w = columnIndex;
+          }
+      }
+
+      const bool showTopSkirt = counterAtBestEdgeLink.x > 1;
+      const bool showLeftSkirt = counterAtBestEdgeLink.y > 1;
+      const bool showBottomSkirt = counterAtBestEdgeLink.z > 1;
+      const bool showRightSkirt = counterAtBestEdgeLink.w > 1;
+      const int4 skirtVisibility = int4(showTopSkirt ? 1 : 0,
+                                        showLeftSkirt ? 1 : 0,
+                                        showBottomSkirt ? 1 : 0,
+                                        showRightSkirt ? 1 : 0);
+
+      float depth = selfData.Depth;
+      if (selfData.Height >= ceiling) {
+        depth = max(0, ceiling - floor - WATER_CEILING_SEPARATION);
+      }
+      if (depth > 0 && depth < WATER_VERTICAL_THRESHOLD) {
+        depth = WATER_VERTICAL_THRESHOLD;
+      }
+      if (depth > 0 && selfData.FlowLimit > 0 && length(selfData.Outflow) > FLOW_LIMIT_THRESHOLD){
+        depth = max(depth, selfData.FlowLimit + FLOW_LIMIT_OFFSET);
+      }
+
+      OutWaterData[selfUv] = float4(depth, floor, ceiling, 0);
+      OutEdgeLinks[selfUv] = edgeLinks;
+      OutBaseCornerLinks[selfUv] = cornerLinks;
+      OutCornerLinks[selfUv] = cornerLinks;
+      OutSkirts[selfUv] = skirtVisibility;
+
+      edgeLinks = -1;
+      cornerLinks = -1;
+      sideIndexCounter = 0;
+      counterAtBestEdgeLink = 0;
+    } 
+  }
+}
+
+[numthreads(8, 8, 1)]
+void BreakCornerLinks(uint3 id : SV_DispatchThreadID) {
+  const float2 coords = id.xy;
+  const int maxIndex = (int)MaxIndex;
+
+  // Iterate all columns and break (remove) corner links if any of the main links (in the
+  // same directions) are broken. If both links are available, then additional check is made to
+  // ensure that flow limiters (e.g. Sluice) allow for the link to be created.
+  // This allows to remove smooth interpolation in case of waterfall corners, which in other case
+  // would render mesh incorrectly.
+  [loop]
+  for (int selfIndex = 0; selfIndex < maxIndex; selfIndex++) {
+    const float3 selfUv = float3(coords, selfIndex);
+    int brokenCornerLinks = 0;
+    int4 cornerLinks = OutCornerLinksBuffer[selfUv];
+    if (cornerLinks.x >= 0) {
+      const float3 topLeftUv = float3(coords + float2(-1, 1), cornerLinks.x);
+      const int4 topLeftEdgeLinks = OutEdgeLinksBuffer[topLeftUv];
+      if (topLeftEdgeLinks.z == -1 || topLeftEdgeLinks.w == -1) {
+        cornerLinks.x = -1;
+        brokenCornerLinks |= 1 << 0;
+      } else {
+        InData rightLinkData = GetInData(float3(topLeftUv.xy + float2(1, 0),
+                                                topLeftEdgeLinks.w));
+        InData bottomLinkData = GetInData(float3(topLeftUv.xy + float2(0, -1),
+                                                 topLeftEdgeLinks.z));
+        if (!rightLinkData.CanLinkBottom || !bottomLinkData.CanLinkRight) {
+          cornerLinks.x = -1;
+          brokenCornerLinks |= 1 << 0;
+        }
+      }
+    }
+    if (cornerLinks.y >= 0) {
+      const float3 topRightUv = float3(coords + float2(1, 1), cornerLinks.y);
+      const int4 topRightEdgeLinks = OutEdgeLinksBuffer[topRightUv];
+      if (topRightEdgeLinks.y == -1 || topRightEdgeLinks.z == -1) {
+        cornerLinks.y = -1;
+        brokenCornerLinks |= 1 << 1;
+      } else {
+        InData leftLinkData = GetInData(float3(topRightUv.xy + float2(-1, 0),
+                                               topRightEdgeLinks.y));
+        InData bottomLinkData = GetInData(float3(topRightUv.xy + float2(0, -1),
+                                                 topRightEdgeLinks.z));
+        if (!leftLinkData.CanLinkBottom || !bottomLinkData.CanLinkLeft) {
+          cornerLinks.y = -1;
+          brokenCornerLinks |= 1 << 1;
+        }
+      }
+    }
+    if (cornerLinks.z >= 0) {
+      const float3 bottomLeftUv = float3(coords + float2(-1, -1), cornerLinks.z);
+      const int4 bottomLeftEdgeLinks = OutEdgeLinksBuffer[bottomLeftUv];
+      if (bottomLeftEdgeLinks.x == -1 || bottomLeftEdgeLinks.w == -1) {
+        cornerLinks.z = -1;
+        brokenCornerLinks |= 1 << 2;
+      } else {
+        InData rightLinkData = GetInData(float3(bottomLeftUv.xy + float2(1, 0),
+                                                bottomLeftEdgeLinks.w));
+        InData topLinkData = GetInData(float3(bottomLeftUv.xy + float2(0, 1),
+                                              bottomLeftEdgeLinks.x));
+        if (!rightLinkData.CanLinkTop || !topLinkData.CanLinkRight) {
+          cornerLinks.z = -1;
+          brokenCornerLinks |= 1 << 2;
+        }
+      }
+    }
+    if (cornerLinks.w >= 0) {
+      const float3 bottomRightUv = float3(coords + float2(1, -1), cornerLinks.w);
+      const int4 bottomRightEdgeLinks = OutEdgeLinksBuffer[bottomRightUv];
+      if (bottomRightEdgeLinks.x == -1 || bottomRightEdgeLinks.y == -1) {
+        cornerLinks.w = -1;
+        brokenCornerLinks |= 1 << 3;
+      } else {
+        InData leftLinkData = GetInData(float3(bottomRightUv.xy + float2(-1, 0),
+                                               bottomRightEdgeLinks.y));
+        InData topLinkData = GetInData(float3(bottomRightUv.xy + float2(0, 1),
+                                              bottomRightEdgeLinks.x));
+        if (!leftLinkData.CanLinkTop || !topLinkData.CanLinkLeft) {
+          cornerLinks.w = -1;
+          brokenCornerLinks |= 1 << 3;
+        }
+      }
+    }
+
+    OutCornerLinks[selfUv] = cornerLinks;
+    BrokenCornerLinks[selfUv] = brokenCornerLinks;
+  }
+}
+
+[numthreads(8, 8, 1)]
+void BreakCornerLinksReversed(uint3 id : SV_DispatchThreadID) {
+  const float2 coords = id.xy;
+  const int maxIndex = (int)MaxIndex;
+
+  // Second pass of breaking corner links, this time in reversed order. This is needed to ensure
+  // that corner links are broken in both directions - which ensures data consistency and
+  // is required by vertex shader logic.
+  [loop]
+  for (int selfIndex = 0; selfIndex < maxIndex; selfIndex++) {
+    const float3 selfUv = float3(coords, selfIndex);
+    int4 cornerLinks = OutCornerLinksBuffer[selfUv];
+    if (cornerLinks.x >= 0) {
+      const float3 topLeftUv = float3(coords + float2(-1, 1), cornerLinks.x);
+      const int topLeftLinks = BrokenCornerLinksBuffer[topLeftUv].x;
+      if (IsMaskBitSet(topLeftLinks, 3))
+        cornerLinks.x = -1;
+    }
+    if (cornerLinks.y >= 0) {
+      const float3 topRightUv = float3(coords + float2(1, 1), cornerLinks.y);
+      const int topRightLinks = BrokenCornerLinksBuffer[topRightUv].x;
+      if (IsMaskBitSet(topRightLinks, 2))
+        cornerLinks.y = -1;
+    }
+    if (cornerLinks.z >= 0) {
+      const float3 bottomLeftUv = float3(coords + float2(-1, -1), cornerLinks.z);
+      const int bottomLeftLinks = BrokenCornerLinksBuffer[bottomLeftUv].x;
+      if (IsMaskBitSet(bottomLeftLinks, 1))
+        cornerLinks.z = -1;
+    }
+    if (cornerLinks.w >= 0) {
+      const float3 bottomRightUv = float3(coords + float2(1, -1), cornerLinks.w);
+      const int bottomRightLinks = BrokenCornerLinksBuffer[bottomRightUv].x;
+      if (IsMaskBitSet(bottomRightLinks, 0))
+        cornerLinks.w = -1;
+    }
+
+    OutCornerLinks[selfUv] = cornerLinks;
+  }
+}
+
+[numthreads(8, 8, 1)]
+void FindBestProperties(uint3 id : SV_DispatchThreadID) {
+  const float2 coords = id.xy;
+  const int maxIndex = (int)MaxIndex;
+
+  // Iterate all columns and find best outflows and contaminations for each tile.
+  // Best values are determined by taking the highest neighboring water column height and using its
+  // outflow and contamination values, if it's higher than certain threshold. This allows high
+  // waterfalls to have proper outflow and contamination values, as if they were take from the
+  // source of the waterfall, not from the waterfall itself.
+  [loop]
+  for (int selfIndex = 0; selfIndex < maxIndex; selfIndex++) {
+    const float3 selfUv = float3(coords, selfIndex);
+    const OutData selfData = GetOutData(selfUv);
+    const int4 edgeLinks = OutEdgeLinksBuffer[selfUv];
+    const int4 cornerLinks = OutCornerLinksBuffer[selfUv];
+    FindBestOutflows(coords, edgeLinks, selfUv, selfData);
+    FindBestContamination(coords, edgeLinks, cornerLinks, selfUv, selfData);
+  }
+}
+
+[numthreads(8, 8, 1)]
+void CalculateHeights(uint3 id : SV_DispatchThreadID) {
+  const int maxIndex = (int)MaxIndex;
+  const float2 vertexUv = id.xy;
+  const float2 tileUv = floor(vertexUv * 0.25);
+
+  // Iterate all preprocessed columns and calculate final water heights for each vertex.
+  // Heights are determined by taking the highest available neighboring (linked) water column height
+  // and using it as the target height for the current vertex. The influence directions are used to
+  // determine which neighboring columns should be considered for the height calculation and how
+  // much the height should be adjusted (in case of waterfall humps).
+  [loop]
+  for (int columnIndex = 0; columnIndex < maxIndex; columnIndex++) {
+    const float3 selfUv = float3(tileUv, columnIndex);
+    const OutData selfData = GetOutData(selfUv);
+    const int4 edgeLinks = OutEdgeLinksBuffer[selfUv];
+    const int4 cornerLinks = OutCornerLinksBuffer[selfUv];
+
+    int directionIndex = vertexUv.x % 4 + 4 * (vertexUv.y % 4);
+    float4 directions = InfluenceDirections[directionIndex];
+
+    const float selfHeight = selfData.Height;
+
+    float2 horizontalNeighbor = normalize(directions.xy);
+    const float2 horizontalUv = tileUv + horizontalNeighbor;
+
+    int horizontalLink = -1;
+    if (horizontalNeighbor.x > 0) {
+      horizontalLink = edgeLinks.w;
+    } else if (horizontalNeighbor.x < 0) {
+      horizontalLink = edgeLinks.y;
+    }
+
+    float horizontalHeight = horizontalLink >= 0
+                               ? GetOutData(float3(horizontalUv, horizontalLink)).Height
+                               : selfData.Height;
+    horizontalHeight = abs(directions.x) < 1
+                         ? max(horizontalHeight - WATERFALL_HUMP, selfHeight)
+                         : horizontalHeight;
+
+    float2 verticalNeighbor = normalize(directions.zw);
+    const float2 verticalUv = tileUv + verticalNeighbor;
+    int verticalLink = -1;
+    if (verticalNeighbor.y > 0) {
+      verticalLink = edgeLinks.x;
+    } else if (verticalNeighbor.y < 0) {
+      verticalLink = edgeLinks.z;
+    }
+
+    float verticalHeight = verticalLink >= 0
+                             ? GetOutData(float3(verticalUv, verticalLink.x)).Height
+                             : selfData.Height;
+    verticalHeight = abs(directions.w) < 1
+                       ? max(verticalHeight - WATERFALL_HUMP, selfHeight)
+                       : verticalHeight;
+
+    float2 diagonalNeighbor = directions.xw;
+    if (diagonalNeighbor.x < 0) {
+      diagonalNeighbor.x = -1;
+    } else if (diagonalNeighbor.x > 0) {
+      diagonalNeighbor.x = 1;
+    }
+    if (diagonalNeighbor.y < 0) {
+      diagonalNeighbor.y = -1;
+    } else if (diagonalNeighbor.y > 0) {
+      diagonalNeighbor.y = 1;
+    }
+
+    const float2 diagonalUv = tileUv + diagonalNeighbor;
+    float diagonalHeight = selfData.Height;
+    int diagonalLink = -1;
+    if (diagonalNeighbor.x > 0 && diagonalNeighbor.y > 0) {
+      diagonalLink = cornerLinks.y;
+    } else if (diagonalNeighbor.x < 0 && diagonalNeighbor.y > 0) {
+      diagonalLink = cornerLinks.x;
+    } else if (diagonalNeighbor.x > 0 && diagonalNeighbor.y < 0) {
+      diagonalLink = cornerLinks.w;
+    } else if (diagonalNeighbor.x < 0 && diagonalNeighbor.y < 0) {
+      diagonalLink = cornerLinks.z;
+    }
+
+    if (diagonalLink >= 0) {
+      const OutData diagonalData = GetOutData(float3(diagonalUv, diagonalLink.x));
+      diagonalHeight.x = diagonalData.Height;
+    }
+    diagonalHeight = abs(directions.x) < 1 || abs(directions.w) < 1
+                       ? max(diagonalHeight - WATERFALL_HUMP, selfHeight)
+                       : diagonalHeight;
+
+    const float targetHeight = max(max(diagonalHeight, selfHeight),
+                                   max(horizontalHeight, verticalHeight));
+
+    OutHeights[float3(vertexUv, columnIndex)] = targetHeight;
+  }
+}
+
+[numthreads(8, 8, 1)]
+void FindWaterfalls(uint3 id : SV_DispatchThreadID) {
+  const float2 tileUv = float2(id.xy);     
+  const uint2  vertexUvBase = id.xy * 4;        
+  const int    maxIndex = (int)MaxIndex;
+  
+  [loop]
+  for (int selfIndex = 0; selfIndex < maxIndex; ++selfIndex)
+  {
+    const float3 selfUv  = float3(tileUv, selfIndex);
+    const OutData selfData = GetOutData(selfUv);
+    float minVertexHeight = INITIAL_MIN;
+    float maxVertexHeight = INITIAL_MAX;
+
+    // Iterate all vertices in the tile and find the maximum and minimum heights
+    // for the current column. This is used to determine if there are any waterfalls
+    // in the tile, and if so, how high they are. The height is determined
+    // by taking the maximum height of the vertices in the tile and comparing it
+    // to the height of the current column. If the maximum height is significantly
+    // higher than the height of the current column, then it is considered a waterfall.
+    [unroll]
+    for (int dy = 0; dy < 4; dy++) {
+      const uint y = vertexUvBase.y + (uint)dy;
+      float rowMin = INITIAL_MIN;
+      float rowMax = INITIAL_MAX;
+      [unroll]
+      for (int dx = 0; dx < 4; dx++) {
+        const uint x = vertexUvBase.x + (uint)dx;
+        const float height = OutHeightsBuffer[float3((float)x, (float)y, (float)selfIndex)].x;
+        rowMax = max(rowMax, height);
+        rowMin = min(rowMin, height);
+      }
+      maxVertexHeight = max(maxVertexHeight, rowMax);
+      minVertexHeight = min(minVertexHeight, rowMin);
+    }
+
+    const float heightSpan = abs(maxVertexHeight - minVertexHeight);
+    const float readHeightDifference = abs(maxVertexHeight - selfData.Height);
+    const float waterfallMask = max(heightSpan, readHeightDifference);
+    OutWaterfalls[selfUv] = smoothstep(0.35, 0.6, waterfallMask);
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "CollidersSpec": {
+    "BoxColliders": [
+      {
+        "Center": {
+          "X": 0.5,
+          "Y": 0.03,
+          "Z": 0.5
+        },
+        "Size": {
+          "X": 0.6,
+          "Y": 0.06,
+          "Z": 1.0
+        }
+      }
+    ],
+    "SphereColliders": [],
+    "CapsuleColliders": []
+  },
+  "Children": {
+    "Beams": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.499241531,
+          "Y": 0.0200000145,
+          "Z": 0.50000006
+        },
+        "Rotation": {
+          "X": 270.019775,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      }
+    },
+    "Rails": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.5,
+          "Y": 0.05,
+          "Z": 0.50000006
+        },
+        "Rotation": {
+          "X": 270.019775,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      }
+    }
+  }
+}

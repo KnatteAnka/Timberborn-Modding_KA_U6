@@ -1,0 +1,424 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "MetalBlock",
+        "Amount": 2
+      },
+      {
+        "Id": "Plank",
+        "Amount": 4
+      }
+    ],
+    "ScienceCost": 500,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "MetalStaircase",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": false,
+    "EdgeGroups": [
+      {
+        "Cost": 0.5,
+        "Group": {
+          "UseGroup": false,
+          "GroupName": ""
+        },
+        "IsPath": true,
+        "AddedEdges": [
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "End": {
+              "X": 0,
+              "Y": 1,
+              "Z": 0
+            },
+            "IsTwoWay": false
+          },
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 1
+            },
+            "End": {
+              "X": 0,
+              "Y": -1,
+              "Z": 1
+            },
+            "IsTwoWay": false
+          }
+        ]
+      },
+      {
+        "Cost": 0.4,
+        "Group": {
+          "UseGroup": false,
+          "GroupName": ""
+        },
+        "IsPath": true,
+        "AddedEdges": [
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "End": {
+              "X": 0,
+              "Y": 0,
+              "Z": 1
+            },
+            "IsTwoWay": true
+          }
+        ]
+      }
+    ],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_Paths2",
+    "ToolOrder": 26,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "KnatteTobbert.MetalStaircase.DisplayName",
+    "DescriptionLocKey": "KnatteTobbert.MetalStaircase.Description",
+    "FlavorDescriptionLocKey": "KnatteTobbert.MetalStaircase.FlavorDiscription",
+    "Icon": "Knatte/StaircaseIcons/StaircaseMetal"
+  },
+  "BlockObjectWithPathRangeSpec": {},
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.1,
+      0.5
+    ]
+  },
+  "PathSpec": {
+    "MainPathCoordinates": {
+      "X": 0,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "MovementSpeedBoostingBuildingSpec": {
+    "BoostPercentage": 150
+  },
+  "StraightStairsSpec": {},
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "Metal V3": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 270.019775,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": -0.15,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 0.7,
+                  "Y": 0.3,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": -0.45,
+                  "Z": 0.3
+                },
+                "Size": {
+                  "X": 0.7,
+                  "Y": 0.3,
+                  "Z": 0.6
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": -0.8,
+                  "Z": 0.15
+                },
+                "Size": {
+                  "X": 0.7,
+                  "Y": 0.4,
+                  "Z": -0.3
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 89.98022,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/MetalStaircase.Emberpelts.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionBase1x1Top#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Colision": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 270.019775,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.15,
+                      "Z": 0.5
+                    },
+                    "Size": {
+                      "X": 0.6,
+                      "Y": 0.3,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.45,
+                      "Z": 0.3
+                    },
+                    "Size": {
+                      "X": 0.6,
+                      "Y": 0.3,
+                      "Z": 0.6
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.8,
+                      "Z": 0.15
+                    },
+                    "Size": {
+                      "X": 0.6,
+                      "Y": 0.4,
+                      "Z": -0.3
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/MetalStaircase.Emberpelts.ConstructionStage0.Model"
+              }
+            },
+            "Dirt": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/Dirt.ConstructionStage.Model"
+              }
+            }
+          }
+        },
+        "ConstructionStage1": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/MetalStaircase.Emberpelts.ConstructionStage1.Model"
+              }
+            },
+            "Dirt": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/Dirt.ConstructionStage.Model"
+              }
+            },
+            "Colision": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 270.019775,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.15,
+                      "Z": 0.5
+                    },
+                    "Size": {
+                      "X": 0.7,
+                      "Y": 0.3,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.45,
+                      "Z": 0.3
+                    },
+                    "Size": {
+                      "X": 0.7,
+                      "Y": 0.3,
+                      "Z": 0.6
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.8,
+                      "Z": 0.15
+                    },
+                    "Size": {
+                      "X": 0.7,
+                      "Y": 0.4,
+                      "Z": -0.3
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

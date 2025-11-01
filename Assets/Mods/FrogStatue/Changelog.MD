@@ -1,8 +1,7 @@
-7.0.0
-* Switched to have first digit in version to supported game version
-* Add Greedy Ember support
+1.0.0.0
+* Update to 1.0 for the game
 
 ---
 MinimumGameVersion: 0.6.1.0
-MaximumGameVersion: 0.7.1.9
+MaximumGameVersion: 1.9.9.9
 ---

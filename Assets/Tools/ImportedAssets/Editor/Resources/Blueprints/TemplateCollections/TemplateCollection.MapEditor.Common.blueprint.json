@@ -1,0 +1,37 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Common",
+    "Blueprints": [
+      "MapEditor/Objects/Blockage/Blockage.blueprint",
+      "MapEditor/Objects/UnstableCore/UnstableCore.blueprint",
+      "MapEditor/Objects/Bramble/Bramble.blueprint",
+      "MapEditor/Objects/NaturalDam/NaturalDam.blueprint",
+      "MapEditor/Objects/NaturalOverhang2x1/NaturalOverhang2x1.blueprint",
+      "MapEditor/Objects/NaturalOverhang3x1/NaturalOverhang3x1.blueprint",
+      "MapEditor/Objects/NaturalOverhang4x1/NaturalOverhang4x1.blueprint",
+      "MapEditor/Objects/Slope/Slope.blueprint",
+      "MapEditor/Resources/GeothermalField/GeothermalField.blueprint",
+      "MapEditor/Resources/LargeRelic/LargeRelic.blueprint",
+      "MapEditor/Resources/MediumRelic/MediumRelic.blueprint",
+      "MapEditor/Resources/ReservePile/ReservePile.blueprint",
+      "MapEditor/Resources/ReserveTank/ReserveTank.blueprint",
+      "MapEditor/Resources/ReserveWarehouse/ReserveWarehouse.blueprint",
+      "MapEditor/Resources/SmallRelic/SmallRelic.blueprint",
+      "MapEditor/Ruins/RuinColumnH1/RuinColumnH1.blueprint",
+      "MapEditor/Ruins/RuinColumnH2/RuinColumnH2.blueprint",
+      "MapEditor/Ruins/RuinColumnH3/RuinColumnH3.blueprint",
+      "MapEditor/Ruins/RuinColumnH4/RuinColumnH4.blueprint",
+      "MapEditor/Ruins/RuinColumnH5/RuinColumnH5.blueprint",
+      "MapEditor/Ruins/RuinColumnH6/RuinColumnH6.blueprint",
+      "MapEditor/Ruins/RuinColumnH7/RuinColumnH7.blueprint",
+      "MapEditor/Ruins/RuinColumnH8/RuinColumnH8.blueprint",
+      "MapEditor/Ruins/UndergroundRuins/UndergroundRuins.blueprint",
+      "MapEditor/StartingLocation/StartingLocation.blueprint",
+      "MapEditor/Water/Aquifer/Aquifer.blueprint",
+      "MapEditor/Water/BadwaterSource/BadwaterSource.blueprint",
+      "MapEditor/Water/AncientAquiferDrill/AncientAquiferDrill.blueprint",
+      "MapEditor/Water/WaterSeep/WaterSeep.blueprint",
+      "MapEditor/Water/WaterSource/WaterSource.blueprint"
+    ]
+  }
+}

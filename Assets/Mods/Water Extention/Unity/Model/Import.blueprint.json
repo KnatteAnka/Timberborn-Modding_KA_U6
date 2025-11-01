@@ -1,0 +1,26 @@
+{
+  "Children": {
+    "WaterExtention (Missing Prefab with guid: 4103182b0db5c3a42b5047ef483b45d1)": {
+      "Children": {
+        "Placeholder for referenced GameObject in Prefab instance (1)": {
+          "CollidersSpec": {
+            "BoxColliders": [],
+            "SphereColliders": [],
+            "CapsuleColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.35,
+                  "Z": 1.49999976
+                },
+                "Radius": 0.3999999,
+                "Height": 1.3,
+                "Direction": "Z"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "TransformSpec": {
+    "Position": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 2.0
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 1.0
+    }
+  },
+  "CollidersSpec": {
+    "BoxColliders": [
+      {
+        "Center": {
+          "X": 0.5,
+          "Y": 0.55,
+          "Z": -0.42
+        },
+        "Size": {
+          "X": 0.9,
+          "Y": 1.1,
+          "Z": 1.17
+        }
+      }
+    ],
+    "SphereColliders": [],
+    "CapsuleColliders": []
+  },
+  "Children": {
+    "TE": {
+      "TransformSpec": {
+        "Position": {
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 180.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "Children": {
+        "FT_T_End LogWall": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -1.78813934E-07,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 9.334668E-06,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "FT_T_End Roof": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -1.78813934E-07,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 9.334668E-06,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "FT_T_End Wall": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -1.78813934E-07,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 9.334668E-06,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

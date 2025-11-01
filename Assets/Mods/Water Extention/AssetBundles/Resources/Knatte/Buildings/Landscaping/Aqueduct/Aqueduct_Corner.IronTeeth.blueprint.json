@@ -1,0 +1,633 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "ScrapMetal",
+        "Amount": 11
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 8
+      }
+    ],
+    "ScienceCost": 700,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "Aqueduct_Corner.IronTeeth",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 2,
+        "Y": 2,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Landscaping",
+    "ToolOrder": 66,
+    "ToolShape": "Square",
+    "Layout": "Line",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.Aqueduct_Corner.DisplayName",
+    "DescriptionLocKey": "Knatte.Aqueduct_Corner.Description",
+    "FlavorDescriptionLocKey": "Knatte.Aqueduct_Corner.FlavorDescription",
+    "Icon": "Knatte/WaterExtentionIcon/AQ_Corner"
+  },
+  "WaterObstacleSpec": {
+    "Coordinates": [
+      {
+        "X": 1,
+        "Y": 0
+      },
+      {
+        "X": 0,
+        "Y": 1
+      }
+    ]
+  },
+  "FinishableWaterObstacleSpec": {
+    "Height": 1.0
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "SoilBarrierSpec": {
+    "BlockAboveMoisture": true,
+    "BlockFullMoisture": false,
+    "BlockContamination": false
+  },
+  "ImpermeableFloorSpec": {},
+  "FinishableHorizontalWaterObstacleSpec": {
+    "Obstacles": [
+      {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    ]
+  },
+  "PathModelTypeEnforcerSpec": {
+    "PathModelType": "Roof"
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0,
+      0.5
+    ]
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.025,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.05,
+              "Z": 1.0
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "BoxColider": {
+          "TransformSpec": {
+            "Position": {
+              "X": -1.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 90.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.025,
+                  "Z": 1.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.05,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.5,
+                  "Z": 2.1
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 0.2
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.1,
+                  "Y": 0.5,
+                  "Z": 1.5
+                },
+                "Size": {
+                  "X": 0.2,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "Model": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 180.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/AquaDuckCorner.IronTeeth.Model"
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.IronTeeth.ConsructionStage0.Model"
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.IronTeeth.ConsructionStage0.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckFloor.IronTeeth.Model"
+              }
+            },
+            "BoxColider": {
+              "TransformSpec": {
+                "Position": {
+                  "X": -1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.025,
+                      "Z": 1.65
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.05,
+                      "Z": 1.3
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": -0.15,
+                      "Y": 0.025,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.3,
+                      "Y": 0.05,
+                      "Z": 1.0
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage1": {
+          "Children": {
+            "BoxColider (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": -1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.5,
+                      "Z": 2.175
+                    },
+                    "Size": {
+                      "X": 0.06,
+                      "Y": 1.0,
+                      "Z": 0.15
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.125,
+                      "Y": 0.5,
+                      "Z": 2.175
+                    },
+                    "Size": {
+                      "X": 0.06,
+                      "Y": 1.0,
+                      "Z": 0.15
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.875,
+                      "Y": 0.5,
+                      "Z": 2.175
+                    },
+                    "Size": {
+                      "X": 0.06,
+                      "Y": 1.0,
+                      "Z": 0.15
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckFloor.IronTeeth.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.IronTeeth.ConsructionStage1.Model"
+              }
+            },
+            "BoxColider (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.5,
+                      "Z": 2.175
+                    },
+                    "Size": {
+                      "X": 0.06,
+                      "Y": 1.0,
+                      "Z": 0.15
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.125,
+                      "Y": 0.5,
+                      "Z": 2.175
+                    },
+                    "Size": {
+                      "X": 0.06,
+                      "Y": 1.0,
+                      "Z": 0.15
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.875,
+                      "Y": 0.5,
+                      "Z": 2.175
+                    },
+                    "Size": {
+                      "X": 0.06,
+                      "Y": 1.0,
+                      "Z": 0.15
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "BoxColider (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": -1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.025,
+                      "Z": 1.65
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.05,
+                      "Z": 1.3
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": -0.15,
+                      "Y": 0.025,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.3,
+                      "Y": 0.05,
+                      "Z": 1.0
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.IronTeeth.ConsructionStage1.Model"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

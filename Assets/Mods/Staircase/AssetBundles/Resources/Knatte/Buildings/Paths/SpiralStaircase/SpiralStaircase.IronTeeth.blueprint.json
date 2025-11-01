@@ -1,0 +1,488 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Log",
+        "Amount": 2
+      },
+      {
+        "Id": "Plank",
+        "Amount": 4
+      }
+    ],
+    "ScienceCost": 120,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "SpiralStaircase.IronTeeth",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": false,
+    "EdgeGroups": [
+      {
+        "Cost": 1.0,
+        "Group": {
+          "UseGroup": false,
+          "GroupName": ""
+        },
+        "IsPath": true,
+        "AddedEdges": [
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "End": {
+              "X": 0,
+              "Y": -1,
+              "Z": 0
+            },
+            "IsTwoWay": false
+          },
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 1
+            },
+            "End": {
+              "X": 1,
+              "Y": 0,
+              "Z": 1
+            },
+            "IsTwoWay": false
+          }
+        ]
+      },
+      {
+        "Cost": 0.4,
+        "Group": {
+          "UseGroup": false,
+          "GroupName": ""
+        },
+        "IsPath": true,
+        "AddedEdges": [
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "End": {
+              "X": 0,
+              "Y": 0,
+              "Z": 1
+            },
+            "IsTwoWay": true
+          }
+        ]
+      }
+    ],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": true
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_Paths2",
+    "ToolOrder": 25,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": true
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "KnatteTobbert.SpiralStaircase.DisplayName",
+    "DescriptionLocKey": "",
+    "FlavorDescriptionLocKey": "KnatteTobbert.SpiralStaircase.FlavorDiscription",
+    "Icon": "Knatte/StaircaseIcons/SpiralStaircase"
+  },
+  "BlockObjectWithPathRangeSpec": {},
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.1,
+      0.5
+    ]
+  },
+  "PathSpec": {
+    "MainPathCoordinates": {
+      "X": 0,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "SpiralStairsSpec": {},
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "SpiralStaircaseR": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 270.019775,
+              "Y": 270.02,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": -0.6,
+                  "Z": 0.4
+                },
+                "Size": {
+                  "X": 0.4,
+                  "Y": 0.4,
+                  "Z": 0.4
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.48,
+                  "Y": -0.2,
+                  "Z": 0.64
+                },
+                "Size": {
+                  "X": 0.69,
+                  "Y": 0.4,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.35,
+                  "Y": -0.45,
+                  "Z": 0.1
+                },
+                "Size": {
+                  "X": 0.7,
+                  "Y": 0.9,
+                  "Z": 0.2
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": [
+              {
+                "Center": {
+                  "X": 0.1,
+                  "Y": -0.1,
+                  "Z": 0.5
+                },
+                "Radius": 0.1,
+                "Height": 1.2,
+                "Axis": "Y"
+              }
+            ]
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 90.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/SpiralStaircaseR.IronTeeth.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionBase1x1Top#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Colision": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 270.019775,
+                  "Y": 270.02,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.6,
+                      "Z": 0.4
+                    },
+                    "Size": {
+                      "X": 0.4,
+                      "Y": 0.4,
+                      "Z": 0.4
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.48,
+                      "Y": -0.2,
+                      "Z": 0.64
+                    },
+                    "Size": {
+                      "X": 0.69,
+                      "Y": 0.4,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.35,
+                      "Y": -0.45,
+                      "Z": 0.1
+                    },
+                    "Size": {
+                      "X": 0.7,
+                      "Y": 0.9,
+                      "Z": 0.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 0.1,
+                      "Y": -0.1,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.1,
+                    "Height": 1.2,
+                    "Axis": "Y"
+                  }
+                ]
+              }
+            },
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 270.047546,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/SpiralStaircaseR.IronTeeth.ConstructionStage0.Model"
+              }
+            },
+            "Dirt": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/Dirt.ConstructionStage.Model"
+              }
+            }
+          }
+        },
+        "ConstructionStage1": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 270.047546,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/SpiralStaircaseR.IronTeeth.ConstructionStage1.Model"
+              }
+            },
+            "Colision": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 270.019775,
+                  "Y": 270.02,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.6,
+                      "Z": 0.4
+                    },
+                    "Size": {
+                      "X": 0.4,
+                      "Y": 0.4,
+                      "Z": 0.4
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.48,
+                      "Y": -0.2,
+                      "Z": 0.64
+                    },
+                    "Size": {
+                      "X": 0.69,
+                      "Y": 0.4,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.35,
+                      "Y": -0.45,
+                      "Z": 0.1
+                    },
+                    "Size": {
+                      "X": 0.7,
+                      "Y": 0.9,
+                      "Z": 0.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 0.1,
+                      "Y": -0.1,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.1,
+                    "Height": 1.2,
+                    "Axis": "Y"
+                  }
+                ]
+              }
+            },
+            "Dirt": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/Dirt.ConstructionStage.Model"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

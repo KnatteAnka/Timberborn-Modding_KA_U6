@@ -219,7 +219,6 @@ MonoBehaviour:
   _componentCache: {fileID: 0}
   _noAutoWalls: 0
   _generateFloorsOnStackable: 0
-  _blockAllEdges: 0
   _edgeGroups:
   - _cost: 0.9
     _group:
@@ -268,7 +267,6 @@ MonoBehaviour:
       _occupations: -1
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
@@ -276,7 +274,6 @@ MonoBehaviour:
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
@@ -284,7 +281,6 @@ MonoBehaviour:
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
@@ -292,7 +288,6 @@ MonoBehaviour:
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
     - _matterBelow: 3
       _legacyOccupation: 0
@@ -300,7 +295,6 @@ MonoBehaviour:
       _occupations: 0
       _stackable: 0
       _occupyAllBelow: 0
-      _optionallyUnderground: 0
       _underground: 0
   _entrance:
     _hasEntrance: 0
@@ -328,6 +322,7 @@ MonoBehaviour:
   _customPivot:
     _hasCustomPivot: 1
     _coordinates: {x: 0.5, y: 0.5, z: 0}
+  _canBeAttachedToTerrainSide: 0
   _devModeTool: 1
 --- !u!114 &2088881534276268686
 MonoBehaviour:

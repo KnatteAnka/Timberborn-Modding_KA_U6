@@ -1,0 +1,326 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 11
+      },
+      {
+        "Id": "Gear",
+        "Amount": 3
+      },
+      {
+        "Id": "Log",
+        "Amount": 4
+      },
+      {
+        "Id": "ScrapMetal",
+        "Amount": 10
+      }
+    ],
+    "ScienceCost": 350,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "WorkplaceSpec": {
+    "MaxWorkers": 1,
+    "DefaultWorkers": 1,
+    "DefaultWorkerType": "Beaver",
+    "DisallowOtherWorkerTypes": false,
+    "WorkerTypeUnlockCosts": [
+      {
+        "WorkerType": "Bot",
+        "ScienceCost": 250
+      }
+    ]
+  },
+  "WorkplaceSlotManagerSpec": {},
+  "TransformSlotInitializerSpec": {
+    "Slots": [
+      {
+        "SlotKeyword": "Entrance",
+        "Animation": "Sitting",
+        "Inanimate": false,
+        "RandomizeYRotation": false,
+        "WaterSlot": false
+      }
+    ]
+  },
+  "WorkplaceLightingSpec": {},
+  "WorkplaceBonusesSpec": {
+    "WorkerBonuses": [
+      {
+        "BonusId": "CarryingCapacity",
+        "MultiplierDelta": 0.10000000149011612
+      },
+      {
+        "BonusId": "MovementSpeed",
+        "MultiplierDelta": 0.05000000074505806
+      }
+    ]
+  },
+  "TemplateSpec": {
+    "TemplateName": "IrrigationTower.Emberpelts",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 2,
+        "Y": 2,
+        "Z": 3
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": true,
+      "Coordinates": {
+        "X": 1,
+        "Y": -1,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": true
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Water",
+    "ToolOrder": 53,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "BuildingAccessibleSpec": {
+    "LocalAccess": {
+      "X": 1.5,
+      "Y": 0.0,
+      "Z": 0.40000000596046448
+    },
+    "ForceOneFinalAccess": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.IrrigationTower.DisplayName",
+    "DescriptionLocKey": "Knatte.IrrigationTower.Description",
+    "FlavorDescriptionLocKey": "Knatte.IrrigationTower.FlavorDescription",
+    "Icon": "Knatte/WaterExtentionIcon/IrrigationTowerIcon"
+  },
+  "GoodConsumingBuildingSpec": {
+    "Supply": "Water",
+    "Capacity": 30,
+    "GoodPerHour": 0.15199999511241913
+  },
+  "EnterableSpec": {
+    "OperatingState": "Finished",
+    "LimitedCapacityFinished": false,
+    "CapacityFinished": 0,
+    "LimitedCapacityUnfinished": false,
+    "CapacityUnfinished": 0
+  },
+  "GoodAmountTransformHeight": {
+    "TargetName": "#MiscWater",
+    "MaxHeight": 2.5580000877380371,
+    "Good": "Water",
+    "NonLinearity": 0.0
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 1.49516892,
+              "Y": 0.4898697,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.8381243,
+              "Y": 0.9797394,
+              "Z": 0.9
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": [
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 1.4,
+              "Z": 1.0
+            },
+            "Radius": 0.7,
+            "Height": 2.7,
+            "Direction": "Y"
+          }
+        ]
+      },
+      "Children": {
+        "#MiscWater": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 1.57,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/MiscWater.Model"
+          }
+        },
+        "Model": {
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/IrrigationTower.Folktails.Model"
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite2x2#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+        }
+      }
+    }
+  }
+}

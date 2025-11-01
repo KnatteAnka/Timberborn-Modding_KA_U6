@@ -1,0 +1,46 @@
+{
+  "TransformSpec": {
+    "Position": {
+      "X": 1.00000119,
+      "Y": 0.0,
+      "Z": 0.999998868
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 180.000061,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 1.0
+    }
+  },
+  "CollidersSpec": {
+    "BoxColliders": [
+      {
+        "Center": {
+          "X": 0.5,
+          "Y": 0.45,
+          "Z": 0.35
+        },
+        "Size": {
+          "X": 0.85,
+          "Y": 0.9,
+          "Z": 0.7
+        }
+      }
+    ],
+    "SphereColliders": [],
+    "CapsuleColliders": []
+  },
+  "Children": {
+    "TE FT": {
+      "Children": {
+        "LogWall (7)": {},
+        "Roof (1).001": {},
+        "Wall Front:1.001": {}
+      }
+    }
+  }
+}

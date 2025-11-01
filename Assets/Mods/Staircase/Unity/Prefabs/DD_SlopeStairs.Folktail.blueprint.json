@@ -1,0 +1,104 @@
+{
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "BlockObject": {
+    "PlacementChangeNotifier": {
+      "InstanceID": 0
+    },
+    "BlockObjectCenter": {
+      "InstanceID": 0
+    },
+    "BlockObjectState": {
+      "InstanceID": 0
+    },
+    "BlockObjectSpec": {
+      "InstanceID": 0
+    }
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.125,
+              "Z": 0.505790651
+            },
+            "Size": {
+              "X": 0.65,
+              "Y": 0.25,
+              "Z": 0.8569473
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.375,
+              "Z": 0.361392677
+            },
+            "Size": {
+              "X": 0.65,
+              "Y": 0.25,
+              "Z": 0.6025833
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.625,
+              "Z": 0.238591164
+            },
+            "Size": {
+              "X": 0.65,
+              "Y": 0.25,
+              "Z": 0.488117039
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.8759308,
+              "Z": 0.113204092
+            },
+            "Size": {
+              "X": 0.65,
+              "Y": 0.251861572,
+              "Z": 0.243566692
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Slope": {
+          "Children": {
+            "DD_RampSlope (Missing Prefab with guid: 148843230277f0441b4c08537ed6d1ee)": {}
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        }
+      }
+    }
+  }
+}

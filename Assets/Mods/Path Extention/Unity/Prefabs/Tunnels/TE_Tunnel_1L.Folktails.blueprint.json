@@ -1,0 +1,115 @@
+{
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "BlockObject": {
+    "PlacementChangeNotifier": {
+      "InstanceID": 0
+    },
+    "BlockObjectCenter": {
+      "InstanceID": 0
+    },
+    "BlockObjectState": {
+      "InstanceID": 0
+    },
+    "BlockObjectSpec": {
+      "InstanceID": 0
+    }
+  },
+  "DrivewayModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "DrivewayModelSpec": {
+      "InstanceID": 0
+    },
+    "Model": {
+      "InstanceID": 0
+    }
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "FT_Tunnel Entry#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/FT_Tunnel Entry.blueprint"
+        },
+        "Tunnel": {},
+        "FT_Tunnel Entry (1)#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/FT_Tunnel Entry.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Z": 2.0
+              },
+              "Rotation": {
+                "Y": 0.0
+              }
+            }
+          }
+        },
+        "Levee_Model": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Buildings/Landscaping/Levee/Levee.Folktails.Model"
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite3x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite3x1.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 1.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 270.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

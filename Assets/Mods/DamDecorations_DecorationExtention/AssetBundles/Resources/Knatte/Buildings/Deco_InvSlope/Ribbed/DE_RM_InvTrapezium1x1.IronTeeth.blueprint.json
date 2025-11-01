@@ -1,0 +1,273 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 9
+      },
+      {
+        "Id": "Log",
+        "Amount": 4
+      },
+      {
+        "Id": "ScrapMetal",
+        "Amount": 2
+      }
+    ],
+    "ScienceCost": 160,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "DE_RM_InvTrapezium1x1.IronTeeth",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 3,
+        "Y": 1,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptCorners",
+          "UseNewOccupation": true,
+          "Occupations": "Top, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptCorners",
+          "UseNewOccupation": true,
+          "Occupations": "Top, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "DE_RM_BW_Dec2",
+    "ToolOrder": 225,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 1.5,
+        "Y": 0.5,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.DE_RMInvTrapezium1x1.DisplayName",
+    "DescriptionLocKey": "Knatte.DE_RMInvSlope.Description",
+    "FlavorDescriptionLocKey": "Knatte.DE_RMInvSlope.FlavorDescription",
+    "Icon": "Knatte/DecorationExtentionicon/InvTrapezium1x1"
+  },
+  "ContinuousEffectBuildingSpec": {
+    "Effects": [
+      {
+        "NeedId": "BlockDecoration",
+        "PointsPerHour": 0.20000000298023224,
+        "SatisfyToMaxValue": false
+      }
+    ]
+  },
+  "RangedEffectBuildingSpec": {
+    "EffectRadius": 1
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "Coliders": {
+          "TransformSpec": {
+            "Position": {
+              "X": 2.0,
+              "Y": 1.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 90.0,
+              "Y": 89.99999,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.82,
+                  "Z": 0.15
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.36,
+                  "Z": 0.3
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.48,
+                  "Z": 0.3
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.32,
+                  "Z": 0.6
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": -0.5,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.00000024,
+                  "Y": 1.0,
+                  "Z": 1.00000048
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": 0.16,
+                  "Z": 0.45
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.32,
+                  "Z": 0.9
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": -1.16,
+                  "Z": 0.45
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.32,
+                  "Z": 0.9
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": -1.48,
+                  "Z": 0.3
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.32,
+                  "Z": 0.6
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.5,
+                  "Y": -1.82,
+                  "Z": 0.15
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.36,
+                  "Z": 0.3
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "DE_RM_Levee Top": {
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/DE_RM_Levee1x3InvSlopeMid.IronTeeth.Model"
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1 1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 1.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

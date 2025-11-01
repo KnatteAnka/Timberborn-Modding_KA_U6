@@ -1,0 +1,192 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Log",
+        "Amount": 24
+      },
+      {
+        "Id": "Plank",
+        "Amount": 12
+      }
+    ],
+    "ScienceCost": 205,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": true,
+    "DrawRangeBoundsOnIt": false
+  },
+  "TemplateSpec": {
+    "TemplateName": "DD_IntCorn_S2X.Folktail",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 1,
+        "Y": -1,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "DD_BW_Dec1",
+    "ToolOrder": 310,
+    "ToolShape": "Square",
+    "Layout": "Rectangle",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "Enterable": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "NumberOfIncomingVisitors": 0
+  },
+  "ContinuousEffectBuilding": {
+    "ContinuousEffectBuildingSpec": {
+      "InstanceID": 0
+    },
+    "RangedEffectBuilding": {
+      "InstanceID": 0
+    }
+  },
+  "RangedEffectBuilding": {
+    "Started": false,
+    "BuildingSounds": {
+      "InstanceID": 0
+    },
+    "BlockableBuilding": {
+      "InstanceID": 0
+    },
+    "BlockObjectRange": {
+      "InstanceID": 0
+    },
+    "MechanicalBuilding": {
+      "InstanceID": 0
+    },
+    "PrefabSpec": {
+      "InstanceID": 0
+    },
+    "RangedEffectApplier": {
+      "InstanceID": 0
+    },
+    "RangedEffectBuildingSpec": {
+      "InstanceID": 0
+    },
+    "WasActive": false
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 1.0,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.8,
+              "Y": 2.0,
+              "Z": 0.8
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Dam Decoration": {
+          "Children": {
+            "DD_InvCorner2X (Missing Prefab with guid: 854ed3a829982d140a54da339753051c)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 9.334667E-06,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            },
+            "DD_Support (Missing Prefab with guid: 5cbe03387fca63342aa80b4da11acf35)": {}
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1 1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        }
+      }
+    }
+  }
+}

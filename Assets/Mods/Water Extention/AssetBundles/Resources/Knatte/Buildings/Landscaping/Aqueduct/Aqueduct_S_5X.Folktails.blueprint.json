@@ -1,0 +1,4831 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "ScrapMetal",
+        "Amount": 25
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 20
+      }
+    ],
+    "ScienceCost": 2000,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "Aqueduct_S_5X.Folktails",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 2,
+        "Y": 5,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": true
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Landscaping",
+    "ToolOrder": 63,
+    "ToolShape": "Square",
+    "Layout": "SideLine",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 1.0,
+        "Y": 0.5,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.Aqueduct_S_5X.DisplayName",
+    "DescriptionLocKey": "Knatte.Aqueduct_S.Description",
+    "FlavorDescriptionLocKey": "Knatte.Aqueduct_S.FlavorDescription",
+    "Icon": "Knatte/WaterExtentionIcon/AQ_Side_5"
+  },
+  "WaterObstacleSpec": {
+    "Coordinates": [
+      {
+        "X": 1,
+        "Y": 0
+      },
+      {
+        "X": 1,
+        "Y": 1
+      },
+      {
+        "X": 1,
+        "Y": 2
+      },
+      {
+        "X": 1,
+        "Y": 3
+      },
+      {
+        "X": 1,
+        "Y": 4
+      }
+    ]
+  },
+  "FinishableWaterObstacleSpec": {
+    "Height": 1.0
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "SoilBarrierSpec": {
+    "BlockAboveMoisture": true,
+    "BlockFullMoisture": false,
+    "BlockContamination": false
+  },
+  "ImpermeableFloorSpec": {},
+  "FinishableHorizontalWaterObstacleSpec": {
+    "Obstacles": [
+      {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      {
+        "X": 0,
+        "Y": 1,
+        "Z": 0
+      },
+      {
+        "X": 0,
+        "Y": 2,
+        "Z": 0
+      },
+      {
+        "X": 0,
+        "Y": 3,
+        "Z": 0
+      },
+      {
+        "X": 0,
+        "Y": 4,
+        "Z": 0
+      }
+    ]
+  },
+  "PathModelTypeEnforcerSpec": {
+    "PathModelType": "Roof"
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0,
+      0.10000000149011612,
+      0.20000000298023224,
+      0.30000001192092896,
+      0.40000000596046448,
+      0.5,
+      0.60000002384185791,
+      0.699999988079071,
+      0.800000011920929,
+      0.89999997615814209
+    ]
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.025,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.05,
+              "Z": 1.0
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "BoxColider": {
+          "TransformSpec": {
+            "Position": {
+              "X": -1.0,
+              "Y": 0.0,
+              "Z": 5.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 90.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 2.5,
+                  "Y": 0.025,
+                  "Z": 1.5
+                },
+                "Size": {
+                  "X": 5.0,
+                  "Y": 0.05,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 2.5,
+                  "Y": 0.5,
+                  "Z": 2.1
+                },
+                "Size": {
+                  "X": 5.0,
+                  "Y": 1.0,
+                  "Z": 0.2
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "Models": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 5.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 90.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuck.Folktails.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 2.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuck.Folktails.Model"
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 3.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuck.Folktails.Model"
+              }
+            },
+            "Model (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 4.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuck.Folktails.Model"
+              }
+            },
+            "Model (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 5.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuck.Folktails.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage0.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+              }
+            },
+            "BoxColider": {
+              "TransformSpec": {
+                "Position": {
+                  "X": -1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.025,
+                      "Z": 1.65
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.05,
+                      "Z": 1.25
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage1": {
+          "Children": {
+            "P1": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage2": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage0.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+              }
+            },
+            "BoxColider": {
+              "TransformSpec": {
+                "Position": {
+                  "X": -1.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.025,
+                      "Z": 1.65
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.05,
+                      "Z": 1.25
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "P1 (1)": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage3": {
+          "Children": {
+            "P1 (1)": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage4": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage0.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+              }
+            },
+            "BoxColider": {
+              "TransformSpec": {
+                "Position": {
+                  "X": -1.0,
+                  "Y": 0.0,
+                  "Z": 3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.025,
+                      "Z": 1.65
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.05,
+                      "Z": 1.25
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "P1 (1)": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage5": {
+          "Children": {
+            "P1 (1)": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage6": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage0.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+              }
+            },
+            "BoxColider": {
+              "TransformSpec": {
+                "Position": {
+                  "X": -1.0,
+                  "Y": 0.0,
+                  "Z": 4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.025,
+                      "Z": 1.65
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.05,
+                      "Z": 1.25
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "P1 (1)": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage7": {
+          "Children": {
+            "P1 (1)": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage8": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage0.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+              }
+            },
+            "BoxColider": {
+              "TransformSpec": {
+                "Position": {
+                  "X": -1.0,
+                  "Y": 0.0,
+                  "Z": 5.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 90.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.025,
+                      "Z": 1.65
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.05,
+                      "Z": 1.25
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "P1 (1)": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ConstructionStage9": {
+          "Children": {
+            "P1 (1)": {
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "P1 (5)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "BoxColider (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.125,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      },
+                      {
+                        "Center": {
+                          "X": 0.875,
+                          "Y": 0.5,
+                          "Z": 2.175
+                        },
+                        "Size": {
+                          "X": 0.06,
+                          "Y": 1.0,
+                          "Z": 0.15
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "BoxColider (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 1.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 0.025,
+                          "Z": 1.65
+                        },
+                        "Size": {
+                          "X": 1.0,
+                          "Y": 0.05,
+                          "Z": 1.25
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                },
+                "Model (3)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/AquaDuckFloor.Folktails.Model"
+                  }
+                },
+                "Model (1)": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 180.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/AquaDuckWall.Folktails.ConsructionStage1.Model"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

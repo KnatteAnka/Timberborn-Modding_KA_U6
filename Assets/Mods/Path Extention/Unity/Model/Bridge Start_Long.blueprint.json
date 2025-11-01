@@ -1,0 +1,64 @@
+{
+  "TransformSpec": {
+    "Position": {
+      "X": 0.0,
+      "Y": 1.0,
+      "Z": 0.0
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 180.000015,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 1.0
+    }
+  },
+  "Children": {
+    "Start_L_V5": {},
+    "Start_R_V5": {},
+    "Plank#nested": {
+      "BlueprintPath": "Mods/Path Extention/PrefabModuls/Plank.blueprint"
+    },
+    "Start_L_V5 (1)": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.999,
+          "Y": -0.679,
+          "Z": -0.091
+        },
+        "Rotation": {
+          "X": 89.97202,
+          "Y": 179.99968,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.3256,
+          "Z": 0.6
+        }
+      }
+    },
+    "Start_R_V5 (1)": {
+      "TransformSpec": {
+        "Position": {
+          "X": 1.001,
+          "Y": -0.679,
+          "Z": -0.091
+        },
+        "Rotation": {
+          "X": 89.97202,
+          "Y": 179.99968,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.3256,
+          "Z": 0.6
+        }
+      }
+    }
+  }
+}

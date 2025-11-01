@@ -1,0 +1,664 @@
+{
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "BlockObject": {
+    "PlacementChangeNotifier": {
+      "InstanceID": 0
+    },
+    "BlockObjectCenter": {
+      "InstanceID": 0
+    },
+    "BlockObjectState": {
+      "InstanceID": 0
+    },
+    "BlockObjectSpec": {
+      "InstanceID": 0
+    }
+  },
+  "ScienceNeedingBuilding": {
+    "Started": false,
+    "BlockableBuilding": {
+      "InstanceID": 0
+    },
+    "ScienceNeedingBuildingSpec": {
+      "InstanceID": 0
+    },
+    "SciencePerTick": 0.0,
+    "CurrentScience": 0.0,
+    "NotEnoughScience": false
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "Bridge Mid1.IronTeeth#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/Bridge Mid1.IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": -1.0,
+                "Z": 1.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "Children": {
+              "Plank.IT": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 2.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 180.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                },
+                "Children": {
+                  "Board.IronTeeth.Model": {
+                    "TransformSpec": {
+                      "Position": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 1.0
+                      },
+                      "Rotation": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                      }
+                    },
+                    "TimbermeshSpec": {
+                      "Model": "Knatte/Model/Bridge.Board.IronTeeth.Model"
+                    }
+                  },
+                  "BoardHitbox": {
+                    "CollidersSpec": {
+                      "BoxColliders": [
+                        {
+                          "Center": {
+                            "X": 0.5,
+                            "Y": -0.05,
+                            "Z": -0.5
+                          },
+                          "Size": {
+                            "X": 1.0,
+                            "Y": 0.1,
+                            "Z": 0.950000048
+                          }
+                        }
+                      ],
+                      "SphereColliders": [],
+                      "CapsuleColliders": []
+                    }
+                  }
+                }
+              },
+              "Plank.IT (1)": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 180.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                },
+                "Children": {
+                  "Board.IronTeeth.Model": {
+                    "TransformSpec": {
+                      "Position": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 1.0
+                      },
+                      "Rotation": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                      }
+                    },
+                    "TimbermeshSpec": {
+                      "Model": "Knatte/Model/Bridge.Board.IronTeeth.Model"
+                    }
+                  },
+                  "BoardHitbox": {
+                    "CollidersSpec": {
+                      "BoxColliders": [
+                        {
+                          "Center": {
+                            "X": 0.5,
+                            "Y": -0.05,
+                            "Z": -0.5
+                          },
+                          "Size": {
+                            "X": 1.0,
+                            "Y": 0.1,
+                            "Z": 0.950000048
+                          }
+                        }
+                      ],
+                      "SphereColliders": [],
+                      "CapsuleColliders": []
+                    }
+                  }
+                }
+              },
+              "Plank.IT#nested#delete": {},
+              "Plank.IT (1)#nested#delete": {}
+            }
+          }
+        },
+        "Bridge Mid1.IronTeeth (1)#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/Bridge Mid1.IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": -1.0,
+                "Z": 3.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "Children": {
+              "Plank.IT": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 2.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 180.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                },
+                "Children": {
+                  "Board.IronTeeth.Model": {
+                    "TransformSpec": {
+                      "Position": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 1.0
+                      },
+                      "Rotation": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                      }
+                    },
+                    "TimbermeshSpec": {
+                      "Model": "Knatte/Model/Bridge.Board.IronTeeth.Model"
+                    }
+                  },
+                  "BoardHitbox": {
+                    "CollidersSpec": {
+                      "BoxColliders": [
+                        {
+                          "Center": {
+                            "X": 0.5,
+                            "Y": -0.05,
+                            "Z": -0.5
+                          },
+                          "Size": {
+                            "X": 1.0,
+                            "Y": 0.1,
+                            "Z": 0.950000048
+                          }
+                        }
+                      ],
+                      "SphereColliders": [],
+                      "CapsuleColliders": []
+                    }
+                  }
+                }
+              },
+              "Plank.IT (1)": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 180.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                },
+                "Children": {
+                  "Board.IronTeeth.Model": {
+                    "TransformSpec": {
+                      "Position": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 1.0
+                      },
+                      "Rotation": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                      }
+                    },
+                    "TimbermeshSpec": {
+                      "Model": "Knatte/Model/Bridge.Board.IronTeeth.Model"
+                    }
+                  },
+                  "BoardHitbox": {
+                    "CollidersSpec": {
+                      "BoxColliders": [
+                        {
+                          "Center": {
+                            "X": 0.5,
+                            "Y": -0.05,
+                            "Z": -0.5
+                          },
+                          "Size": {
+                            "X": 1.0,
+                            "Y": 0.1,
+                            "Z": 0.950000048
+                          }
+                        }
+                      ],
+                      "SphereColliders": [],
+                      "CapsuleColliders": []
+                    }
+                  }
+                }
+              },
+              "Plank.IT#nested#delete": {},
+              "Plank.IT (1)#nested#delete": {}
+            }
+          }
+        },
+        "Bridge Mid2.IronTeeth#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/Bridge Mid2.IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": -1.0,
+                "Z": 6.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "Children": {
+              "Plank.IT": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 0.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 180.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                },
+                "Children": {
+                  "Board.IronTeeth.Model": {
+                    "TransformSpec": {
+                      "Position": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 1.0
+                      },
+                      "Rotation": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                      }
+                    },
+                    "TimbermeshSpec": {
+                      "Model": "Knatte/Model/Bridge.Board.IronTeeth.Model"
+                    }
+                  },
+                  "BoardHitbox": {
+                    "CollidersSpec": {
+                      "BoxColliders": [
+                        {
+                          "Center": {
+                            "X": 0.5,
+                            "Y": -0.05,
+                            "Z": -0.5
+                          },
+                          "Size": {
+                            "X": 1.0,
+                            "Y": 0.1,
+                            "Z": 0.950000048
+                          }
+                        }
+                      ],
+                      "SphereColliders": [],
+                      "CapsuleColliders": []
+                    }
+                  }
+                }
+              },
+              "Plank.IT#nested#delete": {}
+            }
+          }
+        },
+        "Bridge Start_Long.IronTeeth#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/Bridge Start_Long.IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 1.0,
+                "Y": 0.0,
+                "Z": 1.0
+              }
+            },
+            "Children": {
+              "Plank.IT": {
+                "Children": {
+                  "Board.IronTeeth.Model": {
+                    "TransformSpec": {
+                      "Position": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 1.0
+                      },
+                      "Rotation": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                      }
+                    },
+                    "TimbermeshSpec": {
+                      "Model": "Knatte/Model/Bridge.Board.IronTeeth.Model"
+                    }
+                  },
+                  "BoardHitbox": {
+                    "CollidersSpec": {
+                      "BoxColliders": [
+                        {
+                          "Center": {
+                            "X": 0.5,
+                            "Y": -0.05,
+                            "Z": -0.5
+                          },
+                          "Size": {
+                            "X": 1.0,
+                            "Y": 0.1,
+                            "Z": 0.950000048
+                          }
+                        }
+                      ],
+                      "SphereColliders": [],
+                      "CapsuleColliders": []
+                    }
+                  }
+                }
+              },
+              "Plank.IT#nested#delete": {}
+            }
+          }
+        },
+        "Marker#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Marker.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 1.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 6.0
+              }
+            }
+          }
+        },
+        "Rail IT (1)#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Rail IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 1.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        "Rail IT (3)#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Rail IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 3.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        "Rail IT (4)#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Rail IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 4.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        "Rail IT (5)#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Rail IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 5.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        "Rail IT (6)#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Rail IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 6.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        "Rail IT (2)#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Rail IT.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 2.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+        }
+      }
+    }
+  }
+}

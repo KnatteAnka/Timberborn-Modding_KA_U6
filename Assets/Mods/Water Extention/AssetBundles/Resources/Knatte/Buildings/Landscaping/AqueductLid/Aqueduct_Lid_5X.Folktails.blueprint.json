@@ -1,0 +1,2858 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "ScrapMetal",
+        "Amount": 10
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 10
+      }
+    ],
+    "ScienceCost": 2500,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "#FinishedUncovered",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "Aqueduct_Lid_5X.Folktails",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 5,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Landscaping",
+    "ToolOrder": 101,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.Aqueduct_Lid_5X.DisplayName",
+    "DescriptionLocKey": "Knatte.Aqueduct_Lid.Description",
+    "FlavorDescriptionLocKey": "Knatte.Aqueduct_Lid.FlavorDescription",
+    "Icon": "Knatte/WaterExtentionIcon/AQ_Lid_5"
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "SoilBarrierSpec": {
+    "BlockAboveMoisture": true,
+    "BlockFullMoisture": false,
+    "BlockContamination": false
+  },
+  "ImpermeableFloorSpec": {},
+  "FinishableHorizontalWaterObstacleSpec": {
+    "Obstacles": [
+      {
+        "X": 0,
+        "Y": 0,
+        "Z": 1
+      },
+      {
+        "X": 0,
+        "Y": 1,
+        "Z": 1
+      },
+      {
+        "X": 0,
+        "Y": 2,
+        "Z": 1
+      },
+      {
+        "X": 0,
+        "Y": 3,
+        "Z": 1
+      },
+      {
+        "X": 0,
+        "Y": 4,
+        "Z": 1
+      }
+    ]
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0,
+      0.10000000149011612,
+      0.20000000298023224,
+      0.30000001192092896,
+      0.40000000596046448,
+      0.5,
+      0.60000002384185791,
+      0.699999988079071,
+      0.800000011920929,
+      0.89999997615814209
+    ]
+  },
+  "Children": {
+    "#FinishedUncovered": {
+      "Children": {
+        "Model": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/ModelConstructionStage/AquaDuckLid_End.Folktails.FinishedUncovered.Model"
+          }
+        },
+        "Model (4)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 4.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 179.934357,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/ModelConstructionStage/AquaDuckLid_End.Folktails.FinishedUncovered.Model"
+          }
+        },
+        "Model (1)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/ModelConstructionStage/AquaDuckLid_Mid.Folktails.FinishedUncovered.Model"
+          }
+        },
+        "Model (2)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": 2.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/ModelConstructionStage/AquaDuckLid_Mid.Folktails.FinishedUncovered.Model"
+          }
+        },
+        "Model (3)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": 3.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/ModelConstructionStage/AquaDuckLid_Mid.Folktails.FinishedUncovered.Model"
+          }
+        },
+        "Colitions": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": -1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 1.05,
+                  "Y": 1.02,
+                  "Z": 3.5
+                },
+                "Size": {
+                  "X": 0.1,
+                  "Y": 0.06,
+                  "Z": 5.2
+                }
+              },
+              {
+                "Center": {
+                  "X": -0.05,
+                  "Y": 1.02,
+                  "Z": 3.5
+                },
+                "Size": {
+                  "X": 0.1,
+                  "Y": 0.06,
+                  "Z": 5.2
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 1.02,
+                  "Z": 0.95
+                },
+                "Size": {
+                  "X": 1.2,
+                  "Y": 0.06,
+                  "Z": 0.1
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 1.02,
+                  "Z": 6.05
+                },
+                "Size": {
+                  "X": 1.2,
+                  "Y": 0.06,
+                  "Z": 0.1
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        }
+      }
+    },
+    "#Finished": {
+      "Children": {
+        "Models": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckLid.Folktails.Model"
+              },
+              "Children": {
+                "BoxColider": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 1.075,
+                          "Z": 0.5
+                        },
+                        "Size": {
+                          "X": 1.2,
+                          "Y": 0.15,
+                          "Z": 1.2
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                }
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckLid.Folktails.Model"
+              },
+              "Children": {
+                "BoxColider": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 1.075,
+                          "Z": 0.5
+                        },
+                        "Size": {
+                          "X": 1.2,
+                          "Y": 0.15,
+                          "Z": 1.2
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                }
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckLid.Folktails.Model"
+              },
+              "Children": {
+                "BoxColider": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 1.075,
+                          "Z": 0.5
+                        },
+                        "Size": {
+                          "X": 1.2,
+                          "Y": 0.15,
+                          "Z": 1.2
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                }
+              }
+            },
+            "Model (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckLid.Folktails.Model"
+              },
+              "Children": {
+                "BoxColider": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 1.075,
+                          "Z": 0.5
+                        },
+                        "Size": {
+                          "X": 1.2,
+                          "Y": 0.15,
+                          "Z": 1.2
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                }
+              }
+            },
+            "Model (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 5.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/AquaDuckLid.Folktails.Model"
+              },
+              "Children": {
+                "BoxColider": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 90.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "CollidersSpec": {
+                    "BoxColliders": [
+                      {
+                        "Center": {
+                          "X": 0.5,
+                          "Y": 1.075,
+                          "Z": 0.5
+                        },
+                        "Size": {
+                          "X": 1.2,
+                          "Y": 0.15,
+                          "Z": 1.2
+                        }
+                      }
+                    ],
+                    "SphereColliders": [],
+                    "CapsuleColliders": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage0.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": -0.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 2.05
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage1": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage2": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage0.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": -0.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 2.05
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage3": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage4": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 2.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage0.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": -0.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 2.05
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage5": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 2.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage6": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 3.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage0.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": -0.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 2.05
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage7": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 3.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage8": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 4.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage0.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": -0.05,
+                      "Y": 1.02,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.06,
+                      "Z": 1.2
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.02,
+                      "Z": 2.05
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.06,
+                      "Z": 0.1
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -5.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "ConstructionStage9": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 4.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -2.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -4.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -3.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/AquaDuckLid.Folktails.Constructionstage1.Model"
+              }
+            },
+            "Colitions (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": -5.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 1.075,
+                      "Z": 1.5
+                    },
+                    "Size": {
+                      "X": 1.2,
+                      "Y": 0.15,
+                      "Z": 1.2
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

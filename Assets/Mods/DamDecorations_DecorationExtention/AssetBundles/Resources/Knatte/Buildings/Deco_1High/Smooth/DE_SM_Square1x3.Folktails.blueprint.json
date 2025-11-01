@@ -1,0 +1,262 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 2
+      },
+      {
+        "Id": "Log",
+        "Amount": 2
+      },
+      {
+        "Id": "ScrapMetal",
+        "Amount": 2
+      }
+    ],
+    "ScienceCost": 180,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "DE_SM_Square1x3.Folktails",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 3,
+        "Y": 1,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "DE_SM_BW_Dec1",
+    "ToolOrder": 7,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.DE_SMSquare1x3.DisplayName",
+    "DescriptionLocKey": "Knatte.DE_SMSquare_B.Description",
+    "FlavorDescriptionLocKey": "Knatte.DE_SMSquare_B.FlavorDescription",
+    "Icon": "Knatte/DecorationExtentionicon/Sq_D_1x3"
+  },
+  "ContinuousEffectBuildingSpec": {
+    "Effects": [
+      {
+        "NeedId": "BlockDecoration",
+        "PointsPerHour": 0.20000000298023224,
+        "SatisfyToMaxValue": false
+      }
+    ]
+  },
+  "RangedEffectBuildingSpec": {
+    "EffectRadius": 0
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0
+    ]
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 1.5,
+              "Y": 0.5,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 3.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "DE_SM_Levee Top": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -1.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/DE_SM_Levee3x1Top.Folktails.Model"
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1 1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/DE_Levee3x1.Folktails.ConstructionStage0.Model"
+              }
+            },
+            "Collider (1)": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 0.12,
+                      "Z": 0.5
+                    },
+                    "Size": {
+                      "X": 3.0,
+                      "Y": 0.24,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.05,
+                      "Y": 0.5,
+                      "Z": 0.05
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.8,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 2.95,
+                      "Y": 0.5,
+                      "Z": 0.05
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.8,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 2.95,
+                      "Y": 0.5,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.8,
+                      "Z": 0.1
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.05,
+                      "Y": 0.5,
+                      "Z": 0.95
+                    },
+                    "Size": {
+                      "X": 0.1,
+                      "Y": 0.8,
+                      "Z": 0.1
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

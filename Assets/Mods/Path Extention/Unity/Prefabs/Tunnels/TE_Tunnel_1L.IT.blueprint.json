@@ -1,0 +1,160 @@
+{
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "BlockObject": {
+    "PlacementChangeNotifier": {
+      "InstanceID": 0
+    },
+    "BlockObjectCenter": {
+      "InstanceID": 0
+    },
+    "BlockObjectState": {
+      "InstanceID": 0
+    },
+    "BlockObjectSpec": {
+      "InstanceID": 0
+    }
+  },
+  "DrivewayModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "DrivewayModelSpec": {
+      "InstanceID": 0
+    },
+    "Model": {
+      "InstanceID": 0
+    }
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "Levee (Missing Prefab with guid: 527a09004591f9441b86618f6849d467)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -1.62920671E-07,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 9.334667E-06,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.500619948,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 1.00269186,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "Tunnel Entry#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/IT_Tunnel Entry.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        "Tunnel": {},
+        "Tunnel Entry (1)#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/IT_Tunnel Entry.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 1.54972076E-06,
+                "Z": 2.00000143
+              },
+              "Rotation": {
+                "Y": 8.70849E-05
+              }
+            }
+          }
+        },
+        "Levee_Model": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Buildings/Landscaping/Levee/Levee.IronTeeth.Model"
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite3x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite3x1.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 1.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 270.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

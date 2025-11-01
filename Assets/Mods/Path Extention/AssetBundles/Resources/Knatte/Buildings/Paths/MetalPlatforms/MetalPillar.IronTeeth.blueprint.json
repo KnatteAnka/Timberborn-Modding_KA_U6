@@ -1,0 +1,165 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "MetalBlock",
+        "Amount": 2
+      }
+    ],
+    "ScienceCost": 400,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "MetalPillar.IronTeeth",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Corners",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_PE_Bridges",
+    "ToolOrder": 101,
+    "ToolShape": "Square",
+    "Layout": "Rectangle",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.MetalPillar.DisplayName",
+    "DescriptionLocKey": "Knatte.MetalPillar.Description",
+    "FlavorDescriptionLocKey": "Knatte.MetalPillar.FlavorDescription",
+    "Icon": "Knatte/PathExtentionIcon/TE_MetalPillar"
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Dam Decoration (1)": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/MetalPillar.IronTeeth.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        }
+      }
+    }
+  }
+}

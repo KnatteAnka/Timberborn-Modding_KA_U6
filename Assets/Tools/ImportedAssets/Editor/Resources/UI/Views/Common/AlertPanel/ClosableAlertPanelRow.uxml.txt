@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Resources/UI/Views/Core/CoreStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Common/CommonStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Common/AlertPanel/AlertPanelStyle.uss" />
+    <ui:VisualElement name="ClosableAlertPanelRow" class="alert-panel-row">
+        <ui:Button name="Close" class="alert-panel-row__close alert-panel-row--closable game-text-small">
+            <ui:Image name="Cross" class="alert-panel-row__cross" />
+        </ui:Button>
+        <ui:Button name="Button" text="Beavers are hungry!" class="alert-panel-row__text alert-panel-row--closable game-text-normal game-text--black" />
+        <ui:Image name="Icon" class="alert-fragment_row__icon" />
+    </ui:VisualElement>
+</ui:UXML>

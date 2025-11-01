@@ -1,0 +1,495 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Log",
+        "Amount": 2
+      },
+      {
+        "Id": "Plank",
+        "Amount": 4
+      }
+    ],
+    "ScienceCost": 120,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "StaircaseLog.Emberpelts",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": false,
+    "EdgeGroups": [
+      {
+        "Cost": 1.0,
+        "Group": {
+          "UseGroup": false,
+          "GroupName": ""
+        },
+        "IsPath": true,
+        "AddedEdges": [
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "End": {
+              "X": 0,
+              "Y": -1,
+              "Z": 0
+            },
+            "IsTwoWay": false
+          },
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 1
+            },
+            "End": {
+              "X": 1,
+              "Y": 0,
+              "Z": 1
+            },
+            "IsTwoWay": false
+          }
+        ]
+      },
+      {
+        "Cost": 0.4,
+        "Group": {
+          "UseGroup": false,
+          "GroupName": ""
+        },
+        "IsPath": true,
+        "AddedEdges": [
+          {
+            "Start": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "End": {
+              "X": 0,
+              "Y": 0,
+              "Z": 1
+            },
+            "IsTwoWay": true
+          }
+        ]
+      }
+    ],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Bottom, Top, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": true
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_Paths2",
+    "ToolOrder": 24,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.75,
+        "Y": 0.25,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "KnatteTobbert.StaircaseLog.DisplayName",
+    "DescriptionLocKey": "",
+    "FlavorDescriptionLocKey": "KnatteTobbert.StaircaseLog.FlavorDiscription",
+    "Icon": "Knatte/StaircaseIcons/StaircaseLog"
+  },
+  "BlockObjectWithPathRangeSpec": {},
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.1,
+      0.5
+    ]
+  },
+  "PathSpec": {
+    "MainPathCoordinates": {
+      "X": 0,
+      "Y": 0,
+      "Z": 0
+    }
+  },
+  "SpiralStairsSpec": {},
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.3638653,
+              "Y": 0.1367855,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.7226941,
+              "Y": 0.173570931,
+              "Z": 1.0
+            }
+          },
+          {
+            "Center": {
+              "X": 0.613474667,
+              "Y": 0.283053815,
+              "Z": 0.8487768
+            },
+            "Size": {
+              "X": 0.6269492,
+              "Y": 0.7661077,
+              "Z": 0.3008237
+            }
+          },
+          {
+            "Center": {
+              "X": 0.416689843,
+              "Y": 0.5,
+              "Z": 0.9326663
+            },
+            "Size": {
+              "X": 0.966037333,
+              "Y": 1.0,
+              "Z": 0.1041981
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Rect Stair Right": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 270.019775,
+              "Y": 270.02,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.3,
+                  "Y": -0.6,
+                  "Z": 0.25
+                },
+                "Size": {
+                  "X": 0.6,
+                  "Y": 0.6,
+                  "Z": 0.5
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": -0.15,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.3,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": -0.5,
+                  "Z": 0.6
+                },
+                "Size": {
+                  "X": 0.51,
+                  "Y": 0.33,
+                  "Z": 0.6
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": [
+              {
+                "Center": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.5
+                },
+                "Radius": 0.235,
+                "Height": 1.59999967,
+                "Axis": "Y"
+              }
+            ]
+          },
+          "Children": {
+            "Staircase": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 90.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/StairCaseLog.Emberpelts.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionBase1x1Top#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Colision": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 270.019775,
+                  "Y": 270.02,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.235,
+                    "Height": 1.59999967,
+                    "Axis": "Y"
+                  }
+                ]
+              }
+            },
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 270.047546,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/StairCaseLog.Emberpelts.ConstructionStage0.Model"
+              }
+            },
+            "Dirt": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/Dirt.ConstructionStage.Model"
+              }
+            }
+          }
+        },
+        "ConstructionStage1": {
+          "Children": {
+            "Colision": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 270.019775,
+                  "Y": 270.02,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.3,
+                      "Y": -0.6,
+                      "Z": 0.25
+                    },
+                    "Size": {
+                      "X": 0.6,
+                      "Y": 0.6,
+                      "Z": 0.5
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.15,
+                      "Z": 0.5
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.3,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -0.5,
+                      "Z": 0.6
+                    },
+                    "Size": {
+                      "X": 0.51,
+                      "Y": 0.33,
+                      "Z": 0.6
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.235,
+                    "Height": 1.59999967,
+                    "Axis": "Y"
+                  }
+                ]
+              },
+              "Children": {
+                "Staircase": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 90.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/ModelConstructionStage/StairCaseLog.Emberpelts.ConstructionStage1.Model"
+                  }
+                }
+              }
+            },
+            "Dirt": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/Dirt.ConstructionStage.Model"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

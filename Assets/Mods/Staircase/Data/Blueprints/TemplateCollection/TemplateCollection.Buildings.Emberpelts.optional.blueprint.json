@@ -1,0 +1,20 @@
+{
+  "TemplateCollectionSpec": {
+  "CollectionId": "Buildings.Emberpelts",
+  "Blueprints#append": [
+    "Knatte/Buildings/Paths/MetalStaircase/MetalStaircase.Emberpelts",
+	"Knatte/Buildings/Paths/MetalStaircase/MetalSpiralStaircase.Emberpelts",
+	"Knatte/Buildings/Paths/SpiralStaircase/SpiralStaircase.Emberpelts",
+	"Knatte/Buildings/Paths/StaircaseLog/StaircaseLog.Emberpelts",
+	"Knatte/Buildings/Paths/Pillar/Pillar.Emberpelts",
+	"Knatte/Buildings/Paths/Pillar/Pillar_1.Emberpelts",
+	"Knatte/Buildings/Paths/Pillar/Pillar_2.Emberpelts",
+	"Knatte/Buildings/Paths/Pillar/Pillar_3.Emberpelts",
+	"Knatte/Buildings/Paths/Pillar/Pillar_4.Emberpelts",
+	"Knatte/Buildings/Paths/Pillar/Pillars.Emberpelts",
+	"Knatte/Buildings/Paths/PillarTop/PillarTop.Emberpelts",
+	"Knatte/Buildings/Paths/PillarTop/StaircasePlatform.Emberpelts",
+	"Knatte/Buildings/Paths/Pillar/StaircasePillar.Emberpelts"
+  ]
+}
+}

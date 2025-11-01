@@ -1,0 +1,446 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 22
+      },
+      {
+        "Id": "Gear",
+        "Amount": 10
+      },
+      {
+        "Id": "TreatedPlank",
+        "Amount": 15
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 8
+      }
+    ],
+    "ScienceCost": 800,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "ManufactorySpec": {
+    "ProductionRecipeIds": [
+      "IrrigationWater",
+      "IrrigationExtractTreeBoost"
+    ]
+  },
+  "SimpleManufactoryBehaviorsSpec": {},
+  "EnterableSpec": {
+    "OperatingState": "Finished",
+    "LimitedCapacityFinished": false,
+    "CapacityFinished": 0,
+    "LimitedCapacityUnfinished": false,
+    "CapacityUnfinished": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "IrrigationTowerV2.Folktails",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 3,
+        "Y": 2,
+        "Z": 3
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Top, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": true,
+      "Coordinates": {
+        "X": 1,
+        "Y": -1,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": true
+  },
+  "BuildingAccessibleSpec": {
+    "LocalAccess": {
+      "X": 1.5,
+      "Y": 0.0,
+      "Z": 0.40000000596046448
+    },
+    "ForceOneFinalAccess": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Water",
+    "ToolOrder": 54,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.IrrigationTowerV2_FT.DisplayName",
+    "DescriptionLocKey": "Knatte.IrrigationTowerV2_FT.Description",
+    "FlavorDescriptionLocKey": "Knatte.IrrigationTowerV2.FlavorDescription",
+    "Icon": "Knatte/WaterExtentionIcon/IrrigationTowerV2Icon"
+  },
+  "ModifyGrowableGrowthRangeEffect": {
+    "EffectGroupName": "ModifyGrowthRate",
+    "GrowthRateModifier": 20.0,
+    "ComponentsFilter": [],
+    "PrefabNamesFilter": []
+  },
+  "GoodAmountTransformHeight": {
+    "TargetName": "#MiscExtract",
+    "MaxHeight": 1.5399999618530273,
+    "Good": "Extract",
+    "NonLinearity": 0.0
+  },
+  "ManufactoryTogglableRecipesSpec": {
+    "LabelLocKey": "Knatte.IrrigationTower.Header"
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 1.49516892,
+              "Y": 0.4898697,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.8381243,
+              "Y": 0.9797394,
+              "Z": 0.9
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": [
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 1.85,
+              "Z": 1.0
+            },
+            "Radius": 0.78,
+            "Height": 2.7,
+            "Direction": "Y"
+          },
+          {
+            "Center": {
+              "X": 2.5,
+              "Y": 0.8,
+              "Z": 0.5
+            },
+            "Radius": 0.46,
+            "Height": 1.8,
+            "Direction": "Y"
+          }
+        ]
+      },
+      "Children": {
+        "#MiscWater": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 1.6573,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/MiscWater.Model"
+          }
+        },
+        "#MiscExtract": {
+          "TransformSpec": {
+            "Position": {
+              "X": 2.5,
+              "Y": 0.549,
+              "Z": 0.5
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/MiscExtract.Model"
+          }
+        },
+        "Model": {
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/IrrigationTowerV2.Folktails.Model"
+          }
+        },
+        "MaxWaterheight": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.469,
+              "Y": 2.7754,
+              "Z": 0.981
+            },
+            "Rotation": {
+              "X": -7.01670659E-15,
+              "Y": 180.000015,
+              "Z": -7.01670955E-15
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "MaxWaterheight (1)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 2.427,
+              "Y": 1.5404,
+              "Z": 0.907
+            },
+            "Rotation": {
+              "X": -7.01670659E-15,
+              "Y": 180.000015,
+              "Z": -7.01670955E-15
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite2x2#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+        },
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 2.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

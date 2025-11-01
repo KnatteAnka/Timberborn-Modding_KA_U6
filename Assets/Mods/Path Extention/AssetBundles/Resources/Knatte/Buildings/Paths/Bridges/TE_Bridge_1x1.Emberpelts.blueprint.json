@@ -1,0 +1,194 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 7
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 20
+      }
+    ],
+    "ScienceCost": 700,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": true,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "TE_Bridge_1x1.Emberpelts",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 2,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": true,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Top",
+          "UseNewOccupation": true,
+          "Occupations": "Top",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Corners",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Corners",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 1,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_PE_Bridges",
+    "ToolOrder": 10,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 1.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "KnatteTobbert.Bridge_1.DisplayName",
+    "DescriptionLocKey": "KnatteTobbert.Bridge.Description",
+    "FlavorDescriptionLocKey": "KnatteTobbert.Bridge.FlavorDiscription",
+    "Icon": "Knatte/PathExtentionIcon/TE_Bridge_1"
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "Bridge Start#nested": {
+          "BlueprintPath": "Mods/Path Extention/PrefabModuls/Bridge Start.Folktails.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 1.00000048,
+                "Y": 0.0,
+                "Z": 0.999999642
+              }
+            },
+            "Children": {
+              "Plank": {
+                "Children": {
+                  "BoardHitbox": {
+                    "CollidersSpec": {
+                      "BoxColliders": [
+                        {
+                          "Center": {
+                            "X": 0.5,
+                            "Y": -0.05,
+                            "Z": -0.5
+                          },
+                          "Size": {
+                            "X": 1.0,
+                            "Y": 0.1,
+                            "Z": 0.950000048
+                          }
+                        }
+                      ],
+                      "SphereColliders": [],
+                      "CapsuleColliders": []
+                    }
+                  },
+                  "Board.Folktails.Model": {
+                    "TransformSpec": {
+                      "Position": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 1.0
+                      },
+                      "Rotation": {
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                      },
+                      "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                      }
+                    },
+                    "TimbermeshSpec": {
+                      "Model": "Knatte/Model/Bridge.Board.Folktails.Model"
+                    }
+                  }
+                }
+              },
+              "Plank#nested#delete": {}
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+        }
+      }
+    }
+  }
+}

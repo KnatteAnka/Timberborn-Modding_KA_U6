@@ -181,14 +181,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _componentCache: {fileID: 0}
-  _noAutoWalls: 1
+  _noAutoWalls: 0
   _generateFloorsOnStackable: 0
-  _blockAllEdges: 0
   _edgeGroups:
   - _cost: 0.9
     _group:
       _useGroup: 0
-      _groupName: 
+      _groupName: Tunnel
     _isPath: 1
     _addedEdges:
     - _start: {x: 0, y: 0, z: 0}

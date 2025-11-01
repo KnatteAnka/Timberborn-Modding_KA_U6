@@ -1,0 +1,532 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "WaterPump",
+    "LoopingSoundName": "WaterPump",
+    "BuildingCost": [
+      {
+        "Id": "MetalBlock",
+        "Amount": 50
+      },
+      {
+        "Id": "TreatedPlank",
+        "Amount": 30
+      },
+      {
+        "Id": "Gear",
+        "Amount": 40
+      }
+    ],
+    "ScienceCost": 20000,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "WorkplaceSpec": {
+    "MaxWorkers": 1,
+    "DefaultWorkers": 1,
+    "DefaultWorkerType": "Bot",
+    "DisallowOtherWorkerTypes": true,
+    "WorkerTypeUnlockCosts": []
+  },
+  "Manufactory": {
+    "MechanicalNode": {
+      "InstanceID": 0
+    },
+    "RecipeGoodDisallower": {
+      "InstanceID": 0
+    },
+    "ManufactorySpec": {
+      "InstanceID": 0
+    },
+    "IngredientsConsumed": false
+  },
+  "Workshop": {
+    "Workplace": {
+      "InstanceID": 0
+    }
+  },
+  "Enterable": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "NumberOfIncomingVisitors": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "DeepBadWaterPump.Folktails",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "WorkplaceSlotManager": {
+    "Enterable": {
+      "InstanceID": 0
+    },
+    "Workplace": {
+      "InstanceID": 0
+    },
+    "SlotManager": {
+      "InstanceID": 0
+    }
+  },
+  "TransformSlotInitializerSpec": {
+    "Slots": [
+      {
+        "SlotKeyword": "Entrance",
+        "Animation": "Sitting",
+        "Inanimate": false,
+        "RandomizeYRotation": false,
+        "WaterSlot": false
+      }
+    ]
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 2,
+        "Y": 3,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Top, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Top, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": true,
+      "Coordinates": {
+        "X": 1,
+        "Y": -1,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "BuildingAccessibleSpec": {
+    "LocalAccess": {
+      "X": 1.5,
+      "Y": 0.0,
+      "Z": 0.40000000596046448
+    },
+    "ForceOneFinalAccess": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Water",
+    "ToolOrder": 14,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "WorkplaceLightingSpec": {},
+  "ManufactoryWaterContaminationConsumer": {
+    "Manufactory": {
+      "InstanceID": 0
+    },
+    "WaterInput": {
+      "InstanceID": 0
+    }
+  },
+  "MechanicalBuildingSpec": {},
+  "MechanicalNodeSpec": {
+    "PowerOutput": 0,
+    "PowerInput": 400,
+    "IsShaft": false
+  },
+  "FloodableBuilding": {
+    "WaterObject": {
+      "InstanceID": 0
+    },
+    "FloodableBuildingBlockerSpec": {
+      "InstanceID": 0
+    }
+  },
+  "WorkplaceBonuses": {
+    "WorkplaceBonusesSpec": {
+      "InstanceID": 0
+    }
+  },
+  "WaterInputSpec": {
+    "WaterInputCoordinates": {
+      "X": 0,
+      "Y": 2,
+      "Z": 0
+    },
+    "MaxDepth": 0,
+    "PipeSegmentPrefabPath": "",
+    "PipeParentName": "#Finished"
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 0.05,
+              "Z": 1.0
+            },
+            "Size": {
+              "X": 2.0,
+              "Y": 0.1,
+              "Z": 2.0
+            }
+          },
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 0.35,
+              "Z": 2.2
+            },
+            "Size": {
+              "X": 2.0,
+              "Y": 0.7,
+              "Z": 1.0
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": [
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 0.57,
+              "Z": 1.0
+            },
+            "Radius": 0.76,
+            "Height": 2.8,
+            "Direction": "Y"
+          },
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 1.5,
+              "Z": 0.5
+            },
+            "Radius": 0.4,
+            "Height": 2.1,
+            "Direction": "X"
+          }
+        ]
+      },
+      "Children": {
+        "Window.005": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.71,
+              "Y": -0.041,
+              "Z": 1.427
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 28.3136482,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "#Slot#Entrance": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.568,
+              "Y": 0.017,
+              "Z": 0.382
+            },
+            "Rotation": {
+              "X": -9.904832E-15,
+              "Y": 138.479416,
+              "Z": -6.02229361E-16
+            },
+            "Scale": {
+              "X": 1.44656372,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "DOORLIGHTBROWN.001": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.16,
+              "Y": 0.0,
+              "Z": 0.137
+            },
+            "Rotation": {
+              "X": 6.40632834E-06,
+              "Y": 313.337463,
+              "Z": -6.78932975E-06
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "DeepWaterPump": {
+          "Children": {
+            "#PistonAnimated.001": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.08646631,
+                  "Y": 0.0,
+                  "Z": -0.07601454
+                },
+                "Rotation": {
+                  "X": 9.334668E-06,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            },
+            "#PistonAnimated": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.08646631,
+                  "Y": 0.0,
+                  "Z": -0.07601454
+                },
+                "Rotation": {
+                  "X": 9.334668E-06,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            },
+            "#ArmAnimated": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.004,
+                  "Y": 1.298,
+                  "Z": 2.401
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "Arm": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": -1.004,
+                      "Y": -1.298,
+                      "Z": -2.541
+                    },
+                    "Rotation": {
+                      "X": 9.334667E-06,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 100.0,
+                      "Y": 100.0,
+                      "Z": 100.0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Window.006": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.396,
+              "Y": 0.379,
+              "Z": 1.41
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 112.176491,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "GameObject": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": -1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        }
+      }
+    },
+    "DeepBadWaterPump House_DBWP": {},
+    "#UnFinished": {
+      "Children": {
+        "ConstructionSite2x2 (1)#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+        }
+      }
+    }
+  }
+}

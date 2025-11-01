@@ -1,0 +1,303 @@
+{
+  "TransformSpec": {
+    "Position": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 0.65,
+      "Z": 1.0
+    }
+  },
+  "BuildingSpec": {
+    "SelectionSoundName": "Dynamite",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Explosives",
+        "Amount": 1
+      },
+      {
+        "Id": "Extract",
+        "Amount": 12
+      }
+    ],
+    "ScienceCost": 4200,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": true,
+    "DrawRangeBoundsOnIt": true
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "#Underground",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 13
+  },
+  "TemplateSpec": {
+    "TemplateName": "Tredecamite.Default",
+    "BackwardCompatibleTemplateNames": [
+      "Tredecamite"
+    ],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "DynamiteSpec": {
+    "Depth": 13,
+    "ExplosionPrefabPath": "Buildings/Landscaping/TripleDynamite/TripleDynamiteExplosion"
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": true,
+    "GenerateFloorsOnStackable": false,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Bombs",
+    "ToolOrder": 92,
+    "ToolShape": "Square",
+    "Layout": "Rectangle",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Cadre.Tredecamite.DisplayName",
+    "DescriptionLocKey": "Cadre.Tredecamite.Description",
+    "FlavorDescriptionLocKey": "Cadre.Tredecamite.FlavourDescription",
+    "Icon": "Buildings/Landscaping/Tredecamite/TredecamiteIcon"
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0
+    ]
+  },
+  "Children": {
+    "#Finished#nested": {
+      "BlueprintPath": "Buildings/Landscaping/Bombs/Dim.Default.blueprint",
+      "Modification": {
+        "Children": {
+          "Barrel": {
+            "TimbermeshSpec": {
+              "Model": "Buildings/Landscaping/Bombs/DimBarrel.Model"
+            },
+            "CollidersSpec": {
+              "BoxColliders": [],
+              "SphereColliders": [],
+              "CapsuleColliders": [
+                {
+                  "Center": {
+                    "X": 0.5,
+                    "Y": 0.0,
+                    "Z": 0.5
+                  },
+                  "Radius": 0.5,
+                  "Height": 2.8,
+                  "Direction": "Y"
+                }
+              ]
+            }
+          },
+          "Flag": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 1.0,
+                "Z": 0.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "TimbermeshSpec": {
+              "Model": "Buildings/Landscaping/Bombs/DimFlag.Model"
+            },
+            "CollidersSpec": {
+              "BoxColliders": [],
+              "SphereColliders": [
+                {
+                  "Center": {
+                    "X": 0.6,
+                    "Y": 0.65,
+                    "Z": 0.5
+                  },
+                  "Radius": 0.2
+                }
+              ],
+              "CapsuleColliders": []
+            }
+          },
+          "#Finished#nested#delete": {},
+          "#Unfinished#nested#delete": {},
+          "#Underground#nested#delete": {}
+        },
+        "BuildingSpec#delete": {},
+        "BuildingModelSpec#delete": {},
+        "TemplateSpec#delete": {},
+        "BlockObjectSpec#delete": {},
+        "DynamiteSpec#delete": {},
+        "BlockObjectNavMeshSettingsSpec#delete": {},
+        "PlaceableBlockObjectSpec#delete": {},
+        "LabeledEntitySpec#delete": {},
+        "ConstructionSiteProgressVisualizerSpec#delete": {}
+      }
+    },
+    "#Unfinished#nested": {
+      "BlueprintPath": "Buildings/Landscaping/Bombs/Dim.Default.blueprint",
+      "Modification": {
+        "Children": {
+          "ConstructionBase1x1Dynamite": {
+            "Children": {
+              "Barrel": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 0.25,
+                    "Z": 1.0
+                  }
+                },
+                "TimbermeshSpec": {
+                  "Model": "Buildings/Landscaping/Bombs/DimBarrel.Model"
+                },
+                "CollidersSpec": {
+                  "BoxColliders": [],
+                  "SphereColliders": [],
+                  "CapsuleColliders": [
+                    {
+                      "Center": {
+                        "X": 0.5,
+                        "Y": 0.0,
+                        "Z": 0.5
+                      },
+                      "Radius": 0.5,
+                      "Height": 2.8,
+                      "Direction": "Y"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "ConstructionStage0": {
+            "Children": {
+              "Barrel": {
+                "TimbermeshSpec": {
+                  "Model": "Buildings/Landscaping/Bombs/DimBarrel.Model"
+                },
+                "CollidersSpec": {
+                  "BoxColliders": [],
+                  "SphereColliders": [],
+                  "CapsuleColliders": [
+                    {
+                      "Center": {
+                        "X": 0.5,
+                        "Y": 0.0,
+                        "Z": 0.5
+                      },
+                      "Radius": 0.5,
+                      "Height": 2.8,
+                      "Direction": "Y"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "#Finished#nested#delete": {},
+          "#Unfinished#nested#delete": {},
+          "#Underground#nested#delete": {}
+        },
+        "BuildingSpec#delete": {},
+        "BuildingModelSpec#delete": {},
+        "TemplateSpec#delete": {},
+        "BlockObjectSpec#delete": {},
+        "DynamiteSpec#delete": {},
+        "BlockObjectNavMeshSettingsSpec#delete": {},
+        "PlaceableBlockObjectSpec#delete": {},
+        "LabeledEntitySpec#delete": {},
+        "ConstructionSiteProgressVisualizerSpec#delete": {}
+      }
+    },
+    "#Underground#nested": {
+      "BlueprintPath": "Buildings/Landscaping/Bombs/Dim.Default.blueprint",
+      "Modification": {
+        "TimbermeshSpec": {
+          "Model": "Buildings/Landscaping/TripleDynamite/TripleDynamite.Underground"
+        },
+        "BuildingSpec#delete": {},
+        "BuildingModelSpec#delete": {},
+        "TemplateSpec#delete": {},
+        "BlockObjectSpec#delete": {},
+        "DynamiteSpec#delete": {},
+        "BlockObjectNavMeshSettingsSpec#delete": {},
+        "PlaceableBlockObjectSpec#delete": {},
+        "LabeledEntitySpec#delete": {},
+        "ConstructionSiteProgressVisualizerSpec#delete": {},
+        "Children#delete": {}
+      }
+    }
+  }
+}

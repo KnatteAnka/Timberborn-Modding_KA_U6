@@ -1,0 +1,843 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "WaterPump",
+    "LoopingSoundName": "WaterPump",
+    "BuildingCost": [
+      {
+        "Id": "MetalBlock",
+        "Amount": 30
+      },
+      {
+        "Id": "Plank",
+        "Amount": 100
+      },
+      {
+        "Id": "Brick",
+        "Amount": 10
+      },
+      {
+        "Id": "Gear",
+        "Amount": 40
+      }
+    ],
+    "ScienceCost": 20000,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "WorkplaceSpec": {
+    "MaxWorkers": 1,
+    "DefaultWorkers": 1,
+    "DefaultWorkerType": "Bot",
+    "DisallowOtherWorkerTypes": true,
+    "WorkerTypeUnlockCosts": []
+  },
+  "ManufactorySpec": {
+    "ProductionRecipeIds": [
+      "BigWater"
+    ]
+  },
+  "WorkshopSpec": {},
+  "EnterableSpec": {
+    "OperatingState": "Finished",
+    "LimitedCapacityFinished": false,
+    "CapacityFinished": 0,
+    "LimitedCapacityUnfinished": false,
+    "CapacityUnfinished": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "DeepSeeWaterPump.Emberpelts",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "WorkplaceSlotManagerSpec": {},
+  "TransformSlotInitializerSpec": {
+    "Slots": [
+      {
+        "SlotKeyword": "Entrance",
+        "Animation": "Sitting",
+        "Inanimate": false,
+        "RandomizeYRotation": false,
+        "WaterSlot": false
+      }
+    ]
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 2,
+        "Y": 3,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Top, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Top, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Corners",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptTop",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": true,
+      "Coordinates": {
+        "X": 1,
+        "Y": -1,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": true
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BuildingAccessibleSpec": {
+    "LocalAccess": {
+      "X": 1.5,
+      "Y": 0.0,
+      "Z": 0.40000000596046448
+    },
+    "ForceOneFinalAccess": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Water",
+    "ToolOrder": 12,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "WorkplaceLightingSpec": {},
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.DeepSeaPump.DisplayName",
+    "DescriptionLocKey": "Knatte.DeepSeaPump.Description",
+    "FlavorDescriptionLocKey": "Knatte.DeepSeaPump.FlavorDescription",
+    "Icon": "Knatte/WaterExtentionIcon/DeepSeaWaterPumpIcon"
+  },
+  "SimpleManufactoryBehaviorsSpec": {},
+  "ManufactoryWaterConsumerSpec": {},
+  "MechanicalBuildingSpec": {},
+  "TransputProviderSpec": {
+    "TransputSpecs": [
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 0,
+          "Z": 1
+        },
+        "Directions": "Left, Right",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 1,
+          "Y": 0,
+          "Z": 1
+        },
+        "Directions": "Left, Right",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 0,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 1,
+          "Y": 0,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 0,
+          "Y": 1,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      },
+      {
+        "Coordinates": {
+          "X": 1,
+          "Y": 1,
+          "Z": 0
+        },
+        "Directions": "Bottom",
+        "ReverseRotation": false
+      }
+    ],
+    "IgnoreRotation": false
+  },
+  "MechanicalNodeSpec": {
+    "PowerOutput": 0,
+    "PowerInput": 400,
+    "IsShaft": false
+  },
+  "WorkplaceBonusesSpec": {
+    "WorkerBonuses": [
+      {
+        "BonusId": "CarryingCapacity",
+        "MultiplierDelta": 1.0
+      }
+    ]
+  },
+  "WaterInputSpec": {
+    "WaterInputCoordinates": {
+      "X": 0,
+      "Y": 2,
+      "Z": 0
+    },
+    "MaxDepth": 1,
+    "PipeSegmentPrefabPath": "Knatte\\Buildings\\Water\\DeepSeePipeSegment.Common",
+    "PipeParentName": "#Finished"
+  },
+  "WorkshopAnimationControllerSpec": {},
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0,
+      0.40000000596046448,
+      0.64999997615814209,
+      0.85000002384185791,
+      0.89999997615814209
+    ]
+  },
+  "FloodableBuildingBlockerSpec": {},
+  "WorkshopWorkerHiderSpec": {},
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 0.05,
+              "Z": 1.0
+            },
+            "Size": {
+              "X": 2.0,
+              "Y": 0.1,
+              "Z": 2.0
+            }
+          },
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 0.35,
+              "Z": 2.2
+            },
+            "Size": {
+              "X": 2.0,
+              "Y": 0.7,
+              "Z": 1.0
+            }
+          },
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 2.09
+            },
+            "Size": {
+              "X": 1.6,
+              "Y": 0.95,
+              "Z": 0.55
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": [
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 0.57,
+              "Z": 1.0
+            },
+            "Radius": 0.76,
+            "Height": 2.8,
+            "Direction": "Y"
+          },
+          {
+            "Center": {
+              "X": 1.0,
+              "Y": 1.5,
+              "Z": 0.5
+            },
+            "Radius": 0.4,
+            "Height": 2.1,
+            "Direction": "X"
+          }
+        ]
+      },
+      "Children": {
+        "Model": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.0,
+              "Y": 0.0,
+              "Z": -1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/DeepSeaPump.Emberpelts.Model"
+          }
+        },
+        "#Slot#Entrance": {
+          "TransformSpec": {
+            "Position": {
+              "X": 1.568,
+              "Y": 0.017,
+              "Z": 0.381999969
+            },
+            "Rotation": {
+              "X": -9.904832E-15,
+              "Y": 138.479416,
+              "Z": -6.02229361E-16
+            },
+            "Scale": {
+              "X": 1.44655979,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite2x2 (1)#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/DeepSeaPump.Emberpelts.ConstructionStage0.Model"
+              }
+            },
+            "ConstructionSite2x2 (2)#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+            },
+            "Coliders": {
+              "CollidersSpec": {
+                "BoxColliders": [],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 0.4,
+                      "Y": 0.4,
+                      "Z": 2.1
+                    },
+                    "Radius": 0.3,
+                    "Height": 1.0,
+                    "Direction": "Y"
+                  },
+                  {
+                    "Center": {
+                      "X": 1.6,
+                      "Y": 0.4,
+                      "Z": 2.1
+                    },
+                    "Radius": 0.3,
+                    "Height": 1.0,
+                    "Direction": "Y"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ConstructionStage1": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/DeepSeaPump.Emberpelts.ConstructionStage1.Model"
+              }
+            },
+            "ConstructionSite2x2 (1)#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+            },
+            "Coliders": {
+              "CollidersSpec": {
+                "BoxColliders": [],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 0.4,
+                      "Y": 0.4,
+                      "Z": 2.1
+                    },
+                    "Radius": 0.3,
+                    "Height": 1.0,
+                    "Direction": "Y"
+                  },
+                  {
+                    "Center": {
+                      "X": 1.6,
+                      "Y": 0.4,
+                      "Z": 2.1
+                    },
+                    "Radius": 0.3,
+                    "Height": 1.0,
+                    "Direction": "Y"
+                  }
+                ]
+              }
+            },
+            "ColidersHouse": {
+              "CollidersSpec": {
+                "BoxColliders": [],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 0.57,
+                      "Z": 1.0
+                    },
+                    "Radius": 0.76,
+                    "Height": 2.8,
+                    "Direction": "Y"
+                  },
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 1.5,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.4,
+                    "Height": 2.1,
+                    "Direction": "X"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ConstructionStage2": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/DeepSeaPump.Emberpelts.ConstructionStage2.Model"
+              }
+            },
+            "ConstructionSite2x2 (1)#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+            },
+            "Coliders": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 0.35,
+                      "Z": 2.2
+                    },
+                    "Size": {
+                      "X": 2.0,
+                      "Y": 0.7,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 2.09
+                    },
+                    "Size": {
+                      "X": 1.6,
+                      "Y": 0.95,
+                      "Z": 0.55
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 0.57,
+                      "Z": 1.0
+                    },
+                    "Radius": 0.76,
+                    "Height": 2.8,
+                    "Direction": "Y"
+                  },
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 1.5,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.4,
+                    "Height": 2.1,
+                    "Direction": "X"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "ConstructionStage3": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/DeepSeaPump.Emberpelts.ConstructionStage3.Model"
+              }
+            },
+            "Coliders": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 0.35,
+                      "Z": 2.2
+                    },
+                    "Size": {
+                      "X": 2.0,
+                      "Y": 0.7,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 2.09
+                    },
+                    "Size": {
+                      "X": 1.6,
+                      "Y": 0.95,
+                      "Z": 0.55
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 0.57,
+                      "Z": 1.0
+                    },
+                    "Radius": 0.76,
+                    "Height": 2.8,
+                    "Direction": "Y"
+                  },
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 1.5,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.4,
+                    "Height": 2.1,
+                    "Direction": "X"
+                  }
+                ]
+              }
+            },
+            "ConstructionSite2x2 (1)#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+            }
+          }
+        },
+        "ConstructionStage4": {
+          "Children": {
+            "Model": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.0,
+                  "Y": 0.0,
+                  "Z": -1.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/ModelConstructionStage/DeepSeaPump.Emberpelts.ConstructionStage4.Model"
+              }
+            },
+            "Coliders": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 0.35,
+                      "Z": 2.2
+                    },
+                    "Size": {
+                      "X": 2.0,
+                      "Y": 0.7,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 2.09
+                    },
+                    "Size": {
+                      "X": 1.6,
+                      "Y": 0.95,
+                      "Z": 0.55
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 0.57,
+                      "Z": 1.0
+                    },
+                    "Radius": 0.76,
+                    "Height": 2.8,
+                    "Direction": "Y"
+                  },
+                  {
+                    "Center": {
+                      "X": 1.0,
+                      "Y": 1.5,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.4,
+                    "Height": 2.1,
+                    "Direction": "X"
+                  }
+                ]
+              }
+            },
+            "ConstructionSite2x2 (1)#nested": {
+              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+            }
+          }
+        }
+      }
+    }
+  }
+}

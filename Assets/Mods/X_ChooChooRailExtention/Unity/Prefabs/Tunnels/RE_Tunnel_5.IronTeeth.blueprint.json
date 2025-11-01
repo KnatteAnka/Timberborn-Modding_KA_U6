@@ -1,0 +1,180 @@
+{
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "BlockObject": {
+    "PlacementChangeNotifier": {
+      "InstanceID": 0
+    },
+    "BlockObjectCenter": {
+      "InstanceID": 0
+    },
+    "BlockObjectState": {
+      "InstanceID": 0
+    },
+    "BlockObjectSpec": {
+      "InstanceID": 0
+    }
+  },
+  "ScienceNeedingBuilding": {
+    "Started": false,
+    "BlockableBuilding": {
+      "InstanceID": 0
+    },
+    "ScienceNeedingBuildingSpec": {
+      "InstanceID": 0
+    },
+    "SciencePerTick": 0.0,
+    "CurrentScience": 0.0,
+    "NotEnoughScience": false
+  },
+  "Children": {
+    "#Finished": {
+      "Children": {
+        "T_Tunnel Entry#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/T_Tunnel Entry.blueprint"
+        },
+        "T_Tunnel Exit#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/T_Tunnel Exit.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 3.99999976
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        },
+        "Mid": {
+          "Children": {
+            "T_Tunnel Mid#nested": {
+              "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/T_Tunnel Mid.blueprint"
+            },
+            "T_Tunnel Mid (1)#nested": {
+              "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/T_Tunnel Mid.blueprint",
+              "Modification": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 1.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              }
+            },
+            "T_Tunnel Mid (2)#nested": {
+              "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/T_Tunnel Mid.blueprint",
+              "Modification": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 2.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              }
+            },
+            "T_Tunnel Mid (3)#nested": {
+              "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/T_Tunnel Mid.blueprint",
+              "Modification": {
+                "TransformSpec": {
+                  "Position": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 3.0
+                  },
+                  "Rotation": {
+                    "X": 0.0,
+                    "Y": 0.0,
+                    "Z": 0.0
+                  },
+                  "Scale": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Rail IT#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Rail IT.blueprint"
+        },
+        "Marker#nested": {
+          "BlueprintPath": "Mods/X_ChooChooRailExtention/Unity/Model/Marker.blueprint",
+          "Modification": {
+            "TransformSpec": {
+              "Position": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 6.0
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+        }
+      }
+    }
+  }
+}

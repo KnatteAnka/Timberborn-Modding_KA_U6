@@ -1,0 +1,105 @@
+{
+  "Children": {
+    "Mid2_L_V5": {
+      "TransformSpec": {
+        "Position": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": -9.334668E-06,
+          "Y": 179.999985,
+          "Z": 2.647584E-12
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      }
+    },
+    "Mid2_R_V5": {
+      "TransformSpec": {
+        "Position": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": -9.334668E-06,
+          "Y": 179.999985,
+          "Z": 2.647584E-12
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      }
+    },
+    "TopBrace_V5": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.9999994,
+          "Y": 0.999999762,
+          "Z": -1.50000036
+        },
+        "Rotation": {
+          "X": 9.334668E-06,
+          "Y": 180.000015,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      }
+    },
+    "Plank (2)#nested": {
+      "BlueprintPath": "Mods/Path Extention/PrefabModuls/Plank.blueprint",
+      "Modification": {
+        "TransformSpec": {
+          "Position": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 2.0
+          },
+          "Rotation": {
+            "X": 0.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        }
+      }
+    },
+    "Plank (3)#nested": {
+      "BlueprintPath": "Mods/Path Extention/PrefabModuls/Plank.blueprint",
+      "Modification": {
+        "TransformSpec": {
+          "Position": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "Rotation": {
+            "X": 0.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Plank",
+        "Amount": 22
+      },
+      {
+        "Id": "Gear",
+        "Amount": 20
+      },
+      {
+        "Id": "ScrapMetal",
+        "Amount": 20
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 5
+      }
+    ],
+    "ScienceCost": 800,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "TemplateSpec": {
+    "TemplateName": "IrrigationTowerV2.IronTeeth",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 2,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Ground",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": true,
+      "Coordinates": {
+        "X": 0,
+        "Y": -1,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": true
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Water",
+    "ToolOrder": 51,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "BuildingAccessibleSpec": {
+    "LocalAccess": {
+      "X": 0.5,
+      "Y": 0.0,
+      "Z": 0.40000000596046448
+    },
+    "ForceOneFinalAccess": false
+  },
+  "Enterable": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "NumberOfIncomingVisitors": 0
+  },
+  "MechanicalNodeSpec": {
+    "PowerOutput": 0,
+    "PowerInput": 50,
+    "IsShaft": false
+  },
+  "MechanicalNodeAnimatorSpec": {
+    "MinSpeedMultiplier": 0.0
+  },
+  "MechanicalBuildingSpec": {},
+  "GoodConsumingBuildingSpec": {
+    "Supply": "Water",
+    "Capacity": 25,
+    "GoodPerHour": 0.47999998927116394
+  },
+  "PoweredGoodConsumingBuilding": {
+    "Started": false,
+    "GoodConsumingBuilding": {
+      "InstanceID": 0
+    },
+    "MechanicalBuilding": {
+      "InstanceID": 0
+    }
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.4898697,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.8381243,
+              "Y": 0.98,
+              "Z": 0.9
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.92,
+              "Z": 1.36
+            },
+            "Radius": 0.31,
+            "Height": 2.13,
+            "Direction": "Y"
+          }
+        ]
+      },
+      "Children": {
+        "IrrigationTower.Folktails.Model": {
+          "TransformSpec": {
+            "Position": {
+              "X": -1.042,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Children": {
+            "#Misc_Water": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.532,
+                  "Y": 1.3492,
+                  "Z": 1.362
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.6,
+                  "Y": 1.0,
+                  "Z": 0.6
+                }
+              }
+            },
+            "Circle.001": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.5364,
+                  "Y": 1.029,
+                  "Z": 1.357
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 314.857117,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.6,
+                  "Y": 0.57,
+                  "Z": 0.6
+                }
+              }
+            },
+            "WaterTank1.010": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.5364,
+                  "Y": 0.7233,
+                  "Z": 1.357
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 314.857117,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.463,
+                  "Y": 0.463,
+                  "Z": 0.463
+                }
+              }
+            },
+            "WaterTank1.011": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.5364,
+                  "Y": 0.0361999869,
+                  "Z": 1.357
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 314.8571,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.463,
+                  "Y": 0.463,
+                  "Z": 0.463
+                }
+              }
+            },
+            "WaterTank1.012": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.5364,
+                  "Y": 0.0361999869,
+                  "Z": 1.357
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 224.857224,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.463,
+                  "Y": 0.463,
+                  "Z": 0.463
+                }
+              }
+            },
+            "WaterTank1.014": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.5364,
+                  "Y": 0.0361999869,
+                  "Z": 1.357
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 44.85716,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.463,
+                  "Y": 0.463,
+                  "Z": 0.463
+                }
+              }
+            },
+            "WaterTank1.015": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.5364,
+                  "Y": 0.0361999869,
+                  "Z": 1.357
+                },
+                "Rotation": {
+                  "X": -7.01675063E-15,
+                  "Y": 134.85704,
+                  "Z": -7.0167536E-15
+                },
+                "Scale": {
+                  "X": 0.463,
+                  "Y": 0.463,
+                  "Z": 0.463
+                }
+              }
+            },
+            "WaterTank1.016": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.5364,
+                  "Y": 2.063,
+                  "Z": 1.357
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 314.857117,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.463,
+                  "Y": 1.9,
+                  "Z": 0.463
+                }
+              }
+            },
+            "WaterTank1.016 (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.5364,
+                  "Y": 2.1239,
+                  "Z": 1.3964
+                },
+                "Rotation": {
+                  "X": 22.3303738,
+                  "Y": 309.973938,
+                  "Z": 335.618958
+                },
+                "Scale": {
+                  "X": 0.3,
+                  "Y": 1.2,
+                  "Z": 0.3
+                }
+              }
+            },
+            "Cylinder.012": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 1.54,
+                  "Y": 0.0,
+                  "Z": 1.36299992
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 44.94814,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.36,
+                  "Y": 0.76,
+                  "Z": 0.36
+                }
+              }
+            },
+            "PipePump": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 2.015,
+                  "Y": -1.0,
+                  "Z": 0.769
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 180.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "Children": {
+                "PipePump": {
+                  "Children": {
+                    "#ElementAnimated": {
+                      "TransformSpec": {
+                        "Position": {
+                          "X": 0.23,
+                          "Y": 1.62851012,
+                          "Z": 0.054
+                        },
+                        "Rotation": {
+                          "X": 9.334667E-06,
+                          "Y": 0.0,
+                          "Z": 0.0
+                        },
+                        "Scale": {
+                          "X": 100.0,
+                          "Y": 100.0,
+                          "Z": 100.0
+                        }
+                      }
+                    },
+                    "#PistonAnimated2": {
+                      "TransformSpec": {
+                        "Position": {
+                          "X": 0.479,
+                          "Y": 2.2538,
+                          "Z": -0.59
+                        },
+                        "Rotation": {
+                          "X": 0.0,
+                          "Y": 134.857117,
+                          "Z": 0.0
+                        },
+                        "Scale": {
+                          "X": 0.49999994,
+                          "Y": 0.51441,
+                          "Z": 0.49999994
+                        }
+                      }
+                    },
+                    "Slit": {
+                      "TransformSpec": {
+                        "Position": {
+                          "X": 0.0,
+                          "Y": 0.71,
+                          "Z": 0.0
+                        },
+                        "Rotation": {
+                          "X": 9.334667E-06,
+                          "Y": 0.0,
+                          "Z": 0.0
+                        },
+                        "Scale": {
+                          "X": 100.0,
+                          "Y": 60.0,
+                          "Z": 100.0
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "MaxWaterheight": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.457999945,
+              "Y": 1.9242,
+              "Z": 1.6937
+            },
+            "Rotation": {
+              "X": -7.01670659E-15,
+              "Y": 180.000015,
+              "Z": -7.01670955E-15
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "House": {
+          "Children": {
+            "DoorIronTeeth.002": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.5,
+                  "Y": 0.0,
+                  "Z": 1.0
+                },
+                "Rotation": {
+                  "X": 89.98022,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.01,
+                  "Y": 0.009999997,
+                  "Z": 0.009999997
+                }
+              }
+            },
+            "Cylinder.015": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.5,
+                  "Y": 0.766,
+                  "Z": 0.456003755
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            },
+            "Cylinder.015 (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.5,
+                  "Y": 1.573,
+                  "Z": 0.456003755
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 0.997,
+                  "Y": 1.1,
+                  "Z": 0.997
+                }
+              }
+            },
+            "#Slot#Entrance": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.457999945,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": -7.01670659E-15,
+                  "Y": 180.000015,
+                  "Z": -7.01670955E-15
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x2#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x2.blueprint"
+        }
+      }
+    }
+  }
+}

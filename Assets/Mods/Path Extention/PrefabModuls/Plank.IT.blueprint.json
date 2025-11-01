@@ -1,0 +1,46 @@
+{
+  "Children": {
+    "Board.IronTeeth.Model": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "TimbermeshSpec": {
+        "Model": "Knatte/Model/Bridge.Board.IronTeeth.Model"
+      }
+    },
+    "BoardHitbox": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": -0.05,
+              "Z": -0.5
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.1,
+              "Z": 0.950000048
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      }
+    }
+  }
+}

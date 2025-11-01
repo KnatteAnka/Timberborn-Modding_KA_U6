@@ -1,0 +1,92 @@
+{
+  "Children": {
+    "Mid2.Model": {
+      "TransformSpec": {
+        "Position": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": -1.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 180.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "TimbermeshSpec": {
+        "Model": "Knatte/Model/Bridge.Mid2.Model"
+      }
+    },
+    "Brace.IronTeeth": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 6.5
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "TimbermeshSpec": {
+        "Model": "Knatte/Model/Bridge.Brace.IronTeeth.Model"
+      }
+    },
+    "Plank.IT#nested": {
+      "BlueprintPath": "Mods/Path Extention/PrefabModuls/Plank.IT.blueprint",
+      "Modification": {
+        "TransformSpec": {
+          "Position": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 2.0
+          },
+          "Rotation": {
+            "X": 0.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        }
+      }
+    },
+    "Plank.IT (1)#nested": {
+      "BlueprintPath": "Mods/Path Extention/PrefabModuls/Plank.IT.blueprint",
+      "Modification": {
+        "TransformSpec": {
+          "Position": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "Rotation": {
+            "X": 0.0,
+            "Y": 180.0,
+            "Z": 0.0
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        }
+      }
+    }
+  }
+}

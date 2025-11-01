@@ -1,0 +1,871 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Floodgate",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "ScrapMetal",
+        "Amount": 4
+      },
+      {
+        "Id": "Gear",
+        "Amount": 8
+      },
+      {
+        "Id": "TreatedPlank",
+        "Amount": 11
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 15
+      }
+    ],
+    "ScienceCost": 3200,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "#FinishedUncovered",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "Aqueduct_MetalFloodgate8.IronTeeth",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 9
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "Bottom, Top, Corners, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": true,
+          "Occupations": "-1",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "BottomAndFloor",
+          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Path, Middle",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": false,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_AqueductFloodGate",
+    "ToolOrder": 54,
+    "ToolShape": "Square",
+    "Layout": "Line",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "FloodgateSpec": {
+    "MaxHeight": 8
+  },
+  "WaterObstacleSpec": {
+    "Coordinates": [
+      {
+        "X": 0,
+        "Y": 0
+      }
+    ]
+  },
+  "FloodgateAnimationControllerSpec": {
+    "GateName": "#Floodgate1x1Misc"
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.Aqueduct_MetalFloodgate8.DisplayName",
+    "DescriptionLocKey": "Knatte.Aqueduct_MetalFloodgate.Description",
+    "FlavorDescriptionLocKey": "",
+    "Icon": "knatte/ExtendedFloodgateIcons/Floodgate8"
+  },
+  "FinishableHorizontalWaterObstacleSpec": {
+    "Obstacles": [
+      {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    ]
+  },
+  "SoilBarrierSpec": {
+    "BlockAboveMoisture": true,
+    "BlockFullMoisture": false,
+    "BlockContamination": true
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0
+    ]
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 4.0,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.9,
+              "Y": 8.0,
+              "Z": 0.9
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 8.35,
+              "Z": 0.5
+            },
+            "Radius": 0.2,
+            "Height": 1.0,
+            "Direction": "Z"
+          }
+        ]
+      },
+      "Children": {
+        "#Floodgate1x1Misc": {
+          "Children": {
+            "Model Top": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMoveTop.IronTeeth.Model"
+              }
+            },
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMove.IronTeeth.Model"
+              }
+            },
+            "Model (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": -1.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMove.IronTeeth.Model"
+              }
+            },
+            "Model (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": -2.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMove.IronTeeth.Model"
+              }
+            },
+            "Model (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": -3.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMove.IronTeeth.Model"
+              }
+            },
+            "Model (4)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": -4.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMove.IronTeeth.Model"
+              }
+            },
+            "Model (5)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": -5.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMove.IronTeeth.Model"
+              }
+            },
+            "Model (6)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": -6.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMove.IronTeeth.Model"
+              }
+            },
+            "Colider": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": -4.0,
+                      "Z": 0.5
+                    },
+                    "Size": {
+                      "X": 0.9,
+                      "Y": 7.9,
+                      "Z": 0.9
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            }
+          }
+        },
+        "Floodgate (1)": {
+          "Children": {
+            "Model Top": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 4.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateTop.IronTeeth.Model"
+              }
+            },
+            "Model Mid": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMid.IronTeeth.Model"
+              },
+              "Children": {
+                "Rope": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 1.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/ExtendedFloodgateRope.Model"
+                  }
+                }
+              }
+            },
+            "Model Mid (1)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 2.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMid.IronTeeth.Model"
+              },
+              "Children": {
+                "Rope": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 1.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/ExtendedFloodgateRope.Model"
+                  }
+                }
+              }
+            },
+            "Model MidBrace (1)": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMidBrace.IronTeeth.Model"
+              },
+              "Children": {
+                "Rope": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 2.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/ExtendedFloodgateRope.Model"
+                  }
+                }
+              }
+            },
+            "Model MidBrace (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 2.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMidBrace.IronTeeth.Model"
+              },
+              "Children": {
+                "Rope": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 2.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/ExtendedFloodgateRope.Model"
+                  }
+                }
+              }
+            },
+            "Model MidBrace (3)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 4.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMidBrace.IronTeeth.Model"
+              },
+              "Children": {
+                "Rope": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 2.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/ExtendedFloodgateRope.Model"
+                  }
+                }
+              }
+            },
+            "Model Mid (2)": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 4.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              },
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateMid.IronTeeth.Model"
+              },
+              "Children": {
+                "Rope": {
+                  "TransformSpec": {
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 1.0,
+                      "Z": 0.0
+                    },
+                    "Rotation": {
+                      "X": 0.0,
+                      "Y": 0.0,
+                      "Z": 0.0
+                    },
+                    "Scale": {
+                      "X": 1.0,
+                      "Y": 1.0,
+                      "Z": 1.0
+                    }
+                  },
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/ExtendedFloodgateRope.Model"
+                  }
+                }
+              }
+            },
+            "Model Base": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateBase.IronTeeth.Model"
+              },
+              "Children": {
+                "Rope": {
+                  "TimbermeshSpec": {
+                    "Model": "Knatte/Model/ExtendedFloodgateRope.Model"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Colider (1)": {
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 7.95,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.1,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.05,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.1,
+                  "Z": 1.0
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.07,
+                  "Y": 4.0,
+                  "Z": 0.07
+                },
+                "Size": {
+                  "X": 0.14,
+                  "Y": 8.0,
+                  "Z": 0.14
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.93,
+                  "Y": 4.0,
+                  "Z": 0.07
+                },
+                "Size": {
+                  "X": 0.14,
+                  "Y": 8.0,
+                  "Z": 0.14
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.93,
+                  "Y": 4.0,
+                  "Z": 0.93
+                },
+                "Size": {
+                  "X": 0.14,
+                  "Y": 8.0,
+                  "Z": 0.14
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.07,
+                  "Y": 4.0,
+                  "Z": 0.93
+                },
+                "Size": {
+                  "X": 0.14,
+                  "Y": 8.0,
+                  "Z": 0.14
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 8.35,
+                  "Z": 0.5
+                },
+                "Radius": 0.2,
+                "Height": 1.0,
+                "Direction": "Z"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+        },
+        "ConstructionStage0": {
+          "Children": {
+            "Colider": {
+              "CollidersSpec": {
+                "BoxColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.05,
+                      "Z": 0.5
+                    },
+                    "Size": {
+                      "X": 1.0,
+                      "Y": 0.1,
+                      "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.07,
+                      "Y": 0.5,
+                      "Z": 0.07
+                    },
+                    "Size": {
+                      "X": 0.14,
+                      "Y": 1.0,
+                      "Z": 0.14
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.93,
+                      "Y": 0.5,
+                      "Z": 0.07
+                    },
+                    "Size": {
+                      "X": 0.14,
+                      "Y": 1.0,
+                      "Z": 0.14
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.93,
+                      "Y": 0.5,
+                      "Z": 0.93
+                    },
+                    "Size": {
+                      "X": 0.14,
+                      "Y": 1.0,
+                      "Z": 0.14
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 0.07,
+                      "Y": 0.5,
+                      "Z": 0.93
+                    },
+                    "Size": {
+                      "X": 0.14,
+                      "Y": 1.0,
+                      "Z": 0.14
+                    }
+                  }
+                ],
+                "SphereColliders": [],
+                "CapsuleColliders": []
+              }
+            },
+            "Model Base": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateBase.IronTeeth.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#FinishedUncovered": {
+      "Children": {
+        "Model Top": {
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/Aqueduct_ExtendedFloodgateBase.IronTeeth.Model"
+          }
+        }
+      }
+    }
+  }
+}

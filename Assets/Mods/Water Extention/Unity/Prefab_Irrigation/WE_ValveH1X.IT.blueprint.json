@@ -1,0 +1,419 @@
+{
+  "TransformSpec": {
+    "Position": {
+      "X": 0.1,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 1.0,
+      "Y": 1.0,
+      "Z": 1.0
+    }
+  },
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Gear",
+        "Amount": 10
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 12
+      },
+      {
+        "Id": "Plank",
+        "Amount": 12
+      }
+    ],
+    "ScienceCost": 600,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModel": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "BlockObjectModelController": {
+      "InstanceID": 0
+    },
+    "BuildingModelSpec": {
+      "InstanceID": 0
+    },
+    "ShowFinishedModel": false,
+    "BlockUnfinishedModel": false,
+    "UndergroundModel": {
+      "InstanceID": 0
+    }
+  },
+  "TemplateSpec": {
+    "TemplateName": "WE_ValveH1X.IT",
+    "BackwardCompatibleTemplateNames": [
+      "WE_ValveH1X.Folktails"
+    ],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 3,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "FullExceptCorners",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "5",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "None",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Full",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "UnfinishedGround",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "BottomAndFloor",
+          "UseNewOccupation": false,
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_WE_Pipe",
+    "ToolOrder": 400,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "WaterObstacle": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "WaterObstacleSpec": {
+      "InstanceID": 0
+    },
+    "WasAdded": false,
+    "Height": 0.0
+  },
+  "FinishableWaterObstacle": {
+    "WaterObstacle": {
+      "InstanceID": 0
+    },
+    "FinishableWaterObstacleSpec": {
+      "InstanceID": 0
+    }
+  },
+  "SoilBarrier": {
+    "BlockObject": {
+      "InstanceID": 0
+    },
+    "SoilBarrierSpec": {
+      "InstanceID": 0
+    }
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 1.38,
+              "Z": 2.4
+            },
+            "Size": {
+              "X": 0.6,
+              "Y": 0.6,
+              "Z": 0.8
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.5,
+              "Z": 0.55
+            },
+            "Size": {
+              "X": 0.9,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Levee (Missing Prefab with guid: 116a011a7bcfcca4f852f8c724081499)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -1.78813934E-07,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 9.334667E-06,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.5,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "Pipe v1": {
+          "Children": {
+            "S_Pipe": {}
+          }
+        },
+        "Pipe": {
+          "Children": {
+            "Pipe2": {
+              "TransformSpec": {
+                "Position": {
+                  "X": 0.0,
+                  "Y": 1.0,
+                  "Z": 0.0
+                },
+                "Rotation": {
+                  "X": 9.334667E-06,
+                  "Y": 0.0,
+                  "Z": 0.0
+                },
+                "Scale": {
+                  "X": 100.0,
+                  "Y": 100.0,
+                  "Z": 100.0
+                }
+              }
+            }
+          }
+        },
+        "WaterParticles": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.5,
+              "Y": 1.318,
+              "Z": 2.679
+            },
+            "Rotation": {
+              "X": 90.0,
+              "Y": 0.167863354,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "PumpBase": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -0.1,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 9.334667E-06,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 100.0,
+              "Y": 100.0,
+              "Z": 100.0
+            }
+          }
+        },
+        "Pipe_Cap": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": -0.1,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 9.334668E-06,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "Levee (1) (Missing Prefab with guid: 116a011a7bcfcca4f852f8c724081499)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.9999998,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 9.334667E-06,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.5,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 1.0,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        }
+      }
+    },
+    "#UnFinished": {
+      "Children": {
+        "ConstructionSite1x1 (1)": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.05,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.1,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        }
+      }
+    }
+  }
+}

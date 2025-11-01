@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:cui="Timberborn.CoreUI" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Resources/UI/Views/Core/CoreStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Common/CommonStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Common/EntityPanel/EntityPanelCommonStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Game/EntityPanel/EntityPanelGameStyle.uss" />
+    <cui:NineSliceVisualElement name="DebugFragment" class="entity-sub-panel bg-sub-box--pale-purple">
+        <ui:VisualElement name="TitleWrapper" class="debug-fragment__title-wrapper">
+            <ui:Label name="Title" class="entity-panel__sub-text text--bold debug-fragment__title-text" />
+            <ui:Button name="Show" class="button-square button-plus button-plus--margin button-square--small" />
+            <ui:Button name="Hide" class="button-square button-minus button-square--small" />
+        </ui:VisualElement>
+        <ui:Label name="Text" class="entity-panel__sub-text" />
+        <ui:VisualElement name="Content" />
+        <cui:NineSliceButton name="Button" text="Button" class="entity-panel__text button-game debug-fragment__button" />
+    </cui:NineSliceVisualElement>
+</ui:UXML>

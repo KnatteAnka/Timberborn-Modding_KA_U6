@@ -1,0 +1,62 @@
+.tutorial-panel {
+    position: absolute;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 85px;
+    padding: 4px;
+    background-color: rgba(48, 35, 55, 0.7);
+    flex-direction: row;
+    right: 0;
+    bottom: 124px;
+}
+
+.tutorial-panel__buttons {
+    margin-right: 2px;
+}
+
+.tutorial-panel__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    right: -2px;
+    background-image: resource('UI/Images/Game/tutorial-exclamation');
+}
+
+.tutorial-panel__continue {
+    margin-top: 4px;
+    padding: 4px;
+    min-width: 50%;
+    align-self: center;
+    margin-bottom: 4px;
+}
+
+.tutorial-panel__minimize {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    --click-sound: "UI.Click";
+}
+
+.tutorial-panel__intro {
+    margin-bottom: 4px;
+    padding: 4px;
+    -unity-paragraph-spacing: -40px;
+}
+
+.tutorial-step-view {
+    flex-direction: row;
+    padding: 2px 4px;
+}
+
+.tutorial-step-view__checkbox {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    background-image: resource('UI/Images/Buttons/empty-alt');
+}
+
+.tutorial-step-view--finished > .tutorial-step-view__checkbox {
+    background-image: resource('UI/Images/Buttons/checkmark-alt');
+
+}

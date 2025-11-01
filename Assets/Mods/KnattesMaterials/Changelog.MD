@@ -1,8 +1,7 @@
-7.0.0
-* Switched to have first digit in version to supported game version
-* Switched to base game shaders
+1.0.0.0
+* Update to version 1.0
 
 ---
 MinimumGameVersion: 0.6.1.5
-MaximumGameVersion: 0.7.9.9
+MaximumGameVersion: 1.0.9.9
 ---

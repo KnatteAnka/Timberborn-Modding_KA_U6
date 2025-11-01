@@ -1,10 +1,5 @@
-7.0.0
-* Switched to have first digit in version to supported game version
-* Add Tunnels to Dynamite subgroup
-* Added Mod support for:
- *  Underground Path
- *  More Tunnels
-
+7.0.1
+* Add support for Ziplines and Tubeways
 
 
 

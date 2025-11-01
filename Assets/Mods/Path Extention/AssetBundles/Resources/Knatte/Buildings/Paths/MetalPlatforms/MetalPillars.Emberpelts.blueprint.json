@@ -1,0 +1,277 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "MetalBlock",
+        "Amount": 5
+      }
+    ],
+    "ScienceCost": 410,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "#FinishedUncovered",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "MetalPillars.Emberpelts",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 2
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Corners",
+          "UseNewOccupation": true,
+          "Occupations": "Corners",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "LegacyOccupation": "Corners",
+          "UseNewOccupation": true,
+          "Occupations": "Top, Corners, Middle",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_PE_Bridges",
+    "ToolOrder": 102,
+    "ToolShape": "Square",
+    "Layout": "Rectangle",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.MetalPillars.DisplayName",
+    "DescriptionLocKey": "Knatte.MetalPillar.Description",
+    "FlavorDescriptionLocKey": "Knatte.MetalPillar.FlavorDescription",
+    "Icon": "Knatte/PathExtentionIcon/TE_MetalPillars"
+  },
+  "Children": {
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 1.0,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 2.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 1.0,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 2.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 1.0,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 2.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 1.0,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 2.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 1.5,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.2,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 1.5,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 0.6,
+              "Z": 1.0
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 1.5,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 0.6,
+              "Z": 1.0
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Dam Decoration (1)": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/MetalPillars.Folktails.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#FinishedUncovered": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Dam Decoration (1)": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/MetalPillar.Folktails.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Log",
+        "Amount": 5
+      },
+      {
+        "Id": "Plank",
+        "Amount": 5
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 2
+      }
+    ],
+    "ScienceCost": 420,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": false,
+    "DrawRangeBoundsOnIt": false
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "#FinishedUncovered",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "MetalPlatform_1.Emberpelts",
+    "BackwardCompatibleTemplateNames": [],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    "BlocksSpec": {
+      "Size": {
+        "X": 1,
+        "Y": 1,
+        "Z": 1
+      },
+      "BlockSpecs": [
+        {
+          "MatterBelow": "GroundOrStackable",
+          "LegacyOccupation": "Corners",
+          "UseNewOccupation": true,
+          "Occupations": "Top, Corners",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+    },
+    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "SubGroup_PE_Bridges",
+    "ToolOrder": 103,
+    "ToolShape": "Square",
+    "Layout": "Rectangle",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.MetalPlatform.DisplayName",
+    "DescriptionLocKey": "Knatte.MetalPlatform.Description",
+    "FlavorDescriptionLocKey": "Knatte.MetalPlatform.FlavorDescription",
+    "Icon": "Knatte/PathExtentionIcon/TE_MetalPlatform"
+  },
+  "Children": {
+    "#FinishedUncovered": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 0.85,
+          "Z": 1.0
+        }
+      },
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Dam Decoration (1)": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/MetalPillar.Folktails.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Finished": {
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.92,
+              "Z": 0.5
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.16,
+              "Z": 1.0
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "Children": {
+        "Dam Decoration (1)": {
+          "Children": {
+            "Model": {
+              "TimbermeshSpec": {
+                "Model": "Knatte/Model/MetalPlatform.Folktails.Model"
+              }
+            }
+          }
+        }
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1#nested": {
+          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+        }
+      }
+    }
+  }
+}

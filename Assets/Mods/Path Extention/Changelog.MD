@@ -1,6 +1,5 @@
-7.0.0
-* Switched to have first digit in version to supported game version
-* Add Greedy Ember support
+7.0.1
+* Fix Tunnel trought levee for Emberpelts
 
 ---
 MinimumGameVersion: 0.6.4.0

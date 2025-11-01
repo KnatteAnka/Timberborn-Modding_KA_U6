@@ -1,0 +1,15 @@
+{
+  "Name": "MoreGroups Paths [U6,U7,V1]",
+  "Version": "10.0.0",
+  "Id": "KnatteAnka.MoreGroups_Paths",
+  "MinimumGameVersion": "1.0.0.0",
+  "Description": "This mod Groups upp Paths items in 2 groups",
+  "RequiredMods": [
+  ],
+  "OptionalMods": [
+	{
+		"Id": "KnatteAnka.Staircase",
+		"MinimumVersion": "10.0.0"
+	}
+  ]
+}

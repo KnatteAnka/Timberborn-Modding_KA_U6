@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:cui="Timberborn.CoreUI" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="/Assets/Resources/UI/Views/Core/CoreStyle.uss" />
+    <Style src="/Assets/Resources/UI/Views/Common/CommonStyle.uss" />
+    <ui:VisualElement name="TutorialPanel" class="tutorial-panel">
+        <Style src="/Assets/Resources/UI/Views/Game/Tutorial/TutorialStyle.uss" />
+        <ui:VisualElement name="Tutorial">
+            <ui:Label name="Intro" text="Build some buildings." class="game-text-normal tutorial-panel__intro" />
+            <ui:VisualElement name="TutorialSteps" />
+            <cui:NineSliceButton name="Continue" text="Continue" class="tutorial-panel__continue button-game game-text-normal" />
+        </ui:VisualElement>
+        <ui:VisualElement class="tutorial-panel__buttons">
+            <ui:Button name="Disable" class="button-square button-square--small button-cross" />
+            <ui:VisualElement name="Icon" class="tutorial-panel__icon" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
