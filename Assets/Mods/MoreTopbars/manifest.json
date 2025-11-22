@@ -1,17 +1,13 @@
 {
-  "Name": "More TopBars",
-  "Version": "7.0.0",
+  "Name": "More TopBars [U6,U7,V1]",
+  "Version": "10.0.0",
   "Id": "KnatteAnka.MoreTopbars",
-  "MinimumGameVersion": "0.7.0.0",
+  "MinimumGameVersion": "1.0.0.0",
   "Description": "This mod moves some items to a new topbar",
   "RequiredMods": [
   
   ],
   "OptionalMods": [
-  {
-	"Id": "TimberApi",
-	"MinimumVersion": "0.7.11.0"
-  },
   {
     "Id": "Emberpelts"
   }

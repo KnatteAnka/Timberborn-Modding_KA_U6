@@ -1,7 +1,13 @@
 ﻿{
   "ExplosionVisualizerSpec": {
-    "HighlightColor": {
-      "r": 1.0,
+    "ObjectHighlightColor": {
+      "r": 0.57,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "TerrainHighlightColor": {
+      "r": 0.4,
       "g": 0.0,
       "b": 0.0,
       "a": 1.0

@@ -41,8 +41,6 @@
       "BlockSpecs": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -50,8 +48,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -59,8 +55,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -68,8 +62,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -153,10 +145,10 @@
   "ConstructionSiteProgressVisualizerSpec": {
     "ProgressThresholds": [
       0.0,
-      0.20000000298023224,
-      0.40000000596046448,
-      0.60000002384185791,
-      0.800000011920929
+      0.2,
+      0.4,
+      0.6,
+      0.8
     ]
   },
   "Children": {
@@ -273,12 +265,12 @@
     "#Unfinished": {
       "Children": {
         "ConstructionSite1x1#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
         },
         "ConstructionStage0": {
           "Children": {
             "ConstructionSite1x1 (1)#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+              "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
             },
             "Colision_Bars": {
               "TransformSpec": {

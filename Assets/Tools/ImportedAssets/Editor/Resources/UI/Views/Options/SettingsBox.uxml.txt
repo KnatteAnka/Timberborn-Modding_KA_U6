@@ -16,17 +16,24 @@
                             <cui:NineSliceButton text="Test languages" name="TestLanguages" focusable="false" class="menu-button" />
                         </ui:VisualElement>
                     </ui:VisualElement>
-                    <cui:LocalizableLabel text="Graphics" name="GraphicsHeader" text-loc-key="Settings.Screen.Header" class="settings-header" />
+                    <cui:LocalizableLabel text="Screen" name="ScreenHeader" text-loc-key="Settings.Screen.ScreenHeader" class="settings-header" />
                     <cui:LocalizableToggle text="FullScreen" name="FullScreen" text-loc-key="Settings.Screen.FullScreen" focusable="false" class="settings-element settings-text settings-toggle" />
                     <Timberborn.DropdownSystem.Dropdown name="ScreenResolution" label-loc-key="Settings.Screen.ScreenResolution" class="settings-element settings-dropdown" />
-                    <Timberborn.DropdownSystem.Dropdown name="GraphicsQuality" label-loc-key="Settings.Screen.GraphicsQuality" class="settings-element settings-dropdown" />
                     <ui:VisualElement name="ResolutionScale" class="settings-element settings-slider settings-text">
                         <cui:LocalizableSliderInt name="Slider" label="ResolutionScale" text-loc-key="Settings.Screen.ResolutionScale" focusable="false" class="settings-slider__slider" />
                         <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
                     </ui:VisualElement>
-                    <cui:LocalizableToggle text="AntiAliasing" name="AntiAliasing" text-loc-key="Settings.Screen.AntiAliasing" focusable="false" class="settings-element settings-text settings-toggle" />
-                    <Timberborn.DropdownSystem.Dropdown name="VSync" label-loc-key="Settings.Screen.VSync" class="settings-element settings-dropdown" />
                     <Timberborn.DropdownSystem.Dropdown name="FrameRateLimit" label-loc-key="Settings.Screen.FrameRateLimit" class="settings-element settings-dropdown" />
+                    <Timberborn.DropdownSystem.Dropdown name="VSync" label-loc-key="Settings.Screen.VSync" class="settings-element settings-dropdown" />
+                    <cui:LocalizableLabel text="Graphics" name="GraphicsHeader" text-loc-key="Settings.Graphics.Header" class="settings-header" />
+                    <Timberborn.DropdownSystem.Dropdown name="GraphicsQuality" label-loc-key="Settings.Graphics.OverallGraphicsQuality" class="settings-element settings-dropdown" />
+                    <Timberborn.DropdownSystem.Dropdown name="TextureQuality" label-loc-key="Settings.Graphics.TextureQuality" class="settings-element settings-dropdown" />
+                    <Timberborn.DropdownSystem.Dropdown name="LightQuality" label-loc-key="Settings.Graphics.LightQuality" class="settings-element settings-dropdown" />
+                    <Timberborn.DropdownSystem.Dropdown name="ShadowQuality" label-loc-key="Settings.Graphics.ShadowQuality" class="settings-element settings-dropdown" />
+                    <Timberborn.DropdownSystem.Dropdown name="WaterQuality" label-loc-key="Settings.Graphics.WaterQuality" class="settings-element settings-dropdown" />
+                    <Timberborn.DropdownSystem.Dropdown name="AnisotropicTextures" label-loc-key="Settings.Graphics.AnisotropicTextures" class="settings-element settings-dropdown" />
+                    <Timberborn.DropdownSystem.Dropdown name="AntiAliasing" label-loc-key="Settings.Graphics.AntiAliasingQuality" class="settings-element settings-dropdown" />
+                    <Timberborn.DropdownSystem.Dropdown name="Bloom" label-loc-key="Settings.Graphics.Bloom" class="settings-element settings-dropdown" />
                     <cui:LocalizableLabel text="Interface" name="InterfaceHeader" text-loc-key="Settings.UI.Header" class="settings-header" />
                     <ui:VisualElement class="settings-wrapper settings-element">
                         <cui:LocalizableLabel text="Current:" text-loc-key="Settings.Language.Current" class="settings-text change-language-label" />
@@ -41,6 +48,8 @@
                     </ui:VisualElement>
                     <cui:LocalizableLabel text="Tutorial" name="TutorialHeader" text-loc-key="Settings.Tutorial.Header" class="settings-header" />
                     <cui:LocalizableToggle text="DisableTutorial" name="DisableTutorial" text-loc-key="Settings.Tutorial.DisableTutorial" focusable="false" class="settings-element settings-toggle settings-text" />
+                    <cui:LocalizableLabel text="Accessibility" name="AccessibilityHeader" text-loc-key="Settings.Accessibility.Header" class="settings-header" />
+                    <cui:LocalizableToggle text="DisableStarfieldRotation" name="DisableStarfieldRotation" text-loc-key="Settings.Accessibility.DisableStarfieldRotation" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableLabel text="Input" name="InputHeader" text-loc-key="Settings.Input.Header" class="settings-header" />
                     <cui:LocalizableButton text="Key bindings" name="BindingsButton" text-loc-key="Menu.KeyBindings" class="menu-button menu-button--medium menu-button--centered" />
                     <cui:LocalizableToggle text="InvertZoom" name="InvertZoom" text-loc-key="Settings.Input.InvertZoom" focusable="false" class="settings-element settings-toggle settings-text" />

@@ -870,9 +870,13 @@
     ]
   },
   "GoodConsumingBuildingSpec": {
-    "GoodId": "Extract",
-    "Capacity": 10,
-    "GoodPerHour": 0.2
+    "FullInventoryWorkHours": 50,
+    "ConsumedGoods": [
+      {
+        "GoodId": "Extract",
+        "GoodPerHour": 0.2
+      }
+    ]
   },
   "GoodConsumingAttractionSpec": {},
   "EnterableParticleControllerSpec": {

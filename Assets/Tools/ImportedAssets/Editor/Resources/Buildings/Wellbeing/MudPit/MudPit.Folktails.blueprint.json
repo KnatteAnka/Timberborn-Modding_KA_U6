@@ -188,9 +188,13 @@
   "EnterableLightingSpec": {},
   "GoodConsumingAttractionSpec": {},
   "GoodConsumingBuildingSpec": {
-    "GoodId": "Dirt",
-    "Capacity": 10,
-    "GoodPerHour": 0.5
+    "FullInventoryWorkHours": 20,
+    "ConsumedGoods": [
+      {
+        "GoodId": "Dirt",
+        "GoodPerHour": 0.5
+      }
+    ]
   },
   "GoodConsumingAttractionSurfaceControllerSpec": {
     "SurfaceName": "#MudMisc",

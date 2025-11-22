@@ -1,0 +1,23 @@
+{
+  "TutorialStageSpec": {
+    "Id": "BuildLumberMill",
+    "IntroLocKey": "Tutorial.Stage.LumberMill"
+  },
+  "Children": {
+    "Step1": {
+      "BuildingTutorialStepSpec": {
+        "TemplateNames": [
+          "LumberMill.Folktails"
+        ],
+        "OnlyFinishedBuildings": true,
+        "RequiredAmount": 1
+      }
+    },
+    "Step2": {
+      "PowerBuildingsTutorialStepSpec": {
+        "TemplateName": "LumberMill.Folktails",
+        "RequiredAmount": 1
+      }
+    }
+  }
+}

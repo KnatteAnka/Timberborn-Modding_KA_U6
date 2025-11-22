@@ -1,0 +1,10 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Buildings.Emberpelts",
+    "Blueprints#append": [
+      "Knatte/Buildings/Power/PowerLevee/PowerLevee.Emberpelts",
+      "Knatte/Buildings/Power/PowerLevee/UPowerLevee.Emberpelts",
+      "Knatte/Buildings/Power/Turbine/TurbineSmall.Emberpelts"
+    ]
+  }
+}

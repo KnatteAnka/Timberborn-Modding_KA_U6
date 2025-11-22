@@ -41,8 +41,6 @@
       "BlockSpecs": [
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -50,8 +48,6 @@
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -59,8 +55,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -258,7 +252,7 @@
     "#Unfinished": {
       "Children": {
         "ConstructionSite1x1#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint",
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint",
           "Modification": {
             "TransformSpec": {
               "Position": {

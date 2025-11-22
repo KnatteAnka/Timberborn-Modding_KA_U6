@@ -265,6 +265,11 @@
                   }
                 ]
               }
+            },
+            "#Dead": {
+              "TimbermeshSpec": {
+                "Model": "NaturalResources/Trees/Maple/Mesh/MapleMatureDead"
+              }
             }
           }
         },
@@ -279,101 +284,24 @@
               {
                 "Center": {
                   "X": 0.5,
-                  "Y": 0.0948844552,
+                  "Y": 1.582121,
                   "Z": 0.5
                 },
-                "Radius": 0.181779072,
-                "Height": 0.5928929,
+                "Radius": 0.61,
+                "Height": 1.38,
+                "Axis": "Y"
+              },
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.59048,
+                  "Z": 0.5
+                },
+                "Radius": 0.186018273,
+                "Height": 1.55066144,
                 "Axis": "Y"
               }
             ]
-          }
-        },
-        "MatureNoYield": {
-          "Children": {
-            "#Alive": {
-              "TimbermeshSpec": {
-                "Model": "NaturalResources/Trees/Maple/Mesh/MapleMatureNoYield"
-              },
-              "CollidersSpec": {
-                "BoxColliders": [],
-                "SphereColliders": [],
-                "CapsuleColliders": [
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": 1.582121,
-                      "Z": 0.5
-                    },
-                    "Radius": 0.61,
-                    "Height": 1.38,
-                    "Axis": "Y"
-                  },
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": 0.59048,
-                      "Z": 0.5
-                    },
-                    "Radius": 0.186018273,
-                    "Height": 1.55066144,
-                    "Axis": "Y"
-                  }
-                ]
-              }
-            },
-            "#Dead": {
-              "TimbermeshSpec": {
-                "Model": "NaturalResources/Trees/Maple/Mesh/MapleMatureNoYieldDead"
-              },
-              "CollidersSpec": {
-                "BoxColliders": [],
-                "SphereColliders": [],
-                "CapsuleColliders": [
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": 0.71,
-                      "Z": 0.5
-                    },
-                    "Radius": 0.25,
-                    "Height": 1.79,
-                    "Axis": "Y"
-                  }
-                ]
-              }
-            },
-            "#Dying": {
-              "TimbermeshSpec": {
-                "Model": "NaturalResources/Trees/Maple/Mesh/MapleMatureNoYieldDry"
-              },
-              "CollidersSpec": {
-                "BoxColliders": [],
-                "SphereColliders": [],
-                "CapsuleColliders": [
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": 1.582121,
-                      "Z": 0.5
-                    },
-                    "Radius": 0.61,
-                    "Height": 1.38,
-                    "Axis": "Y"
-                  },
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": 0.59048,
-                      "Z": 0.5
-                    },
-                    "Radius": 0.186018273,
-                    "Height": 1.55066144,
-                    "Axis": "Y"
-                  }
-                ]
-              }
-            }
           }
         }
       }

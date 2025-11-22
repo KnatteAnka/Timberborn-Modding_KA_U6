@@ -1,5 +1,6 @@
-10.0.0
-* Initial release only V1
+10.0.1
+* only V1
+* Added support to mod: Logstairs, Bob platforms
 
 
 

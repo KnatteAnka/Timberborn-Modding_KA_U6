@@ -1,0 +1,14 @@
+{
+  "TutorialStageSpec": {
+    "Id": "MarkCarrots",
+    "IntroLocKey": "Tutorial.Stage.MarkCarrots"
+  },
+  "Children": {
+    "Step1": {
+      "MarkPlantablesTutorialStepSpec": {
+        "TemplateName": "Carrot",
+        "RequiredAmount": 100
+      }
+    }
+  }
+}

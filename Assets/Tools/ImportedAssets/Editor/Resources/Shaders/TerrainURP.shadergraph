@@ -816,6 +816,9 @@
         },
         {
             "m_Id": "bfae421bf8364fb887155ada6de2080f"
+        },
+        {
+            "m_Id": "86d299cbe6a54e13a9e48bb33474f0e6"
         }
     ],
     "m_GroupDatas": [
@@ -2522,9 +2525,9 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "f2b2d023e2634ccaa036074b6fa05a31"
+                    "m_Id": "86d299cbe6a54e13a9e48bb33474f0e6"
                 },
-                "m_SlotId": 1801157426
+                "m_SlotId": 0
             }
         },
         {
@@ -2791,6 +2794,20 @@
                     "m_Id": "2984e16c79a149dca5e99370767aa7f5"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "86d299cbe6a54e13a9e48bb33474f0e6"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "f2b2d023e2634ccaa036074b6fa05a31"
+                },
+                "m_SlotId": 1801157426
             }
         },
         {
@@ -3908,7 +3925,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "27a2aadfd3cf41bab3f55b4ae1d7aaea"
+                    "m_Id": "86d299cbe6a54e13a9e48bb33474f0e6"
                 },
                 "m_SlotId": 1
             }
@@ -4937,8 +4954,8 @@
     "m_ObjectId": "041dcb74154a456ca4c44ce3bb096dc5",
     "m_Title": "Base with detail",
     "m_Position": {
-        "x": 5378.00048828125,
-        "y": 1926.0001220703125
+        "x": 5378.0,
+        "y": 1926.0
     }
 }
 
@@ -5691,8 +5708,8 @@
     "m_ObjectId": "0ae64694163d49978aa27b34e5f016bc",
     "m_Title": "Desert Factor",
     "m_Position": {
-        "x": 2035.000244140625,
-        "y": 4816.00048828125
+        "x": 2035.0,
+        "y": 4816.0
     }
 }
 
@@ -5702,8 +5719,8 @@
     "m_ObjectId": "0b3977d1c9ef402182ebff43d0234a87",
     "m_Title": "Altitude Multiplier UV",
     "m_Position": {
-        "x": -634.0000610351563,
-        "y": 2708.000244140625
+        "x": -634.0,
+        "y": 2708.0
     }
 }
 
@@ -6902,8 +6919,8 @@
     "m_ObjectId": "162d62d425e64569aa2a63ae8b853a88",
     "m_Title": "TerrainMaterialMap texel toward nearest edge along X",
     "m_Position": {
-        "x": 2090.000244140625,
-        "y": 6243.00048828125
+        "x": 2090.0,
+        "y": 6243.0
     }
 }
 
@@ -7028,7 +7045,7 @@
     "m_ObjectId": "182a95266ab6427f92fe1a96e6760367",
     "m_Title": "Wet Field Base",
     "m_Position": {
-        "x": 855.9998779296875,
+        "x": 856.0,
         "y": 1154.0
     }
 }
@@ -7638,8 +7655,8 @@
     "m_ObjectId": "1e0c7699fb3f47c3824ea9f28db767f2",
     "m_Title": "Desert Base",
     "m_Position": {
-        "x": 639.9999389648438,
-        "y": 2044.000244140625
+        "x": 640.0,
+        "y": 2044.0
     }
 }
 
@@ -9075,8 +9092,8 @@
     "m_ObjectId": "2bb550281ec14334a63a37d0916831c3",
     "m_Title": "Base color with altitude multiplier",
     "m_Position": {
-        "x": 2898.00048828125,
-        "y": 1761.0001220703125
+        "x": 2898.0,
+        "y": 1761.0
     }
 }
 
@@ -11524,8 +11541,8 @@
     "m_ObjectId": "444e55b226d04c07b97ee522796d28fd",
     "m_Title": "Blending Noise",
     "m_Position": {
-        "x": 391.99993896484377,
-        "y": 3844.000244140625
+        "x": 392.0,
+        "y": 3844.0
     }
 }
 
@@ -11756,8 +11773,8 @@
     "m_ObjectId": "464ab8e0c7e64634b2b274be4a68335e",
     "m_Title": "Altitude Multiplier",
     "m_Position": {
-        "x": 63.99987030029297,
-        "y": 2824.000244140625
+        "x": 64.0,
+        "y": 2824.0
     }
 }
 
@@ -12264,8 +12281,8 @@
     "m_ObjectId": "4af4b137a6ae4919958a50909e7f2ca3",
     "m_Title": "Field Factor",
     "m_Position": {
-        "x": 2038.000244140625,
-        "y": 5193.00048828125
+        "x": 2038.0,
+        "y": 5193.0
     }
 }
 
@@ -13745,8 +13762,8 @@
     "m_ObjectId": "57d41d65f7544f369390eb3b49224d8b",
     "m_Title": "Terrain Highlight",
     "m_Position": {
-        "x": 5790.00048828125,
-        "y": 5296.00048828125
+        "x": 5790.0,
+        "y": 5296.0
     }
 }
 
@@ -14147,7 +14164,7 @@
     "m_Title": "TerrainMaterialMap texel at tile center",
     "m_Position": {
         "x": 2085.0,
-        "y": 5750.00048828125
+        "y": 5750.0
     }
 }
 
@@ -14707,6 +14724,30 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "60a2e484b7724cbf835792cd5178180b",
+    "m_Id": 2,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "60f997433fd84087b7e62ad0411b860b",
     "m_Id": 0,
     "m_DisplayName": "",
@@ -15196,8 +15237,8 @@
     "m_ObjectId": "65c7659e73174f42b8f1aded18a97237",
     "m_Title": "Splat",
     "m_Position": {
-        "x": 4534.00048828125,
-        "y": 51.000003814697269
+        "x": 4534.0,
+        "y": 51.0
     }
 }
 
@@ -15582,8 +15623,8 @@
     "m_ObjectId": "68a6b0337b694b2b8ef8baa56eaf9067",
     "m_Title": "Terrain Coordinates",
     "m_Position": {
-        "x": -1799.0001220703125,
-        "y": 3011.000244140625
+        "x": -1799.0,
+        "y": 3011.0
     }
 }
 
@@ -16220,9 +16261,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 7118.99951171875,
-            "y": 2251.0,
-            "width": 154.00048828125,
+            "x": 6954.99951171875,
+            "y": 2295.999755859375,
+            "width": 154.0,
             "height": 34.0
         }
     },
@@ -16274,7 +16315,7 @@
     "m_Title": "Splat Filter",
     "m_Position": {
         "x": 4449.0,
-        "y": 1143.0001220703125
+        "y": 1143.0
     }
 }
 
@@ -16682,8 +16723,8 @@
     "m_ObjectId": "7712e7622470451aa9ed5a6e762d5214",
     "m_Title": "Tile center",
     "m_Position": {
-        "x": 517.0000610351563,
-        "y": 5676.00048828125
+        "x": 517.0,
+        "y": 5676.0
     }
 }
 
@@ -18114,6 +18155,45 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.MaximumNode",
+    "m_ObjectId": "86d299cbe6a54e13a9e48bb33474f0e6",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Maximum",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 7142.99951171875,
+            "y": 2271.0,
+            "width": 130.0,
+            "height": 117.999755859375
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "e49acd4667b048e78883dab7a79edd73"
+        },
+        {
+            "m_Id": "fc16ec70c9374719b08b659764fa4f5f"
+        },
+        {
+            "m_Id": "60a2e484b7724cbf835792cd5178180b"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": false,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "86f85d1cf8e2198d866a1774a3118dcc",
     "m_Id": 1,
@@ -18202,7 +18282,7 @@
     "m_ObjectId": "881bd8e5547b401785d023a214eb38a5",
     "m_Title": "Base color",
     "m_Position": {
-        "x": 349.99993896484377,
+        "x": 350.0,
         "y": 15.0
     }
 }
@@ -19132,8 +19212,8 @@
     "m_ObjectId": "935c74566efc48329881bec8ccc26692",
     "m_Title": "Cosmetical only",
     "m_Position": {
-        "x": -747.0000610351563,
-        "y": 4232.00048828125
+        "x": -747.0,
+        "y": 4232.0
     }
 }
 
@@ -19735,8 +19815,8 @@
     "m_ObjectId": "99f9a9f551eb41e0b58354db643bb6d7",
     "m_Title": "Dry Field Base",
     "m_Position": {
-        "x": 857.0000610351563,
-        "y": 1511.0001220703125
+        "x": 857.0,
+        "y": 1511.0
     }
 }
 
@@ -20328,8 +20408,8 @@
     "m_ObjectId": "9faae580c07949d68344efe9ad76bc13",
     "m_Title": "UV from coordinates",
     "m_Position": {
-        "x": -819.0000610351563,
-        "y": 1204.0001220703125
+        "x": -819.0,
+        "y": 1204.0
     }
 }
 
@@ -21426,8 +21506,8 @@
     "m_ObjectId": "aa55c63f68bb439389f6974ddd27736a",
     "m_Title": "TerrainMaterialMap texel toward nearest edge along Y",
     "m_Position": {
-        "x": 2090.000244140625,
-        "y": 6733.00048828125
+        "x": 2090.0,
+        "y": 6733.0
     }
 }
 
@@ -22543,8 +22623,8 @@
     "m_ObjectId": "b7e16ca5fc1d4b77b81e34f3263eabbc",
     "m_Title": "Interpolate desert",
     "m_Position": {
-        "x": 1396.000244140625,
-        "y": 4908.00048828125
+        "x": 1396.0,
+        "y": 4908.0
     }
 }
 
@@ -23489,8 +23569,8 @@
     "m_ObjectId": "c3e72133f31646ba881b96dc4a315915",
     "m_Title": "Base with desert",
     "m_Position": {
-        "x": 3162.00048828125,
-        "y": 3388.000244140625
+        "x": 3162.0,
+        "y": 3388.0
     }
 }
 
@@ -24751,8 +24831,8 @@
     "m_ObjectId": "d00f1eabdfe14f0887a66b75a9f1f03c",
     "m_Title": "Detail color",
     "m_Position": {
-        "x": 406.00006103515627,
-        "y": 484.0001220703125
+        "x": 406.0,
+        "y": 484.0
     }
 }
 
@@ -25480,8 +25560,8 @@
     "m_ObjectId": "dc231c60da6040c3bca97365f7f037ef",
     "m_Title": "Desert Altitude Multiplier",
     "m_Position": {
-        "x": 64.99998474121094,
-        "y": 2423.000244140625
+        "x": 65.0,
+        "y": 2423.0
     }
 }
 
@@ -26192,7 +26272,7 @@
     "m_Title": "Wet Field mixed with Dry Field",
     "m_Position": {
         "x": 4676.0,
-        "y": 3234.000244140625
+        "y": 3234.0
     }
 }
 
@@ -26365,6 +26445,30 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.Smoothness"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "e49acd4667b048e78883dab7a79edd73",
+    "m_Id": 0,
+    "m_DisplayName": "A",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "A",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
 }
 
 {
@@ -26720,8 +26824,8 @@
     "m_ObjectId": "e926373efc334e35bda988993be2390d",
     "m_Title": "Base with Field",
     "m_Position": {
-        "x": 4131.99951171875,
-        "y": 3527.000244140625
+        "x": 4132.0,
+        "y": 3527.0
     }
 }
 
@@ -28359,6 +28463,30 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "fc16ec70c9374719b08b659764fa4f5f",
+    "m_Id": 1,
+    "m_DisplayName": "B",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "B",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
 }
 
 {

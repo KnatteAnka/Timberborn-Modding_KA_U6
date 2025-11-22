@@ -54,6 +54,9 @@
     "DemolishTimeInHours": 10.0,
     "ShowDemolishButtonInEntityPanel": true
   },
+  "DemolishableParticleControllerSpec": {
+    "ParticlesAttachmentId": "Bramble.Demolish.Particles"
+  },
   "StartableMarkerPositionUpdaterSpec": {},
   "LabeledEntitySpec": {
     "DisplayNameLocKey": "Building.Bramble.DisplayName",
@@ -85,6 +88,31 @@
         "NeedId": "Injury",
         "Points": -1.0,
         "Probability": "High"
+      }
+    ]
+  },
+  "TemplateAttachmentsSpec": {
+    "Attachments": [
+      {
+        "AttachmentId": "Bramble.Demolish.Particles",
+        "Prefab": "MapEditor/Objects/Bramble/BrambleRemoving",
+        "Parent": "#Model",
+        "Position": {
+          "X": 0.5,
+          "Y": 0.3,
+          "Z": 0.5
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "CreateInstantly": true
       }
     ]
   },

@@ -1,8 +1,10 @@
-7.0.2
-* Fix missing Turbine for Greedy Ember and Emberpelts
-
+10.0.1
+* update to 1.0
+* Updated powergeneration more inline with basegame(some increase)
+* Fix PoweredLevee Glitching model
+* Fix greedybuilders
 
 ---
-MinimumGameVersion: 0.7.2.0
-MaximumGameVersion: 0.7.9.9
+MinimumGameVersion: 0.7.9.0
+MaximumGameVersion: 1.0.9.9
 ---

@@ -1,0 +1,17 @@
+{
+  "TutorialStageSpec": {
+    "Id": "BuildInventor",
+    "IntroLocKey": "Tutorial.Stage.Inventor"
+  },
+  "Children": {
+    "Step1": {
+      "BuildingTutorialStepSpec": {
+        "TemplateNames": [
+          "Inventor.Folktails"
+        ],
+        "OnlyFinishedBuildings": true,
+        "RequiredAmount": 1
+      }
+    }
+  }
+}

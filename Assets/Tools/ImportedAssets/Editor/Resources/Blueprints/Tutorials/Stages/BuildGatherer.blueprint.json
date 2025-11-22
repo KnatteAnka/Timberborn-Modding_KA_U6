@@ -1,0 +1,17 @@
+{
+  "TutorialStageSpec": {
+    "Id": "BuildGatherer",
+    "IntroLocKey": "Tutorial.Stage.Gatherer"
+  },
+  "Children": {
+    "Step1": {
+      "BuildingTutorialStepSpec": {
+        "TemplateNames": [
+          "GathererFlag.Folktails"
+        ],
+        "OnlyFinishedBuildings": true,
+        "RequiredAmount": 1
+      }
+    }
+  }
+}

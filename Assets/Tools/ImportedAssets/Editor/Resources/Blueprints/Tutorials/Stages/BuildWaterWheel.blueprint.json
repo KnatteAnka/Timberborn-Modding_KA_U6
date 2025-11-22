@@ -1,0 +1,17 @@
+{
+  "TutorialStageSpec": {
+    "Id": "BuildWaterWheel",
+    "IntroLocKey": "Tutorial.Stage.WaterWheel"
+  },
+  "Children": {
+    "Step1": {
+      "BuildingTutorialStepSpec": {
+        "TemplateNames": [
+          "WaterWheel.Folktails"
+        ],
+        "OnlyFinishedBuildings": true,
+        "RequiredAmount": 1
+      }
+    }
+  }
+}

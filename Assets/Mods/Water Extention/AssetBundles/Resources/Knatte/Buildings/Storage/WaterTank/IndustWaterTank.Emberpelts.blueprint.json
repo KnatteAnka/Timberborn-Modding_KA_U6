@@ -473,11 +473,11 @@
       "Children": {
         "ConstructionSite": {
           "Children": {
-            "ConstructionSite3x2#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite3x2.blueprint"
-            },
+            "ConstructionBase3x2#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase3x2/ConstructionBase3x2.blueprint"
+        },
             "ConstructionSite1x1#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint",
+              "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint",
               "Modification": {
                 "TransformSpec": {
                   "Position": {
@@ -503,7 +503,7 @@
         "ConstructionStage0": {
           "Children": {
             "ConstructionSite1x1 (1)#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint",
+              "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint",
               "Modification": {
                 "TransformSpec": {
                   "Position": {
@@ -634,7 +634,7 @@
         "ConstructionStage1": {
           "Children": {
             "ConstructionSite1x1 (1)#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint",
+              "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint",
               "Modification": {
                 "TransformSpec": {
                   "Position": {

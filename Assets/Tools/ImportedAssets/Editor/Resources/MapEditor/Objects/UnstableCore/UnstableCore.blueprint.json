@@ -83,7 +83,7 @@
   "TimedComponentActivatorSpec": {
     "IsOptionallyActivable": false,
     "CyclesUntilCountdownActivation": 5,
-    "DaysUntilActivation": 10,
+    "DaysUntilActivation": 10.5,
     "ProgressBarActiveLabelLocKey": "TimedComponentActivator.DaysUntilExplosionProgress",
     "ProgressBarNotActiveLabelLocKey": "TimedComponentActivator.CountdownNotActive",
     "IsHazardousActivator": true

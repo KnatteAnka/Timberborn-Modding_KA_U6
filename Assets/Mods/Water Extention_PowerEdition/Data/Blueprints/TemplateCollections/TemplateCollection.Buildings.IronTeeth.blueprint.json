@@ -1,0 +1,12 @@
+{
+  "TemplateCollectionSpec": {
+  "CollectionId": "Buildings.IronTeeth",
+  "Blueprints#append": [
+	"Knatte/Buildings/Power/LargeWaterWheelLevee/LargeWaterWheelLevee.IronTeeth",
+    "Knatte/Buildings/Power/PowerLevee/PowerLevee.IronTeeth",
+	"Knatte/Buildings/Power/PowerLevee/UPowerLevee.IronTeeth",
+	"Knatte/Buildings/Power/Turbine/TurbineSmall.IronTeeth"
+	
+  ]
+ }
+}

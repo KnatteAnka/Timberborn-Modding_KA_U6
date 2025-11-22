@@ -1,0 +1,10 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Buildings.Folktails",
+    "Blueprints#append": [
+      "Knatte/Buildings/Power/PowerLevee/PowerLevee.Folktails",
+      "Knatte/Buildings/Power/PowerLevee/UPowerLevee.Folktails",
+      "Knatte/Buildings/Power/Turbine/TurbineSmall.Folktails"
+    ]
+  }
+}

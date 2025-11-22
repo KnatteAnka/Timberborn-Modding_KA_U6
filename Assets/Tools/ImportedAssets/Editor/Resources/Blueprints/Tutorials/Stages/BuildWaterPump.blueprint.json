@@ -1,0 +1,17 @@
+{
+  "TutorialStageSpec": {
+    "Id": "BuildWaterPump",
+    "IntroLocKey": "Tutorial.Stage.WaterPump"
+  },
+  "Children": {
+    "Step1": {
+      "BuildingTutorialStepSpec": {
+        "TemplateNames": [
+          "WaterPump.Folktails"
+        ],
+        "OnlyFinishedBuildings": true,
+        "RequiredAmount": 1
+      }
+    }
+  }
+}

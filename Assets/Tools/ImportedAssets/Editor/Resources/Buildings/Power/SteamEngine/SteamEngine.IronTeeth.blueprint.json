@@ -319,9 +319,17 @@
     "IgnoreRotation": true
   },
   "GoodConsumingBuildingSpec": {
-    "GoodId": "Log",
-    "Capacity": 10,
-    "GoodPerHour": 0.2
+    "FullInventoryWorkHours": 50,
+    "ConsumedGoods": [
+      {
+        "GoodId": "Log",
+        "GoodPerHour": 0.2
+      },
+      {
+        "GoodId": "Water",
+        "GoodPerHour": 0.3
+      }
+    ]
   },
   "GoodPoweredGeneratorSpec": {},
   "MechanicalBuildingSpec": {},

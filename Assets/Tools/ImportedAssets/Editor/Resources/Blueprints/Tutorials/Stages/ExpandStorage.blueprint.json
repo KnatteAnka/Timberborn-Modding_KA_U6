@@ -1,0 +1,31 @@
+{
+  "TutorialStageSpec": {
+    "Id": "ExpandStorage",
+    "IntroLocKey": "Tutorial.Stage.ExpandStorage"
+  },
+  "Children": {
+    "Step1": {
+      "BuildingTutorialStepSpec": {
+        "TemplateNames": [
+          "MediumWarehouse.Folktails"
+        ],
+        "OnlyFinishedBuildings": true,
+        "RequiredAmount": 2
+      }
+    },
+    "Step2": {
+      "SelectStockpileGoodTutorialStepSpec": {
+        "TemplateName": "MediumWarehouse.Folktails",
+        "RequiredAmount": 1,
+        "GoodId": "Carrot"
+      }
+    },
+    "Step3": {
+      "SelectStockpileGoodTutorialStepSpec": {
+        "TemplateName": "MediumWarehouse.Folktails",
+        "RequiredAmount": 1,
+        "GoodId": "Berries"
+      }
+    }
+  }
+}

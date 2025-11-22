@@ -48,7 +48,7 @@
     position: absolute;
     bottom: 0;
     align-items: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .game-ui__panels {
@@ -645,6 +645,8 @@
 }
 
 .production-item__items--input {
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: flex-end;
 }
 

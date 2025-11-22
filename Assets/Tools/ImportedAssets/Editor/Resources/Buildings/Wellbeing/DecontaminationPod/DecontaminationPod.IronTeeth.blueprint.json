@@ -148,9 +148,13 @@
     "ResetAnimationUponExit": false
   },
   "GoodConsumingBuildingSpec": {
-    "GoodId": "Extract",
-    "Capacity": 10,
-    "GoodPerHour": 0.1
+    "FullInventoryWorkHours": 100,
+    "ConsumedGoods": [
+      {
+        "GoodId": "Extract",
+        "GoodPerHour": 0.1
+      }
+    ]
   },
   "PoweredGoodConsumingBuildingSpec": {},
   "GoodConsumingAttractionSpec": {},

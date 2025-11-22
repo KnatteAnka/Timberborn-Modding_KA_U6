@@ -148,6 +148,7 @@
 .thumbnail-capturing-panel {
     flex-direction: column;
     max-width: 500px;
+    padding-top: 15px;
 }
 
 .thumbnail-capturing-panel__preview {

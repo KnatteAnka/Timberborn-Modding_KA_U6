@@ -1,8 +1,7 @@
-7.0.0
-* Switched to have first digit in version to supported game version
-* Move Construction material first so its easier to find
+10.0.0
+* update to 1.0
 
 ---
-MinimumGameVersion: 0.7.0.0
-MaximumGameVersion: 0.7.99.9
+MinimumGameVersion: 0.7.9.0
+MaximumGameVersion: 1.0.9.9
 ---

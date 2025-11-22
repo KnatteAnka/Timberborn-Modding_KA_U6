@@ -1,0 +1,11 @@
+{
+  "TutorialStageSpec": {
+    "Id": "MarkTrees",
+    "IntroLocKey": "Tutorial.Stage.MarkTrees"
+  },
+  "Children": {
+    "Step1": {
+      "MarkTreesTutorialStepSpec": {}
+    }
+  }
+}

@@ -1,1 +1,23 @@
 ID,Text,Comment
+Building.BadwaterSeep.Description,A source of badwater with limited pressure.,
+Building.BadwaterSeep.DisplayName,Badwater Seep,"A building that allows badwater to seep through, creating a natural badwater source."
+Settings.Accessibility.Header,Accessibility,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,Disable starfield rotation,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
+Settings.Graphics.AnisotropicTextures,Anisotropic textures,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,Anti-aliasing,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,Bloom,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,Graphics quality,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,Light quality,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,Preset,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,Custom,Label for custom graphics quality option
+Settings.Graphics.Quality.High,High,Label for high quality graphics option
+Settings.Graphics.Quality.Low,Low,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,Medium,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,Off,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,On,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,Ultra,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,Shadow quality,Label for shadow quality option
+Settings.Graphics.TextureQuality,Texture quality,Label for texture quality option
+Settings.Graphics.WaterQuality,Water quality,"Label for water quality dropdown, used in graphics settings panel"
+Settings.Screen.ScreenHeader,Screen,Section label in settings panel
+SteamWorkshop.Tags,Tags,"Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags"

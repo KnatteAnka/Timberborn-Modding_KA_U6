@@ -307,11 +307,13 @@ Button.entity-panel__button--red:hover:enabled {
 .entity-panel-setting {
     flex-grow: 1;
     flex-direction: row;
-    margin: 2px;
+    margin: 2px 0;
+    align-items: flex-start;
 }
 
 .entity-panel-setting__text {
     flex-grow: 1;
+    flex-shrink: 1;
     margin-right: 4px;
     -unity-text-align: middle-left;
 }
@@ -335,13 +337,17 @@ Button.entity-panel__button--red:hover:enabled {
     justify-content: space-between;
 }
 
+.debug-fragment__button {
+    margin: 0;
+}
+
 .debug-fragment__title-text {
     -unity-text-align: middle-left;
     flex-grow: 1;
 }
 
-.debug-fragment__button {
-    margin-top: 4px;
+.debug-fragment--margin {
+    margin-top: 8px;
 }
 
 .science-cost__slash {

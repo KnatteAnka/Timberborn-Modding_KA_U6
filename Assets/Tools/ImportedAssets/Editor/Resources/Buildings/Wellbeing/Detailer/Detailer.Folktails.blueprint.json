@@ -139,9 +139,13 @@
     "IconRendererName": "#Press1Animated.018"
   },
   "GoodConsumingBuildingSpec": {
-    "GoodId": "Extract",
-    "Capacity": 10,
-    "GoodPerHour": 0.25
+    "FullInventoryWorkHours": 40,
+    "ConsumedGoods": [
+      {
+        "GoodId": "Extract",
+        "GoodPerHour": 0.25
+      }
+    ]
   },
   "GoodConsumingAttractionSpec": {},
   "ConstructionSiteProgressVisualizerSpec": {

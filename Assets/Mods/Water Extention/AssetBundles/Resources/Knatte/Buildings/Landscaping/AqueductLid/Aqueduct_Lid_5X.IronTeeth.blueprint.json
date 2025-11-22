@@ -41,8 +41,6 @@
       "BlockSpecs": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Corners",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -50,8 +48,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Corners",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -59,8 +55,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Corners",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -68,8 +62,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Corners",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -77,8 +69,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Corners",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -86,8 +76,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -95,8 +83,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -104,8 +90,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -113,8 +97,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -122,8 +104,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -209,15 +189,15 @@
   "ConstructionSiteProgressVisualizerSpec": {
     "ProgressThresholds": [
       0.0,
-      0.10000000149011612,
-      0.20000000298023224,
-      0.30000001192092896,
-      0.40000000596046448,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
       0.5,
-      0.60000002384185791,
-      0.699999988079071,
-      0.800000011920929,
-      0.89999997615814209
+      0.6,
+      0.7,
+      0.8,
+      0.9
     ]
   },
   "Children": {
@@ -724,7 +704,7 @@
     "#Unfinished": {
       "Children": {
         "ConstructionSite1x1#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1.blueprint"
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
         },
         "ConstructionStage0": {
           "Children": {

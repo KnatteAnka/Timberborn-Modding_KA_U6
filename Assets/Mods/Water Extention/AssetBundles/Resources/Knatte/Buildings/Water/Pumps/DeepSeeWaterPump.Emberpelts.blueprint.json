@@ -333,7 +333,7 @@
       0.89999997615814209
     ]
   },
-  "FloodableBuildingBlockerSpec": {},
+  "FloodableBuildingSpec": {},
   "WorkshopWorkerHiderSpec": {},
   "Children": {
     "#Finished": {
@@ -446,8 +446,8 @@
     },
     "#Unfinished": {
       "Children": {
-        "ConstructionSite2x2 (1)#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+        "ConstructionBase2x2#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase2x2/ConstructionBase2x2.blueprint"
         },
         "ConstructionStage0": {
           "Children": {
@@ -473,9 +473,9 @@
                 "Model": "Knatte/ModelConstructionStage/DeepSeaPump.Emberpelts.ConstructionStage0.Model"
               }
             },
-            "ConstructionSite2x2 (2)#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
-            },
+            "ConstructionBase2x2#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase2x2/ConstructionBase2x2.blueprint"
+        },
             "Coliders": {
               "CollidersSpec": {
                 "BoxColliders": [],
@@ -530,9 +530,9 @@
                 "Model": "Knatte/ModelConstructionStage/DeepSeaPump.Emberpelts.ConstructionStage1.Model"
               }
             },
-            "ConstructionSite2x2 (1)#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
-            },
+            "ConstructionBase2x2#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase2x2/ConstructionBase2x2.blueprint"
+        },
             "Coliders": {
               "CollidersSpec": {
                 "BoxColliders": [],
@@ -615,9 +615,9 @@
                 "Model": "Knatte/ModelConstructionStage/DeepSeaPump.Emberpelts.ConstructionStage2.Model"
               }
             },
-            "ConstructionSite2x2 (1)#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
-            },
+            "ConstructionBase2x2#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase2x2/ConstructionBase2x2.blueprint"
+        },
             "Coliders": {
               "CollidersSpec": {
                 "BoxColliders": [
@@ -750,8 +750,9 @@
                 ]
               }
             },
-            "ConstructionSite2x2 (1)#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+            "ConstructionBase2x2#nested": {
+              "BlueprintPath": "ConstructionBases/ConstructionBase2x2/ConstructionBase2x2.blueprint"
+
             }
           }
         },
@@ -832,8 +833,9 @@
                 ]
               }
             },
-            "ConstructionSite2x2 (1)#nested": {
-              "BlueprintPath": "All_Material/BasePrefab/ConstructionSite2x2.blueprint"
+            "ConstructionBase2x2#nested": {
+              "BlueprintPath": "ConstructionBases/ConstructionBase2x2/ConstructionBase2x2.blueprint"
+
             }
           }
         }

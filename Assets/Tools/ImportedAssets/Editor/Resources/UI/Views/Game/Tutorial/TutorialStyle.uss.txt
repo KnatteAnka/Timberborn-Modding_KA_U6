@@ -1,26 +1,74 @@
-.tutorial-panel {
+.tutorial-panels {
     position: absolute;
     min-width: 400px;
     max-width: 400px;
-    min-height: 85px;
-    padding: 4px;
-    background-color: rgba(48, 35, 55, 0.7);
-    flex-direction: row;
     right: 0;
     bottom: 124px;
 }
 
-.tutorial-panel__buttons {
-    margin-right: 2px;
+.tutorial-panel {
+    margin: 8px 0;
 }
 
-.tutorial-panel__icon {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    bottom: 0;
-    right: -2px;
-    background-image: resource('UI/Images/Game/tutorial-exclamation');
+.hidden.tutorial-panel {
+    align-items: flex-end;
+}
+
+.tutorial-panel__header {
+    background-color: rgba(48, 35, 55, 0.9);
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom-color: rgba(179, 179, 128, 0.8);
+    border-bottom-width: 1px;
+}
+
+.tutorial-panel__header-button {
+    padding: 4px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.hover-enabled.tutorial-panel__header:hover:enabled {
+    background-color: rgba(179, 179, 128, 0.8);
+}
+
+.hover-enabled.tutorial-panel__header:hover:enabled .tutorial-panel__header-text {
+    color: black;
+}
+
+.hover-enabled.tutorial-panel__header:hover:enabled .tutorial-panel__header-icon {
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.75);
+}
+
+.tutorial-panel__header-text {
+    margin: 0 8px;
+    -unity-text-align: middle-right;
+}
+
+.tutorial-panel__header-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+    background-image: resource('UI/Images/Game/tutorial-icon');
+}
+
+.all-steps-achieved .tutorial-panel__header-icon {
+    background-image: resource('UI/Images/Game/tutorial-ready');
+}
+
+.tutorial-panel__content {
+    background-color: rgba(48, 35, 55, 0.8);
+    padding: 4px;
+}
+
+.hidden .tutorial-panel__content {
+    display: none;
+}
+
+.hidden .tutorial-panel__disable {
+    display: none;
 }
 
 .tutorial-panel__continue {
@@ -29,17 +77,19 @@
     min-width: 50%;
     align-self: center;
     margin-bottom: 4px;
+    display: none;
 }
 
-.tutorial-panel__minimize {
-    position: absolute;
-    right: 4px;
-    top: 4px;
+.all-steps-achieved .tutorial-panel__continue {
+    display: flex;
+}
+
+.tutorial-panel__disable {
     --click-sound: "UI.Click";
+    margin: 0 5px;
 }
 
 .tutorial-panel__intro {
-    margin-bottom: 4px;
     padding: 4px;
     -unity-paragraph-spacing: -40px;
 }

@@ -3,10 +3,12 @@
     <Style src="/Assets/Resources/UI/Views/Common/CommonStyle.uss" />
     <Style src="/Assets/Resources/UI/Views/Common/AlertPanel/AlertPanelStyle.uss" />
     <ui:VisualElement name="ClosableAlertPanelRow" class="alert-panel-row">
-        <ui:Button name="Close" class="alert-panel-row__close alert-panel-row--closable game-text-small">
-            <ui:Image name="Cross" class="alert-panel-row__cross" />
-        </ui:Button>
-        <ui:Button name="Button" text="Beavers are hungry!" class="alert-panel-row__text alert-panel-row--closable game-text-normal game-text--black" />
+        <ui:VisualElement name="Wrapper" class="closable-alert-panel-row__wrapper">
+            <ui:Button name="Button" class="closable-alert-panel-row__button game-text-normal game-text--black" />
+            <ui:Button name="Close" class="closable-alert-panel-row__close">
+                <ui:Image name="Cross" class="closable-alert-panel-row__cross" />
+            </ui:Button>
+        </ui:VisualElement>
         <ui:Image name="Icon" class="alert-fragment_row__icon" />
     </ui:VisualElement>
 </ui:UXML>

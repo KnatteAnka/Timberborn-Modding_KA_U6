@@ -27,7 +27,7 @@
     "FinishedUncoveredModelName": "",
     "UndergroundModelName": "#Underground",
     "ConstructionModeModel": "Finished",
-    "UndergroundModelDepth": 3
+    "UndergroundModelDepth": 99
   },
   "TemplateSpec": {
     "TemplateName": "BadwaterRig.Folktails",
@@ -329,7 +329,7 @@
     "DisplayNameLocKey": "Building.BadwaterRig.DisplayName",
     "DescriptionLocKey": "Building.BadwaterRig.Description",
     "FlavorDescriptionLocKey": "Building.BadwaterRig.FlavorDescription",
-    "Icon": "Buildings/Water/BadwaterRig/BadwaterRig.Folktails"
+    "Icon": "Buildings/Water/BadwaterRig/BadwaterRigIcon"
   },
   "BottomMatchingTemplateSpec": {
     "RequiredTemplateAtBottomName": "BadwaterSource"

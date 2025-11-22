@@ -205,52 +205,10 @@
                 ],
                 "CapsuleColliders": []
               }
-            }
-          }
-        },
-        "MatureNoYield": {
-          "Children": {
-            "#Alive": {
-              "TimbermeshSpec": {
-                "Model": "NaturalResources/Bushes/Blueberry/BlueberryBushMatureNoYield"
-              },
-              "CollidersSpec": {
-                "BoxColliders": [],
-                "SphereColliders": [
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": 0.0,
-                      "Z": 0.5
-                    },
-                    "Radius": 0.38
-                  }
-                ],
-                "CapsuleColliders": []
-              }
             },
             "#Dead": {
               "TimbermeshSpec": {
-                "Model": "NaturalResources/Bushes/Blueberry/BlueberryBushMatureNoYieldDead"
-              },
-              "CollidersSpec": {
-                "BoxColliders": [],
-                "SphereColliders": [
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": 0.0,
-                      "Z": 0.5
-                    },
-                    "Radius": 0.38
-                  }
-                ],
-                "CapsuleColliders": []
-              }
-            },
-            "#Dying": {
-              "TimbermeshSpec": {
-                "Model": "NaturalResources/Bushes/Blueberry/BlueberryBushMatureNoYieldDry"
+                "Model": "NaturalResources/Bushes/Blueberry/BlueberryBushMatureDead"
               },
               "CollidersSpec": {
                 "BoxColliders": [],

@@ -1,0 +1,11 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Buildings.GreedyBuilders",
+    "Blueprints#append": [
+      "Knatte/Buildings/Power/LargeWaterWheelLevee/LargeWaterWheelLevee.IronTeeth",
+      "Knatte/Buildings/Power/PowerLevee/PowerLevee.Folktails",
+      "Knatte/Buildings/Power/PowerLevee/UPowerLevee.Folktails",
+      "Knatte/Buildings/Power/Turbine/TurbineSmall.Folktails"
+    ]
+  }
+}
