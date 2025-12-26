@@ -147,12 +147,11 @@
     "DefaultContamination": 0.0
   },
   "BadtideWaterSourceContaminationControllerSpec": {},
-  "UndergroundWaterSourceModelSpec": {
-    "ClosedModelName": "#Closed",
-    "OpenModelName": "#Open"
-  },
   "Children": {
     "#Model": {
+      "TimbermeshSpec": {
+        "Model": "MapEditor/Water/Aquifer/Aquifer.Model"
+      },
       "CollidersSpec": {
         "BoxColliders": [
           {
@@ -182,18 +181,6 @@
         ],
         "SphereColliders": [],
         "CapsuleColliders": []
-      },
-      "Children": {
-        "#Closed": {
-          "TimbermeshSpec": {
-            "Model": "MapEditor/Water/Aquifer/Aquifer.Closed.Model"
-          }
-        },
-        "#Open": {
-          "TimbermeshSpec": {
-            "Model": "MapEditor/Water/Aquifer/Aquifer.Opened.Model"
-          }
-        }
       }
     },
     "#Underground": {

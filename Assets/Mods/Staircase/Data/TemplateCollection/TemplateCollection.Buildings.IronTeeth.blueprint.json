@@ -1,0 +1,20 @@
+{
+  "TemplateCollectionSpec": {
+  "CollectionId": "Buildings.IronTeeth",
+  "Blueprints#append": [
+    "Knatte/Buildings/Paths/MetalStaircase/MetalStaircase.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/MetalStaircase/MetalSpiralStaircase.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/SpiralStaircase/SpiralStaircase.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/StaircaseLog/StaircaseLog.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar_1.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar_2.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar_3.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar_4.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillars.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/PillarTop/PillarTop.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/PillarTop/StaircasePlatform.IronTeeth.blueprint",
+	"Knatte/Buildings/Paths/Pillar/StaircasePillar.IronTeeth.blueprint"
+  ]
+}
+}

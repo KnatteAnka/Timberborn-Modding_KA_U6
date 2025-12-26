@@ -94,6 +94,8 @@ Building.BadwaterPump.FlavorDescription,"""ฉันหวังว่ามา�
 Building.BadwaterRig.Description,ช่วยปิดกั้นแหล่งน้ำเสีย ใช้แรงงานเพื่อตักน้ำเสียออกจากแหล่งน้ำโดยตรง,"Badwater Source must be the same as Building.BadwaterSource.DisplayName, Badwater must be the same as Good.Badwater.DisplayName."
 Building.BadwaterRig.DisplayName,เครื่องกำจัดน้ำเสีย,Name of the building that stops flow from badwater source and generates Good.Badwater.DisplayName goods (by extracting them from source). It's a mechanical building that needs workers to operate. Badwater must be the same as Good.Badwater.DisplayName
 Building.BadwaterRig.FlavorDescription,เหล่าบีเวอร์ที่ทำงานอยู่เหนือแหล่งน้ำเสียที่กำลังปะทุรู้สึกถึงแรงกดดันอันต่อเนื่อง,Play on words with pressure referring to both water pressure and stress. If possible try to adapt the phrase to fit your language.
+Building.BadwaterSeep.Description,แหล่งน้ำเสียที่มีแรงดันจำกัด,
+Building.BadwaterSeep.DisplayName,แหล่งน้ำเสียซึม,"A building that allows badwater to seep through, creating a natural badwater source."
 Building.BadwaterSource.DisplayName,แหล่งน้ำเสีย,A crack or spring in the ground spuming badwater. Badwater should be the same as Good.Badwater.DisplayName.
 Building.BadwaterSource.FlavorDescription,"""ทำไมเราถึงต้องเก็บกวาดเศษซากของมานุดด้วย อ๋อ จริงด้วย เพราะพวกนั้นตายกันไปหมดแล้วไง""—พีนา",
 Building.ContaminationBarrier.Description,ช่วยหยุดยั้งการแพร่กระจายของการปนเปื้อนในดินด้านล่างแผง,Ideally all uses of the word contaminate/contamination/contaminated should be uniform across the project.
@@ -529,7 +531,6 @@ Building.SuspensionBridge3x1.DisplayName,สะพานแขวน 3x1,Numbers
 Building.SuspensionBridge4x1.DisplayName,สะพานแขวน 4x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge5x1.DisplayName,สะพานแขวน 5x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge6x1.DisplayName,สะพานแขวน 6x1,Numbers at the end denote size X by Y
-Building.SuspensionBridgeMetal.FlavorDescription,ทนทานอย่างที่เห็น,
 Building.SwimmingPool.Description,สระว่ายน้ำ,
 Building.SwimmingPool.DisplayName,สระว่ายน้ำ,
 Building.SwimmingPoll.FlavorDescription,"""ทำเวลาได้ดีมาก แต่เราควรมาฝึกตีหางเพิ่ม!"" —พีนา","Backstroke is a swimming style, but beavers also have tails. Pina is a younger beaver figure that's exploring the world and isn't related to any faction in particular. Pina as a name relates to the pine tree, the translated name shouldn't suggest a gender if possible."
@@ -1461,12 +1462,30 @@ Saving.TakenName,มีถิ่นฐานที่ใช้ชื่อนี
 Saving.Autosave,บันทึกอัตโนมัติ,Name of the autosaved game
 Saving.CycleUnknown,ไม่ทราบรอบฤดูกาล,"Text shown in old save games labels that don't have cycle information. ""Cycle"" should be the same as in Weather.CycleAndDayLong"
 Science.SciencePoints,แต้มวิทยาศาสตร์,The name of a resource which can be spent to unlock new technology
+Settings.Accessibility.Header,การเข้าถึง,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,ปิดการหมุนตามจุดสนใจ,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
 Settings.Analytics.Header,การวิเคราะห์,Header for the data collection/analytics consent section.
 Settings.Analytics.ConsentToggle,เปิดใช้งานการวิเคราะห์แล้ว,Selected when giving consent to data collection/analytics.
 Settings.Analytics.DeleteData,ลบข้อมูลที่รวบรวมไว้,Selected when withdrawing consent to data collection/analytics.
 Settings.Analytics.DataDeleted,ลบข้อมูลที่รวบรวมไว้แล้ว,Confirmation info that the collected data has been deleted.
 Settings.GameSaving.AutoSavingOn,บันทึกอัตโนมัติ,
 Settings.GameSaving.Header,กำลังบันทึก,
+Settings.Graphics.AnisotropicTextures,พื้นผิวคมชัดระยะไกล,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,การลบรอยหยัก,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,ความฟุ้ง,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,คุณภาพกราฟิก,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,คุณภาพแสง,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,พรีเซ็ต,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,กำหนดเอง,Label for custom graphics quality option
+Settings.Graphics.Quality.High,สูง,Label for high quality graphics option
+Settings.Graphics.Quality.Low,ต่ำ,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,ปานกลาง,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,ปิด,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,เปิด,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,สูงพิเศษ,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,คุณภาพเงา,Label for shadow quality option
+Settings.Graphics.TextureQuality,คุณภาพพื้นผิว,Label for texture quality option
+Settings.Graphics.WaterQuality,คุณภาพน้ำ,"Label for water quality dropdown, used in graphics settings panel"
 Settings.Header,การตั้งค่า,
 Settings.Input.DragCamera,การลากกล้อง,
 Settings.Input.EdgePanCamera,การเลื่อนขอบ,"When this option is enabled, player can move camera by moving mouse to screen edge"
@@ -1499,6 +1518,7 @@ Settings.Screen.Quality.Low,ต่ำ,Please keep short
 Settings.Screen.Quality.Medium,ปานกลาง,Please keep short
 Settings.Screen.Quality.Ultra,สูงพิเศษ,Please keep short
 Settings.Screen.ResolutionScale,ระดับความละเอียด,Please keep short
+Settings.Screen.ScreenHeader,หน้าจอ,Section label in settings panel
 Settings.Screen.ScreenResolution,ความละเอียดหน้าจอ,
 Settings.Screen.VSync,VSync,Label of a dropdown for choosing a VSync mode.
 Settings.Screen.VSync.0,ปิด,A dropdown item indicating VSync mode.
@@ -1591,6 +1611,7 @@ SteamWorkshop.Preview,ตัวอย่าง,Label of the preview of the item 
 SteamWorkshop.RefreshThumbnail,รีเฟรช,Label of a button that tries to load the preview of the item to be uploaded to Steam Workshop.
 SteamWorkshop.ShowWorkshopItem,เปิดใน Steam Workshop,Label of the button that opens the Steam Workshop page of the item that has been uploaded to Steam Workshop.
 SteamWorkshop.SteamMapTooltip,แผนที่ Steam Workshop,Tooltip on the map icon that indicates that the map is from Steam Workshop.
+SteamWorkshop.Tags,แท็ก,Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags
 SteamWorkshop.Update,อัปเดต,Label of the checkbox that determines whether certain elements of the item to be uploaded to Steam Workshop should be updated.
 SteamWorkshop.UploadAsNew,อัปโหลดเป็นรายการใหม่,Label of the checkbox that determines whether the item to be uploaded to Steam Workshop should be uploaded as a new item or as an update to an existing item.
 SteamWorkshop.UploadButton,อัปโหลด,Text on the button that starts uploading the item to Steam Workshop.

@@ -69,7 +69,7 @@
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Decoration",
-    "ToolOrder": 80,
+    "ToolOrder": 41,
     "ToolShape": "Square",
     "Layout": "Single",
     "CustomPivot": {
@@ -127,6 +127,18 @@
   "FloodableBuildingSpec": {},
   "BlockableFloodableObjectSpec": {},
   "BlockableBuildingWindAnimatorSpec": {},
+  "RangedEffectBuildingSpec": {
+    "EffectRadius": 3
+  },
+  "ContinuousEffectBuildingSpec": {
+    "Effects": [
+      {
+        "NeedId": "WindGauge",
+        "PointsPerHour": 0.32,
+        "SatisfyToMaxValue": false
+      }
+    ]
+  },
   "Children": {
     "#Finished": {
       "TimbermeshSpec": {

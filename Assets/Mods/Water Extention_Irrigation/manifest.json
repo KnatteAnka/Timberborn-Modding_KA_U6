@@ -1,23 +1,20 @@
 {
   "Name": "Water Extention Irrigation Towers",
-  "Version": "7.0.2",
+  "Version": "1.0.0.1",
   "Id": "KnatteAnka.waterextention.IrrigationTowers",
-  "MinimumGameVersion": "0.7.9.0",
+  "MinimumGameVersion": "1.0.0.0",
   "Description": "This is not an official upload and should not be used",
   "ModIOID":"4399324",
   "RequiredMods": [
 	{
 		"Id": "KnatteAnka.Materials",
-		"MinimumVersion": "2.1.0"
+		"MinimumVersion": "1.0.1.0"
 	},
 	{
 		"Id": "Timberborn.IgorZ.TimberCommons",
-		"MinimumVersion": "1.12.0"
+		"MinimumVersion": "1.14.0"
 	}
   ],
   "OptionalMods": [
-    {
-		"Id": "TimberApi"
-    }
   ]
 }

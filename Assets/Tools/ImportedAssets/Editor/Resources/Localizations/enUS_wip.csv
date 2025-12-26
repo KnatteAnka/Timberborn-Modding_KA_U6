@@ -1,23 +1,142 @@
 ID,Text,Comment
-Building.BadwaterSeep.Description,A source of badwater with limited pressure.,
-Building.BadwaterSeep.DisplayName,Badwater Seep,"A building that allows badwater to seep through, creating a natural badwater source."
-Settings.Accessibility.Header,Accessibility,Header for accessibility section in settings panel
-Settings.Accessibility.DisableStarfieldRotation,Disable starfield rotation,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
-Settings.Graphics.AnisotropicTextures,Anisotropic textures,Label for anisotropic textures quality option
-Settings.Graphics.AntiAliasingQuality,Anti-aliasing,Antialiasing dropdown label in graphics settings panel
-Settings.Graphics.Bloom,Bloom,Label for bloom effect dropdown in graphics settings panel
-Settings.Graphics.Header,Graphics quality,Header for graphics quality section in settings panel
-Settings.Graphics.LightQuality,Light quality,Label for Light quality dropdown
-Settings.Graphics.OverallGraphicsQuality,Preset,Label for graphics quality dropdown
-Settings.Graphics.Quality.Custom,Custom,Label for custom graphics quality option
-Settings.Graphics.Quality.High,High,Label for high quality graphics option
-Settings.Graphics.Quality.Low,Low,Label for low quality graphics option
-Settings.Graphics.Quality.Medium,Medium,Label for medium quality graphics option
-Settings.Graphics.Quality.Off,Off,"Label for graphics quality option that disables certain graphic effect, please keep short"
-Settings.Graphics.Quality.On,On,"Label for graphics quality option that enables certain graphic effect, please keep short"
-Settings.Graphics.Quality.Ultra,Ultra,Label for ultra quality graphics option
-Settings.Graphics.ShadowQuality,Shadow quality,Label for shadow quality option
-Settings.Graphics.TextureQuality,Texture quality,Label for texture quality option
-Settings.Graphics.WaterQuality,Water quality,"Label for water quality dropdown, used in graphics settings panel"
-Settings.Screen.ScreenHeader,Screen,Section label in settings panel
-SteamWorkshop.Tags,Tags,"Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags"
+Building.BadtideDrain.Description,Spews out badwater during a Badtide.,
+Building.BadtideDrain.DisplayName,Badtide Drain,
+Building.Thorns.Description,"An impenetrable obstacle that also blocks irrigation and contamination. It's difficult to demolish and can injure those who attempt it.",
+Building.Thorns.DisplayName,Thorns,
+Decals.Flip,Flip pattern,Label on a button to flip (mirror) the pattern in the decal panel building
+KeyBinding.LevelVisibilityCursorTool,Level Visibility Cursor Tool,Name of layer tool keybinding
+RecoveredGoodStack.DisintegrationCountdown,Disintegrates in: {0} days,Info on rubble entity panel disintegration countdown progress bar
+Settings.Graphics.AnisotropicFiltering,Anisotropic filtering,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasing.FXAA,FXAA,Label for FXAA anti-aliasing option in graphics settings panel
+Settings.Graphics.AntiAliasing.MacMSAAWarning,This may cause artifacts on older hardware.,Warning message for Mac users about potential artifacts when using MSAA anti-aliasing
+Settings.Graphics.AntiAliasing.MSAAx2,MSAA x2,Label for MSAA with x2 resolution anti-aliasing option in graphics settings panel
+Settings.Graphics.AntiAliasing.MSAAx4,MSAA x4,Label for MSAA with x4 resolution anti-aliasing option in graphics settings panel
+Settings.Graphics.AntiAliasing.MSAAx8,MSAA x8,Label for MSAA with x8 resolution anti-aliasing option in graphics settings panel
+Settings.Graphics.AntiAliasing.SMAA,SMAA,Label for SMAA anti-aliasing option in graphics settings panel
+Settings.Screen.Brightness,Brightness,Label for overall brightness level setting in screen settings panel
+Tutorial.Basics,"Basics",Header of the tutorial section that covers the basic concepts
+Tutorial.Basics.ManagePause,"The game can be paused at any moment, helping you assess the situation and plan things out.",
+Tutorial.Basics.ManageSpeed,"You can also increase game speed to reduce downtime while your beavers are working or sleeping.",
+Tutorial.Basics.MoveCamera,"First, let's have a look around the area.",
+Tutorial.Basics.MoveCameraDown,"Move camera backward",
+Tutorial.Basics.MoveCameraLeft,"Move camera left",
+Tutorial.Basics.MoveCameraRight,"Move camera right",
+Tutorial.Basics.MoveCameraUp,"Move camera forward",
+Tutorial.Basics.Pause,"Pause",
+Tutorial.Basics.RotateCamera,"Now, rotate the view.",
+Tutorial.Basics.RotateCameraLeft,"Rotate the camera left",
+Tutorial.Basics.RotateCameraRight,"Rotate the camera right",
+Tutorial.Basics.SetSpeed1,"Set the speed to >",
+Tutorial.Basics.SetSpeed2,"Set the speed to >>",
+Tutorial.Basics.SetSpeed3,"Set the speed to >>>",
+Tutorial.Basics.Unpause,"Unpause",
+Tutorial.Basics.ZoomCamera,"If you want to check on your beavers up close, or get a wider view of the settlement, you can!",
+Tutorial.Basics.ZoomCameraIn,"Zoom in",
+Tutorial.Basics.ZoomCameraOut,"Zoom out",
+Tutorial.Finish,Close,
+Tutorial.Forestry,Forestry,
+Tutorial.Forestry.Forester,"Beavers need a stable source of Logs. Duh.
+                            
+Using Science Points produced by your Inventor, unlock the Forester. Then build it in an area where you want to plant trees.",
+Tutorial.Forestry.MarkBirchesForPlanting,"Use the Plant Trees and Bushes tool to plant some Birches. They grow quickly, making them a good choice in a fledgling settlement.
+                                          
+Similarly to crops, trees only grow on irrigated, green areas.
+                                          
+Remember to mark the planting areas for cutting.",
+Tutorial.GoodLuck,Good luck!,
+Tutorial.GoodLuck.Description,"Well done! You have laid the foundations for a great city but survival won't be easy.
+                               
+Build your first dam. Engineer new technologies. Grow your population and keep it alive.
+                               
+Succeed, and this barren land will turn into a beaver utopia. Fail, and you will share the fate of hoomanity.",
+Tutorial.HousingAndPopulation,Housing and population,
+Tutorial.HousingAndPopulation.GrowPopulation,"Beavers do not reproduce unless there are empty housing slots available. Folktails need two adults and an empty slot for the magic to happen.
+                                              
+Tip: Beaver children are called kits.","The Tip is optional if there's no special name for beaver children in your language. If that's the case, remove this part."
+Tutorial.HousingAndPopulation.BeaverBirth,Have a kit,"If there's no special name for beaver children in your language use 'have a child'."
+Tutorial.HousingAndPopulation.Lodges,"Two beavers are better than one! Houses improve your beavers' well-being and allow your Folktails population to grow.
+                                      
+Beavers automatically assign themselves to available housing slots.",
+Tutorial.Introduction.Description,"Welcome to Timberborn! The tutorial will help you survive, build a beaver settlement, and bring life back to this wasteland.
+                               
+As you progress through the next steps, the tips will appear here.",
+Tutorial.Tutorial,Tutorial,
+Tutorial.PowerAndPlanks,Power and planks,
+Tutorial.PowerAndPlanks.LumberMill,"It is time to start producing Planks!
+                                    
+Build a Lumber Mill directly next to the Water Wheel. You may also build it further away and connect it to the Water Wheel using Power Shafts.
+                                    
+Tip: Many buildings, such as Lumber Mills and Lodges, pass power to one another when placed wall to wall. No Power Shafts needed!",
+Tutorial.PowerAndPlanks.WaterWheel,"More advanced buildings require power, and beavers like their power to come from the river.
+                                    
+Place a Water Wheel in flowing water along the river bank.",
+Tutorial.Science,"Science",Header of the tutorial section that covers the science
+Tutorial.Science.AccumulateScience,"Accumulate: Science Points ({0}/{1})","{0} stands for amount of Science Points accumulated, {1} stands for amount needed"
+Tutorial.Science.Inventor,"Beavers are the engineers of the animal world. It's time to turn their lumberpunk ideas into reality.
+                           
+Build an Inventor to produce Science Points.",
+Tutorial.Science.SciencePoints,"For now, let the Inventor work.
+                                
+Once you accumulate enough Science Points, we'll spend them to unlock more advanced buildings.",
+Tutorial.Science.Unlock,"Unlock: {0}","{0} stands for the name of the building to unlock"
+Tutorial.Storage,Storage,
+Tutorial.Storage.Pile,"Many buildings have some built-in storage but it fills up quickly.
+                               
+Build a Large Pile to store more Logs.
+                               
+Each storage building holds a single good. You can set the stored good after selecting the building.",
+Tutorial.Storage.Tanks,"All liquids are stored in tanks. This includes the water we've been pumping.",
+Tutorial.Storage.Warehouses,"Finally, let's prepare some storage for Berries. We should also get ready for the upcoming Carrot harvest.
+                             
+Food, just like many other boxed goods, is stored in warehouses.",
+Tutorial.WaterAndFood,Water and food,
+Tutorial.WaterAndFood.Farmhouse,"In the long run, we need something more nutritious. Build a farmhouse to plant and harvest crops.
+                                 
+Like flags, a farmhouse has a limited range.
+                                 
+Tip: If you are running low on workers, you can pause some buildings. To do so, select a building and click the pause button.",
+Tutorial.WaterAndFood.Gatherer,"In addition to water, beavers need food.
+                                
+Gatherers automatically gather Berries within the Gatherer Flag's range. You can see the range when placing the flag.
+                                
+Build a Gatherer Flag near some Blueberry Bushes.",
+Tutorial.WaterAndFood.MarkCarrots,"Farmers do not start working until you tell them what and where to plant.
+                                   
+Use the Plant Crops tool to designate a Carrot field.
+                                   
+Crops need to be planted on irrigated, green land. Otherwise, plants will dry out and eventually die.",
+Tutorial.WaterAndFood.WaterPump,"Beavers need water to survive.
+                                 
+Build a Water Pump to ensure continuous access to drinking water. Remember to connect the Pump to the District Center.",
+Tutorial.Wellbeing,Well-being,
+Tutorial.Wellbeing.Campfire,"Well-being is a metric that shows how content a beaver is. It affects three attributes: working speed, movement speed, and lifespan.
+                             
+One of the main ways of increasing the well-being is through attractions. Attractions are buildings that beavers enter when not at work.",
+Tutorial.Wellbeing.SelectBeaver,Select a beaver and check its needs,
+Tutorial.Wellbeing.Shrub,"Well-being also increases around decorations. Beavers do not intentionally approach them, so place the decorations close to where your settlers hang out.
+                          
+A Shrub is the simplest decoration, and beavers appreciate every bit of greenery.",
+Tutorial.Wellbeing.Beaver,"You can see the impact your actions have on your beavers.
+                           
+Select a beaver by clicking on it. In the panel, you can see its current well-being, attributes, and needs.
+                           
+Some needs can reach negative values and incur severe penalties or cause death.",
+Tutorial.Wellbeing.WellbeingPanel,"For beavers, it's the entire society that counts. You can see your settlement's average well-being in the top left corner of your screen.
+                                   
+Click on it to see the fulfillment of all possible needs. There are many ways to make life in the wasteland more bearable.",
+Tutorial.Wellbeing.OpenWellbeingPanel,Open the well-being panel,
+Tutorial.Wood,Wood,
+Tutorial.Wood.ConnectLumberjacks,"Every building with an entrance must be connected to a District Center with a Path. When you select a building, you can see its entrance marked by an arrow.
+                                  
+Build Paths to connect the Lumberjack Flags to the District Center.",
+Tutorial.Wood.FinishLumberjacks,"The Flags will not be built unless they are in the district's building range.
+                                 
+Select the District Center to see its building range. You can extend it by connecting Paths to the District Center's entrance.",
+Tutorial.Wood.MarkTrees,"Lumberjacks only cut trees in areas that you mark for cutting.
+                         
+The trees must be within a Lumberjack Flag's range. Select a flag to see its range.
+                         
+Use the Mark Tree Cutting Area tool now. Hold the mouse button to select multiple tiles at once.",
+Tutorial.Wood.PlaceLumberjacks,"Every beaver settlement needs Logs, and lots of them. Only lumberjacks cut trees. 
+                                
+Build Lumberjack Flags next to nearby trees.",

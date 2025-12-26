@@ -582,6 +582,10 @@
     background-image: resource('UI/Images/Core/unconventional-map-icon');
 }
 
+.map-item__text {
+    padding-bottom: 15px;
+}
+
 .map-item-faction-icon {
     width: 40px;
     height: 40px;

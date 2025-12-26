@@ -69,11 +69,11 @@
     },
     "BaseZ": 0,
     "Overridable": false,
-    "Flippable": true
+    "Flippable": false
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Decoration",
-    "ToolOrder": 110,
+    "ToolOrder": 100,
     "ToolShape": "Square",
     "Layout": "Single",
     "CustomPivot": {
@@ -103,6 +103,9 @@
     "ProgressThresholds": [
       0.0
     ]
+  },
+  "FlippableDecalSpec": {
+    "DecalName": "#display_IT"
   },
   "Children": {
     "#Finished": {

@@ -94,6 +94,8 @@ Building.BadwaterPump.FlavorDescription,„Te ich środki ochrony mogłyby zawie
 Building.BadwaterRig.Description,Odcina źródło złowody. Pracują tam bobry pobierające złowodę prosto z jej źródła.,"Badwater Source must be the same as Building.BadwaterSource.DisplayName, Badwater must be the same as Good.Badwater.DisplayName."
 Building.BadwaterRig.DisplayName,Szyb złowody,Name of the building that stops flow from badwater source and generates Good.Badwater.DisplayName goods (by extracting them from source). It's a mechanical building that needs workers to operate. Badwater must be the same as Good.Badwater.DisplayName
 Building.BadwaterRig.FlavorDescription,"Jak pracujesz nad bulgoczącym źródłem złowody, to wiecznie ci skacze ciśnienie.",Play on words with pressure referring to both water pressure and stress. If possible try to adapt the phrase to fit your language.
+Building.BadwaterSeep.Description,Źródło złowody o ograniczonym ciśnieniu.,
+Building.BadwaterSeep.DisplayName,Wyciek złowodny,"A building that allows badwater to seep through, creating a natural badwater source."
 Building.BadwaterSource.DisplayName,Źródło złowody,A crack or spring in the ground spuming badwater. Badwater should be the same as Good.Badwater.DisplayName.
 Building.BadwaterSource.FlavorDescription,"„Dlaczego musimy sprzątać bałagan, który zrobili ludzie? Ach, no tak… przecież wszyscy wymarli” — Sosno.",
 Building.ContaminationBarrier.Description,Zapobiega podziemnemu rozprzestrzenianiu się skażenia gleby.,Ideally all uses of the word contaminate/contamination/contaminated should be uniform across the project.
@@ -529,7 +531,6 @@ Building.SuspensionBridge3x1.DisplayName,Most wantowy 3x1,Numbers at the end den
 Building.SuspensionBridge4x1.DisplayName,Most wantowy 4x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge5x1.DisplayName,Most wantowy 5x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge6x1.DisplayName,Most wantowy 6x1,Numbers at the end denote size X by Y
-Building.SuspensionBridgeMetal.FlavorDescription,"Tak wytrzymały, jak wygląda.",
 Building.SwimmingPool.Description,Po prostu basen.,
 Building.SwimmingPool.DisplayName,Basen,
 Building.SwimmingPoll.FlavorDescription,"„Dobry czas, ale musimy popracować nad twoim stylem ogonowym!” — Sosno.","Backstroke is a swimming style, but beavers also have tails. Pina is a younger beaver figure that's exploring the world and isn't related to any faction in particular. Pina as a name relates to the pine tree, the translated name shouldn't suggest a gender if possible."
@@ -1461,12 +1462,30 @@ Saving.TakenName,Osada o tej nazwie już istnieje.,Error message shown after inp
 Saving.Autosave,Autozapis,Name of the autosaved game
 Saving.CycleUnknown,Cykl nieznany,"Text shown in old save games labels that don't have cycle information. ""Cycle"" should be the same as in Weather.CycleAndDayLong"
 Science.SciencePoints,Punkty nauki,The name of a resource which can be spent to unlock new technology
+Settings.Accessibility.Header,Dostępność,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,Wyłącz rotację pola gwiazd,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
 Settings.Analytics.Header,Zbieranie danych,Header for the data collection/analytics consent section.
 Settings.Analytics.ConsentToggle,Włączono zbieranie danych,Selected when giving consent to data collection/analytics.
 Settings.Analytics.DeleteData,Usuń zebrane dane,Selected when withdrawing consent to data collection/analytics.
 Settings.Analytics.DataDeleted,Zebrane dane zostały usunięte.,Confirmation info that the collected data has been deleted.
 Settings.GameSaving.AutoSavingOn,Autozapis,
 Settings.GameSaving.Header,Zapisywanie,
+Settings.Graphics.AnisotropicTextures,Tekstury anizotropowe,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,Antyaliasing,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,Poświata,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,Jakość grafiki,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,Jakość oświetlenia,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,Gotowe ustawienia,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,Własne ustawienia,Label for custom graphics quality option
+Settings.Graphics.Quality.High,Wysoka,Label for high quality graphics option
+Settings.Graphics.Quality.Low,Niska,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,Średnia,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,Wyłączono,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,Włączono,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,Ultra,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,Jakość cieni,Label for shadow quality option
+Settings.Graphics.TextureQuality,Jakość tekstur,Label for texture quality option
+Settings.Graphics.WaterQuality,Jakość wody,"Label for water quality dropdown, used in graphics settings panel"
 Settings.Header,Ustawienia,
 Settings.Input.DragCamera,Przeciąganie kamery,
 Settings.Input.EdgePanCamera,Przewijanie do krawędzi,"When this option is enabled, player can move camera by moving mouse to screen edge"
@@ -1499,6 +1518,7 @@ Settings.Screen.Quality.Low,Niska,Please keep short
 Settings.Screen.Quality.Medium,Średnia,Please keep short
 Settings.Screen.Quality.Ultra,Ultra,Please keep short
 Settings.Screen.ResolutionScale,Skalowanie obrazu,Please keep short
+Settings.Screen.ScreenHeader,Ekran,Section label in settings panel
 Settings.Screen.ScreenResolution,Rozdzielczość ekranu,
 Settings.Screen.VSync,Synchronizacja pionowa,Label of a dropdown for choosing a VSync mode.
 Settings.Screen.VSync.0,Wyłączono,A dropdown item indicating VSync mode.
@@ -1591,6 +1611,7 @@ SteamWorkshop.Preview,Podgląd,Label of the preview of the item to be uploaded t
 SteamWorkshop.RefreshThumbnail,Odśwież,Label of a button that tries to load the preview of the item to be uploaded to Steam Workshop.
 SteamWorkshop.ShowWorkshopItem,Otwórz w Warsztacie Steam,Label of the button that opens the Steam Workshop page of the item that has been uploaded to Steam Workshop.
 SteamWorkshop.SteamMapTooltip,Mapa z Warsztatu Steam,Tooltip on the map icon that indicates that the map is from Steam Workshop.
+SteamWorkshop.Tags,Tagi,Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags
 SteamWorkshop.Update,Aktualizuj,Label of the checkbox that determines whether certain elements of the item to be uploaded to Steam Workshop should be updated.
 SteamWorkshop.UploadAsNew,Wyślij jako nową,Label of the checkbox that determines whether the item to be uploaded to Steam Workshop should be uploaded as a new item or as an update to an existing item.
 SteamWorkshop.UploadButton,Wyślij,Text on the button that starts uploading the item to Steam Workshop.

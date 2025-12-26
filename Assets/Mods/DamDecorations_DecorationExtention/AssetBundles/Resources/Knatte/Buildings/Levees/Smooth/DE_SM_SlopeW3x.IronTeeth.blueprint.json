@@ -163,7 +163,7 @@
     "Flippable": false
   },
   "PlaceableBlockObjectSpec": {
-    "ToolGroupId": "DE_sM_BW_Levee",
+    "ToolGroupId": "DE_SM_BW_Levee",
     "ToolOrder": 72,
     "ToolShape": "Square",
     "Layout": "Rectangle",
@@ -267,7 +267,7 @@
     "#Unfinished": {
       "Children": {
         "ConstructionSite1x1 1#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
         }
       }
     }

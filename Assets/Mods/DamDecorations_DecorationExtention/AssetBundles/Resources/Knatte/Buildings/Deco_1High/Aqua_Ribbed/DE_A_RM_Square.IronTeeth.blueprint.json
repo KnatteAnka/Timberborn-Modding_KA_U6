@@ -69,7 +69,7 @@
     "Flippable": false
   },
   "PlaceableBlockObjectSpec": {
-    "ToolGroupId": "DE_A_RM_BW_Dec1",
+    "ToolGroupId": "DE_A_RM_BW_Dec3",
     "ToolOrder": 5,
     "ToolShape": "Square",
     "Layout": "Rectangle",
@@ -155,7 +155,7 @@
     "#Unfinished": {
       "Children": {
         "ConstructionSite1x1 1#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
         },
         "ConstructionStage0 (1)": {
           "Children": {

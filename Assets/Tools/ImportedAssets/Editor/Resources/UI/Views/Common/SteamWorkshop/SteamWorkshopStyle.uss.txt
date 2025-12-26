@@ -1,11 +1,12 @@
 .steam-workshop-upload-panel {
     width: 1100px;
-    height: 480px;
+    height: 540px;
 }
 
 .steam-workshop-upload-panel__content {
     flex-direction: row;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    height: 100%;
 }
 
 .steam-workshop-upload-panel__content-column {
@@ -13,7 +14,8 @@
 }
 
 .steam-workshop-upload-panel__left-content {
-    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: space-between;
 }
 
 .steam-workshop-upload-panel__name-and-visibility {
@@ -22,7 +24,7 @@
 }
 
 .steam-workshop-upload-panel__name-content {
-    width: 50%;
+    width: 52%;
 }
 
 .steam-workshop-upload-panel__label {
@@ -52,12 +54,44 @@
 }
 
 .steam-workshop-upload-panel__description {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.steam-workshop-upload-panel__changelog {
     height: 90px;
 }
 
-.steam-workshop-upload-panel__changelog-label {
+.steam-workshop-upload-panel__changelog-and-tags {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.steam-workshop-upload-panel__description-and-changelog {
+    width: 100%;
+}
+
+.steam-workshop-upload-panel__non-updatable-label {
     height: 20px;
     margin-bottom: 3px;
+}
+
+.steam-workshop-upload-panel__tags-content {
+    width: 145px;
+    flex-shrink: 0;
+    margin-left: 14px;
+}
+
+.steam-workshop-upload-panel__tags-background {
+    --background-image: resource('UI/Images/Backgrounds/bg-input');
+    --background-slice-scale: 0.5;
+    --background-slice: 8;
+    flex-grow: 1;
+}
+
+.steam-workshop-upload-panel__tags {
+    height: 100%;
+    margin: 5px 0 5px 7px;
 }
 
 .steam-workshop-upload-panel__margin-bottom {
@@ -65,7 +99,8 @@
 }
 
 .steam-workshop-upload-panel__right-content {
-    flex-shrink: 0;
+    flex-grow: 1;
+    flex-direction: row;
 }
 
 .steam-workshop-upload-panel__thumbnail {
@@ -122,4 +157,12 @@
 
 .steam-workshop-upload-panel__spacer {
     width: 50%
+}
+
+.steam-workshop-tag {
+    width: 100%;
+}
+
+.steam-workshop-tag--margin {
+    margin-top: 6px;
 }

@@ -1,0 +1,59 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGPiles",
+    "Order": 10,
+    "NameLocKey": "Knatte.Subgroup_MGPiles.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGPiles",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Storage"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "2x2pileLeft",
+      "2x2pileLeftEP",
+      "2x2pileLeftFT",
+      "2x2pileLeftIT",
+      "2x2pileRight",
+      "2x2pileRightEP",
+      "2x2pileRightFT",
+      "2x2pileRightIT",
+      "ExtraLargeIndustrialPile.Emberpelts",
+      "ExtraLargeIndustrialPile.Folktails",
+      "ExtraLargeIndustrialPile.IronTeeth",
+      "ExtraLargeIndustrialPile.Whitepaws",
+      "ExtraLargePile.Emberpelts",
+      "ExtraLargePile.Folktails",
+      "ExtraLargePile.IronTeeth",
+      "ExtraLargePile.Whitepaws",
+      "GigargantuanPileEP",
+      "GigargantuanPileFT",
+      "GigargantuanPileIT",
+      "LargeIndustrialPile.Emberpelts",
+      "LargeIndustrialPile.Folktails",
+      "LargeIndustrialPile.IronTeeth",
+      "LargeIndustrialPile.Whitepaws",
+      "LargePile.Folktails",
+      "Longpile",
+      "LongpileEP",
+      "LongpileFT",
+      "LongpileIT",
+      "Pitpile",
+      "PitpileEP",
+      "PitpileFT",
+      "PitpileIT",
+      "SmallIndustrialPile.Emberpelts",
+      "SmallIndustrialPile.IronTeeth",
+      "SmallPile.Folktails",
+      "UndergroundPile.Emberpelts",
+      "UndergroundPile.Folktails",
+      "UndergroundPile.IronTeeth",
+      "UndergroundPile.Whitepaws"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

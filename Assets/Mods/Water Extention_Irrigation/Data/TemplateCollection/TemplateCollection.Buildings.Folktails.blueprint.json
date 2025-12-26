@@ -1,0 +1,10 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Buildings.Folktails",
+    "Blueprints#Append": [
+      "Knatte/Buildings/Water/Irrigation/IrrigationTower.Folktails.blueprint",
+      "Knatte/Buildings/Water/Irrigation/BigIrrigationTower.Folktails.blueprint",
+      "Knatte/Buildings/Water/Irrigation/IrrigationTowerV2.Folktails.blueprint",
+    ]
+  }
+}

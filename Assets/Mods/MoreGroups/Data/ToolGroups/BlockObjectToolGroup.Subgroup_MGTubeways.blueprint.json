@@ -1,0 +1,31 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGTubeways",
+    "Order": 37,
+    "NameLocKey": "Knatte.Subgroup_MGTubeways.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGTubeways",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "Tubeway.Bridge2x1.IronTeeth",
+      "Tubeway.Bridge3x1.IronTeeth",
+      "Tubeway.Bridge4x1.IronTeeth",
+      "Tubeway.Bridge5x1.IronTeeth",
+      "Tubeway.Bridge6x1.IronTeeth",
+      "Tubeway.IronTeeth",
+      "TubewayLevee.IronTeeth",
+      "TubewayLeveeTunnel.IronTeeth",
+      "TubewayStation.IronTeeth",
+      "TubewayStation.Tiny.IronTeeth",
+      "VerticalTubeway.IronTeeth"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

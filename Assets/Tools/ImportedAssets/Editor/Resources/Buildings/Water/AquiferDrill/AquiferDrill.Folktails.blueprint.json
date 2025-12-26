@@ -115,7 +115,7 @@
         },
         {
           "MatterBelow": "Any",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -136,7 +136,7 @@
         },
         {
           "MatterBelow": "Any",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -178,7 +178,7 @@
         },
         {
           "MatterBelow": "Any",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -199,7 +199,7 @@
         },
         {
           "MatterBelow": "Any",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -384,54 +384,41 @@
           {
             "Center": {
               "X": 1.5,
-              "Y": 0.2,
-              "Z": 1.5
+              "Y": 0.9587828,
+              "Z": 0.454715073
             },
             "Size": {
-              "X": 3.0,
-              "Y": 0.4,
-              "Z": 1.0
+              "X": 1.01552629,
+              "Y": 1.89481592,
+              "Z": 0.883741856
             }
           },
           {
             "Center": {
               "X": 1.5,
-              "Y": 0.206315875,
-              "Z": 1.5
+              "Y": 2.46602821,
+              "Z": 0.8865489
             },
             "Size": {
-              "X": 1.0,
-              "Y": 0.4,
-              "Z": 3.0
-            }
-          },
-          {
-            "Center": {
-              "X": 1.50622809,
-              "Y": 2.00519586,
-              "Z": 1.48748076
-            },
-            "Size": {
-              "X": 0.433144927,
-              "Y": 3.33972216,
-              "Z": 0.336705923
-            }
-          },
-          {
-            "Center": {
-              "X": 1.50622809,
-              "Y": 1.3041296,
-              "Z": 0.439039171
-            },
-            "Size": {
-              "X": 1.00157714,
-              "Y": 1.77337551,
-              "Z": 0.849869967
+              "X": 0.414655447,
+              "Y": 1.10694933,
+              "Z": 0.883741856
             }
           }
         ],
         "SphereColliders": [],
-        "CapsuleColliders": []
+        "CapsuleColliders": [
+          {
+            "Center": {
+              "X": 1.49652123,
+              "Y": 1.81193137,
+              "Z": 1.48309934
+            },
+            "Radius": 0.281885862,
+            "Height": 3.285083,
+            "Axis": "Y"
+          }
+        ]
       }
     },
     "#Unfinished": {
@@ -445,18 +432,6 @@
           },
           "CollidersSpec": {
             "BoxColliders": [
-              {
-                "Center": {
-                  "X": 1.5,
-                  "Y": 0.05,
-                  "Z": 1.5
-                },
-                "Size": {
-                  "X": 3.0,
-                  "Y": 0.1,
-                  "Z": 3.0
-                }
-              },
               {
                 "Center": {
                   "X": 1.5,

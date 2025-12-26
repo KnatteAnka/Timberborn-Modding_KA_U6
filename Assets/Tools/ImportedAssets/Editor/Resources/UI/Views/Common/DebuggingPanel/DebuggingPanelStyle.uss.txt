@@ -6,9 +6,32 @@
     padding: 2px;
 }
 
+.debugging-panel__dragging-icon {
+    background-image: resource('UI/Images/Core/dragging-icon-yellow');
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.debugging-panel__minimize-icon {
+    background-image: resource('UI/Images/Core/minimize-icon-yellow');
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.debugging-panel__minimize-icon:hover {
+    -unity-background-image-tint-color: black;
+}
+
 .debugging-panel__title {
     -unity-text-align: middle-center;
     padding: 5px;
+    margin-right: 32px;
 }
 
 .debugging-panel-item {
@@ -86,7 +109,7 @@
 
 .object-selector__search-field {
     flex-grow: 1;
-    margin-bottom: 4px;
+    margin: 4px 0;
 }
 
 .object-selector__item:hover {

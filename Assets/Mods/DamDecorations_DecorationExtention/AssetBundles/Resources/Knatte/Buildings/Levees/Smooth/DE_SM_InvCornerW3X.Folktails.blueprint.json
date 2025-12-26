@@ -47,8 +47,6 @@
       "BlockSpecs": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Top, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -56,8 +54,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Top, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -65,8 +61,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path, Middle",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -87,7 +81,7 @@
     "Flippable": false
   },
   "PlaceableBlockObjectSpec": {
-    "ToolGroupId": "DE_sM_BW_Levee",
+    "ToolGroupId": "DE_SM_BW_Levee",
     "ToolOrder": 75,
     "ToolShape": "Square",
     "Layout": "Rectangle",
@@ -155,7 +149,7 @@
     "#Unfinished": {
       "Children": {
         "ConstructionSite1x1 1#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
         }
       }
     }

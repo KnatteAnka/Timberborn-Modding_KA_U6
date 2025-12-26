@@ -1,0 +1,65 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGStaircase",
+    "Order": 29,
+    "NameLocKey": "Knatte.Subgroup_MGStaircase.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGStaircase",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "DD_SlopeStairs.Emberpelts",
+      "DD_SlopeStairs.Folktails",
+      "DD_SlopeStairs.IronTeeth",
+      "Ladder.Emberpelts",
+      "Ladder.Folktails",
+      "Ladder.IronTeeth",
+      "Ladder",
+      "LogLadder.Emberpelts",
+      "LogLadder.Folktails",
+      "LogLadder.IronTeeth",
+      "LogLadder",
+      "Logstairs",
+      "Logstairs1",
+      "Logstairs2",
+      "Logstairs3",
+      "Logstairs_Birch",
+      "Logstairs_Brown",
+      "Logstairs_Pink",
+      "Logstairs_Scrambled",
+      "MetalSpiralStaircase.Emberpelts",
+      "MetalSpiralStaircase.Folktails",
+      "MetalSpiralStaircase.IronTeeth",
+      "MetalStaircase.Emberpelts",
+      "MetalStaircase.Folktails",
+      "MetalStaircase.IronTeeth",
+      "MetalStaircase",
+      "Slope1",
+      "SpiralStaircase.Emberpelts",
+      "SpiralStaircase.Folktails",
+      "SpiralStaircase.IronTeeth",
+      "StaircaseLog.Emberpelts",
+      "StaircaseLog.Folktails",
+      "StaircaseLog.IronTeeth",
+      "UTurnStairs.Emberpelts",
+      "UTurnStairs.Folktails",
+      "UTurnStairs.IronTeeth",
+      "WoodenStairs.Emberpelts",
+      "WoodenStairs.Folktails",
+      "WoodenStairs.IronTeeth",
+      "Stairs.Folktails",
+      "Stairs.IronTeeth",
+      "SpiralStairs.Folktails",
+      "SpiralStairs.IronTeeth",
+      "Stairs.Emberpelts",
+      "SpiralStairs.Emberpelts"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

@@ -1,8 +1,7 @@
-10.0.0 
-* Add support to V 1.0
-
+1.0.1.3 
+* Fix crash on MacOS
 
 ---
 MinimumGameVersion: 0.6.4.0
-MaximumGameVersion: 1.0.9.9
+MaximumGameVersion: 1.0.99.9
 ---

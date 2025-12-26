@@ -1,0 +1,14 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "DE_SM_BW_Dec3",
+    "Order": 4,
+    "NameLocKey": "Knatte.DE_SMCategoryDamSQ.DisplayName",
+    "Icon": "Knatte/Sprites/DE_SM_CategorySQ",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "KnatteDecorationBlocks"
+    ]
+  }
+}

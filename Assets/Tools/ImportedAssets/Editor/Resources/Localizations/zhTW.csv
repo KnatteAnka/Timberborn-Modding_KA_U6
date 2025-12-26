@@ -94,6 +94,8 @@ Building.BadwaterPump.FlavorDescription,「真希望額外的保護措施包括�
 Building.BadwaterRig.Description,封住一處惡水源頭。需僱用勞工直接在此源頭抽取惡水。,"Badwater Source must be the same as Building.BadwaterSource.DisplayName, Badwater must be the same as Good.Badwater.DisplayName."
 Building.BadwaterRig.DisplayName,惡水鑽井,Name of the building that stops flow from badwater source and generates Good.Badwater.DisplayName goods (by extracting them from source). It's a mechanical building that needs workers to operate. Badwater must be the same as Good.Badwater.DisplayName
 Building.BadwaterRig.FlavorDescription,在滾滾惡水源頭上方工作的河狸會感受到持續性的壓力。,Play on words with pressure referring to both water pressure and stress. If possible try to adapt the phrase to fit your language.
+Building.BadwaterSeep.Description,水壓有限的惡水源頭。,
+Building.BadwaterSeep.DisplayName,惡水點,"A building that allows badwater to seep through, creating a natural badwater source."
 Building.BadwaterSource.DisplayName,惡水源頭,A crack or spring in the ground spuming badwater. Badwater should be the same as Good.Badwater.DisplayName.
 Building.BadwaterSource.FlavorDescription,「為什麼我們要清理人類的爛攤子？哦，對，因為他們都死了。」——小松,
 Building.ContaminationBarrier.Description,阻止土壤汙染在其下方蔓延。,Ideally all uses of the word contaminate/contamination/contaminated should be uniform across the project.
@@ -529,7 +531,6 @@ Building.SuspensionBridge3x1.DisplayName,吊橋 3x1,Numbers at the end denote si
 Building.SuspensionBridge4x1.DisplayName,吊橋 4x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge5x1.DisplayName,吊橋 5x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge6x1.DisplayName,吊橋 6x1,Numbers at the end denote size X by Y
-Building.SuspensionBridgeMetal.FlavorDescription,跟看上去一樣堅固。,
 Building.SwimmingPool.Description,一座游泳池。,
 Building.SwimmingPool.DisplayName,游泳池,
 Building.SwimmingPoll.FlavorDescription,「雖然玩得很開心，但現在該來訓練一下你的尾式泳姿了！」——小松,"Backstroke is a swimming style, but beavers also have tails. Pina is a younger beaver figure that's exploring the world and isn't related to any faction in particular. Pina as a name relates to the pine tree, the translated name shouldn't suggest a gender if possible."
@@ -1461,12 +1462,30 @@ Saving.TakenName,已有相同名稱的定居地。,Error message shown after inp
 Saving.Autosave,自動儲存,Name of the autosaved game
 Saving.CycleUnknown,未知週期,"Text shown in old save games labels that don't have cycle information. ""Cycle"" should be the same as in Weather.CycleAndDayLong"
 Science.SciencePoints,科學點數,The name of a resource which can be spent to unlock new technology
+Settings.Accessibility.Header,輔助功能,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,停用星空旋轉,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
 Settings.Analytics.Header,資料分析,Header for the data collection/analytics consent section.
 Settings.Analytics.ConsentToggle,資料分析已啟用,Selected when giving consent to data collection/analytics.
 Settings.Analytics.DeleteData,刪除已收集的資料,Selected when withdrawing consent to data collection/analytics.
 Settings.Analytics.DataDeleted,已刪除收集的資料。,Confirmation info that the collected data has been deleted.
 Settings.GameSaving.AutoSavingOn,自動儲存,
 Settings.GameSaving.Header,正在儲存,
+Settings.Graphics.AnisotropicTextures,各向異性紋理,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,反鋸齒,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,光暈,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,圖像品質,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,光線品質,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,預設,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,自訂,Label for custom graphics quality option
+Settings.Graphics.Quality.High,高,Label for high quality graphics option
+Settings.Graphics.Quality.Low,低,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,中,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,關,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,開,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,極高,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,陰影品質,Label for shadow quality option
+Settings.Graphics.TextureQuality,紋理品質,Label for texture quality option
+Settings.Graphics.WaterQuality,水品質,"Label for water quality dropdown, used in graphics settings panel"
 Settings.Header,設定,
 Settings.Input.DragCamera,視角拖曳,
 Settings.Input.EdgePanCamera,畫面邊緣捲動,"When this option is enabled, player can move camera by moving mouse to screen edge"
@@ -1499,6 +1518,7 @@ Settings.Screen.Quality.Low,低,Please keep short
 Settings.Screen.Quality.Medium,中,Please keep short
 Settings.Screen.Quality.Ultra,極高,Please keep short
 Settings.Screen.ResolutionScale,解析度比例,Please keep short
+Settings.Screen.ScreenHeader,螢幕,Section label in settings panel
 Settings.Screen.ScreenResolution,螢幕解析度,
 Settings.Screen.VSync,垂直同步,Label of a dropdown for choosing a VSync mode.
 Settings.Screen.VSync.0,關,A dropdown item indicating VSync mode.
@@ -1591,6 +1611,7 @@ SteamWorkshop.Preview,預覽,Label of the preview of the item to be uploaded to 
 SteamWorkshop.RefreshThumbnail,重新整理,Label of a button that tries to load the preview of the item to be uploaded to Steam Workshop.
 SteamWorkshop.ShowWorkshopItem,在 Steam 工作坊開啟,Label of the button that opens the Steam Workshop page of the item that has been uploaded to Steam Workshop.
 SteamWorkshop.SteamMapTooltip,Steam 工作坊地圖,Tooltip on the map icon that indicates that the map is from Steam Workshop.
+SteamWorkshop.Tags,標籤,Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags
 SteamWorkshop.Update,更新,Label of the checkbox that determines whether certain elements of the item to be uploaded to Steam Workshop should be updated.
 SteamWorkshop.UploadAsNew,上傳為新模組,Label of the checkbox that determines whether the item to be uploaded to Steam Workshop should be uploaded as a new item or as an update to an existing item.
 SteamWorkshop.UploadButton,上傳,Text on the button that starts uploading the item to Steam Workshop.

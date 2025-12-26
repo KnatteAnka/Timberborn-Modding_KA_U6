@@ -1,6 +1,6 @@
-10.0.1
-* only V1
-* Added support to mod: Logstairs, Bob platforms
+1.0.1.0 
+* Update to 1.0.5.x for the game
+
 
 
 

@@ -8,7 +8,7 @@
         "Amount": 12
       }
     ],
-    "ScienceCost": 20,
+    "ScienceCost": 0,
     "PlaceFinished": false,
     "FinishableWithBeaversOnSite": false,
     "DrawRangeBoundsOnIt": false
@@ -68,7 +68,7 @@
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Decoration",
-    "ToolOrder": 20,
+    "ToolOrder": 10,
     "ToolShape": "Square",
     "Layout": "Single",
     "CustomPivot": {

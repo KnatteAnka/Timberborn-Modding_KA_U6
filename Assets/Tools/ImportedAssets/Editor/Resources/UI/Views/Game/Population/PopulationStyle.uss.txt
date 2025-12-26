@@ -338,6 +338,10 @@
     --background-image: resource('UI/Images/Backgrounds/bg-striped-3');
 }
 
+.basic-statistics__wellbeing-counter.highlight {
+    --background-image: resource('UI/Images/Backgrounds/bg-striped-6');
+}
+
 .basic-statistics__bot > Label {
     background-image: resource('UI/Images/Game/ico-bot');
     padding: 0;

@@ -13,11 +13,15 @@ Knatte.PipeU.Description,"Levees on both sides of the pipe and a input and outpu
 Pipe going underground between Levees
 Leeve need to be powered but also act as transfer
 Do not place Levees in hex above the Output Pipe! it will crash!",-
+//,//,-
 Knatte.CategoryPipe.DisplayName,Straight Pipes,-
 Knatte.CategoryPipe.Description,Pipes that go overground,-
 Knatte.CategoryPipeU.DisplayName,Underground Pipes,-
 Knatte.CategoryPipeU.Description,Pipes that need to go underground at the bend,-
 Knatte.CategoryHideWE.DisplayName,Unused Water Extention,-
+Knatte.CategoryAquaduct.DisplayName,Aquaducts,
+Knatte.CategoryAquaduct_Floors.DisplayName,Aquaduct Floors,
+//,//,-
 Knatte.Pipe1X.DisplayName,Pipe Outlet,-
 Knatte.Pipe1X.Description,"Two Levees and a input and output pipe. Leeve need to be powered but also act as transfer
 Do not place Levees in hex above the Output Pipe! it will crash!",-
@@ -41,6 +45,7 @@ No power needed and does not transfer
 Knatte.ValveH1X.DisplayName,OneWay Valve (H),
 Knatte.ValveH1X.Description,"High Volume Oneway Valve with levee in the middle
 No power needed and does not transfer",
+//,//,-
 Knatte.Aqueduct_S_1X.DisplayName,Aqueduct,-
 Knatte.Aqueduct_S_5X.DisplayName,Aqueduct 5 Long,-
 Knatte.Aqueduct_S.Description,Aqueduct with wall on one side. Also Stops water at the bottom.,-

@@ -47,9 +47,7 @@
       "BlockSpecs": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
@@ -159,7 +157,7 @@
     "#Unfinished": {
       "Children": {
         "ConstructionSite1x1 1#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
         },
         "ConstructionStage0 (1)": {
           "Children": {

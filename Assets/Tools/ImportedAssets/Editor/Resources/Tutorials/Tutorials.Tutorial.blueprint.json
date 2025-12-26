@@ -1,0 +1,27 @@
+{
+  "TutorialSpec": {
+    "Id": "BasicTutorial",
+    "NameLocKey": "Tutorial.PanelTitle",
+    "RequiredTutorialIds": [],
+    "SortOrder": 0,
+    "Stages": [
+      "PlaceLumberjacks",
+      "FinishLumberjacks",
+      "ConnectLumberjacks",
+      "MarkTrees",
+      "BuildWaterPump",
+      "BuildGatherer",
+      "BuildFarmhouse",
+      "MarkCarrots",
+      "BuildBasicStorage",
+      "ExpandStorage",
+      "BuildInventor",
+      "BuildLodges",
+      "BuildWaterWheel",
+      "BuildLumberMill",
+      "BuildForester",
+      "MarkBirchesForPlanting",
+      "KeepPlaying"
+    ]
+  }
+}

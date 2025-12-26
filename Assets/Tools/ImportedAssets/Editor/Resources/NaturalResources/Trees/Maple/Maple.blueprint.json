@@ -9,14 +9,14 @@
       "BlockSpecs": [
         {
           "MatterBelow": "Ground",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -269,6 +269,22 @@
             "#Dead": {
               "TimbermeshSpec": {
                 "Model": "NaturalResources/Trees/Maple/Mesh/MapleMatureDead"
+              },
+              "CollidersSpec": {
+                "BoxColliders": [],
+                "SphereColliders": [],
+                "CapsuleColliders": [
+                  {
+                    "Center": {
+                      "X": 0.5,
+                      "Y": 0.71,
+                      "Z": 0.5
+                    },
+                    "Radius": 0.25,
+                    "Height": 1.79,
+                    "Axis": "Y"
+                  }
+                ]
               }
             }
           }

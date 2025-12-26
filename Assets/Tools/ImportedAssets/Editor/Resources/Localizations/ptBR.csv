@@ -94,6 +94,8 @@ Building.BadwaterPump.FlavorDescription,"""Eu queria que as medidas extras de pr
 Building.BadwaterRig.Description,Sela uma nascente de água ruim. Emprega trabalhadores que extraem água ruim diretamente da nascente.,"Badwater Source must be the same as Building.BadwaterSource.DisplayName, Badwater must be the same as Good.Badwater.DisplayName."
 Building.BadwaterRig.DisplayName,Plataforma de água ruim,Name of the building that stops flow from badwater source and generates Good.Badwater.DisplayName goods (by extracting them from source). It's a mechanical building that needs workers to operate. Badwater must be the same as Good.Badwater.DisplayName
 Building.BadwaterRig.FlavorDescription,Quem trabalha com fontes ferventes de água ruim vive sob pressão.,Play on words with pressure referring to both water pressure and stress. If possible try to adapt the phrase to fit your language.
+Building.BadwaterSeep.Description,Uma nascente de água ruim com pressão limitada.,
+Building.BadwaterSeep.DisplayName,Olho-d'água ruim,"A building that allows badwater to seep through, creating a natural badwater source."
 Building.BadwaterSource.DisplayName,Nascente de água ruim,A crack or spring in the ground spuming badwater. Badwater should be the same as Good.Badwater.DisplayName.
 Building.BadwaterSource.FlavorDescription,"""Por que temos que limpar a bagunça dos humanos? Ah, é… já morreram todos."" (Pina)",
 Building.ContaminationBarrier.Description,Impede que a contaminação do solo se espalhe sob a superfície.,Ideally all uses of the word contaminate/contamination/contaminated should be uniform across the project.
@@ -529,7 +531,6 @@ Building.SuspensionBridge3x1.DisplayName,Ponte suspensa 3x1,Numbers at the end d
 Building.SuspensionBridge4x1.DisplayName,Ponte suspensa 4x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge5x1.DisplayName,Ponte suspensa 5x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge6x1.DisplayName,Ponte suspensa 6x1,Numbers at the end denote size X by Y
-Building.SuspensionBridgeMetal.FlavorDescription,Tão resistente quanto parece.,
 Building.SwimmingPool.Description,Uma piscina.,
 Building.SwimmingPool.DisplayName,Piscina,
 Building.SwimmingPoll.FlavorDescription,"""Nada mal, mas precisamos trabalhar seu nado de cauda!"" (Pina)","Backstroke is a swimming style, but beavers also have tails. Pina is a younger beaver figure that's exploring the world and isn't related to any faction in particular. Pina as a name relates to the pine tree, the translated name shouldn't suggest a gender if possible."
@@ -1461,12 +1462,30 @@ Saving.TakenName,Já existe um assentamento com este nome.,Error message shown a
 Saving.Autosave,Salvamento automático,Name of the autosaved game
 Saving.CycleUnknown,Ciclo desconhecido,"Text shown in old save games labels that don't have cycle information. ""Cycle"" should be the same as in Weather.CycleAndDayLong"
 Science.SciencePoints,Pontos de pesquisa,The name of a resource which can be spent to unlock new technology
+Settings.Accessibility.Header,Acessibilidade,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,Desabilitar rotação das estrelas,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
 Settings.Analytics.Header,Analytics,Header for the data collection/analytics consent section.
 Settings.Analytics.ConsentToggle,Analytics habilitado,Selected when giving consent to data collection/analytics.
 Settings.Analytics.DeleteData,Excluir dados coletados,Selected when withdrawing consent to data collection/analytics.
 Settings.Analytics.DataDeleted,Dados coletados excluídos.,Confirmation info that the collected data has been deleted.
 Settings.GameSaving.AutoSavingOn,Salvamento automático,
 Settings.GameSaving.Header,Salvando,
+Settings.Graphics.AnisotropicTextures,Texturas anisotrópicas,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,Antisserrilhamento,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,Incandescência,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,Qualidade gráfica,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,Qualidade de iluminação,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,Predefinida,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,Personalizada,Label for custom graphics quality option
+Settings.Graphics.Quality.High,Alta,Label for high quality graphics option
+Settings.Graphics.Quality.Low,Baixa,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,Média,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,Desligado,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,Ligado,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,Ultra,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,Qualidade de sombra,Label for shadow quality option
+Settings.Graphics.TextureQuality,Qualidade de textura,Label for texture quality option
+Settings.Graphics.WaterQuality,Qualidade de água,"Label for water quality dropdown, used in graphics settings panel"
 Settings.Header,Configurações,
 Settings.Input.DragCamera,Arrasto da câmera,
 Settings.Input.EdgePanCamera,Arrasto da borda,"When this option is enabled, player can move camera by moving mouse to screen edge"
@@ -1499,6 +1518,7 @@ Settings.Screen.Quality.Low,Baixa,Please keep short
 Settings.Screen.Quality.Medium,Média,Please keep short
 Settings.Screen.Quality.Ultra,Ultra,Please keep short
 Settings.Screen.ResolutionScale,Escala de resolução,Please keep short
+Settings.Screen.ScreenHeader,Tela,Section label in settings panel
 Settings.Screen.ScreenResolution,Resolução de tela,
 Settings.Screen.VSync,VSync,Label of a dropdown for choosing a VSync mode.
 Settings.Screen.VSync.0,Desligado,A dropdown item indicating VSync mode.
@@ -1591,6 +1611,7 @@ SteamWorkshop.Preview,Prévia,Label of the preview of the item to be uploaded to
 SteamWorkshop.RefreshThumbnail,Atualizar,Label of a button that tries to load the preview of the item to be uploaded to Steam Workshop.
 SteamWorkshop.ShowWorkshopItem,Abrir na Oficina Steam,Label of the button that opens the Steam Workshop page of the item that has been uploaded to Steam Workshop.
 SteamWorkshop.SteamMapTooltip,Mapa da Oficina Steam,Tooltip on the map icon that indicates that the map is from Steam Workshop.
+SteamWorkshop.Tags,Marcadores,Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags
 SteamWorkshop.Update,Atualizar,Label of the checkbox that determines whether certain elements of the item to be uploaded to Steam Workshop should be updated.
 SteamWorkshop.UploadAsNew,Enviar como novo,Label of the checkbox that determines whether the item to be uploaded to Steam Workshop should be uploaded as a new item or as an update to an existing item.
 SteamWorkshop.UploadButton,Enviar,Text on the button that starts uploading the item to Steam Workshop.

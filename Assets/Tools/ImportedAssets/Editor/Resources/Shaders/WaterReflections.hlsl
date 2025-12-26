@@ -12,7 +12,7 @@
                             float contamination,
                             float waterfallMask,
                             out float3 reflectionColor) {
-  #if _WATER_REFLECTIONS_ENABLED
+  #if _HIGH_QUALITY_WATER_ENABLED
   cameraDirection = normalize(cameraDirection);
 
   #if SHADERGRAPH_PREVIEW

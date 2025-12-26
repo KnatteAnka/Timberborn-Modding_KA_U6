@@ -1,0 +1,14 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "DE_SM_BW_LeveeSQ",
+    "Order": 23,
+    "NameLocKey": "Knatte.DE_SMCategoryLeveesSQ.DisplayName",
+    "Icon": "Knatte/Sprites/DE_SM_CategoryLevees_SQ",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Landscaping"
+    ]
+  }
+}

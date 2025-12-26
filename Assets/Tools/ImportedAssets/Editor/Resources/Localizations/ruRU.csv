@@ -94,6 +94,8 @@ Building.BadwaterPump.FlavorDescription,«Защитные средства до
 Building.BadwaterRig.Description,"Перекрывает источник плохой воды. Даёт работу исполнителям, которые извлекают плохую воду из источника.","Badwater Source must be the same as Building.BadwaterSource.DisplayName, Badwater must be the same as Good.Badwater.DisplayName."
 Building.BadwaterRig.DisplayName,Колонка для плохой воды,Name of the building that stops flow from badwater source and generates Good.Badwater.DisplayName goods (by extracting them from source). It's a mechanical building that needs workers to operate. Badwater must be the same as Good.Badwater.DisplayName
 Building.BadwaterRig.FlavorDescription,"Бобры, работающие над кипящим источником плохой воды, постоянно находятся под давлением.",Play on words with pressure referring to both water pressure and stress. If possible try to adapt the phrase to fit your language.
+Building.BadwaterSeep.Description,Источник плохой воды с ограниченным напором.,
+Building.BadwaterSeep.DisplayName,Прослойка плохой воды,"A building that allows badwater to seep through, creating a natural badwater source."
 Building.BadwaterSource.DisplayName,Источник плохой воды,A crack or spring in the ground spuming badwater. Badwater should be the same as Good.Badwater.DisplayName.
 Building.BadwaterSource.FlavorDescription,"«Почему нам всегда приходится убирать за человеками? А, ну да, они же все мертвы» (Пина).",
 Building.ContaminationBarrier.Description,Не даёт заражению почвы распространяться.,Ideally all uses of the word contaminate/contamination/contaminated should be uniform across the project.
@@ -529,7 +531,6 @@ Building.SuspensionBridge3x1.DisplayName,Подвесной мост 3х1,Number
 Building.SuspensionBridge4x1.DisplayName,Подвесной мост 4х1,Numbers at the end denote size X by Y
 Building.SuspensionBridge5x1.DisplayName,Подвесной мост 5х1,Numbers at the end denote size X by Y
 Building.SuspensionBridge6x1.DisplayName,Подвесной мост 6х1,Numbers at the end denote size X by Y
-Building.SuspensionBridgeMetal.FlavorDescription,Выглядит надёжно — так и есть.,
 Building.SwimmingPool.Description,Плавательный бассейн.,
 Building.SwimmingPool.DisplayName,Бассейн,
 Building.SwimmingPoll.FlavorDescription,"«Неплохо, но хвостом надо грести интенсивнее!» (Пина).","Backstroke is a swimming style, but beavers also have tails. Pina is a younger beaver figure that's exploring the world and isn't related to any faction in particular. Pina as a name relates to the pine tree, the translated name shouldn't suggest a gender if possible."
@@ -1461,12 +1462,30 @@ Saving.TakenName,Поселение с таким названием уже су
 Saving.Autosave,Автосохранение,Name of the autosaved game
 Saving.CycleUnknown,Нет данных о цикле,"Text shown in old save games labels that don't have cycle information. ""Cycle"" should be the same as in Weather.CycleAndDayLong"
 Science.SciencePoints,Очки науки,The name of a resource which can be spent to unlock new technology
+Settings.Accessibility.Header,Спецвозможности,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,Выключить вращение звёздного неба,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
 Settings.Analytics.Header,Аналитика,Header for the data collection/analytics consent section.
 Settings.Analytics.ConsentToggle,Аналитика включена,Selected when giving consent to data collection/analytics.
 Settings.Analytics.DeleteData,Удалить собранные данные,Selected when withdrawing consent to data collection/analytics.
 Settings.Analytics.DataDeleted,Собранные данные удалены.,Confirmation info that the collected data has been deleted.
 Settings.GameSaving.AutoSavingOn,Автосохранение,
 Settings.GameSaving.Header,Сохранение,
+Settings.Graphics.AnisotropicTextures,Анизотропные текстуры,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,Сглаживание,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,Эффект свечения,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,Качество изображения,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,Качество освещения,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,Набор настроек,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,Свои настройки,Label for custom graphics quality option
+Settings.Graphics.Quality.High,Высокое,Label for high quality graphics option
+Settings.Graphics.Quality.Low,Низкое,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,Среднее,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,Выкл.,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,Вкл.,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,Ультра,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,Качество теней,Label for shadow quality option
+Settings.Graphics.TextureQuality,Качество текстур,Label for texture quality option
+Settings.Graphics.WaterQuality,Качество воды,"Label for water quality dropdown, used in graphics settings panel"
 Settings.Header,Настройки,
 Settings.Input.DragCamera,Перетаскивание камеры,
 Settings.Input.EdgePanCamera,Прокрутка с краю,"When this option is enabled, player can move camera by moving mouse to screen edge"
@@ -1499,6 +1518,7 @@ Settings.Screen.Quality.Low,Низкое,Please keep short
 Settings.Screen.Quality.Medium,Среднее,Please keep short
 Settings.Screen.Quality.Ultra,Ультра,Please keep short
 Settings.Screen.ResolutionScale,Масштабирование разрешения,Please keep short
+Settings.Screen.ScreenHeader,Экран,Section label in settings panel
 Settings.Screen.ScreenResolution,Разрешение экрана,
 Settings.Screen.VSync,Вертикальная синхронизация,Label of a dropdown for choosing a VSync mode.
 Settings.Screen.VSync.0,Откл.,A dropdown item indicating VSync mode.
@@ -1591,6 +1611,7 @@ SteamWorkshop.Preview,Изображение,Label of the preview of the item to
 SteamWorkshop.RefreshThumbnail,Обновить,Label of a button that tries to load the preview of the item to be uploaded to Steam Workshop.
 SteamWorkshop.ShowWorkshopItem,Открыть в мастерской Steam,Label of the button that opens the Steam Workshop page of the item that has been uploaded to Steam Workshop.
 SteamWorkshop.SteamMapTooltip,Карта мастерской Steam,Tooltip on the map icon that indicates that the map is from Steam Workshop.
+SteamWorkshop.Tags,Метки,Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags
 SteamWorkshop.Update,Обновить,Label of the checkbox that determines whether certain elements of the item to be uploaded to Steam Workshop should be updated.
 SteamWorkshop.UploadAsNew,Отправить как новый,Label of the checkbox that determines whether the item to be uploaded to Steam Workshop should be uploaded as a new item or as an update to an existing item.
 SteamWorkshop.UploadButton,Отправить,Text on the button that starts uploading the item to Steam Workshop.

@@ -1,0 +1,14 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "DD_BW_Dec2",
+    "Order": 20,
+    "NameLocKey": "Knatte.CategoryDam2.DisplayName",
+    "Icon": "Knatte/Sprites/DD_CategoryInvSlope",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "KnatteDecorationBlocks"
+    ]
+  }
+}

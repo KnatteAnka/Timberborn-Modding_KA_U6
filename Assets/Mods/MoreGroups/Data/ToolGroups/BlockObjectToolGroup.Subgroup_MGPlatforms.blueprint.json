@@ -1,0 +1,61 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGPlatforms",
+    "Order": 30,
+    "NameLocKey": "Knatte.Subgroup_MGPlatforms.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGPlatforms",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "Crappyplatform_birch",
+      "Crappyplatform_brown",
+      "Crappyplatform_Pink",
+      "Crappyplatform_scramble",
+      "DoublePlatform.Emberpelts",
+      "DoublePlatform.Folktails",
+      "DoublePlatform.IronTeeth",
+      "Pillar.Emberpelts",
+      "Pillar.Folktails",
+      "Pillar.IronTeeth",
+      "Pillars.Emberpelts",
+      "Pillars.Folktail",
+      "Pillars.Folktails",
+      "Pillars.IronTeeth",
+      "PillarTop.Emberpelts",
+      "PillarTop.Folktails",
+      "PillarTop.IronTeeth",
+      "Pillar_1.Emberpelts",
+      "Pillar_1.Folktails",
+      "Pillar_1.IronTeeth",
+      "Pillar_2.Emberpelts",
+      "Pillar_2.Folktails",
+      "Pillar_2.IronTeeth",
+      "Pillar_3.Emberpelts",
+      "Pillar_3.Folktails",
+      "Pillar_3.IronTeeth",
+      "Pillar_4.Emberpelts",
+      "Pillar_4.Folktails",
+      "Pillar_4.IronTeeth",
+      "Platform.Emberpelts",
+      "Platform.Folktails",
+      "Platform.IronTeeth",
+      "StaircasePillar.Emberpelts",
+      "StaircasePillar.Folktails",
+      "StaircasePillar.IronTeeth",
+      "StaircasePlatform.Emberpelts",
+      "StaircasePlatform.Folktails",
+      "StaircasePlatform.IronTeeth",
+      "TriplePlatform.Emberpelts",
+      "TriplePlatform.Folktails",
+      "TriplePlatform.IronTeeth"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

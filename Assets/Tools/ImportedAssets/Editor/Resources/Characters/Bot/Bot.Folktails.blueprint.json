@@ -77,6 +77,16 @@
   "PlantingParticleControllerSpec": {
     "ParticlesAttachmentId": "Dirt.PlantingAnimation.Bot"
   },
+  "DemolishableParticleControllerSpec": {
+    "DemolishableParticles": [
+      {
+        "AttachmentId": "Thorns.DemolishAnimation.Beaver",
+        "TemplateNames": [
+          "Thorns"
+        ]
+      }
+    ]
+  },
   "WorkerOutfitAnimationAttachmentVisibilitySpec": {
     "WorkerOutfitAnimationAttachments": [
       {
@@ -108,6 +118,13 @@
       {
         "AnimationName": "Bot_building",
         "ParticlesAttachmentId": "Dust.BuildingAnimation",
+        "TriggerTimes": [
+          0.82
+        ]
+      },
+      {
+        "AnimationName": "Bot_building",
+        "ParticlesAttachmentId": "Thorns.DemolishAnimation.Beaver",
         "TriggerTimes": [
           0.82
         ]
@@ -1370,6 +1387,27 @@
         "AttachmentId": "ZiplineHarness.Bot",
         "Prefab": "Characters/Bot/Attachments/ZiplineHarness.Bot",
         "Parent": "#ZiplineHarness",
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "CreateInstantly": false
+      },
+      {
+        "AttachmentId": "Thorns.DemolishAnimation.Beaver",
+        "Prefab": "Characters/Attachments/ThornsAnimationDust",
+        "Parent": "#BuildingParticles",
         "Position": {
           "X": 0.0,
           "Y": 0.0,

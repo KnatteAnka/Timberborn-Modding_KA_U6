@@ -1,4 +1,4 @@
-﻿{
+{
   "TemplateSpec": {
     "TemplateName": "NaturalDam",
     "BackwardCompatibleTemplateNames": [],
@@ -15,7 +15,7 @@
       "BlockSpecs": [
         {
           "MatterBelow": "GroundOrStackable",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -84,6 +84,7 @@
     "UndergroundModelName": "",
     "UndergroundModelDepth": 0
   },
+  "BlockObjectNavMeshAdderSpec": {},
   "Children": {
     "#Model": {
       "TimbermeshSpec": {

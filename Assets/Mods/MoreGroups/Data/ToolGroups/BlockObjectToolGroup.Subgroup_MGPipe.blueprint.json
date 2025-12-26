@@ -1,0 +1,58 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGPipe",
+    "Order": 93,
+    "NameLocKey": "Knatte.Subgroup_MGPipe.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGPipe",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Water"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "PipeBox.Emberpelts",
+      "PipeBox.Folktails",
+      "PipeBox.IronTeeth",
+      "PipeBox.Whitepaws",
+      "PipeDownward.Emberpelts",
+      "PipeDownward.Folktails",
+      "PipeDownward.IronTeeth",
+      "PipeDownward.Whitepaws",
+      "PipeStraight.Emberpelts",
+      "PipeStraight.Folktails",
+      "PipeStraight.IronTeeth",
+      "PipeStraight.Whitepaws",
+      "PipeTIntersection.Emberpelts",
+      "PipeTIntersection.Folktails",
+      "PipeTIntersection.IronTeeth",
+      "PipeTIntersection.Whitepaws",
+      "PipeTurn.Emberpelts",
+      "PipeTurn.Folktails",
+      "PipeTurn.IronTeeth",
+      "PipeTurn.Whitepaws",
+      "PipeUpward.Emberpelts",
+      "PipeUpward.Folktails",
+      "PipeUpward.IronTeeth",
+      "PipeUpward.Whitepaws",
+      "PipeValve.Emberpelts",
+      "PipeValve.Folktails",
+      "PipeValve.IronTeeth",
+      "PipeVertical.Emberpelts",
+      "PipeVertical.Folktails",
+      "PipeVertical.IronTeeth",
+      "PipeVertical.Whitepaws",
+      "PipeWaterPump.Emberpelts",
+      "PipeWaterPump.Folktails",
+      "PipeWaterPump.IronTeeth",
+      "PipeXIntersection.Emberpelts",
+      "PipeXIntersection.Folktails",
+      "PipeXIntersection.IronTeeth",
+      "PipeXIntersection.Whitepaws"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

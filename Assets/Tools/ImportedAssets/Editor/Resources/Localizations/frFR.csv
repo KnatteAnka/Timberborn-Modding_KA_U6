@@ -94,6 +94,8 @@ Building.BadwaterPump.FlavorDescription,« Ah si seulement ces mesures de prote
 Building.BadwaterRig.Description,Scelle une source d’eau infectée. Emploie des ouvriers qui extraient l'eau infectée directement à la source.,"Badwater Source must be the same as Building.BadwaterSource.DisplayName, Badwater must be the same as Good.Badwater.DisplayName."
 Building.BadwaterRig.DisplayName,Plateforme à eau infectée,Name of the building that stops flow from badwater source and generates Good.Badwater.DisplayName goods (by extracting them from source). It's a mechanical building that needs workers to operate. Badwater must be the same as Good.Badwater.DisplayName
 Building.BadwaterRig.FlavorDescription,Ceux qui travaillent au-dessus d'une source d'eau infectée en ébullition sont soumis à une pression constante.,Play on words with pressure referring to both water pressure and stress. If possible try to adapt the phrase to fit your language.
+Building.BadwaterSeep.Description,Une source d'eau infectée à faible pression.,
+Building.BadwaterSeep.DisplayName,Infiltration d'eau infectée,"A building that allows badwater to seep through, creating a natural badwater source."
 Building.BadwaterSource.DisplayName,Source d’eau infectée,A crack or spring in the ground spuming badwater. Badwater should be the same as Good.Badwater.DisplayName.
 Building.BadwaterSource.FlavorDescription,"« Pourquoi c’est nous qui devons nettoyer les dégâts des humains ? Ah oui, parce qu’ils sont tous morts ». —Pina",
 Building.ContaminationBarrier.Description,Empêche la contamination du sol de se propager.,Ideally all uses of the word contaminate/contamination/contaminated should be uniform across the project.
@@ -529,7 +531,6 @@ Building.SuspensionBridge3x1.DisplayName,Pont suspendu 3x1,Numbers at the end de
 Building.SuspensionBridge4x1.DisplayName,Pont suspendu 4x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge5x1.DisplayName,Pont suspendu 5x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge6x1.DisplayName,Pont suspendu 6x1,Numbers at the end denote size X by Y
-Building.SuspensionBridgeMetal.FlavorDescription,Aussi solide qu'il en a l'air.,
 Building.SwimmingPool.Description,Une piscine.,
 Building.SwimmingPool.DisplayName,Piscine,
 Building.SwimmingPoll.FlavorDescription,"« On s'amuse bien, mais on devrait travailler ta queue crawlée ! » — Pina","Backstroke is a swimming style, but beavers also have tails. Pina is a younger beaver figure that's exploring the world and isn't related to any faction in particular. Pina as a name relates to the pine tree, the translated name shouldn't suggest a gender if possible."
@@ -1461,12 +1462,30 @@ Saving.TakenName,Une colonie possède déjà ce nom.,Error message shown after i
 Saving.Autosave,Sauvegarde auto,Name of the autosaved game
 Saving.CycleUnknown,Cycle inconnu,"Text shown in old save games labels that don't have cycle information. ""Cycle"" should be the same as in Weather.CycleAndDayLong"
 Science.SciencePoints,Points de science,The name of a resource which can be spent to unlock new technology
+Settings.Accessibility.Header,Accessibilité,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,Désactiver la rotation du ciel étoilé,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
 Settings.Analytics.Header,Analyse des données,Header for the data collection/analytics consent section.
 Settings.Analytics.ConsentToggle,Analyse des données autorisée,Selected when giving consent to data collection/analytics.
 Settings.Analytics.DeleteData,Supprimer les données collectées,Selected when withdrawing consent to data collection/analytics.
 Settings.Analytics.DataDeleted,Les données collectées ont été supprimées.,Confirmation info that the collected data has been deleted.
 Settings.GameSaving.AutoSavingOn,Sauvegarde auto,
 Settings.GameSaving.Header,Sauvegarde en cours,
+Settings.Graphics.AnisotropicTextures,Filtrage anisotrope,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,Anticrénelage,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,Flou lumineux,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,Qualité des graphismes,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,Qualité des lumières,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,Préréglage,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,Personnalisée,Label for custom graphics quality option
+Settings.Graphics.Quality.High,Élevée,Label for high quality graphics option
+Settings.Graphics.Quality.Low,Basse,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,Moyenne,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,Non,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,Oui,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,Ultra,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,Qualité des ombres,Label for shadow quality option
+Settings.Graphics.TextureQuality,Qualité des textures,Label for texture quality option
+Settings.Graphics.WaterQuality,Qualité de l'eau,"Label for water quality dropdown, used in graphics settings panel"
 Settings.Header,Options,
 Settings.Input.DragCamera,Mouvement de caméra,
 Settings.Input.EdgePanCamera,Défilement au bord,"When this option is enabled, player can move camera by moving mouse to screen edge"
@@ -1499,6 +1518,7 @@ Settings.Screen.Quality.Low,Basse,Please keep short
 Settings.Screen.Quality.Medium,Moyenne,Please keep short
 Settings.Screen.Quality.Ultra,Ultra,Please keep short
 Settings.Screen.ResolutionScale,Échelle de résolution,Please keep short
+Settings.Screen.ScreenHeader,Écran,Section label in settings panel
 Settings.Screen.ScreenResolution,Résolution d'écran,
 Settings.Screen.VSync,Synchronisation verticale,Label of a dropdown for choosing a VSync mode.
 Settings.Screen.VSync.0,Non,A dropdown item indicating VSync mode.
@@ -1591,6 +1611,7 @@ SteamWorkshop.Preview,Aperçu,Label of the preview of the item to be uploaded to
 SteamWorkshop.RefreshThumbnail,Rafraîchir,Label of a button that tries to load the preview of the item to be uploaded to Steam Workshop.
 SteamWorkshop.ShowWorkshopItem,Ouvrir dans le Workshop Steam,Label of the button that opens the Steam Workshop page of the item that has been uploaded to Steam Workshop.
 SteamWorkshop.SteamMapTooltip,Carte du Workshop Steam,Tooltip on the map icon that indicates that the map is from Steam Workshop.
+SteamWorkshop.Tags,Tags,Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags
 SteamWorkshop.Update,Mettre à jour,Label of the checkbox that determines whether certain elements of the item to be uploaded to Steam Workshop should be updated.
 SteamWorkshop.UploadAsNew,Charger en tant que nouveau,Label of the checkbox that determines whether the item to be uploaded to Steam Workshop should be uploaded as a new item or as an update to an existing item.
 SteamWorkshop.UploadButton,Charger,Text on the button that starts uploading the item to Steam Workshop.

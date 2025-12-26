@@ -94,6 +94,8 @@ Building.BadwaterPump.FlavorDescription,「追加の防護措置に鼻栓が入�
 Building.BadwaterRig.Description,汚水の源を封じる。水源から直接汚水を抽出する労働者を配置する。,"Badwater Source must be the same as Building.BadwaterSource.DisplayName, Badwater must be the same as Good.Badwater.DisplayName."
 Building.BadwaterRig.DisplayName,汚水装置,Name of the building that stops flow from badwater source and generates Good.Badwater.DisplayName goods (by extracting them from source). It's a mechanical building that needs workers to operate. Badwater must be the same as Good.Badwater.DisplayName
 Building.BadwaterRig.FlavorDescription,沸き立つ汚水源で働く者たちは、絶えずプレッシャーを感じている。,Play on words with pressure referring to both water pressure and stress. If possible try to adapt the phrase to fit your language.
+Building.BadwaterSeep.Description,水圧が制限された汚水の源。,
+Building.BadwaterSeep.DisplayName,汚水漏れ,"A building that allows badwater to seep through, creating a natural badwater source."
 Building.BadwaterSource.DisplayName,汚水の源,A crack or spring in the ground spuming badwater. Badwater should be the same as Good.Badwater.DisplayName.
 Building.BadwaterSource.FlavorDescription,「何でニンゲンが作り出したゴミの始末をしなければならないかって？ まぁ、アイツらはもうみんな死んでるからねぇ」—ピナ,
 Building.ContaminationBarrier.Description,地中の土壌汚染拡大を防ぐ。,Ideally all uses of the word contaminate/contamination/contaminated should be uniform across the project.
@@ -529,7 +531,6 @@ Building.SuspensionBridge3x1.DisplayName,吊り橋 3x1,Numbers at the end denote
 Building.SuspensionBridge4x1.DisplayName,吊り橋 4x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge5x1.DisplayName,吊り橋 5x1,Numbers at the end denote size X by Y
 Building.SuspensionBridge6x1.DisplayName,吊り橋 6x1,Numbers at the end denote size X by Y
-Building.SuspensionBridgeMetal.FlavorDescription,見た目どおりの頑丈さ。,
 Building.SwimmingPool.Description,スイミングプール。,
 Building.SwimmingPool.DisplayName,スイミングプール,
 Building.SwimmingPoll.FlavorDescription,「良いタイムだけど、まだまだ尻尾泳ぎの修行が必要だね！」—ピナ,"Backstroke is a swimming style, but beavers also have tails. Pina is a younger beaver figure that's exploring the world and isn't related to any faction in particular. Pina as a name relates to the pine tree, the translated name shouldn't suggest a gender if possible."
@@ -1461,12 +1462,30 @@ Saving.TakenName,もう既にこの名前の開拓地が存在します。,Error
 Saving.Autosave,自動保存,Name of the autosaved game
 Saving.CycleUnknown,サイクル不明,"Text shown in old save games labels that don't have cycle information. ""Cycle"" should be the same as in Weather.CycleAndDayLong"
 Science.SciencePoints,科学ポイント,The name of a resource which can be spent to unlock new technology
+Settings.Accessibility.Header,ユーザー補助,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,星空の回転を無効にする,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
 Settings.Analytics.Header,データ分析,Header for the data collection/analytics consent section.
 Settings.Analytics.ConsentToggle,データ分析を有効にしました,Selected when giving consent to data collection/analytics.
 Settings.Analytics.DeleteData,収集されたデータを削除,Selected when withdrawing consent to data collection/analytics.
 Settings.Analytics.DataDeleted,収集されたデータを削除しました。,Confirmation info that the collected data has been deleted.
 Settings.GameSaving.AutoSavingOn,自動保存,
 Settings.GameSaving.Header,保存,
+Settings.Graphics.AnisotropicTextures,異方性テクスチャ,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,アンチエイリアス,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,ブルーム,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,画質,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,光質,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,プリセット,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,カスタム,Label for custom graphics quality option
+Settings.Graphics.Quality.High,高い,Label for high quality graphics option
+Settings.Graphics.Quality.Low,低い,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,中,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,オフ,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,オン,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,最高,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,影の品質,Label for shadow quality option
+Settings.Graphics.TextureQuality,テクスチャ品質,Label for texture quality option
+Settings.Graphics.WaterQuality,水の品質,"Label for water quality dropdown, used in graphics settings panel"
 Settings.Header,設定,
 Settings.Input.DragCamera,カメラのドラッグ,
 Settings.Input.EdgePanCamera,エッジスクロール,"When this option is enabled, player can move camera by moving mouse to screen edge"
@@ -1499,6 +1518,7 @@ Settings.Screen.Quality.Low,低い,Please keep short
 Settings.Screen.Quality.Medium,中,Please keep short
 Settings.Screen.Quality.Ultra,最高,Please keep short
 Settings.Screen.ResolutionScale,解像度のスケール,Please keep short
+Settings.Screen.ScreenHeader,画面,Section label in settings panel
 Settings.Screen.ScreenResolution,解像度,
 Settings.Screen.VSync,VSync（垂直同期）,Label of a dropdown for choosing a VSync mode.
 Settings.Screen.VSync.0,オフ,A dropdown item indicating VSync mode.
@@ -1591,6 +1611,7 @@ SteamWorkshop.Preview,プレビュー,Label of the preview of the item to be upl
 SteamWorkshop.RefreshThumbnail,再読み込み,Label of a button that tries to load the preview of the item to be uploaded to Steam Workshop.
 SteamWorkshop.ShowWorkshopItem,Steam Workshopで開く,Label of the button that opens the Steam Workshop page of the item that has been uploaded to Steam Workshop.
 SteamWorkshop.SteamMapTooltip,Steam Workshop マップ,Tooltip on the map icon that indicates that the map is from Steam Workshop.
+SteamWorkshop.Tags,タグ,Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags
 SteamWorkshop.Update,アップデート,Label of the checkbox that determines whether certain elements of the item to be uploaded to Steam Workshop should be updated.
 SteamWorkshop.UploadAsNew,新規アイテムとしてアップロード,Label of the checkbox that determines whether the item to be uploaded to Steam Workshop should be uploaded as a new item or as an update to an existing item.
 SteamWorkshop.UploadButton,アップロード,Text on the button that starts uploading the item to Steam Workshop.

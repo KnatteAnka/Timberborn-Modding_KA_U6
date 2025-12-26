@@ -1,0 +1,14 @@
+{
+    "BlockObjectToolGroupSpec": {
+        "Id": "SubGroup_AqueductFloodGate",
+        "Order": 34,
+        "Icon": "knatte/ExtendedFloodgateIcons/Aqueduct_FloodgateCat",
+        "NameLocKey": "Knatte.Aqueduct_Floodgate.DisplayName",
+        "FallbackGroup": false
+    },
+    "ParentToolGroupSpec": {
+        "ParentIds": [
+            "Landscaping"
+        ]
+    }
+}

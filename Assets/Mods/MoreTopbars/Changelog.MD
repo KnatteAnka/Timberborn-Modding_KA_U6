@@ -1,5 +1,5 @@
-10.0.0
-* update to 1.0
+1.0.1.0
+* Update to 1.0.5.x for the game
 
 ---
 MinimumGameVersion: 0.7.9.0

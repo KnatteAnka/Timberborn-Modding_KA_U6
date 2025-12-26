@@ -94,6 +94,8 @@ Building.BadwaterPump.FlavorDescription,"""I wish the extra protective measures 
 Building.BadwaterRig.Description,Seals a Badwater Source. Employs workers who extract badwater directly from the source.,"Badwater Source must be the same as Building.BadwaterSource.DisplayName, Badwater must be the same as Good.Badwater.DisplayName."
 Building.BadwaterRig.DisplayName,Badwater Rig,"Name of the building that stops flow from badwater source and generates Good.Badwater.DisplayName goods (by extracting them from source). It's a mechanical building that needs workers to operate. Badwater must be the same as Good.Badwater.DisplayName"
 Building.BadwaterRig.FlavorDescription,Those working on top of a boiling badwater source feel constant pressure.,"Play on words with pressure referring to both water pressure and stress. If possible try to adapt the phrase to fit your language."
+Building.BadwaterSeep.Description,A source of badwater with limited pressure.,
+Building.BadwaterSeep.DisplayName,Badwater Seep,"A building that allows badwater to seep through, creating a natural badwater source."
 Building.BadwaterSource.DisplayName,Badwater Source,A crack or spring in the ground spuming badwater. Badwater should be the same as Good.Badwater.DisplayName.
 Building.BadwaterSource.FlavorDescription,"""Why do we have to clean up the hoomans' mess? Oh, right, they're all dead."" —Pina",
 Building.ContaminationBarrier.Description,Stops soil contamination from spreading beneath it.,Ideally all uses of the word contaminate/contamination/contaminated should be uniform across the project.
@@ -130,8 +132,6 @@ Building.BotAssembler.FlavorDescription,"It all started with a simple ""what if 
 Building.BotPartFactory.Description,Puts together bot components.,Bot should be the same as Bot.TemplateName
 Building.BotPartFactory.DisplayName,Bot Part Factory,"A factory for creating bot parts, that are later assembled into full bots. Bot should be the same as Bot.TemplateName."
 Building.BotPartFactory.FlavorDescription,"""Done! Wait, what is this screw doing here?"" —Pina",
-Building.Bramble.Description,"An impenetrable obstacle that also blocks irrigation and contamination. It's difficult to demolish and can injure those who attempt it.",
-Building.Bramble.DisplayName,Bramble,
 Building.Brazier.Description,A fire in a decorative box.,
 Building.Brazier.DisplayName,Brazier,
 Building.Brazier.FlavorDescription,"""Woah, that's lit."" —Suli","Play on words with lit meaning both lit up and cool. If possible try to adapt the phrase to fit your language. Suli is a younger beaver that likes to play tricks on their fellow beavers and isn't related to any faction in particular. Translated name shouldn't suggest a gender if possible."
@@ -929,7 +929,6 @@ Inventory.IsEmpty,No goods in stock,
 Inventory.Goods,Goods:,
 Inventory.Header.Stock,Stock,Please keep short. Header above a column with amounts of resource in stock of the storage.
 Inventory.NothingSelected,None,"Text shown in a dropdown when no good is selected. Keep below 15 characters."
-Inventory.StartingInventory,Starting goods,
 Inventory.StockpileOverlay.Show,Show storage overlay,Tooltip for button showing overlay over warehouses containing stored goods.
 Inventory.StockpileOverlay.Hide,Hide storage overlay,Tooltip for button showing overlay over warehouses containing stored goods.
 Inventory.Undesired,Undesired:,Please keep short. Which resources are not desired in the storage.
@@ -1460,12 +1459,30 @@ Saving.TakenName,A settlement with this name already exists.,"Error message show
 Saving.Autosave,Autosave,Name of the autosaved game
 Saving.CycleUnknown,Cycle unknown,"Text shown in old save games labels that don't have cycle information. ""Cycle"" should be the same as in Weather.CycleAndDayLong"
 Science.SciencePoints,Science Points,The name of a resource which can be spent to unlock new technology
+Settings.Accessibility.Header,Accessibility,Header for accessibility section in settings panel
+Settings.Accessibility.DisableStarfieldRotation,Disable starfield rotation,Label for disabling starfield (stars in the night sky) rotation in accessibility settings
 Settings.Analytics.Header,"Analytics",Header for the data collection/analytics consent section.
 Settings.Analytics.ConsentToggle,"Analytics enabled",Selected when giving consent to data collection/analytics.
 Settings.Analytics.DeleteData,"Delete collected data",Selected when withdrawing consent to data collection/analytics.
 Settings.Analytics.DataDeleted,"Collected data deleted.",Confirmation info that the collected data has been deleted.
 Settings.GameSaving.AutoSavingOn,Autosave,
 Settings.GameSaving.Header,Saving,
+Settings.Graphics.AnisotropicTextures,Anisotropic textures,Label for anisotropic textures quality option
+Settings.Graphics.AntiAliasingQuality,Anti-aliasing,Antialiasing dropdown label in graphics settings panel
+Settings.Graphics.Bloom,Bloom,Label for bloom effect dropdown in graphics settings panel
+Settings.Graphics.Header,Graphics quality,Header for graphics quality section in settings panel
+Settings.Graphics.LightQuality,Light quality,Label for Light quality dropdown
+Settings.Graphics.OverallGraphicsQuality,Preset,Label for graphics quality dropdown
+Settings.Graphics.Quality.Custom,Custom,Label for custom graphics quality option
+Settings.Graphics.Quality.High,High,Label for high quality graphics option
+Settings.Graphics.Quality.Low,Low,Label for low quality graphics option
+Settings.Graphics.Quality.Medium,Medium,Label for medium quality graphics option
+Settings.Graphics.Quality.Off,Off,"Label for graphics quality option that disables certain graphic effect, please keep short"
+Settings.Graphics.Quality.On,On,"Label for graphics quality option that enables certain graphic effect, please keep short"
+Settings.Graphics.Quality.Ultra,Ultra,Label for ultra quality graphics option
+Settings.Graphics.ShadowQuality,Shadow quality,Label for shadow quality option
+Settings.Graphics.TextureQuality,Texture quality,Label for texture quality option
+Settings.Graphics.WaterQuality,Water quality,"Label for water quality dropdown, used in graphics settings panel"
 Settings.Header,Settings,
 Settings.Input.DragCamera,Camera dragging,
 Settings.Input.EdgePanCamera,Edge scrolling,"When this option is enabled, player can move camera by moving mouse to screen edge"
@@ -1498,6 +1515,7 @@ Settings.Screen.Quality.Low,Low,Please keep short
 Settings.Screen.Quality.Medium,Medium,Please keep short
 Settings.Screen.Quality.Ultra,Ultra,Please keep short
 Settings.Screen.ResolutionScale,Resolution scale,Please keep short
+Settings.Screen.ScreenHeader,Screen,Section label in settings panel
 Settings.Screen.ScreenResolution,Screen resolution,
 Settings.Screen.VSync,VSync,Label of a dropdown for choosing a VSync mode.
 Settings.Screen.VSync.0,Off,A dropdown item indicating VSync mode.
@@ -1590,6 +1608,7 @@ SteamWorkshop.Preview,Preview,Label of the preview of the item to be uploaded to
 SteamWorkshop.RefreshThumbnail,Refresh,Label of a button that tries to load the preview of the item to be uploaded to Steam Workshop.
 SteamWorkshop.ShowWorkshopItem,Open in Steam Workshop,Label of the button that opens the Steam Workshop page of the item that has been uploaded to Steam Workshop.
 SteamWorkshop.SteamMapTooltip,Steam Workshop map,Tooltip on the map icon that indicates that the map is from Steam Workshop.
+SteamWorkshop.Tags,Tags,"Label of the list of tags in Steam Workshop that user can set. It should be translated the same way as Steam is translating it: https://partner.steamgames.com/doc/features/workshop/tags"
 SteamWorkshop.Update,Update,Label of the checkbox that determines whether certain elements of the item to be uploaded to Steam Workshop should be updated.
 SteamWorkshop.UploadAsNew,Upload as new,Label of the checkbox that determines whether the item to be uploaded to Steam Workshop should be uploaded as a new item or as an update to an existing item.
 SteamWorkshop.UploadButton,Upload,Text on the button that starts uploading the item to Steam Workshop.
@@ -1670,7 +1689,6 @@ Tutorial.Disable,Disable tutorial,
 Tutorial.DisablePrompt,"Are you sure you want to disable the tutorial?
 You can re-enable it later in settings.",
 Tutorial.ConnectBuilding,Connect: {0} ({1}/{2}),"{0} stands for building name {1} stands for number of buildings connected with paths {2} stands for number of buildings to connect. This is used in a goal description with the verb in active voice, for example 'Connect: Lumberjack Flag (0/2)'."
-Tutorial.Finish,Close the tutorial,
 Tutorial.MarkPlantables,Plant: {0} ({1}/{2}),"{0} stands for resource name {1} stands for number of marked resource tiles {2} stands for number of tiles to mark with resource. This is used in a goal description with the verb in active voice, for example 'Plant: Carrot (0/5)'."
 Tutorial.MarkTrees,Mark trees for cutting.,
 Tutorial.PanelTitle,Tutorial,

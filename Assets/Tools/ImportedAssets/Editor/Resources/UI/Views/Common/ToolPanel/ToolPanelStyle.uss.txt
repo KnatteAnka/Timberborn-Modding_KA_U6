@@ -51,6 +51,10 @@
     --background-slice: 24;
 }
 
+.highlight .description-panel-unlock-section__button .science-cost-section__background {
+    --background-image: resource('UI/Images/Buttons/button-game-highlight');
+}
+
 .description-panel-unlock-section__button .science-cost-section__background:hover:enabled {
     --background-image: resource('UI/Images/Buttons/button-game-disabled');
 }

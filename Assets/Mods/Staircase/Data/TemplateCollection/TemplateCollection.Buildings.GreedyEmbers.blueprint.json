@@ -1,0 +1,20 @@
+{
+  "TemplateCollectionSpec": {
+  "CollectionId": "Buildings.GreedyEmbers",
+  "Blueprints#append": [
+    "Knatte/Buildings/Paths/MetalStaircase/MetalStaircase.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/MetalStaircase/MetalSpiralStaircase.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/SpiralStaircase/SpiralStaircase.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/StaircaseLog/StaircaseLog.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar_1.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar_2.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar_3.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillar_4.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/Pillar/Pillars.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/PillarTop/PillarTop.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/PillarTop/StaircasePlatform.Emberpelts.blueprint",
+	"Knatte/Buildings/Paths/Pillar/StaircasePillar.Emberpelts.blueprint"
+  ]
+}
+}

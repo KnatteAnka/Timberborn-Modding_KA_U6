@@ -17,28 +17,28 @@
       "BlockSpecs": [
         {
           "MatterBelow": "Ground",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -90,7 +90,8 @@
   },
   "ActivationWarningStatusSpec": {
     "StatusSpriteName": "UnstableCoreCountdown",
-    "StatusLocKey": "Status.UnstableCoreActivationWarning"
+    "StatusLocKey": "Status.UnstableCoreActivationWarning",
+    "UseInfiniteWarning": true
   },
   "BasicSelectionSoundSpec": {
     "SoundName": "Default",

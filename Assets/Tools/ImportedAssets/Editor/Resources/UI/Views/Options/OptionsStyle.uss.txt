@@ -276,6 +276,7 @@
     color: rgb(255, 255, 255);
     font-size: 14px;
     -unity-text-align: middle-left;
+    white-space: normal;
 }
 
 .settings-dropdown .dropdown__label {
@@ -422,6 +423,23 @@
 
 .settings-dropdown .dropdown__arrow {
     display: none;
+}
+
+.settings-mac-msaa-warning {
+    background-color: rgba(0.5, 0.5, 0.5, 0.25);
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 25px;
+    margin: 4px 5px;
+}
+
+.settings-mac-msaa-warning__icon {
+    background-image: resource('UI/Images/Core/warning_triangle');
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .load-map-box {

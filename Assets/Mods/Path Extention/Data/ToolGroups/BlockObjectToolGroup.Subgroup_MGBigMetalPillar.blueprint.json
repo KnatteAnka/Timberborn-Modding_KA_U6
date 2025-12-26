@@ -1,0 +1,38 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGBigMetalPillar",
+    "Order": 33,
+    "NameLocKey": "Knatte.Subgroup_MGBigMetalPillar.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGBigMetalPillar",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "Aque_MetalBigPillarBase.Emberpelts",
+      "Aque_MetalBigPillarBase.Folktails",
+      "Aque_MetalBigPillarBase.IronTeeth",
+      "Aque_MetalBigPillarMid.Emberpelts",
+      "Aque_MetalBigPillarMid.Folktails",
+      "Aque_MetalBigPillarMid.IronTeeth",
+      "Aque_MetalBigPillarTop.Emberpelts",
+      "Aque_MetalBigPillarTop.Folktails",
+      "Aque_MetalBigPillarTop.IronTeeth",
+      "MetalBigPillarBase.Emberpelts",
+      "MetalBigPillarBase.Folktails",
+      "MetalBigPillarBase.IronTeeth",
+      "MetalBigPillarMid.Emberpelts",
+      "MetalBigPillarMid.Folktails",
+      "MetalBigPillarMid.IronTeeth",
+      "MetalBigPillarTop.Emberpelts",
+      "MetalBigPillarTop.Folktails",
+      "MetalBigPillarTop.IronTeeth"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

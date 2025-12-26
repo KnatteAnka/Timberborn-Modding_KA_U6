@@ -51,6 +51,9 @@
     "UndergroundModelDepth": 0
   },
   "HidabilityPositionUpdaterSpec": {},
+  "RecoveredGoodStackDisintegrationSpec": {
+    "DaysToDisintegrate": 15.0
+  },
   "Children": {
     "#Model": {
       "TransformSpec": {

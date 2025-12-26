@@ -1,0 +1,43 @@
+{
+  "TemplateCollectionSpec": {
+  "CollectionId": "Buildings.Emberpelts",
+  "Blueprints#append": [
+	"Knatte/Buildings/Water/Pipes/Pipe1X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/Pipe5X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/Pipe10X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/Pipe15X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/PipeH1X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/PipeU5X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/PipeU10X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/PipeU15X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/PipeHU5X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/PipeHU10X.Emberpelts.blueprint",
+	"Knatte/Buildings/Water/Pipes/PipeHU15X.Emberpelts.blueprint",
+    
+	"Knatte/Buildings/Water/Pumps/DeepSeeWaterPump.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_S_1X.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_S_5X.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_P_1X.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_P_5X.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/AqueductLid/Aqueduct_Lid_1X.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/AqueductLid/Aqueduct_Lid_5X.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Corner.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Wall.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Wall2.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Wall3.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Wall4.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Wall_OffDec.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Wall_OffDec2.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Sluice.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/AqueductFloor/Aqueduct_Floor_1X1.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/AqueductFloor/Aqueduct_Floor_1X5.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/AqueductFloor/Aqueduct_Floor_2X2.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/AqueductFloor/Aqueduct_Floor_3X3.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/AqueductFloor/Aqueduct_Floor_5X5.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_Corner_Int.Emberpelts.blueprint",
+	"Knatte/Buildings/Landscaping/Aqueduct/Aqueduct_P_1X_Corner_Int.Emberpelts.blueprint",
+	"Knatte/Buildings/Storage/WaterTank/IndustWaterTank.Emberpelts.blueprint",
+	
+	
+  ]
+}}

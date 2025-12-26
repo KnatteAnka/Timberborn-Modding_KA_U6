@@ -36,7 +36,7 @@
     "GenerateFloorsOnStackable": false,
     "EdgeGroups": [
       {
-        "Cost": 0.89999997615814209,
+        "Cost": 0.9,
         "Group": {
           "UseGroup": false,
           "GroupName": "Tunnel"
@@ -97,18 +97,14 @@
       "BlockSpecs": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": true

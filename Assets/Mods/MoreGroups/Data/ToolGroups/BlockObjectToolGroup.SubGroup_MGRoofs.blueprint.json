@@ -1,0 +1,47 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "SubGroup_MGRoofs",
+    "Order": 42,
+    "NameLocKey": "Knatte.Subgroup_MGRoofs.DisplayName",
+    "Icon": "Knatte/Sprites/SubGroup_MGRoofs",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Decoration"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "HalfRoof1x1.Emberpelts",
+      "HalfRoof1x1.Folktails",
+      "HalfRoof1x1.IronTeeth",
+      "HalfRoof1x2.Emberpelts",
+      "HalfRoof1x2.Folktails",
+      "HalfRoof1x2.IronTeeth",
+      "HalfRoof2x1.Emberpelts",
+      "HalfRoof2x1.Folktails",
+      "HalfRoof2x1.IronTeeth",
+      "HalfRoof2x2.Emberpelts",
+      "HalfRoof2x2.Folktails",
+      "HalfRoof2x2.IronTeeth",
+      "Roof1x1.Emberpelts",
+      "Roof1x1.Folktails",
+      "Roof1x1.IronTeeth",
+      "Roof1x2.Emberpelts",
+      "Roof1x2.Folktails",
+      "Roof1x2.IronTeeth",
+      "Roof2x2.Emberpelts",
+      "Roof2x2.Folktails",
+      "Roof2x2.IronTeeth",
+      "Roof2x3.Emberpelts",
+      "Roof2x3.Folktails",
+      "Roof2x3.IronTeeth",
+      "Roof3x2.Emberpelts",
+      "Roof3x2.Folktails",
+      "Roof3x2.IronTeeth"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

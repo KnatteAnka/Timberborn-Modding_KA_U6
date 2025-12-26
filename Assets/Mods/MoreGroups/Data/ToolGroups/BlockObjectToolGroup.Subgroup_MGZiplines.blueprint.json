@@ -1,0 +1,23 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGZiplines",
+    "Order": 38,
+    "NameLocKey": "Knatte.Subgroup_MGZiplines.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGZiplines",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "ZiplineBeam.Folktails",
+      "ZiplinePylon.Folktails",
+      "ZiplineStation.Folktails"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

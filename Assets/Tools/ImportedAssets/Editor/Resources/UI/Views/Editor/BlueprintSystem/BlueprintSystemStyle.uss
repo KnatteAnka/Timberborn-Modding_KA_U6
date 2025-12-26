@@ -3,6 +3,7 @@
 }
 
 .blueprint-editor__editable-text-field {
+    -unity-text-generator: standard;
     -unity-font-definition: resource("UI/Fonts/NotoSansMono-Regular SDF");
     font-size: 12px;
 }

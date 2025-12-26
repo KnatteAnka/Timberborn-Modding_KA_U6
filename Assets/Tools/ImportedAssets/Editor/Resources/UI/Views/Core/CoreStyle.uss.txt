@@ -692,7 +692,7 @@ NineSliceTextField {
     --click-sound: "UI.Click";
 }
 
-.clickable-hierarchy . * {
+.clickable-hierarchy * {
     --click-sound: "UI.Click";
 }
 

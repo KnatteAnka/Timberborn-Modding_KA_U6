@@ -1,0 +1,46 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGTanks",
+    "Order": 30,
+    "NameLocKey": "Knatte.Subgroup_MGTanks.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGTanks",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Storage"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "IndustWaterTank.Emberpelts",
+      "IndustWaterTank.Folktails",
+      "IndustWaterTank.IronTeeth",
+      "IndustWaterTank.IT",
+      "LargeTank.Emberpelts",
+      "LargeTank.Folktails",
+      "LargeTank.IronTeeth",
+      "LargeUndergroundTank.Emberpelts",
+      "MediumTank.Emberpelts",
+      "MediumTank.Folktails",
+      "MediumTank.IronTeeth",
+      "PitTank",
+      "PitTankEP",
+      "PitTankFT",
+      "PitTankIT",
+      "SCoveredtank",
+      "SCoveredtankEP",
+      "SCoveredtankFT",
+      "SCoveredtankIT",
+      "SmallTank.Emberpelts",
+      "SmallTank.Folktails",
+      "SmallTank.IronTeeth",
+      "UndergroundTank.Emberpelts",
+      "UndergroundTank.Folktails",
+      "UndergroundTank.IronTeeth",
+      "UndergroundTank.Whitepaws"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

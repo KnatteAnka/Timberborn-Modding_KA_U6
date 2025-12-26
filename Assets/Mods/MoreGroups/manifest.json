@@ -1,16 +1,48 @@
 {
   "Name": "MoreGroups",
-  "Version": "7.0.2",
+  "Version": "1.0.1.0",
   "Id": "KnatteAnka.MoreGroups",
-  "MinimumGameVersion": "0.7.0.0",
+  "MinimumGameVersion": "1.0.0.0",
   "Description": "This mod Groups upp alot of items thanks to Timberapi",
   "RequiredMods": [
   {
-	"Id": "TimberApi",
-	"MinimumVersion": "0.7.11.0"
+		"Id": "ModdableToolGroups",
+		"MinimumVersion": "10.1.0"
   }
   ],
   "OptionalMods": [
-  
+	{
+		"Id":"Lapantouflemagic.1x1x2Storage"
+	},
+	{
+		"Id":"Lapantouflemagic.Logstairs"
+	},
+	{
+		"Id":"EmberpeltsLadder"
+	},
+	{
+		"Id":"BobPlatforms"
+	},
+	{
+		"Id":"Emberpelts"
+	},
+	{
+		"Id":"ConvenientLargeWaterWheel"
+	},
+	{
+		"Id":"KnatteAnka.Staircase"
+	},
+	{
+		"Id":"KnatteAnka.ExtendedFloodgates"
+	},
+	{
+		"Id":"Tobbert.Ladder"
+	},
+	{
+		"Id":"Timberborn.OldGopher.Pipe"
+	},
+	{
+		"Id":"alin.dirt"
+	}
   ]
 }

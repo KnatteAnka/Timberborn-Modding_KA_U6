@@ -1,0 +1,32 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "SubGroup_MGFloodGates",
+    "Order": 32,
+    "NameLocKey": "Knatte.Subgroup_MGFloodgates.DisplayName",
+    "Icon": "Knatte/Sprites/SubGroup_MGFloodGates",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Landscaping"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "DoubleFloodgate.Emberpelts",
+      "DoubleFloodgate.Flat.Emberpelts",
+      "DoubleFloodgate.Folktails",
+      "DoubleFloodgate.IronTeeth",
+      "Floodgate.Emberpelts",
+      "Floodgate.Flat.Emberpelts",
+      "Floodgate.Folktails",
+      "Floodgate.IronTeeth",
+      "TripleFloodgate.Emberpelts",
+      "TripleFloodgate.Flat.Emberpelts",
+      "TripleFloodgate.Folktails",
+      "TripleFloodgate.IronTeeth"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

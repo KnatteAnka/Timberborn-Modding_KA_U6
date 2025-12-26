@@ -1,0 +1,52 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGWarehouses",
+    "Order": 20,
+    "NameLocKey": "Knatte.Subgroup_MGWarehouses.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGWarehouses",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Storage"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "GigargantuanWarehouseEP",
+      "GigargantuanWarehouseFT",
+      "GigargantuanWarehouseIT",
+      "LargeWarehouse.Emberpelts",
+      "LargeWarehouse.Folktails",
+      "LargeWarehouse.IronTeeth",
+      "LargeWarehouse.Whitepaws",
+      "LongWarehouse",
+      "LongWarehouseEP",
+      "LongWarehouseFT",
+      "LongWarehouseIT",
+      "MediumWarehouse.Emberpelts",
+      "MediumWarehouse.Folktails",
+      "MediumWarehouse.IronTeeth",
+      "NewUndergroundWarehouse.Emberpelts",
+      "NewUndergroundWarehouse.Folktails",
+      "NewUndergroundWarehouse.IronTeeth",
+      "NewUndergroundWarehouse.Whitepaws",
+      "Pitwarehouse",
+      "PitwarehouseEP",
+      "PitwarehouseFT",
+      "PitwarehouseIT",
+      "SmallWarehouse.Emberpelts",
+      "SmallWarehouse.Folktails",
+      "SmallWarehouse.IronTeeth",
+      "SmallWarehouseNew.Emberpelts",
+      "SmallWarehouseNew.Folktails",
+      "SmallWarehouseNew.IronTeeth",
+      "UndergroundWarehouse.Emberpelts",
+      "UndergroundWarehouse.Folktails",
+      "UndergroundWarehouse.IronTeeth",
+      "UndergroundWarehouse.Whitepaws"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

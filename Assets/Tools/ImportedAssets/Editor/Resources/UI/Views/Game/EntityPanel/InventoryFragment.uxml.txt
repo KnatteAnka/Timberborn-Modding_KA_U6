@@ -5,7 +5,6 @@
     <Style src="/Assets/Resources/UI/Views/Common/EntityPanel/EntityPanelCommonStyle.uss" />
     <Style src="/Assets/Resources/UI/Views/Game/EntityPanel/EntityPanelGameStyle.uss" />
     <cui:NineSliceVisualElement name="InventoryFragment">
-        <cui:LocalizableLabel name="SimpleHeader" text-loc-key="Inventory.StartingInventory" class="entity-panel__heading-text inventory-fragment-header__item" />
         <cui:LocalizableLabel name="IsEmpty" text-loc-key="Inventory.IsEmpty" class="entity-panel__text text--centered" />
         <ui:ScrollView name="Content" class="game-scroll-view inventory-fragment__rows" />
     </cui:NineSliceVisualElement>

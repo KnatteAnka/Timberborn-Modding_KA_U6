@@ -35,5 +35,6 @@
             </ui:Instance>
             <ui:VisualElement name="Logo" class="background__timberborn-logo" />
         </ui:VisualElement>
+        <ui:Button name="MerchandiseButton" focusable="false" class="main-menu-merch-button" />
     </ui:VisualElement>
 </ui:UXML>

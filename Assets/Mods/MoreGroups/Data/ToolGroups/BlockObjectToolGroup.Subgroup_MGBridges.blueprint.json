@@ -1,0 +1,45 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGBridges",
+    "Order": 35,
+    "NameLocKey": "Knatte.Subgroup_MGBridges.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGBridges",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "SuspensionBridge1x1.Emberpelts",
+      "SuspensionBridge1x1.Folktails",
+      "SuspensionBridge1x1.IronTeeth",
+      "SuspensionBridge2x1.Emberpelts",
+      "SuspensionBridge2x1.Folktails",
+      "SuspensionBridge2x1.IronTeeth",
+      "SuspensionBridge3x1.Emberpelts",
+      "SuspensionBridge3x1.Folktails",
+      "SuspensionBridge3x1.IronTeeth",
+      "SuspensionBridge4x1.Emberpelts",
+      "SuspensionBridge4x1.Folktails",
+      "SuspensionBridge4x1.IronTeeth",
+      "SuspensionBridge5x1.Emberpelts",
+      "SuspensionBridge5x1.Folktails",
+      "SuspensionBridge5x1.IronTeeth",
+      "SuspensionBridge6x1.Emberpelts",
+      "SuspensionBridge6x1.Folktails",
+      "SuspensionBridge6x1.IronTeeth",
+      "SuspensionBridge7x1.Emberpelts",
+      "SuspensionBridge7x1.Folktails",
+      "SuspensionBridge7x1.IronTeeth",
+      "SuspensionBridge8x1.Emberpelts",
+      "SuspensionBridge8x1.Folktails",
+      "SuspensionBridge8x1.IronTeeth"
+    ],
+    "ChildrenOrderedIds": [],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

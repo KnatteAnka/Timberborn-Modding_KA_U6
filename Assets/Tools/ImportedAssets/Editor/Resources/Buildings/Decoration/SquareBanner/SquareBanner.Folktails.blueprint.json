@@ -62,7 +62,7 @@
     },
     "BaseZ": 0,
     "Overridable": false,
-    "Flippable": true
+    "Flippable": false
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Decoration",
@@ -96,6 +96,9 @@
     "ProgressThresholds": [
       0.0
     ]
+  },
+  "FlippableDecalSpec": {
+    "DecalName": "#display1x1_FT"
   },
   "Children": {
     "#Finished": {

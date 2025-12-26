@@ -169,12 +169,6 @@
     max-height: 200px;
 }
 
-.inventory-fragment-header__item {
-    -unity-text-align: middle-center;
-    flex-direction: row;
-    margin: 0 4px 8px 4px;
-}
-
 .inventory-fragment-header__separator {
     margin-left: 5px;
     margin-right: 5px;

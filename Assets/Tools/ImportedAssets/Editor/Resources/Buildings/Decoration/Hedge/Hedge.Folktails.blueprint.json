@@ -58,9 +58,9 @@
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Decoration",
-    "ToolOrder": 70,
+    "ToolOrder": 90,
     "ToolShape": "Square",
-    "Layout": "Line",
+    "Layout": "TwoSegmentLine",
     "CustomPivot": {
       "HasCustomPivot": false,
       "Coordinates": {

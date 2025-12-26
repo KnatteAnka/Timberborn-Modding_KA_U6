@@ -45,7 +45,7 @@
                             <ui:VisualElement name="UnconventionalMapIcon" class="map-item__icon map-item__icon--unconventional" />
                             <cui:LocalizableLabel name="UnconventionalMapLabel" text="Unconventional" text-loc-key="MapSelection.Unconventional" class="text--default" />
                         </ui:VisualElement>
-                        <ui:Label name="DescriptionText" class="text--default" />
+                        <ui:Label name="DescriptionText" class="text--default map-item__text" />
                     </ui:ScrollView>
                 </cui:NineSliceVisualElement>
             </ui:VisualElement>

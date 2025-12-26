@@ -45,7 +45,7 @@
       "BlockSpecs": [
         {
           "MatterBelow": "GroundOrStackable",
-          "Occupations": "Bottom, Middle",
+          "Occupations": "Bottom, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -62,7 +62,7 @@
     },
     "BaseZ": 0,
     "Overridable": false,
-    "Flippable": true
+    "Flippable": false
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Decoration",
@@ -96,6 +96,9 @@
     "ProgressThresholds": [
       0.0
     ]
+  },
+  "FlippableDecalSpec": {
+    "DecalName": "#display1x1_IT"
   },
   "Children": {
     "#Finished": {

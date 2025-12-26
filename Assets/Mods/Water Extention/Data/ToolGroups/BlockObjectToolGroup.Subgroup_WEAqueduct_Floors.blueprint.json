@@ -1,0 +1,20 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_WEAqueduct_Floors",
+    "Order": 63,
+    "NameLocKey": "Knatte.CategoryAquaduct_Floors.DisplayName",
+    "Icon": "Knatte/CategorySprites/Subgroup_MGAqueduct_Floors",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Landscaping"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

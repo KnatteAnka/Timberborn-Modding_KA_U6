@@ -1,8 +1,8 @@
-7.0.0
-* Switched to have first digit in version to supported game version
-* Add Greedy Ember support
+1.0.0.0
+* Support V1.0
+* Uses Moddable Tool Groups to allow multi level subgroups
 
 ---
 MinimumGameVersion: 0.6.0.0
-MaximumGameVersion: 0.7.9.9
+MaximumGameVersion: 1.0.99.9
 ---

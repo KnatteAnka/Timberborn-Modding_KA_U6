@@ -1,10 +1,8 @@
-10.0.1
-* update to 1.0
-* Updated powergeneration more inline with basegame(some increase)
-* Fix PoweredLevee Glitching model
-* Fix greedybuilders
+1.0.1.1
+* Update to 1.0.5.x for the game
+* fix IT crash
 
 ---
 MinimumGameVersion: 0.7.9.0
-MaximumGameVersion: 1.0.9.9
+MaximumGameVersion: 1.0.99.9
 ---

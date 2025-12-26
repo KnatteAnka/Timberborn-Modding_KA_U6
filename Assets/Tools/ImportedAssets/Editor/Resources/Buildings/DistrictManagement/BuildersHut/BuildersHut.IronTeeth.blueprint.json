@@ -268,6 +268,12 @@
     "IgnoreRotation": false
   },
   "MechanicalConnectorReceiverSpec": {},
+  "SimpleOutputInventorySpec": {
+    "Capacity": 20,
+    "IgnorableCapacity": true,
+    "UnlimitedTotalCapacity": true
+  },
+  "InventoryLimitRowHiderSpec": {},
   "Children": {
     "#Finished": {
       "TimbermeshSpec": {

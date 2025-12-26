@@ -1,0 +1,25 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGOverhangs",
+    "Order": 25,
+    "NameLocKey": "Knatte.Subgroup_MGOverhangs.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGOverhangs",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Landscaping"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "StoneArc3x1",
+      "StoneOverhang2x11",
+      "StoneOverhang3x11",
+      "StoneOverhang4x11",
+      "StoneWall"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

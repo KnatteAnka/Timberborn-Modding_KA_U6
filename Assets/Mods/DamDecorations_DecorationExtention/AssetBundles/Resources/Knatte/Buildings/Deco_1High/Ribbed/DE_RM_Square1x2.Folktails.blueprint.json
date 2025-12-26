@@ -51,8 +51,6 @@
       "BlockSpecs": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners, Path, Middle",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -60,8 +58,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners, Path, Middle",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -82,7 +78,7 @@
     "Flippable": false
   },
   "PlaceableBlockObjectSpec": {
-    "ToolGroupId": "DE_RM_BW_Dec1",
+    "ToolGroupId": "DE_RM_BW_Dec3",
     "ToolOrder": 6,
     "ToolShape": "Square",
     "Layout": "Single",
@@ -107,7 +103,7 @@
     "Effects": [
       {
         "NeedId": "BlockDecoration",
-        "PointsPerHour": 0.20000000298023224,
+        "PointsPerHour": 0.2,
         "SatisfyToMaxValue": false
       }
     ]
@@ -168,7 +164,7 @@
     "#Unfinished": {
       "Children": {
         "ConstructionSite1x1 1#nested": {
-          "BlueprintPath": "All_Material/BasePrefab/ConstructionSite1x1Top2.blueprint"
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
         },
         "ConstructionStage0": {
           "Children": {

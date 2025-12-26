@@ -1,0 +1,56 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGPower",
+    "Order": 10,
+    "NameLocKey": "Knatte.Subgroup_MGPower.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGPower",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Power"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "CompactWaterWheel.Emberpelts",
+      "WaterWheel.Emberpelts",
+      "LargePowerWheel.Emberpelts",
+      "LargeWaterWheel.Emberpelts",
+      "GeothermalEngine.Emberpelts",
+      "Engine.Emberpelts",
+      "SmallEngine.Emberpelts",
+      "FuelEngine.Emberpelts",
+      "Windmill.Emberpelts",
+      "LargeWindmill.Emberpelts",
+      "TurbineSmall.Emberpelts",
+      "TurbineBig.Emberpelts",
+      "CompactWaterWheel.IronTeeth",
+      "SteamEngine.IronTeeth",
+      "CoolingTower.IT",
+      "CoolingTower",
+      "Engine.IronTeeth",
+      "GeothermalPowerPlant.IT",
+      "LargePowerWheel.IronTeeth",
+      "LargeWaterWheel.IronTeeth",
+      "LargeWaterWheelLevee.IronTeeth",
+      "PowerWheel.IronTeeth",
+      "TurbineBig.IronTeeth",
+      "TurbineSmall.IronTeeth",
+      "GeothermalEngine.IronTeeth",
+      "Engine.Folktails",
+      "GeothermalPowerPlant",
+      "CompactWaterWheel.Folktails",
+      "LargeWaterWheel.Folktails",
+      "LargeWindmill.Folktails",
+      "PowerWheel.Folktails",
+      "TurbineBig.Folktails",
+      "TurbineSmall.Folktails",
+      "WaterWheel.Folktails",
+      "Windmill.Folktails",
+      "GeothermalEngine.Folktails"
+    ],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

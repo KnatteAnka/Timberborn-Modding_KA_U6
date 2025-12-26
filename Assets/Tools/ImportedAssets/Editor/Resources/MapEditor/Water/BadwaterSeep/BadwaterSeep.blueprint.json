@@ -145,14 +145,15 @@
   "TimedComponentActivatorSpec": {
     "IsOptionallyActivable": true,
     "CyclesUntilCountdownActivation": 5,
-    "DaysUntilActivation": 10,
+    "DaysUntilActivation": 10.0,
     "ProgressBarActiveLabelLocKey": "TimedComponentActivator.DaysUntilActivationProgress",
     "ProgressBarNotActiveLabelLocKey": "TimedComponentActivator.CountdownNotActive",
     "IsHazardousActivator": true
   },
   "ActivationWarningStatusSpec": {
     "StatusSpriteName": "WaterSourceCountdown",
-    "StatusLocKey": "Status.TimedActivationWarning"
+    "StatusLocKey": "Status.TimedActivationWarning",
+    "UseInfiniteWarning": false
   },
   "ActivationProgressParticlesSpec": {
     "AttachmentIds": [

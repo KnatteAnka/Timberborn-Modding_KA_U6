@@ -112,6 +112,10 @@
       {
         "NeedId": "BadwaterContamination",
         "PropertyName": "_BadwaterContamination"
+      },
+      {
+        "NeedId": "WetFur",
+        "PropertyName": "_WetFur"
       }
     ]
   },
@@ -127,6 +131,16 @@
   },
   "PlantingParticleControllerSpec": {
     "ParticlesAttachmentId": "Dirt.PlantingAnimation.Beaver"
+  },
+  "DemolishableParticleControllerSpec": {
+    "DemolishableParticles": [
+      {
+        "AttachmentId": "Thorns.DemolishAnimation.Beaver",
+        "TemplateNames": [
+          "Thorns"
+        ]
+      }
+    ]
   },
   "WorkerOutfitAnimationAttachmentVisibilitySpec": {
     "WorkerOutfitAnimationAttachments": [
@@ -159,6 +173,15 @@
       {
         "AnimationName": "BeaverAdult_building",
         "ParticlesAttachmentId": "Dust.BuildingAnimation",
+        "TriggerTimes": [
+          0.6,
+          1.1,
+          1.6
+        ]
+      },
+      {
+        "AnimationName": "BeaverAdult_building",
+        "ParticlesAttachmentId": "Thorns.DemolishAnimation.Beaver",
         "TriggerTimes": [
           0.6,
           1.1,
@@ -1690,6 +1713,27 @@
         "AttachmentId": "Shavings.CuttingAnimation.Beaver",
         "Prefab": "Characters/Beaver/Attachments/CuttingAnimationShavings",
         "Parent": "#Teeth",
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "CreateInstantly": false
+      },
+      {
+        "AttachmentId": "Thorns.DemolishAnimation.Beaver",
+        "Prefab": "Characters/Attachments/ThornsAnimationDust",
+        "Parent": "#BuildingParticles",
         "Position": {
           "X": 0.0,
           "Y": 0.0,

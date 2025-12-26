@@ -1,0 +1,9 @@
+{
+  "MaterialCollectionSpec": {
+	  "CollectionId": "IronTeeth",
+	  "Materials#append": [
+		"Materials/Goods/Water",
+		"Materials/Goods/Extract",
+	  ]
+	}
+}

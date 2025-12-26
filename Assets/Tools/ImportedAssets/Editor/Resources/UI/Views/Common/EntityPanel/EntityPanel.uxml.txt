@@ -34,6 +34,7 @@
         </ui:VisualElement>
         <cui:NineSliceVisualElement text="Entity description" name="EntityDescription" class="entity-sub-panel entity-panel__description bg-sub-box--blue" />
         <ui:VisualElement name="Fragments" />
+        <ui:VisualElement name="DiagnosticFragments" />
         <ui:Button name="EntityDescriptionHider" class="entity-panel__description-hider">
             <ui:VisualElement class="entity-panel__description-hider-icon" />
         </ui:Button>

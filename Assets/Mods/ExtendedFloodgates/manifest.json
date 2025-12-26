@@ -1,17 +1,17 @@
 {
-  "Name": "ExtendedFloodgates",
-  "Version": "7.0.0",
-  "Id": "KnatteAnka.ExtendedFloodgates",
-  "MinimumGameVersion": "0.7.9.0",
-  "Description": "This is not an official upload and should not be used",
-  "RequiredMods": [
-  {
-	"Id": "KnatteAnka.Materials",
-	"MinimumVersion": "2.1.0"
-  },
-  {
-	"Id": "TimberApi",
-	"MinimumVersion": "0.7.5.0"
-  }
-  ]
+    "Name": "ExtendedFloodgates",
+    "Version": "1.0.0.0",
+    "Id": "KnatteAnka.ExtendedFloodgates",
+    "MinimumGameVersion": "1.0.5.0",
+    "Description": "This is not an official upload and should not be used",
+    "RequiredMods": [
+        {
+            "Id": "KnatteAnka.Materials",
+            "MinimumVersion": "1.0.1.0"
+        },
+        {
+            "Id": "ModdableToolGroups",
+            "MinimumVersion": "10.1.0"
+        }
+    ]
 }

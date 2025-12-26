@@ -4,15 +4,15 @@
     "LoopingSoundName": "WaterWheel",
     "BuildingCost": [
       {
-        "Id": "Log",
-        "Amount": 1
+        "Id": "MetalBlock",
+        "Amount": 4
       },
       {
         "Id": "Plank",
-        "Amount": 8
+        "Amount": 22
       },
       {
-        "Id": "TreatedPlank",
+        "Id": "PineResin",
         "Amount": 6
       }
     ],
@@ -135,18 +135,18 @@
     "TransputSpecs": [
       {
         "Coordinates": {
-          "X": 0,
+          "X": 1,
           "Y": 0,
-          "Z": 0
+          "Z": 1
         },
         "Directions": "Down",
         "ReverseRotation": true
       },
       {
         "Coordinates": {
-          "X": 0,
+          "X": 1,
           "Y": 0,
-          "Z": 0
+          "Z": 1
         },
         "Directions": "Up",
         "ReverseRotation": false
@@ -158,7 +158,7 @@
   "MechanicalBuildingSpec": {},
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Power",
-    "ToolOrder": 14,
+    "ToolOrder": 15,
     "ToolShape": "Square",
     "Layout": "Rectangle",
     "CustomPivot": {
@@ -170,12 +170,20 @@
       }
     },
     "CanBeAttachedToTerrainSide": false,
-    "DevModeTool": true
+    "DevModeTool": false
   },
   "WaterPoweredGeneratorSpec": {
     "Blocks": [
       {
         "X": 0,
+        "Y": 0
+      },
+      {
+        "X": 1,
+        "Y": 0
+      },
+      {
+        "X": 2,
         "Y": 0
       }
     ],
@@ -253,8 +261,8 @@
     },
     "#Unfinished": {
       "Children": {
-        "ConstructionBase1x1Top#nested": {
-          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
+        "ConstructionBase3x1#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase3x1/ConstructionBase3x1.blueprint"
         },
         "ConstructionStage0": {
           "Children": {
@@ -266,14 +274,38 @@
                 "BoxColliders": [
                   {
                     "Center": {
-                      "X": 0.5,
+                      "X": 1.5,
                       "Y": 0.1,
                       "Z": 0.5
                     },
                     "Size": {
-                      "X": 1.0,
+                      "X": 3.0,
                       "Y": 0.2,
                       "Z": 1.0
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 0.790951,
+                      "Z": 0.07938421
+                    },
+                    "Size": {
+                      "X": 0.103862286,
+                      "Y": 1.65996265,
+                      "Z": 0.08772096
+                    }
+                  },
+                  {
+                    "Center": {
+                      "X": 1.5,
+                      "Y": 0.790951,
+                      "Z": 0.926841557
+                    },
+                    "Size": {
+                      "X": 0.103862286,
+                      "Y": 1.65996265,
+                      "Z": 0.08772096
                     }
                   }
                 ],

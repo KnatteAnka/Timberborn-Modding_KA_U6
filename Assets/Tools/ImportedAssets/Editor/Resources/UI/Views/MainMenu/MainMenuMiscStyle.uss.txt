@@ -195,6 +195,19 @@
     align-self: center;
 }
 
+.main-menu-merch-button {
+    background-image: resource('UI/Images/MainMenu/merch_button');
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.main-menu-merch-button:hover:enabled {
+    background-image: resource('UI/Images/MainMenu/merch_button_hover');
+}
+
 .main-menu-panel__language-button {
     background-color: rgba(0, 0, 0, 0.65);
     padding: 5px 8px;
@@ -361,14 +374,25 @@
     margin-left: 5px;
 }
 
-.new-game-mode-panel__modes {
+.new-game-mode-panel__modes-and-details {
     flex-direction: row;
-    margin: 30px;
+    width: 1100px;
+    height: 100%;
+    margin-left: 350px;
+}
+
+.new-game-mode-panel__modes {
+    margin: 13px 30px 13px 0;
+}
+
+.new-game-mode-panel__modes .unity-scroll-view__content-viewport {
+    justify-content: center;
 }
 
 .new-game-mode-panel__mode {
     --background-slice-scale: 0.6;
     --background-slice: 64;
+    --background-image: resource('UI/Images/Buttons/difficulty');
     min-width: 209px;
     min-height: 92px;
     margin: 0 20px;
@@ -379,57 +403,28 @@
 }
 
 .new-game-mode-panel__mode:hover {
+    --background-image: resource('UI/Images/Buttons/difficulty-hover');
     color: rgb(0, 0, 0);
 }
 
-.new-game-mode-panel__mode--easy {
-    --background-image: resource('UI/Images/Buttons/Difficulty/easy');
+.new-game-mode-panel__mode--selected {
+    --background-image: resource('UI/Images/Buttons/difficulty-active');
 }
 
-.new-game-mode-panel__mode--normal {
-    --background-image: resource('UI/Images/Buttons/Difficulty/normal');
-}
-
-.new-game-mode-panel__mode--hard {
-    --background-image: resource('UI/Images/Buttons/Difficulty/hard');
-}
-
-.new-game-mode-panel__mode--easy.new-game-mode-panel__mode--selected {
-    --background-image: resource('UI/Images/Buttons/Difficulty/easy-active');
-}
-
-.new-game-mode-panel__mode--normal.new-game-mode-panel__mode--selected {
-    --background-image: resource('UI/Images/Buttons/Difficulty/normal-active');
-}
-
-.new-game-mode-panel__mode--hard.new-game-mode-panel__mode--selected {
-    --background-image: resource('UI/Images/Buttons/Difficulty/hard-active');
-}
-
-.new-game-mode-panel__mode--easy:hover {
-    --background-image: resource('UI/Images/Buttons/Difficulty/easy-hover');
-}
-
-.new-game-mode-panel__mode--normal:hover {
-    --background-image: resource('UI/Images/Buttons/Difficulty/normal-hover');
-}
-
-.new-game-mode-panel__mode--hard:hover {
-    --background-image: resource('UI/Images/Buttons/Difficulty/hard-hover');
-}
-
-.new-game-mode-panel__mode-description-and-settings {
-    height: 330px;
+.new-game-mode-panel__mode-details {
+    justify-content: center;
 }
 
 .new-game-mode-panel__mode-description {
+    width: 500px;
     -unity-text-align: upper-center;
     color: rgb(255, 255, 255);
     font-size: 14px;
+    white-space: normal;
 }
 
 .new-game-mode-panel__mode-customize-button {
-    margin: 16px 20px;
+    margin: 16px 0 0 0;
 }
 
 .new-game-mode-panel__scroll-view {
@@ -451,7 +446,7 @@
 
 .new-game-mode-panel__setting-wrapper {
     flex-direction: row;
-    margin-bottom: 5px;
+    margin: 3px 0;
 }
 
 .new-game-mode-panel__setting-label {

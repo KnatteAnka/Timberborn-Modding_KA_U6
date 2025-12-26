@@ -1,13 +1,13 @@
 {
-  "Name": "Frog Statue [U6,U7,V1]",
-  "Version": "10.0.0",
+  "Name": "Frog Statue",
+  "Version": "1.0.1.5",
   "Id": "KnatteAnka.frogstatue",
-  "MinimumGameVersion": "1.0.0.0",
+  "MinimumGameVersion": "1.0.6.0",
   "Description": "This is not an official upload and should not be used",
   "RequiredMods": [
   {
 	"Id": "KnatteAnka.Materials",
-	"MinimumVersion": "10.0.0"
+	"MinimumVersion": "1.0.1.0"
   }
   ]
 }
