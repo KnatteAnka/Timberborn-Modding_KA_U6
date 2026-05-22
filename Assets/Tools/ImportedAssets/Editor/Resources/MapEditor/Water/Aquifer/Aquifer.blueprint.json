@@ -6,78 +6,76 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
-      "Size": {
-        "X": 3,
-        "Y": 3,
-        "Z": 1
-      },
-      "BlockSpecs": [
-        {
-          "MatterBelow": "Any",
-          "Occupations": "None",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "Occupations": "None",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "Occupations": "None",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "Occupations": "None",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        }
-      ]
+    "Size": {
+      "X": 3,
+      "Y": 3,
+      "Z": 1
     },
+    "Blocks": [
+      {
+        "MatterBelow": "Any",
+        "Occupations": "None",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Any",
+        "Occupations": "None",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Any",
+        "Occupations": "None",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Any",
+        "Occupations": "None",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      }
+    ],
     "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
@@ -109,7 +107,7 @@
   "LabeledEntitySpec": {
     "DisplayNameLocKey": "Building.Aquifer.DisplayName",
     "DescriptionLocKey": "Building.Aquifer.Description",
-    "FlavorDescriptionLocKey": "",
+    "FlavorDescriptionLocKey": "Building.Aquifer.FlavorDescription",
     "Icon": "MapEditor/Water/Aquifer/AquiferIcon"
   },
   "BlockObjectTerrainCutoutSpec": {
@@ -122,7 +120,7 @@
     ]
   },
   "BasicSelectionSoundSpec": {
-    "SoundName": "Default",
+    "SoundName": "Aquifer",
     "AlternativeSoundName": ""
   },
   "BlockObjectNavMeshAdderSpec": {},

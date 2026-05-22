@@ -289,7 +289,7 @@
     background-image: resource('UI/Images/Buttons/minus-batch-multi-hover');
 }
 
-.battery-batch-control-row-item {
+.battery-batch-control-row-item__progress-bar {
     width: 250px;
 }
 
@@ -1129,4 +1129,16 @@
     padding: 6px 0;
     margin-right: 3px;
     margin-left: 1px;
+}
+
+.fill-rate-progress-bar .progress-bar {
+    justify-content: center;
+}
+
+.fill-rate-progress-bar .progress-bar__frame {
+    height: 16px;
+}
+
+.fill-rate-progress-bar .progress-bar__item {
+    height: 16px;
 }

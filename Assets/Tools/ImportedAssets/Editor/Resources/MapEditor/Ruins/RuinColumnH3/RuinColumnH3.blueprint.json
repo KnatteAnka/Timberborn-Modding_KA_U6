@@ -6,36 +6,34 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
-      "Size": {
-        "X": 1,
-        "Y": 1,
-        "Z": 3
-      },
-      "BlockSpecs": [
-        {
-          "MatterBelow": "GroundOrStackable",
-          "Occupations": "All",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "Occupations": "All",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "Occupations": "All",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        }
-      ]
+    "Size": {
+      "X": 1,
+      "Y": 1,
+      "Z": 3
     },
+    "Blocks": [
+      {
+        "MatterBelow": "GroundOrStackable",
+        "Occupations": "All",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Any",
+        "Occupations": "All",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Any",
+        "Occupations": "All",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      }
+    ],
     "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
@@ -67,7 +65,7 @@
   "RuinSpec": {
     "ModelParentName": "#Models",
     "RuinHeight": 3,
-    "YielderSpec": {
+    "Yielder": {
       "YielderComponentName": "Ruin",
       "Yield": {
         "Id": "ScrapMetal",

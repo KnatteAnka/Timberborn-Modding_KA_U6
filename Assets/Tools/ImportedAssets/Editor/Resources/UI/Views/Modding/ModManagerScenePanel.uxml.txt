@@ -4,7 +4,7 @@
     <Style src="/Assets/Resources/UI/Views/MainMenu/MainMenuMiscStyle.uss" />
     <Style src="/Assets/Resources/UI/Views/Modding/ModdingStyle.uss" />
     <Style src="/Assets/Resources/UI/Views/Options/OptionsStyle.uss" />
-    <ui:VisualElement name="ModManagerScenePanel" class="title-screen content-row-centered">
+    <ui:VisualElement name="ModManagerScenePanel" class="title-screen title-screen-background content-row-centered">
         <ui:VisualElement name="ModManagerBox" class="mod-manager-box">
             <ui:VisualElement name="Content" class="mod-manager-scene-panel__content box__content-container">
                 <ui:VisualElement name="HeaderWrapper" class="capsule-header capsule-header--lower content-centered mod-manager-scene-panel__header">

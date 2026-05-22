@@ -1,0 +1,14 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "SubGroup_PE_SuspBridge",
+    "Order": 3010,
+    "NameLocKey": "Knatte.SubGroup_PE_SuspensionBridges.DisplayName",
+    "Icon": "Knatte/CategorySprites/PE_Cat_Suspension",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  }
+}

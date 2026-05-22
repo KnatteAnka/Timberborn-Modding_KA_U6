@@ -11,8 +11,8 @@
         <ui:Button name="Minus" class="button-square button-minus" />
         <ui:Button name="Plus" class="button-square button-plus button-plus--margin" />
         <ui:VisualElement name="Bindings" class="tool-panel-item__binding-row">
-            <cui:NineSliceLabel name="Decrease" class="bg-sub-box--green game-text-normal tool-panel-item__binding" />
-            <cui:NineSliceLabel name="Increase" class="bg-sub-box--green game-text-normal tool-panel-item__binding" />
+            <cui:NineSliceLabel name="Decrease" class="key-binding tool-panel-item__binding" />
+            <cui:NineSliceLabel name="Increase" class="key-binding tool-panel-item__binding" />
         </ui:VisualElement>
     </cui:NineSliceVisualElement>
 </ui:UXML>

@@ -1,6 +1,5 @@
-1.0.0.0
-* Support V1.0
-* Uses Moddable Tool Groups to allow multi level subgroups
+1.0.0.4
+* Fix mod for game version 1.0.11.1
 
 ---
 MinimumGameVersion: 0.6.0.0

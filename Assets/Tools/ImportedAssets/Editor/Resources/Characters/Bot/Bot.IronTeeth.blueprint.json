@@ -1,5 +1,16 @@
 {
   "BotSpec": {},
+  "NamedEntitySpec": {
+    "IsEditable": true
+  },
+  "NumberedEntityNamerSpec": {
+    "FormatLocKey": "Bot.DisplayName.IronTeeth",
+    "NumberingGroup": "Bots",
+    "IsPersistent": true
+  },
+  "CharacterBirthNotifierSpec": {
+    "NotificationLocKey": "Bot.Created"
+  },
   "CharacterModelSpec": {
     "ModelName": "Model_Preserved"
   },
@@ -34,14 +45,8 @@
     "ShortWalkingDistanceThreshold": 10.0,
     "WalkingSpeedThreshold": 0.75
   },
-  "WellbeingTrackerSpec": {
-    "CountsToPopulationWellbeing": false
-  },
   "SimpleLabeledEntitySpec": {
     "EntityNameLocKey": "Bot.TemplateName"
-  },
-  "BotFactionNameSpec": {
-    "NameLocKey": "Bot.DisplayName.IronTeeth"
   },
   "DeteriorableSpec": {
     "DeteriorationInDays": 70
@@ -65,7 +70,7 @@
       }
     ]
   },
-  "WellbeingBonusesReceiverSpec": {
+  "WellbeingBonusesSubjectSpec": {
     "Bonuses": [
       "WorkingSpeed",
       "MovementSpeed"
@@ -130,9 +135,6 @@
         ]
       }
     ]
-  },
-  "CharacterObjectNamerSpec": {
-    "Prefix": "Bot"
   },
   "TimbermeshAnimatorControllerSpec": {
     "BoolParameters": [

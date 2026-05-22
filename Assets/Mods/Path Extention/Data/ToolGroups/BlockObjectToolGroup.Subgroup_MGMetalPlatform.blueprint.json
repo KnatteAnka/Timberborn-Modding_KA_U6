@@ -1,0 +1,70 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGMetalPlatform",
+    "Order": 32,
+    "NameLocKey": "Knatte.Subgroup_MGMetalPlatform.DisplayName",
+    "Icon": "Knatte/SubGroupSprites/Subgroup.PE.MetalPlatform",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "LargeMetalPlatform.Emberpelts",
+      "LargeMetalPlatform.Folktails",
+      "LargeMetalPlatform.IronTeeth",
+      "MetalPillar.Emberpelts",
+      "MetalPillar.Folktails",
+      "MetalPillar.IronTeeth",
+      "MetalPillars.Emberpelts",
+      "MetalPillars.Folktails",
+      "MetalPillars.IronTeeth",
+      "MetalPlatform.Emberpelts",
+      "MetalPlatform.Folktails",
+      "MetalPlatform.IronTeeth",
+      "MetalPlatform1x1.Emberpelts",
+      "MetalPlatform1x1.Folktails",
+      "MetalPlatform1x1.IronTeeth",
+      "MetalPlatform3x3.Emberpelts",
+      "MetalPlatform3x3.Folktails",
+      "MetalPlatform3x3.IronTeeth",
+      "MetalPlatform5x3.Emberpelts",
+      "MetalPlatform5x3.Folktails",
+      "MetalPlatform5x3.IronTeeth",
+      "MetalPlatform5x5.Emberpelts",
+      "MetalPlatform5x5.Folktails",
+      "MetalPlatform5x5.IronTeeth",
+      "MetalPlatform7x7.Emberpelts",
+      "MetalPlatform7x7.Folktails",
+      "MetalPlatform7x7.IronTeeth",
+      "MetalPlatform_1.Emberpelts",
+      "MetalPlatform_1.Folktails",
+      "MetalPlatform_1.IronTeeth",
+      "Overhang2x1.Emberpelts",
+      "Overhang2x1.Folktails",
+      "Overhang2x1.IronTeeth",
+      "Overhang3x1.Emberpelts",
+      "Overhang3x1.Folktails",
+      "Overhang3x1.IronTeeth",
+      "Overhang4x1.Emberpelts",
+      "Overhang4x1.Folktails",
+      "Overhang4x1.IronTeeth",
+      "Overhang5x1.Emberpelts",
+      "Overhang5x1.Folktails",
+      "Overhang5x1.IronTeeth",
+      "Overhang6x1.Emberpelts",
+      "Overhang6x1.Folktails",
+      "Overhang6x1.IronTeeth",
+      "Overhang7x1.Emberpelts",
+      "Overhang7x1.Folktails",
+      "Overhang7x1.IronTeeth"
+    ],
+    "ChildrenOrderedIds": [],
+    "ChildrenExplicitOrderedIds": [],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

@@ -1,6 +1,6 @@
 {
   "Name": "MoreGroups",
-  "Version": "1.0.1.0",
+  "Version": "1.0.1.4",
   "Id": "KnatteAnka.MoreGroups",
   "MinimumGameVersion": "1.0.0.0",
   "Description": "This mod Groups upp alot of items thanks to Timberapi",
@@ -11,38 +11,30 @@
   }
   ],
   "OptionalMods": [
-	{
-		"Id":"Lapantouflemagic.1x1x2Storage"
-	},
-	{
-		"Id":"Lapantouflemagic.Logstairs"
-	},
-	{
-		"Id":"EmberpeltsLadder"
-	},
-	{
-		"Id":"BobPlatforms"
-	},
-	{
-		"Id":"Emberpelts"
-	},
-	{
-		"Id":"ConvenientLargeWaterWheel"
-	},
-	{
-		"Id":"KnatteAnka.Staircase"
-	},
-	{
-		"Id":"KnatteAnka.ExtendedFloodgates"
-	},
-	{
-		"Id":"Tobbert.Ladder"
-	},
-	{
-		"Id":"Timberborn.OldGopher.Pipe"
-	},
-	{
-		"Id":"alin.dirt"
-	}
+	{ "Id":"Lapantouflemagic.1x1x2Storage" 	},
+	{	"Id":"Lapantouflemagic.Logstairs"  		},
+	
+	{ "Id":"KnatteAnka.Staircase"						},
+	{	"Id":"KnatteAnka.ExtendedFloodgates" 	},
+	
+	{ "Id":"Tobbert.Ladder"									},
+	
+	{	"Id":"Timberborn.OldGopher.Pipe"			},
+	{ "Id":"MoreTunnels" 										},
+	
+	{ "Id":"alin.dirt" 											},
+	{ "Id":"HangingOverhang" 								},
+	{ "Id":"StableCore" 										},
+	
+	{ "Id":"Emberpelts" 										},
+	{	"Id":"EmberpeltsLadder"								},
+	{ "Id":"ConvenientLargeWaterWheel"			},
+	{ "Id":"BobPlatforms" 									},
+	{	"Id":"BobingaboutZiplineLevee"				},
+	{ "Id":"BobingaboutTubewayLevee"				},
+	{ "Id":"BobingaboutTinyTubewayStation" 	},
+	{ "Id":"alin.sluice" 	},
+	{ "Id":"Battery.Flywheels" 	},
+	{ "Id":"MoreTunnels.Ladder" 	}
   ]
 }

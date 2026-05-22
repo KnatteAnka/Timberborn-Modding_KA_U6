@@ -61,10 +61,21 @@
       "Overhang6x1.IronTeeth",
       "Overhang7x1.Emberpelts",
       "Overhang7x1.Folktails",
-      "Overhang7x1.IronTeeth"
+      "Overhang7x1.IronTeeth",
+      "HangingOverhang.IronTeeth",
+      "HangingOverhang.Folktails"
     ],
     "ChildrenOrderedIds": [],
-    "ChildrenExplicitOrderedIds": [],
+    "ChildrenExplicitOrderedIds": [
+      {
+        "Id": "HangingOverhang.IronTeeth",
+        "Order": 76
+      },
+      {
+        "Id": "HangingOverhang.Folktails",
+        "Order": 76
+      }
+    ],
     "DoNotIncludePlaceableToolGroup": true
   }
 }

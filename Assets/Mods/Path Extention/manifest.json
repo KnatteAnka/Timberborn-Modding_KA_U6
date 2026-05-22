@@ -1,21 +1,25 @@
 {
-  "Name": "Path Extention",
-  "Version": "7.0.1",
-  "Id": "KnatteAnka.Path_extention",
-  "MinimumGameVersion": "0.7.9.0",
-  "Description": "This is not an official upload and should not be used",
-  "RequiredMods": [
-  {
-	"Id": "KnatteAnka.Materials",
-	"MinimumVersion": "2.0.0"
-  }
-  ],
-  "OptionalMods": [
-	{
-		"Id": "Emberpelts"
-    },
-	{
-		"Id": "TimberApi"
-	}
-  ]
+    "Name": "Path Extention",
+    "Version": "1.0.0.9",
+    "Id": "KnatteAnka.Path_extention",
+    "MinimumGameVersion": "1.0.11.1",
+    "Description": "This is not an official upload and should not be used",
+    "RequiredMods": [
+        {
+            "Id": "KnatteAnka.Materials",
+            "MinimumVersion": "1.0.1.0"
+        },
+        {
+            "Id": "ModdableToolGroups",
+            "MinimumVersion": "10.1.0"
+        }
+    ],
+    "OptionalMods": [
+        {
+            "Id": "Emberpelts"
+        },
+        {
+            "Id": "BobPlatforms"
+        }
+    ]
 }

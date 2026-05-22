@@ -3,8 +3,8 @@
     <Style src="/Assets/Resources/UI/Views/Common/CommonStyle.uss" />
     <Style src="/Assets/Resources/UI/Views/Game/GameStyle.uss" />
     <Style src="/Assets/Resources/UI/Views/Game/BatchControl/BatchControlStyle.uss" />
-    <cui:NineSliceVisualElement name="BatteryBatchControlRowItem" class="batch-control-box__row-item battery-batch-control-row-item">
-        <cui:ProgressBar name="ProgressBar" class="progress-bar progress-bar--teal">
+    <cui:NineSliceVisualElement name="BatteryBatchControlRowItem" class="batch-control-box__row-item">
+        <cui:ProgressBar name="ProgressBar" class="progress-bar progress-bar--no-grow progress-bar--teal battery-batch-control-row-item__progress-bar">
             <ui:Label name="Charge" class="game-text-normal" />
             <ui:Image name="PowerIcon" class="battery-batch-control-row-item__icon" />
         </cui:ProgressBar>

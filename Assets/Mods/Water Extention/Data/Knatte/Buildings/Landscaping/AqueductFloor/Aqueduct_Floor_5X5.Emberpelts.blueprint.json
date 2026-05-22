@@ -28,17 +28,15 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 5,
         "Y": 5,
         "Z": 1
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -46,8 +44,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -55,8 +51,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -64,8 +58,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -73,8 +65,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -82,8 +72,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -91,8 +79,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -100,8 +86,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -109,8 +93,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -118,8 +100,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -127,8 +107,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -136,8 +114,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -145,8 +121,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -154,8 +128,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -163,8 +135,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -172,8 +142,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -181,8 +149,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -190,8 +156,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -199,8 +163,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -208,8 +170,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -217,8 +177,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -226,8 +184,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -235,8 +191,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -244,8 +198,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -253,16 +205,13 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,
@@ -443,15 +392,15 @@
   "ConstructionSiteProgressVisualizerSpec": {
     "ProgressThresholds": [
       0.0,
-      0.10000000149011612,
-      0.20000000298023224,
-      0.30000001192092896,
-      0.40000000596046448,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
       0.5,
-      0.60000002384185791,
-      0.699999988079071,
-      0.800000011920929,
-      0.949999988079071
+      0.6,
+      0.7,
+      0.8,
+      0.95
     ]
   },
   "Children": {

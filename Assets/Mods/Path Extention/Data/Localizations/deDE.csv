@@ -14,11 +14,13 @@ KnatteTobbert.Tunnel.Description,Ermöglicht Bibern die Durchquerung von Bergen.
 KnatteTobbert.Tunnel.FlavorDiscription,"\u201EDo you know how hard it is to Model and Texture?\u201C
 (Wisst Ihr, wie schwer es ist,
 zu modellieren und zu texturieren?) \u2013 Knatte_Anka",-
-KnatteTobbert.CategoryTunnel.DisplayName,Tunnels,-
-KnatteTobbert.CategoryTunnel.Description,Tunnels durch die Berge.,-
-KnatteTobbert.CategorySBridges.DisplayName,Metallbrücken,-
-KnatteTobbert.CategorySBridges.Description,Brücke zwischen Bergen., Momentan nicht verwendet
-KnatteTobbert.CategorySuspensionBridges.DisplayName,Hängebrücken,-
+//,//,-
+Knatte.Subgroup_MGMetalPlatform.DisplayName,Metal Platforms,
+Knatte.Subgroup_MGMetalOverhang.DisplayName,Metal Overhangs,-
+Knatte.SubGroup_PE_Tunnel.DisplayName,Tunnels,-
+Knatte.SubGroup_PE_SBridges.DisplayName,Metallbrücken,
+Knatte.SubGroup_PE_BigMetalPillar.DisplayName,Big Metal Pillars,
+//,//,
 KnatteTobbert.Bridge_1.DisplayName,Metallbrücke 1x1,-
 KnatteTobbert.Bridge_2.DisplayName,Metallbrücke 2x1,-
 KnatteTobbert.Bridge_3.DisplayName,Metallbrücke 3x1,-

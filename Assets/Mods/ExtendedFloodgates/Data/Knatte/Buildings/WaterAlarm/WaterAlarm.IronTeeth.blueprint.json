@@ -32,13 +32,13 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 1,
         "Z": 4
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
           "Occupations": "Bottom, Top, Path, Middle",
@@ -68,8 +68,7 @@
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,
@@ -192,7 +191,7 @@
         },
         "ConstructionStage0": {
           "TimbermeshSpec": {
-            "Model": "Buildings/Water/StreamGauge/StreamGauge.IronTeeth.ConstructionStage0.Model"
+            "Model": "Buildings/Decoration/StreamGauge/StreamGauge.IronTeeth.ConstructionStage0.Model"
           },
           "CollidersSpec": {
             "BoxColliders": [

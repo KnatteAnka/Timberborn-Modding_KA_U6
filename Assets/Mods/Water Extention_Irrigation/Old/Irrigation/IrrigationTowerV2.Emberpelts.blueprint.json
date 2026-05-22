@@ -54,35 +54,29 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 3,
         "Y": 2,
         "Z": 3
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Top, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -90,26 +84,20 @@
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -117,26 +105,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -144,26 +126,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -171,8 +147,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -180,8 +154,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -189,8 +161,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -198,8 +168,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -207,8 +175,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -216,16 +182,13 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": true,
       "Coordinates": {
         "X": 1,
@@ -241,7 +204,7 @@
     "LocalAccess": {
       "X": 1.5,
       "Y": 0.0,
-      "Z": 0.40000000596046448
+      "Z": 0.4
     },
     "ForceOneFinalAccess": false
   },
@@ -266,18 +229,6 @@
     "DescriptionLocKey": "Knatte.IrrigationTowerV2_FT.Description",
     "FlavorDescriptionLocKey": "Knatte.IrrigationTowerV2.FlavorDescription",
     "Icon": "Knatte/WaterExtentionIcon/IrrigationTowerV2Icon"
-  },
-  "ModifyGrowableGrowthRangeEffect": {
-    "EffectGroupName": "ModifyGrowthRate",
-    "GrowthRateModifier": 20.0,
-    "ComponentsFilter": [],
-    "PrefabNamesFilter": []
-  },
-  "GoodAmountTransformHeight": {
-    "TargetName": "#MiscExtract",
-    "MaxHeight": 1.5399999618530273,
-    "Good": "Extract",
-    "NonLinearity": 0.0
   },
   "ManufactoryTogglableRecipesSpec": {
     "LabelLocKey": "Knatte.IrrigationTower.Header"
@@ -309,7 +260,7 @@
             },
             "Radius": 0.78,
             "Height": 2.7,
-            "Direction": "Y"
+            "Axis": "Y"
           },
           {
             "Center": {
@@ -319,7 +270,7 @@
             },
             "Radius": 0.46,
             "Height": 1.8,
-            "Direction": "Y"
+            "Axis": "Y"
           }
         ]
       },

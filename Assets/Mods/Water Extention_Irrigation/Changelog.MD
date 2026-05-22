@@ -1,8 +1,8 @@
-1.0.0.1 
-* Add Support to Version 1.0.6.x
-* Enable irrigation towers with folktails style in emberpelts
+1.0.0.4 
+* Fix mod for game version 1.0.11.1
 
 ---
 MinimumGameVersion: 0.6.4.0
-MaximumGameVersion: 1.0.9.9
+MaximumGameVersion: 1.0.99.9
 ---
+

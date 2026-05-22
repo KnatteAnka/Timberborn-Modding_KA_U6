@@ -1,0 +1,69 @@
+{
+  "TemplateAttachmentsSpec": {
+    "Attachments#Append": [
+      {
+        "AttachmentId": "KAScissorBack.Beaver",
+        "Prefab": "Knatte/Character/Attachments/ScissorOnBack",
+        "Parent": "#Backpack",
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "CreateInstantly": false
+      },
+			{
+        "AttachmentId": "KASciccorBack.Beaver",
+        "Prefab": "Knatte/Character/Attachments/ScissorOnBack",
+        "Parent": "#Backpack",
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "CreateInstantly": false
+      },
+      {
+        "AttachmentId": "KAScissorHand.Beaver",
+        "Prefab": "Knatte/Character/Attachments/ScissorInHand",
+        "Parent": "#CarriedInHands",
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "CreateInstantly": false
+      }
+    ]
+  }
+}

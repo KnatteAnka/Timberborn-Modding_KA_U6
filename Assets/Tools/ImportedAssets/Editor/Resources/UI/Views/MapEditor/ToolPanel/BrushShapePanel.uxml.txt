@@ -8,6 +8,6 @@
             <cui:LocalizableLabel text="Brush shape:" text-loc-key="MapEditor.Brush.Shape.Label" class="game-text-normal tool-panel-item__label" />
         </ui:VisualElement>
         <ui:VisualElement name="Toggles" class="tool-panel-item__text__toggles content-centered" />
-        <cui:NineSliceLabel name="Binding" class="bg-sub-box--green game-text-normal tool-panel-item__binding tool-panel-item__binding-row" />
+        <cui:NineSliceLabel name="Binding" class="tool-panel-item__binding tool-panel-item__binding-row key-binding" />
     </cui:NineSliceVisualElement>
 </ui:UXML>

@@ -15,36 +15,34 @@
     "DefaultStrength": 1.0
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
-      "Size": {
-        "X": 1,
-        "Y": 3,
-        "Z": 1
-      },
-      "BlockSpecs": [
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "All",
-          "Stackable": "BlockObject",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "All",
-          "Stackable": "BlockObject",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "Occupations": "Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        }
-      ]
+    "Size": {
+      "X": 1,
+      "Y": 3,
+      "Z": 1
     },
+    "Blocks": [
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "All",
+        "Stackable": "BlockObject",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "All",
+        "Stackable": "BlockObject",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Any",
+        "Occupations": "Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      }
+    ],
     "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
@@ -76,7 +74,7 @@
   "LabeledEntitySpec": {
     "DisplayNameLocKey": "Building.BadtideDrain.DisplayName",
     "DescriptionLocKey": "Building.BadtideDrain.Description",
-    "FlavorDescriptionLocKey": "",
+    "FlavorDescriptionLocKey": "Building.BadtideDrain.FlavorDescription",
     "Icon": "MapEditor/Water/BadtideDrain/BadtideDrainIcon"
   },
   "BasicSelectionSoundSpec": {
@@ -105,14 +103,15 @@
   "ActivationWarningStatusSpec": {
     "StatusSpriteName": "WaterSourceCountdown",
     "StatusLocKey": "Status.TimedActivationWarning",
-    "UseInfiniteWarning": false
+    "UseInfiniteWarning": false,
+    "WarningSound": "UI.Buildings.Warnings.SourceActivationAlert"
   },
   "HazardousWeatherWaterSourceSpec": {
     "ActiveInHazardousWeather": [
       "BadtideWeather"
     ]
   },
-  "StartableHorizontalWaterObstacleSpec": {
+  "FinishableHorizontalWaterObstacleSpec": {
     "Obstacles": [
       {
         "X": 0,
@@ -135,8 +134,15 @@
       }
     ]
   },
-  "StartableWaterObstacleSpec": {
+  "FinishableWaterObstacleSpec": {
     "Height": 1.0
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": [],
+    "BlockedEdges": []
   },
   "Children": {
     "#Model": {

@@ -94,6 +94,11 @@ NineSliceTextField {
     justify-content: center;
 }
 
+.content-stretched {
+    align-items: stretch;
+    justify-content: center;
+}
+
 .sliced-border {
     --background-image: resource('UI/Images/Core/border_transparent');
     --background-slice-scale: 0.5;
@@ -354,12 +359,24 @@ NineSliceTextField {
     -unity-text-align: middle-left;
     --background-image: resource('UI/Images/Backgrounds/bg-square-3');
     --background-slice-scale: 0.5;
-    --background-slice: 10;
+    --background-slice: 20;
     align-self: center;
+    flex-direction: row;
 }
 
 .tooltip--not-centered {
+    flex-direction: column;
     align-items: flex-start;
+}
+
+.tooltip-key-binding {
+    background-color: rgb(154, 134, 94);
+    font-size: 12px;
+    white-space: normal;
+    margin-left: 8px;
+    padding: 0 4px;
+    justify-content: center;
+    -unity-text-align: middle-center;
 }
 
 .tooltip-wrapper {
@@ -372,7 +389,6 @@ NineSliceTextField {
 .unity-list-view > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-list-view__empty-label {
     display: none;
 }
-
 
 .slider > .unity-slider__input > .unity-base-slider__drag-container > .unity-base-slider__dragger {
     height: 16px;
@@ -649,7 +665,11 @@ NineSliceTextField {
 
 .progress-bar {
     flex-grow: 1;
-    height: 28px;
+    min-height: 28px;
+}
+
+.progress-bar--no-grow {
+    flex-grow: 0;
 }
 
 .progress-bar__item {
@@ -678,6 +698,19 @@ NineSliceTextField {
     --background-image: resource('UI/Images/Backgrounds/bg-pixel-4');
     width: 100%;
     height: 100%;
+}
+
+.progress-bar__content-container {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar Label {
+    -unity-text-align: middle-center;
+}
+
+.progress-bar LocalizableLabel {
+    -unity-text-align: middle-center;
 }
 
 .unity-text--shaded .unity-text-element {
@@ -711,13 +744,62 @@ NineSliceTextField {
 .precise-slider {
     flex-direction: row;
     flex-grow: 1;
+    margin-bottom: 5px;
 }
 
 .precise-slider__slider {
     flex-grow: 1;
 }
 
+.precise-slider__slider > .unity-slider__input > .unity-base-slider__drag-container > .unity-base-slider__tracker {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.precise-slider__marker {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 50%;
+    margin-top: -7px;
+    background-image: resource('UI/Images/Buttons/circle-marker');
+}
+
 .precise-slider__buttons {
     flex-direction: row;
     margin-left: 16px;
+}
+
+.key-binding {
+    color: rgb(0, 0, 0);
+    background-color: rgb(154, 134, 94);
+    font-size: 13px;
+    white-space: normal;
+}
+
+.radio-button {
+    align-items: center;
+    flex-direction: row;
+    --click-sound: "UI.Click";
+    margin: 2px 0;
+}
+
+.radio-button__icon {
+    width: 18px;
+    height: 18px;
+    margin: 1px 5px 1px 0;
+    flex-shrink: 0;
+    background-image: resource('UI/Images/Buttons/radio-unselected');
+}
+
+.radio-button.selected > .radio-button__icon {
+    background-image: resource('UI/Images/Buttons/radio-selected');
+}
+
+.radio-button:enabled:hover > .radio-button__icon {
+    background-image: resource('UI/Images/Buttons/radio-unselected-hover');
+}
+
+.radio-button.selected:enabled:hover > .radio-button__icon {
+    background-image: resource('UI/Images/Buttons/radio-selected');
 }

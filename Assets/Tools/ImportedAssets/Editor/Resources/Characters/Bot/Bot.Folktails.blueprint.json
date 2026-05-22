@@ -1,5 +1,16 @@
 {
   "BotSpec": {},
+  "NamedEntitySpec": {
+    "IsEditable": true
+  },
+  "NumberedEntityNamerSpec": {
+    "FormatLocKey": "Bot.DisplayName.Folktails",
+    "NumberingGroup": "Bots",
+    "IsPersistent": true
+  },
+  "CharacterBirthNotifierSpec": {
+    "NotificationLocKey": "Bot.Created"
+  },
   "CharacterModelSpec": {
     "ModelName": "Model_Preserved"
   },
@@ -34,17 +45,11 @@
     "ShortWalkingDistanceThreshold": 10.0,
     "WalkingSpeedThreshold": 0.75
   },
-  "WellbeingTrackerSpec": {
-    "CountsToPopulationWellbeing": false
-  },
   "SimpleLabeledEntitySpec": {
     "EntityNameLocKey": "Bot.TemplateName"
   },
   "DeteriorableSpec": {
     "DeteriorationInDays": 70
-  },
-  "BotFactionNameSpec": {
-    "NameLocKey": "Bot.DisplayName.Folktails"
   },
   "SwimmingAnimatorSpec": {
     "LowerSwimmingDepthThreshold": 0.22,
@@ -65,7 +70,7 @@
       }
     ]
   },
-  "WellbeingBonusesReceiverSpec": {
+  "WellbeingBonusesSubjectSpec": {
     "Bonuses": [
       "WorkingSpeed",
       "MovementSpeed"
@@ -130,9 +135,6 @@
         ]
       }
     ]
-  },
-  "CharacterObjectNamerSpec": {
-    "Prefix": "Bot"
   },
   "ZiplineHarnessModelSpec": {
     "AttachmentId": "ZiplineHarness.Bot"

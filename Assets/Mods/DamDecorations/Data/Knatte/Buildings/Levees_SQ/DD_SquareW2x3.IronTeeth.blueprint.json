@@ -38,70 +38,57 @@
     "UnblockedCoordinates": []
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 3,
         "Y": 1,
         "Z": 2
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,

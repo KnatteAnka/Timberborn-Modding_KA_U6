@@ -1,0 +1,14 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "SubGroup_PE_Tunnels",
+    "Order": 3100,
+    "NameLocKey": "Knatte.SubGroup_PE_Tunnel.DisplayName",
+    "Icon": "Knatte/CategorySprites/PE_Cat_Tunnel",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  }
+}

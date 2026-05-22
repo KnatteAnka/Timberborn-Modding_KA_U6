@@ -8,22 +8,20 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
-      "Size": {
-        "X": 1,
-        "Y": 1,
-        "Z": 1
-      },
-      "BlockSpecs": [
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "All",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        }
-      ]
+    "Size": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
     },
+    "Blocks": [
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      }
+    ],
     "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
@@ -38,7 +36,7 @@
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "MapEditorObjects",
-    "ToolOrder": 700,
+    "ToolOrder": 800,
     "ToolShape": "Square",
     "Layout": "Rectangle",
     "CustomPivot": {
@@ -60,11 +58,11 @@
   "LabeledEntitySpec": {
     "DisplayNameLocKey": "Building.Thorns.DisplayName",
     "DescriptionLocKey": "Building.Thorns.Description",
-    "FlavorDescriptionLocKey": "",
+    "FlavorDescriptionLocKey": "Building.Thorns.FlavorDescription",
     "Icon": "MapEditor/Objects/Thorns/ThornsIcon"
   },
   "BasicSelectionSoundSpec": {
-    "SoundName": "Default",
+    "SoundName": "Thorns",
     "AlternativeSoundName": ""
   },
   "BlockObjectRandomizablePlacementSpec": {},

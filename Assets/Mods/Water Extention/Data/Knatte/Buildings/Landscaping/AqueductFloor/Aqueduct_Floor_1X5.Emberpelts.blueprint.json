@@ -28,13 +28,13 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 5,
         "Z": 1
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
           "Occupations": "Floor",
@@ -71,8 +71,7 @@
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,

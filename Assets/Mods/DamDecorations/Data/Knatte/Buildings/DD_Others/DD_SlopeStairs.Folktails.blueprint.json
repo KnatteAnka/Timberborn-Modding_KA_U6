@@ -85,32 +85,31 @@
         ]
       }
     ],
-    "UnblockedCoordinates": []
+    "UnblockedCoordinates": [],
+    "BlockedEdges": []
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
-      "Size": {
-        "X": 1,
-        "Y": 1,
-        "Z": 2
-      },
-      "BlockSpecs": [
-        {
-          "MatterBelow": "GroundOrStackable",
-          "Occupations": "Bottom, Top, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "Occupations": "Floor, Bottom, Path",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        }
-      ]
+    "Size": {
+      "X": 1,
+      "Y": 1,
+      "Z": 2
     },
+    "Blocks": [
+      {
+        "MatterBelow": "GroundOrStackable",
+        "Occupations": "Bottom, Top, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Any",
+        "Occupations": "Floor, Bottom, Path",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      }
+    ],
     "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
@@ -137,7 +136,7 @@
       }
     },
     "CanBeAttachedToTerrainSide": false,
-    "DevModeTool": true
+    "DevModeTool": false
   },
   "LabeledEntitySpec": {
     "DisplayNameLocKey": "Knatte.SlopeS.DisplayName",
@@ -161,31 +160,64 @@
   "StraightStairsSpec": {},
   "Children": {
     "#Finished": {
-      "Children": {
-        "Metal V3": {
-          "TransformSpec": {
-            "Position": {
-              "X": 0.0,
-              "Y": 0.0,
-              "Z": 0.0
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.15,
+              "Z": 0.5
             },
-            "Rotation": {
-              "X": 270.019775,
-              "Y": 0.0,
-              "Z": 0.0
-            },
-            "Scale": {
+            "Size": {
               "X": 1.0,
-              "Y": 1.0,
+              "Y": 0.3,
               "Z": 1.0
             }
           },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.45,
+              "Z": 0.3
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.3,
+              "Z": 0.6
+            }
+          },
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.8,
+              "Z": 0.15
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.4,
+              "Z": -0.3
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "TimbermeshSpec": {
+        "Model": "Knatte/Model/RampSlope.Folktails.Model"
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionSite1x1Top#nested": {
+          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
+        },
+        "ConstructionStage0": {
           "CollidersSpec": {
             "BoxColliders": [
               {
                 "Center": {
                   "X": 0.5,
-                  "Y": -0.15,
+                  "Y": 0.15,
                   "Z": 0.5
                 },
                 "Size": {
@@ -197,7 +229,7 @@
               {
                 "Center": {
                   "X": 0.5,
-                  "Y": -0.45,
+                  "Y": 0.45,
                   "Z": 0.3
                 },
                 "Size": {
@@ -209,7 +241,7 @@
               {
                 "Center": {
                   "X": 0.5,
-                  "Y": -0.8,
+                  "Y": 0.8,
                   "Z": 0.15
                 },
                 "Size": {
@@ -222,106 +254,8 @@
             "SphereColliders": [],
             "CapsuleColliders": []
           },
-          "Children": {
-            "Model": {
-              "TransformSpec": {
-                "Position": {
-                  "X": 0.0,
-                  "Y": 0.0,
-                  "Z": 0.0
-                },
-                "Rotation": {
-                  "X": 89.98022,
-                  "Y": 0.0,
-                  "Z": 0.0
-                },
-                "Scale": {
-                  "X": 1.0,
-                  "Y": 1.0,
-                  "Z": 1.0
-                }
-              },
-              "TimbermeshSpec": {
-                "Model": "Knatte/Model/RampSlope.Folktails.Model"
-              }
-            }
-          }
-        }
-      }
-    },
-    "#Unfinished": {
-      "Children": {
-        "ConstructionSite1x1Top#nested": {
-          "BlueprintPath": "ConstructionBases/ConstructionBase1x1Top/ConstructionBase1x1Top.blueprint"
-        },
-        "ConstructionStage0": {
-          "Children": {
-            "Colision": {
-              "TransformSpec": {
-                "Position": {
-                  "X": 0.0,
-                  "Y": 0.0,
-                  "Z": 0.0
-                },
-                "Rotation": {
-                  "X": 270.019775,
-                  "Y": 0.0,
-                  "Z": 0.0
-                },
-                "Scale": {
-                  "X": 1.0,
-                  "Y": 1.0,
-                  "Z": 1.0
-                }
-              },
-              "CollidersSpec": {
-                "BoxColliders": [
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": -0.15,
-                      "Z": 0.5
-                    },
-                    "Size": {
-                      "X": 1.0,
-                      "Y": 0.3,
-                      "Z": 1.0
-                    }
-                  },
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": -0.45,
-                      "Z": 0.3
-                    },
-                    "Size": {
-                      "X": 1.0,
-                      "Y": 0.3,
-                      "Z": 0.6
-                    }
-                  },
-                  {
-                    "Center": {
-                      "X": 0.5,
-                      "Y": -0.8,
-                      "Z": 0.15
-                    },
-                    "Size": {
-                      "X": 1.0,
-                      "Y": 0.4,
-                      "Z": -0.3
-                    }
-                  }
-                ],
-                "SphereColliders": [],
-                "CapsuleColliders": []
-              }
-            },
-            "Model": {
-              "TimbermeshSpec": {
-                "Model": "Knatte/ModelConstructionStage/Levee1xSlope.Folktails.ConstructionStage0.Model"
-              }
-            }
+          "TimbermeshSpec": {
+            "Model": "Knatte/ModelConstructionStage/Levee1xSlope.Folktails.ConstructionStage0.Model"
           }
         }
       }

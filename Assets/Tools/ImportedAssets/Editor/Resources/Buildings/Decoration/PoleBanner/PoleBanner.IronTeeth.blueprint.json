@@ -36,29 +36,27 @@
     "UndergroundModelDepth": 0
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
-      "Size": {
-        "X": 1,
-        "Y": 1,
-        "Z": 2
-      },
-      "BlockSpecs": [
-        {
-          "MatterBelow": "GroundOrStackable",
-          "Occupations": "Bottom, Top, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "Occupations": "Floor, Bottom, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        }
-      ]
+    "Size": {
+      "X": 1,
+      "Y": 1,
+      "Z": 2
     },
+    "Blocks": [
+      {
+        "MatterBelow": "GroundOrStackable",
+        "Occupations": "Bottom, Top, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Any",
+        "Occupations": "Floor, Bottom, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      }
+    ],
     "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
@@ -73,7 +71,7 @@
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Decoration",
-    "ToolOrder": 100,
+    "ToolOrder": 110,
     "ToolShape": "Square",
     "Layout": "Single",
     "CustomPivot": {
@@ -90,7 +88,7 @@
   "LabeledEntitySpec": {
     "DisplayNameLocKey": "Building.PoleBanner.DisplayName",
     "DescriptionLocKey": "Building.PoleBanner.Description",
-    "FlavorDescriptionLocKey": "",
+    "FlavorDescriptionLocKey": "Building.PoleBanner.FlavorDescription",
     "Icon": "Buildings/Decoration/PoleBanner/PoleBannerIcon"
   },
   "DecalSupplierSpec": {

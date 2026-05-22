@@ -27,43 +27,41 @@
     "DefaultStrength": 1.0
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
-      "Size": {
-        "X": 2,
-        "Y": 2,
-        "Z": 1
-      },
-      "BlockSpecs": [
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "Occupations": "Floor, Bottom, Corners, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": true,
-          "Underground": false
-        }
-      ]
+    "Size": {
+      "X": 2,
+      "Y": 2,
+      "Z": 1
     },
+    "Blocks": [
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      },
+      {
+        "MatterBelow": "Ground",
+        "Occupations": "Floor, Bottom, Corners, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": true,
+        "Underground": false
+      }
+    ],
     "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
@@ -95,7 +93,7 @@
   "LabeledEntitySpec": {
     "DisplayNameLocKey": "Building.WaterSeep.DisplayName",
     "DescriptionLocKey": "Building.WaterSeep.Description",
-    "FlavorDescriptionLocKey": "",
+    "FlavorDescriptionLocKey": "Building.WaterSeep.FlavorDescription",
     "Icon": "MapEditor/Water/WaterSeep/WaterSeepIcon"
   },
   "BasicSelectionSoundSpec": {
@@ -153,7 +151,8 @@
   "ActivationWarningStatusSpec": {
     "StatusSpriteName": "WaterSourceCountdown",
     "StatusLocKey": "Status.TimedActivationWarning",
-    "UseInfiniteWarning": false
+    "UseInfiniteWarning": false,
+    "WarningSound": "UI.Buildings.Warnings.SourceActivationAlert"
   },
   "ActivationProgressParticlesSpec": {
     "AttachmentIds": [

@@ -11,6 +11,6 @@
             <cui:LocalizableButton name="SaveButton" text="Save" text-loc-key="Core.Save" focusable="false" class="menu-button menu-button--medium" />
         </ui:VisualElement>
         <ui:ListView name="ItemList" class="panel-list-view text--default scroll--green-decorated" />
-        <cui:LocalizableButton name="BrowseDirectoryButton" text="Browse directory ►" text-loc-key="Core.BrowseDirectory" focusable="false" class="open-dir__button text--default text--bold" />
+        <cui:LocalizableButton name="BrowseDirectoryButton" text="Browse directory ►" text-loc-key="Core.BrowseFolder" focusable="false" class="open-dir__button text--default text--bold" />
     </ui:Instance>
 </ui:UXML>

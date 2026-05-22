@@ -1,1 +1,18 @@
-﻿{"PlaceableBlockObjectSpec":{"ToolGroupId":"Subgroup_MGPlatforms","DevModeTool":false,"ToolOrder":7}}
+{
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Subgroup_MGPlatforms",
+    "ToolOrder": 7,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": false,
+      "Coordinates": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  }
+}

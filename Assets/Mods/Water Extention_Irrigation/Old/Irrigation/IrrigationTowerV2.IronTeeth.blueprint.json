@@ -40,26 +40,22 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 2,
         "Z": 2
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Top, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -67,25 +63,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Top, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": true,
       "Coordinates": {
         "X": 0,
@@ -117,7 +108,7 @@
     "LocalAccess": {
       "X": 0.5,
       "Y": 0.0,
-      "Z": 0.40000000596046448
+      "Z": 0.4
     },
     "ForceOneFinalAccess": false
   },
@@ -167,24 +158,8 @@
     "IgnoreRotation": false
   },
   "GoodConsumingBuildingSpec": {
-    "Supply": "Water",
-    "Capacity": 25,
-    "GoodPerHour": 0.47999998927116394
-  },
-  "PoweredGoodConsumingBuilding": {
-    "Started": false,
-    "GoodConsumingBuilding": {
-      "InstanceID": 0
-    },
-    "MechanicalBuilding": {
-      "InstanceID": 0
-    }
-  },
-  "GoodAmountTransformHeight": {
-    "TargetName": "#MiscWater",
-    "MaxHeight": 1.9199999570846558,
-    "Good": "Water",
-    "NonLinearity": 0.0
+    "FullInventoryWorkHours": 0,
+    "ConsumedGoods": []
   },
   "Children": {
     "#Finished": {
@@ -213,7 +188,7 @@
             },
             "Radius": 0.41,
             "Height": 2.13,
-            "Direction": "Y"
+            "Axis": "Y"
           }
         ]
       },

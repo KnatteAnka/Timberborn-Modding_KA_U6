@@ -36,22 +36,20 @@
     "UndergroundModelDepth": 0
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
-      "Size": {
-        "X": 1,
-        "Y": 1,
-        "Z": 1
-      },
-      "BlockSpecs": [
-        {
-          "MatterBelow": "GroundOrStackable",
-          "Occupations": "Bottom, Path, Middle",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        }
-      ]
+    "Size": {
+      "X": 1,
+      "Y": 1,
+      "Z": 1
     },
+    "Blocks": [
+      {
+        "MatterBelow": "GroundOrStackable",
+        "Occupations": "Bottom, Path, Middle",
+        "Stackable": "None",
+        "OccupyAllBelow": false,
+        "Underground": false
+      }
+    ],
     "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
@@ -66,7 +64,7 @@
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Decoration",
-    "ToolOrder": 110,
+    "ToolOrder": 120,
     "ToolShape": "Square",
     "Layout": "SideLine",
     "CustomPivot": {
@@ -83,7 +81,7 @@
   "LabeledEntitySpec": {
     "DisplayNameLocKey": "Building.SquareBanner.DisplayName",
     "DescriptionLocKey": "Building.SquareBanner.Description",
-    "FlavorDescriptionLocKey": "",
+    "FlavorDescriptionLocKey": "Building.SquareBanner.FlavorDescription",
     "Icon": "Buildings/Decoration/SquareBanner/SquareBannerIcon"
   },
   "DecalSupplierSpec": {

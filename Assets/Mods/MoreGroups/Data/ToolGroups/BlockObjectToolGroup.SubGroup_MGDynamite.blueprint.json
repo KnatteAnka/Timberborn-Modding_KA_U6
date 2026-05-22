@@ -48,19 +48,10 @@
       "Octamite.Common",
       "Octamite.Default",
       "Octamite",
-      "PlatformPathTunnel.Emberpelts",
-      "PlatformPathTunnel.Folktails",
-      "PlatformPathTunnel.IronTeeth",
-      "PlatformPathTunnel.Whitepaws",
       "PlatformPowerShaftTunnel.Emberpelts",
       "PlatformPowerShaftTunnel.Folktails",
       "PlatformPowerShaftTunnel.IronTeeth",
       "PlatformPowerShaftTunnel.Whitepaws",
-      "PlatformTubewayTunnel.Emberpelts",
-      "PlatformTubewayTunnel.Folktails",
-      "PlatformTubewayTunnel.GreedyBuilders",
-      "PlatformTubewayTunnel.IronTeeth",
-      "PlatformTubewayTunnel.Whitepaws",
       "Quadradecamite.Common",
       "Quadradecamite.Default",
       "Quadradecamite",
@@ -86,23 +77,158 @@
       "TripleDynamite.Emberpelts",
       "TripleDynamite.Folktails",
       "TripleDynamite.IronTeeth",
+      "Undecamite.Common",
+      "Undecamite.Default",
+      "Undecamite",
+      "StableCore",
       "Tubnel.Emberpelts",
       "Tubnel.Folktails",
       "Tubnel.IronTeeth",
       "Tubnel.Whitepaws",
-      "Tunnel.Emberpelts",
-      "Tunnel.Folktails",
+      "PowerShaftPlatformTunnel.Folktails",
+      "VerticalPowerShaftTunnel.Folktails",
+      "PowerShaftPlatformTunnel.IronTeeth",
+      "VerticalPowerShaftTunnel.IronTeeth",
+      "TubewayPlatformTunnel.IronTeeth",
+      "VerticalTubewayTunnel.IronTeeth",
       "Tunnel.IronTeeth",
+      "Tunnel.Folktails",
+      "Tunnel.Emberpelts",
+      "PathTunnel.Folktails",
+      "PathTunnel.IronTeeth",
       "Tunnel.Whitepaws",
-      "Undecamite.Common",
-      "Undecamite.Default",
-      "Undecamite",
       "UPath.Emberpelts",
       "UPath.Folktails",
-      "UPath.IronTeeth"
+      "UPath.IronTeeth",
+      "PathPlatformTunnel.Folktails",
+      "PathPlatformTunnel.IronTeeth",
+      "PlatformTubewayTunnel.Emberpelts",
+      "PlatformTubewayTunnel.Folktails",
+      "PlatformTubewayTunnel.IronTeeth",
+      "PlatformTubewayTunnel.GreedyBuilders",
+      "PlatformTubewayTunnel.Whitepaws",
+      "PlatformPathTunnel.Emberpelts",
+      "PlatformPathTunnel.Folktails",
+      "PlatformPathTunnel.IronTeeth",
+      "PlatformPathTunnel.Whitepaws",
+      "LadderTunnel.IronTeeth",
+      "LadderTunnel.Folktails",
+      "USV.IronTeeth",
+      "USL.IronTeeth",
+      "USl.IronTeeth",
+      "USV.Folktails",
+      "USL.Folktails",
+      "USl.Folktails",
+      "USV.Emberpelts",
+      "USL.Emberpelts",
+      "USl.Emberpelts",
+      "USS.IronTeeth",
+      "USS.Folktails",
+      "USS.Emberpelts"
     ],
     "ChildrenOrderedIds": [],
-    "ChildrenExplicitOrderedIds": [],
+    "ChildrenExplicitOrderedIds": [
+      {
+        "Id": "Tunnel.IronTeeth",
+        "Order": 5
+      },
+      {
+        "Id": "Tunnel.Folktails",
+        "Order": 5
+      },
+      {
+        "Id": "Tunnel.Emberpelts",
+        "Order": 5
+      },
+      {
+        "Id": "PathTunnel.Folktails",
+        "Order": 10
+      },
+      {
+        "Id": "PathTunnel.IronTeeth",
+        "Order": 10
+      },
+      {
+        "Id": "Tunnel.Whitepaws",
+        "Order": 5
+      },
+      {
+        "Id": "UPath.Emberpelts",
+        "Order": 11
+      },
+      {
+        "Id": "UPath.Folktails",
+        "Order": 11
+      },
+      {
+        "Id": "UPath.IronTeeth",
+        "Order": 11
+      },
+      {
+        "Id": "PathPlatformTunnel.Folktails",
+        "Order": 20
+      },
+      {
+        "Id": "PathPlatformTunnel.IronTeeth",
+        "Order": 20
+      },
+      {
+        "Id": "PlatformTubewayTunnel.Emberpelts",
+        "Order": 25
+      },
+      {
+        "Id": "PlatformTubewayTunnel.Folktails",
+        "Order": 25
+      },
+      {
+        "Id": "PlatformTubewayTunnel.IronTeeth",
+        "Order": 25
+      },
+      {
+        "Id": "PlatformTubewayTunnel.GreedyBuilders",
+        "Order": 25
+      },
+      {
+        "Id": "PlatformTubewayTunnel.Whitepaws",
+        "Order": 25
+      },
+      {
+        "Id": "PlatformPathTunnel.Emberpelts",
+        "Order": 30
+      },
+      {
+        "Id": "PlatformPathTunnel.Folktails",
+        "Order": 30
+      },
+      {
+        "Id": "PlatformPathTunnel.IronTeeth",
+        "Order": 30
+      },
+      {
+        "Id": "PlatformPathTunnel.Whitepaws",
+        "Order": 30
+      },
+      {
+        "Id": "LadderTunnel.IronTeeth",
+        "Order": 31
+      },
+      {
+        "Id": "LadderTunnel.Folktails",
+        "Order": 31
+      },
+      {
+        "Id": "TubewayPlatformTunnel.IronTeeth",
+        "Order": 40
+      },
+      {
+        "Id": "VerticalTubewayTunnel.IronTeeth",
+        "Order": 45
+      },
+      {
+        "Id": "PlatformTubewayTunnel.IronTeeth",
+        "Order": 50
+      }
+    ],
     "DoNotIncludePlaceableToolGroup": true
   }
 }

@@ -13,7 +13,7 @@
     "Effectiveness": 1.0,
     "Wastable": false,
     "HoursWarningThreshold": 3.5,
-    "DisplayNameLocKey": "Need.Energy.DisplayName",
+    "DisplayNameLocKey": "Need.Power.DisplayName",
     "FavorableWellbeing": 0,
     "UnfavorableWellbeing": -3
   },
@@ -23,8 +23,8 @@
   "CriticalNeedSpec": {
     "CriticalNeedType": "StateWithAlert",
     "SpriteName": "OutOfEnergy",
-    "DescriptionLocKey": "Status.Need.Energy",
-    "DescriptionShortLocKey": "Status.Need.Energy.Short"
+    "DescriptionLocKey": "Status.Need.Power",
+    "DescriptionShortLocKey": "Status.Need.Power.Short"
   },
   "PunitiveNeedSpec": {
     "Penalties": [

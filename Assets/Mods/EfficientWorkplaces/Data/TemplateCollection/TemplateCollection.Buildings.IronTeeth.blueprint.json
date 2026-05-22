@@ -1,0 +1,17 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Buildings.IronTeeth",
+    "Blueprints#append": [
+      "Knatte/Buildings/EfficientWoodWorkshop/EfficientWoodWorkshop.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientFlags/EfficientScavengerFlag.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientFlags/EfficientGathererFlag.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientFlags/EfficientLumberjackFlag.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientHaulingPost/EfficientHaulingPost.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientBuildersHut/EfficientBuildersHut.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientWaterExperiments/EfficientWaterExperiments.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientWaterPump/EfficientWaterPump.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientWaterPump/EfficientBadWaterPump.IronTeeth.blueprint",
+			"Knatte/Buildings/EfficientFood/EfficientBarnHouse.IronTeeth.blueprint",
+    ]
+  }
+}

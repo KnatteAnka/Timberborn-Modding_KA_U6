@@ -2,8 +2,10 @@
   "TemplateCollectionSpec": {
   "CollectionId": "Buildings.IronTeeth",
   "Blueprints#append": [
+	"Knatte/Buildings/Power/PowerLevee/PowerLeveeN.IronTeeth.blueprint",
+	"Knatte/Buildings/Power/PowerLevee/UPowerLeveeN.IronTeeth.blueprint",
 	"Knatte/Buildings/Power/LargeWaterWheelLevee/LargeWaterWheelLevee.IronTeeth.blueprint",
-    "Knatte/Buildings/Power/PowerLevee/PowerLevee.IronTeeth.blueprint",
+	"Knatte/Buildings/Power/PowerLevee/PowerLevee.IronTeeth.blueprint",
 	"Knatte/Buildings/Power/PowerLevee/UPowerLevee.IronTeeth.blueprint",
 	"Knatte/Buildings/Power/Turbine/TurbineSmall.IronTeeth.blueprint",
 	"Knatte/Buildings/Power/Turbine/TurbineBig.IronTeeth.blueprint"

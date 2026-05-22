@@ -6,7 +6,7 @@
     <Style src="/Assets/Resources/UI/Views/MainMenu/MainMenuStyle.uss" />
     <Style src="/Assets/Resources/UI/Views/MainMenu/MainMenuMiscStyle.uss" />
     <Style src="/Assets/Resources/UI/Views/Modding/ModdingStyle.uss" />
-    <ui:VisualElement name="TitleScreen" class="title-screen">
+    <ui:VisualElement name="TitleScreen" class="title-screen title-screen-background">
         <ui:VisualElement name="TitleScreenContent" class="title-screen__content" />
         <ui:VisualElement name="Footer" picking-mode="Ignore" class="grow-centered title-screen__footer">
             <ui:VisualElement name="LeftPanel" class="title-screen__left-panel title-screen__footer-element">

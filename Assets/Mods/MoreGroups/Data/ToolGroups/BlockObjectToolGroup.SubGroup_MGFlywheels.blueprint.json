@@ -1,0 +1,49 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGFlywheels",
+    "Order": 70,
+    "NameLocKey": "Knatte.Subgroup_MGFlywheels.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGFlywheels",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Power"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "SmallFlywheel.Folktails",
+      "SmallHorizontalFramedFlywheel.Folktails",
+      "SmallVerticalFramedFlywheel.Folktails",
+      "MediumFlywheel.Folktails",
+      "MediumHorizontalFramedFlywheel.Folktails",
+      "MediumVerticalFramedFlywheel.Folktails",
+      "LargeFlywheel.Folktails",
+      "LargeHorizontalFramedFlywheel.Folktails",
+      "LargeVerticalFramedFlywheel.Folktails",
+      "SmallFlywheel.IronTeeth",
+      "SmallHorizontalFramedFlywheel.IronTeeth",
+      "SmallVerticalFramedFlywheel.IronTeeth",
+      "MediumFlywheel.IronTeeth",
+      "MediumHorizontalFramedFlywheel.IronTeeth",
+      "MediumVerticalFramedFlywheel.IronTeeth",
+      "LargeFlywheel.IronTeeth",
+      "LargeHorizontalFramedFlywheel.IronTeeth",
+      "LargeVerticalFramedFlywheel.IronTeeth",
+      "SmallFlywheel.Emberpelts",
+      "SmallHorizontalFramedFlywheel.Emberpelts",
+      "SmallVerticalFramedFlywheel.Emberpelts",
+      "MediumFlywheel.Emberpelts",
+      "MediumHorizontalFramedFlywheel.Emberpelts",
+      "MediumVerticalFramedFlywheel.Emberpelts",
+      "LargeFlywheel.Emberpelts",
+      "LargeHorizontalFramedFlywheel.Emberpelts",
+      "LargeVerticalFramedFlywheel.Emberpelts"
+    ],
+    "ChildrenOrderedIds": [],
+    "ChildrenExplicitOrderedIds": [],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

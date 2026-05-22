@@ -24,7 +24,22 @@
       "TubewayLeveeTunnel.IronTeeth",
       "TubewayStation.IronTeeth",
       "TubewayStation.Tiny.IronTeeth",
-      "VerticalTubeway.IronTeeth"
+      "VerticalTubeway.IronTeeth",
+      "TubewayPlatformTunnel.IronTeeth",
+      "VerticalTubewayTunnel.IronTeeth",
+      "UndergroundTubeway.IronTeeth",
+      "UndergroundVerticalTubeway.IronTeeth"
+    ],
+    "ChildrenOrderedIds": [],
+    "ChildrenExplicitOrderedIds": [
+      {
+        "Id": "TubewayPlatformTunnel.IronTeeth",
+        "Order": 100
+      },
+      {
+        "Id": "VerticalTubewayTunnel.IronTeeth",
+        "Order": 101
+      }
     ],
     "DoNotIncludePlaceableToolGroup": true
   }

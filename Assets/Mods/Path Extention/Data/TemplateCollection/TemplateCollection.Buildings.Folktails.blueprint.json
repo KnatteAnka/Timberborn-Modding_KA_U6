@@ -1,0 +1,39 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Buildings.Folktails",
+    "Blueprints#append": [
+      "Knatte/Buildings/Paths/Bridges/TE_Bridge_1x1.Folktails.blueprint",
+			"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x2.Folktails.blueprint",
+			"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x3.Folktails.blueprint",
+			"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x4.Folktails.blueprint",
+			"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x5.Folktails.blueprint",
+			"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x6.Folktails.blueprint",
+			"Knatte/Buildings/Paths/FullBridges/TE_BridgeF_1x10.Folktails.blueprint",
+			"Knatte/Buildings/Paths/FullBridges/TE_BridgeF_1x7.Folktails.blueprint",
+			"Knatte/Buildings/Paths/FullBridges/TE_BridgeF_1x8.Folktails.blueprint",
+			"Knatte/Buildings/Paths/FullBridges/TE_BridgeF_1x9.Folktails.blueprint",
+			"Knatte/Buildings/Paths/MetalBigPillars/Aque_MetalBigPillarBase.Folktails.blueprint",
+			"Knatte/Buildings/Paths/MetalBigPillars/Aque_MetalBigPillarMid.Folktails.blueprint",
+			"Knatte/Buildings/Paths/MetalBigPillars/Aque_MetalBigPillarTop.Folktails.blueprint",
+			"Knatte/Buildings/Paths/MetalBigPillars/MetalBigPillarBase.Folktails.blueprint",
+			"Knatte/Buildings/Paths/MetalBigPillars/MetalBigPillarMid.Folktails.blueprint",
+			"Knatte/Buildings/Paths/MetalBigPillars/MetalBigPillarTop.Folktails.blueprint",
+			
+			"Knatte/Buildings/Paths/SmallGate/DecoSmallGate.Folktails.blueprint",
+			"Knatte/Buildings/Paths/SmallGate/SmallGate.Folktails.blueprint",
+			"Knatte/Buildings/Paths/Tunnels/TE_Tunnel_1L.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/ArcOverhang3x1.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/ArcOverhang4x1.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/ArcOverhang5x1.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/ArcOverhang6x1.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/MetalPillar.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/MetalPillars.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/MetalPlatform.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/MetalPlatform5x3.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/Overhang3x1.Centered.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/Overhang4x1.Centered.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/Overhang5x1.Centered.Folktails.blueprint",
+			"Buildings/Platforms/Folktails/Overhang7x1.Centered.Folktails.blueprint",
+    ]
+  }
+}

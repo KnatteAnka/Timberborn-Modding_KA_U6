@@ -28,17 +28,15 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 5,
         "Z": 1
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -46,8 +44,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -55,8 +51,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -64,8 +58,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -73,16 +65,13 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Floor",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,
@@ -163,10 +152,10 @@
   "ConstructionSiteProgressVisualizerSpec": {
     "ProgressThresholds": [
       0.0,
-      0.20000000298023224,
-      0.40000000596046448,
-      0.60000002384185791,
-      0.800000011920929
+      0.2,
+      0.4,
+      0.6,
+      0.8
     ]
   },
   "Children": {

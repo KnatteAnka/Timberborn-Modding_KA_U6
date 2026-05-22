@@ -12,7 +12,11 @@
     "BaseDistance": 32.0,
     "DefaultZoomLimits": {
       "Min": -8.0,
-      "Max": 4.0
+      "Max": 6.0
+    },
+    "UnlockedZoomLimits": {
+      "Min": -8.0,
+      "Max": 10.0
     },
     "MapEditorZoomLimits": {
       "Min": -2.5,

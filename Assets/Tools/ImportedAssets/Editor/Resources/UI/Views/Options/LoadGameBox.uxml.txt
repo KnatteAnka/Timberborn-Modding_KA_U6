@@ -24,7 +24,7 @@
                 <cui:LocalizableButton name="DeleteSaveButton" text-loc-key="Saving.DeleteSave" focusable="false" class="menu-button menu-button--medium" />
                 <cui:LocalizableButton name="LoadButton" text="Load" text-loc-key="Core.Load" focusable="false" class="menu-button menu-button--medium" />
             </ui:VisualElement>
-            <cui:LocalizableButton name="BrowseDirectoryButton" text="Browse directory ►" text-loc-key="Core.BrowseDirectory" focusable="false" class="open-dir__button text--default text--bold" />
+            <cui:LocalizableButton name="BrowseDirectoryButton" text="Browse directory ►" text-loc-key="Core.BrowseFolder" focusable="false" class="open-dir__button text--default text--bold" />
         </ui:Instance>
     </ui:VisualElement>
 </ui:UXML>

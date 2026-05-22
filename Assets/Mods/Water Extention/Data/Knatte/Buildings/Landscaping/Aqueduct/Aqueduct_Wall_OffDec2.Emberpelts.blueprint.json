@@ -32,13 +32,13 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 3,
         "Y": 1,
         "Z": 1
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "Any",
           "Occupations": "Bottom",
@@ -61,8 +61,7 @@
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,

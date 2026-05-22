@@ -1,6 +1,6 @@
-1.0.0.0
-* Support V1.0
-* Uses Moddable Tool Groups to allow multi level subgroups
+1.0.0.7
+* Add Underside texture to 2-3 long levees
+
 
 ---
 MinimumGameVersion: 0.6.3.1

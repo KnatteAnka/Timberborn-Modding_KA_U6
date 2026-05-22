@@ -1,0 +1,39 @@
+{
+    "TemplateCollectionSpec": {
+        "CollectionId": "Buildings.IronTeeth",
+        "Blueprints#append": [
+            "Knatte/Buildings/Paths/Bridges/TE_Bridge_1x1.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x2.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x3.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x4.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x5.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/Bridges/TE_Bridge_1x6.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/FullBridges/TE_BridgeF_1x10.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/FullBridges/TE_BridgeF_1x7.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/FullBridges/TE_BridgeF_1x8.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/FullBridges/TE_BridgeF_1x9.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/MetalBigPillars/Aque_MetalBigPillarBase.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/MetalBigPillars/Aque_MetalBigPillarMid.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/MetalBigPillars/Aque_MetalBigPillarTop.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/MetalBigPillars/MetalBigPillarBase.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/MetalBigPillars/MetalBigPillarMid.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/MetalBigPillars/MetalBigPillarTop.IronTeeth.blueprint",
+						
+						"Knatte/Buildings/Paths/SmallGate/DecoSmallGate.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/SmallGate/SmallGate.IronTeeth.blueprint",
+						"Knatte/Buildings/Paths/Tunnels/TE_Tunnel_1L.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/ArcOverhang3x1.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/ArcOverhang4x1.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/ArcOverhang5x1.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/ArcOverhang6x1.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/MetalPillar.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/MetalPillars.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/MetalPlatform.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/MetalPlatform5x3.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/Overhang3x1.Centered.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/Overhang4x1.Centered.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/Overhang5x1.Centered.IronTeeth.blueprint",
+						"Buildings/Platforms/IronTeeth/Overhang7x1.Centered.IronTeeth.blueprint",
+        ]
+    }
+}

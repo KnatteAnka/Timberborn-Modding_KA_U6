@@ -34,13 +34,13 @@
     "UnblockedCoordinates": []
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 1,
         "Z": 2
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
           "Occupations": "Corners",
@@ -50,14 +50,13 @@
         },
         {
           "MatterBelow": "Any",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,

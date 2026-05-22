@@ -1,0 +1,14 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "SubGroup_PE_Bridges",
+    "Order": 59,
+    "NameLocKey": "Knatte.SubGroup_PE_SBridges.DisplayName",
+    "Icon": "Knatte/SubGroupSprites/Subgroup.PE.Bridge",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Paths"
+    ]
+  }
+}

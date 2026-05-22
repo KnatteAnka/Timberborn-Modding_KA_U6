@@ -1,0 +1,46 @@
+{
+  "BlockObjectToolGroupSpec": {
+    "Id": "Subgroup_MGSluices",
+    "Order": 35,
+    "NameLocKey": "Knatte.Subgroup_MGSluices.DisplayName",
+    "Icon": "Knatte/Sprites/Subgroup_MGSluices",
+    "FallbackGroup": false
+  },
+  "ParentToolGroupSpec": {
+    "ParentIds": [
+      "Landscaping"
+    ]
+  },
+  "ToolGroupChildrenSpec": {
+    "ChildrenGroupsIds": [],
+    "ChildrenToolsTemplateNames": [
+      "Sluice.Emberpelts",
+      "Sluice.Folktails",
+      "Sluice.IronTeeth",
+      "Valve.Folktails",
+      "Valve.IronTeeth",
+      "Valve.Emberpelts",
+      "FillValve.Folktails",
+      "FillValve.IronTeeth",
+      "FillValve.Emberpelts",
+      "USV.IronTeeth",
+      "USL.IronTeeth",
+      "USl.IronTeeth",
+      "USV.Folktails",
+      "USL.Folktails",
+      "USl.Folktails",
+      "USV.Emberpelts",
+      "USL.Emberpelts",
+      "USl.Emberpelts",
+      "USS.IronTeeth",
+      "USS.Folktails",
+      "USS.Emberpelts",
+      "Aqueduct_Sluice.Folktails",
+      "Aqueduct_Sluice.IronTeeth",
+      "Aqueduct_Sluice.Emberpelts"
+    ],
+    "ChildrenOrderedIds": [],
+    "ChildrenExplicitOrderedIds": [],
+    "DoNotIncludePlaceableToolGroup": true
+  }
+}

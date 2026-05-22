@@ -1,0 +1,17 @@
+{
+  "TemplateCollectionSpec": {
+    "CollectionId": "Buildings.Folktails",
+    "Blueprints#append": [
+      "Knatte/Buildings/EfficientWoodWorkshop/EfficientWoodWorkshop.Folktails.blueprint",
+			"Knatte/Buildings/EfficientFlags/EfficientScavengerFlag.Folktails.blueprint",
+			"Knatte/Buildings/EfficientFlags/EfficientGathererFlag.Folktails.blueprint",
+			"Knatte/Buildings/EfficientFlags/EfficientLumberjackFlag.Folktails.blueprint",
+			"Knatte/Buildings/EfficientHaulingPost/EfficientHaulingPost.Folktails.blueprint",
+			"Knatte/Buildings/EfficientBuildersHut/EfficientBuildersHut.Folktails.blueprint",
+			"Knatte/Buildings/EfficientWaterExperiments/EfficientWaterExperiments.Folktails.blueprint",
+			"Knatte/Buildings/EfficientWaterPump/EfficientWaterPump.Folktails.blueprint",
+			"Knatte/Buildings/EfficientWaterPump/EfficientBadWaterPump.Folktails.blueprint",
+			"Knatte/Buildings/EfficientFood/EfficientBarnHouse.Folktails.blueprint",
+    ]
+  }
+}

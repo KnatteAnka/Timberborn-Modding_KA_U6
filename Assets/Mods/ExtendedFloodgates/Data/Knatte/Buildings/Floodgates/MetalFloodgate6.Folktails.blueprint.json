@@ -40,17 +40,15 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 1,
         "Z": 7
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -58,61 +56,48 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,
@@ -212,7 +197,7 @@
             },
             "Radius": 0.2,
             "Height": 1.0,
-            "Direction": "Z"
+            "Axis": "Y"
           }
         ]
       },
@@ -613,7 +598,7 @@
                 },
                 "Radius": 0.2,
                 "Height": 1.0,
-                "Direction": "Z"
+                "Axis": "Y"
               }
             ]
           }

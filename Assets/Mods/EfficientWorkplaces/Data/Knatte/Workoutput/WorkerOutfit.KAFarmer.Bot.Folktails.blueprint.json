@@ -1,0 +1,13 @@
+{
+  "WorkerOutfitSpec": {
+    "Id": "KAFarmer",
+    "FactionId": "Folktails",
+    "WorkerType": "Bot",
+    "DiffuseTexture": "Materials/Beavers/Common/WorkerOutfits/WorkerHammerStrings_D",
+    "NormalTexture": "Materials/Beavers/Common/WorkerOutfits/WorkerHammerStrings_N",
+    "Attachments": [
+      "KAScissorBack.Bot",
+      "FarmerHat.Bot.Folktails"
+    ]
+  }
+}

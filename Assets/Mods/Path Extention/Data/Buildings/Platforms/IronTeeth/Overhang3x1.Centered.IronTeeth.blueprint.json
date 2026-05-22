@@ -1,0 +1,402 @@
+{
+  "BuildingSpec": {
+    "SelectionSoundName": "Default",
+    "LoopingSoundName": "",
+    "BuildingCost": [
+      {
+        "Id": "Log",
+        "Amount": 15
+      },
+      {
+        "Id": "Plank",
+        "Amount": 15
+      },
+      {
+        "Id": "MetalBlock",
+        "Amount": 6
+      }
+    ],
+    "ScienceCost": 600,
+    "PlaceFinished": false,
+    "FinishableWithBeaversOnSite": true,
+    "DrawRangeBoundsOnIt": true
+  },
+  "BuildingModelSpec": {
+    "FinishedModelName": "#Finished",
+    "UnfinishedModelName": "#Unfinished",
+    "FinishedUncoveredModelName": "#FinishedUncovered",
+    "UndergroundModelName": "",
+    "ConstructionModeModel": "Finished",
+    "UndergroundModelDepth": 0
+  },
+  "TemplateSpec": {
+    "TemplateName": "Overhang3x1.Centered.IronTeeth",
+    "BackwardCompatibleTemplateNames": [
+      "MiddleOverhang1x3.IronTeeth",
+      "MiddleOverhang3x1.IronTeeth"
+    ],
+    "RequiredFeatureToggle": "",
+    "DisablingFeatureToggle": ""
+  },
+  "BlockObjectNavMeshSettingsSpec": {
+    "NoAutoWalls": false,
+    "GenerateFloorsOnStackable": true,
+    "EdgeGroups": [],
+    "UnblockedCoordinates": []
+  },
+  "BlockObjectSpec": {
+    
+      "Size": {
+        "X": 1,
+        "Y": 3,
+        "Z": 1
+      },
+      "Blocks": [
+        {
+          "MatterBelow": "Any",
+          "Occupations": "Top",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "GroundOrStackable",
+          "Occupations": "Top, Corners",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "Occupations": "Top",
+          "Stackable": "BlockObject",
+          "OccupyAllBelow": false,
+          "Underground": false
+        }
+      ]
+,    "Entrance": {
+      "HasEntrance": false,
+      "Coordinates": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    "BaseZ": 0,
+    "Overridable": false,
+    "Flippable": false
+  },
+  "PlaceableBlockObjectSpec": {
+    "ToolGroupId": "Subgroup_MGMetalOverhang",
+    "ToolOrder": 200,
+    "ToolShape": "Square",
+    "Layout": "Single",
+    "CustomPivot": {
+      "HasCustomPivot": true,
+      "Coordinates": {
+        "X": 0.5,
+        "Y": 1.5,
+        "Z": 0.0
+      }
+    },
+    "CanBeAttachedToTerrainSide": false,
+    "DevModeTool": false
+  },
+  "LabeledEntitySpec": {
+    "DisplayNameLocKey": "Knatte.MiddleOverhang3x1.DisplayName",
+    "DescriptionLocKey": "Knatte.MiddleOverhang.Description",
+    "FlavorDescriptionLocKey": "Knatte.MiddleOverhang.FlavorDescription",
+    "Icon": "Knatte/PathExtentionIcon/MiddleOverhang3x1"
+  },
+  "ConstructionSiteProgressVisualizerSpec": {
+    "ProgressThresholds": [
+      0.0
+    ]
+  },
+  "Children": {
+    "#FinishedUncovered": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "TimbermeshSpec": {
+        "Model": "Knatte/Model/MetalPillar.IronTeeth.Model"
+      },
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 0.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      }
+    },
+    "#Finished": {
+      "TransformSpec": {
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Scale": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        }
+      },
+      "CollidersSpec": {
+        "BoxColliders": [
+          {
+            "Center": {
+              "X": 0.5,
+              "Y": 0.92,
+              "Z": 1.5
+            },
+            "Size": {
+              "X": 1.0,
+              "Y": 0.16,
+              "Z": 3.0
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 1.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.08,
+              "Y": 0.5,
+              "Z": 1.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 1.08
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          },
+          {
+            "Center": {
+              "X": 0.92,
+              "Y": 0.5,
+              "Z": 1.92
+            },
+            "Size": {
+              "X": 0.16,
+              "Y": 1.0,
+              "Z": 0.16
+            }
+          }
+        ],
+        "SphereColliders": [],
+        "CapsuleColliders": []
+      },
+      "TimbermeshSpec": {
+        "Model": "Knatte/Model/MiddleOverhang3x1.IronTeeth.Model"
+      }
+    },
+    "#Unfinished": {
+      "Children": {
+        "ConstructionBase1x1": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "ConstructionBases/ConstructionBase1x1/ConstructionBase1x1.Model"
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.5,
+                  "Y": 0.05,
+                  "Z": 0.5
+                },
+                "Size": {
+                  "X": 1.0,
+                  "Y": 0.1,
+                  "Z": 1.0
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        },
+        "ConstructionStage0": {
+          "TransformSpec": {
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 1.0
+            },
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "TimbermeshSpec": {
+            "Model": "Knatte/Model/MetalPillar.IronTeeth.Model"
+          },
+          "CollidersSpec": {
+            "BoxColliders": [
+              {
+                "Center": {
+                  "X": 0.08,
+                  "Y": 0.5,
+                  "Z": 0.08
+                },
+                "Size": {
+                  "X": 0.16,
+                  "Y": 1.0,
+                  "Z": 0.16
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.92,
+                  "Y": 0.5,
+                  "Z": 0.08
+                },
+                "Size": {
+                  "X": 0.16,
+                  "Y": 1.0,
+                  "Z": 0.16
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.08,
+                  "Y": 0.5,
+                  "Z": 0.92
+                },
+                "Size": {
+                  "X": 0.16,
+                  "Y": 1.0,
+                  "Z": 0.16
+                }
+              },
+              {
+                "Center": {
+                  "X": 0.92,
+                  "Y": 0.5,
+                  "Z": 0.92
+                },
+                "Size": {
+                  "X": 0.16,
+                  "Y": 1.0,
+                  "Z": 0.16
+                }
+              }
+            ],
+            "SphereColliders": [],
+            "CapsuleColliders": []
+          }
+        }
+      }
+    }
+  }
+}

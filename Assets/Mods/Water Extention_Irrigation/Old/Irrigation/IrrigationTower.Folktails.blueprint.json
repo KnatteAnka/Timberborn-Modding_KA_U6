@@ -61,12 +61,12 @@
   "WorkplaceBonusesSpec": {
     "WorkerBonuses": [
       {
-        "BonusId": "CarryingCapacity",
-        "MultiplierDelta": 0.10000000149011612
+        "Id": "",
+        "MultiplierDelta": 0.1
       },
       {
-        "BonusId": "MovementSpeed",
-        "MultiplierDelta": 0.05000000074505806
+        "Id": "",
+        "MultiplierDelta": 0.05
       }
     ]
   },
@@ -77,89 +77,71 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 2,
         "Y": 2,
         "Z": 3
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -167,8 +149,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -176,8 +156,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -185,16 +163,13 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "FullExceptTop",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Corners, Path, Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": true,
       "Coordinates": {
         "X": 1,
@@ -226,7 +201,7 @@
     "LocalAccess": {
       "X": 1.5,
       "Y": 0.0,
-      "Z": 0.40000000596046448
+      "Z": 0.4
     },
     "ForceOneFinalAccess": false
   },
@@ -237,9 +212,8 @@
     "Icon": "Knatte/WaterExtentionIcon/IrrigationTowerIcon"
   },
   "GoodConsumingBuildingSpec": {
-    "Supply": "Water",
-    "Capacity": 30,
-    "GoodPerHour": 0.15199999511241913
+    "FullInventoryWorkHours": 0,
+    "ConsumedGoods": []
   },
   "EnterableSpec": {
     "OperatingState": "Finished",
@@ -247,12 +221,6 @@
     "CapacityFinished": 0,
     "LimitedCapacityUnfinished": false,
     "CapacityUnfinished": 0
-  },
-  "GoodAmountTransformHeight": {
-    "TargetName": "#MiscWater",
-    "MaxHeight": 2.5580000877380371,
-    "Good": "Water",
-    "NonLinearity": 0.0
   },
   "Children": {
     "#Finished": {
@@ -281,7 +249,7 @@
             },
             "Radius": 0.7,
             "Height": 2.7,
-            "Direction": "Y"
+            "Axis": "Y"
           }
         ]
       },

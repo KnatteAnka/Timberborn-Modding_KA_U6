@@ -12,11 +12,13 @@ KnatteTobbert.Tunnel_1L.DisplayName,Tunnel à travers Digue,-
 KnatteTobbert.Tunnel_1L.Description,Autorise des castors a passer au travers des digues.,-
 KnatteTobbert.Tunnel.Description,Autorise des castors a passer au travers des montagnes.,-
 KnatteTobbert.Tunnel.FlavorDiscription,Savez-vous a quel point c'est difficile à modéliser et texturer ? - KnatteAnka,-
-KnatteTobbert.CategoryTunnel.DisplayName,Tunnels,-
-KnatteTobbert.CategoryTunnel.Description,Tunnels à travers les montagnes,-
-KnatteTobbert.CategorySBridges.DisplayName,Ponts en métal,-
-KnatteTobbert.CategorySBridges.Description,Bridge between Mountains, Not used atm
-KnatteTobbert.CategorySuspensionBridges.DisplayName,Ponts suspendus,-
+//,//,-
+Knatte.Subgroup_MGMetalPlatform.DisplayName,Metal Platforms,
+Knatte.Subgroup_MGMetalOverhang.DisplayName,Metal Overhangs,-
+Knatte.SubGroup_PE_Tunnel.DisplayName,Tunnels,-
+Knatte.SubGroup_PE_SBridges.DisplayName,Ponts en métal,
+Knatte.SubGroup_PE_BigMetalPillar.DisplayName,Big Metal Pillars,
+//,//,
 KnatteTobbert.Bridge_1.DisplayName,Pont en métal 1x1,-
 KnatteTobbert.Bridge_2.DisplayName,Pont en métal 2x1,-
 KnatteTobbert.Bridge_3.DisplayName,Pont en métal 3x1,-

@@ -32,17 +32,15 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 2,
         "Z": 1
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Path, Middle",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
@@ -50,16 +48,13 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Middle",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,
@@ -78,7 +73,7 @@
     "UnblockedCoordinates": []
   },
   "PlaceableBlockObjectSpec": {
-    "ToolGroupId": "Subgroup_WEAqueduct",
+    "ToolGroupId": "Landscaping",
     "ToolOrder": 45,
     "ToolShape": "Square",
     "Layout": "SideLine",

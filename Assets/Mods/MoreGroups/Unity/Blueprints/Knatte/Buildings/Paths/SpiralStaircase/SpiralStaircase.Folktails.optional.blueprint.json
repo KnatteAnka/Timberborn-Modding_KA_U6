@@ -1,18 +1,1 @@
-{
-  "PlaceableBlockObjectSpec": {
-    "ToolGroupId": "",
-    "ToolOrder": 32,
-    "ToolShape": "Square",
-    "Layout": "Single",
-    "CustomPivot": {
-      "HasCustomPivot": false,
-      "Coordinates": {
-        "X": 0.0,
-        "Y": 0.0,
-        "Z": 0.0
-      }
-    },
-    "CanBeAttachedToTerrainSide": false,
-    "DevModeTool": false
-  }
-}
+﻿{"PlaceableBlockObjectSpec":{"ToolOrder":32}}

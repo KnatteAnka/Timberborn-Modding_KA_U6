@@ -4,5 +4,7 @@
     <ui:VisualElement name="TutorialStepView" class="tutorial-step-view">
         <ui:VisualElement name="Checkbox" class="tutorial-step-view__checkbox" />
         <ui:Label name="Description" text="build a Log pile" class="game-text-normal" />
+        <ui:VisualElement name="FixedKeyBinding" class="tutorial-step-view__key-binding" />
+        <ui:Label name="KeyBinding" text="W" class="tutorial-step-view__key-binding tutorial-step-view__key-binding--text" />
     </ui:VisualElement>
 </ui:UXML>

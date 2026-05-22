@@ -2,11 +2,24 @@
   "ToolGroupChildrenSpec": {
     "ChildrenGroupsIds": [],
     "ChildrenToolsTemplateNames": [],
-    "ChildrenOrderedIds#Append": [
-      "Dam.Folktails",
-      "Dam.IronTeeth",
-      "Levee.Folktails",
-      "Levee.IronTeeth"
+    "ChildrenOrderedIds": [],
+    "ChildrenExplicitOrderedIds": [
+      {
+        "Id": "Dam.Folktails",
+        "Order": 10
+      },
+      {
+        "Id": "Dam.IronTeeth",
+        "Order": 10
+      },
+      {
+        "Id": "Levee.Folktails",
+        "Order": 15
+      },
+      {
+        "Id": "Levee.IronTeeth",
+        "Order": 15
+      }
     ],
     "DoNotIncludePlaceableToolGroup": false
   }

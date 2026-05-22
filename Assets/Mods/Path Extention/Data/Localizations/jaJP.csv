@@ -12,11 +12,13 @@ KnatteTobbert.Tunnel_1L.DisplayName,堤防用トンネル,-
 KnatteTobbert.Tunnel_1L.Description,ビーバーが堤防を通り抜けられるようにする。,-
 KnatteTobbert.Tunnel.Description,ビーバーが山を通り抜けられるようにする。,-
 KnatteTobbert.Tunnel.FlavorDiscription,トンネルの水密性の高さは我々ビーバーの最高知能の結晶であり誇りである。,-ジョジョの奇妙な冒険
-KnatteTobbert.CategoryTunnel.DisplayName,トンネル,-
-KnatteTobbert.CategoryTunnel.Description,山を超えるトンネル。,-
-KnatteTobbert.CategorySBridges.DisplayName,鉄橋,-
-KnatteTobbert.CategorySBridges.Description,谷を渡る鉄橋。,未使用
-KnatteTobbert.CategorySuspensionBridges.DisplayName,吊り橋,-
+//,//,-
+Knatte.Subgroup_MGMetalPlatform.DisplayName,Metal Platforms,
+Knatte.Subgroup_MGMetalOverhang.DisplayName,Metal Overhangs,-
+Knatte.SubGroup_PE_Tunnel.DisplayName,トンネル,-
+Knatte.SubGroup_PE_SBridges.DisplayName,鉄橋,
+Knatte.SubGroup_PE_BigMetalPillar.DisplayName,Big Metal Pillars,
+//,//,
 KnatteTobbert.Bridge_1.DisplayName,鉄橋 1x1,-
 KnatteTobbert.Bridge_2.DisplayName,鉄橋 2x1,-
 KnatteTobbert.Bridge_3.DisplayName,鉄橋 3x1,-

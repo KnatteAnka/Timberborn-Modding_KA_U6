@@ -12,11 +12,13 @@ KnatteTobbert.Tunnel_1L.DisplayName,Tunnel Thrue Levee,-
 KnatteTobbert.Tunnel_1L.Description,Allows beavers to pass through Levees.,-
 KnatteTobbert.Tunnel.Description,Allows beavers to pass through mountains.,-
 KnatteTobbert.Tunnel.FlavorDiscription,Do you know how hard it is to Model and Texture? - KnatteAnka,-
-KnatteTobbert.CategoryTunnel.DisplayName,Tunnels,-
-KnatteTobbert.CategoryTunnel.Description,Tunnels Past the Mountains,-
-KnatteTobbert.CategorySBridges.DisplayName,Steel Bridges,-
-KnatteTobbert.CategorySBridges.Description,Bridge between Mountains, Not used atm
-KnatteTobbert.CategorySuspensionBridges.DisplayName,Suspension Bridges,-
+//,//,-
+Knatte.Subgroup_MGMetalPlatform.DisplayName,Metal Platforms,
+Knatte.Subgroup_MGMetalOverhang.DisplayName,Metal Overhangs,
+Knatte.SubGroup_PE_Tunnel.DisplayName,Tunnels,
+Knatte.SubGroup_PE_SBridges.DisplayName,Steel Bridges,
+Knatte.SubGroup_PE_BigMetalPillar.DisplayName,Big Metal Pillars,
+//,//,
 KnatteTobbert.Bridge_1.DisplayName,Steel Bridge 1x1,-
 KnatteTobbert.Bridge_2.DisplayName,Steel Bridge 2x1,-
 KnatteTobbert.Bridge_3.DisplayName,Steel Bridge 3x1,-

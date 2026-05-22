@@ -1,0 +1,21 @@
+{
+  "RecipeSpec": {
+    "Id": "IrrigationWaterIT",
+    "BackwardCompatibleIds": [],
+    "DisplayLocKey": "Knatte.WE_IrrigationFuel.DisplayName",
+    "CycleDurationInHours": 3.3,
+    "Ingredients": [
+      {
+        "Id": "Water",
+        "Amount": 1
+      }
+    ],
+    "Products": [],
+    "ProducedSciencePoints": 0,
+    "Fuel": "",
+    "CyclesFuelLasts": 0,
+    "FuelCapacity": 0,
+    "CyclesCapacity": 26,
+    "Icon": "Knatte/WaterExtentionIcon/Irrigation"
+  }
+}

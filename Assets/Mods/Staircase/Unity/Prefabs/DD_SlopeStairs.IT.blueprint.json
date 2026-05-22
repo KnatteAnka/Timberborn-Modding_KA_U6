@@ -16,36 +16,6 @@
       "Z": 1.0
     }
   },
-  "BuildingModel": {
-    "BlockObject": {
-      "InstanceID": 0
-    },
-    "BlockObjectModelController": {
-      "InstanceID": 0
-    },
-    "BuildingModelSpec": {
-      "InstanceID": 0
-    },
-    "ShowFinishedModel": false,
-    "BlockUnfinishedModel": false,
-    "UndergroundModel": {
-      "InstanceID": 0
-    }
-  },
-  "BlockObject": {
-    "PlacementChangeNotifier": {
-      "InstanceID": 0
-    },
-    "BlockObjectCenter": {
-      "InstanceID": 0
-    },
-    "BlockObjectState": {
-      "InstanceID": 0
-    },
-    "BlockObjectSpec": {
-      "InstanceID": 0
-    }
-  },
   "Children": {
     "#Finished": {
       "CollidersSpec": {

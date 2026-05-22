@@ -1,0 +1,30 @@
+{
+  "RecipeSpec": {
+    "Id": "EfficientTreatedPlank",
+    "BackwardCompatibleIds": [],
+    "DisplayLocKey": "Knatte.EfficientTreatedPlank.PluralDisplayName",
+    "CycleDurationInHours": 3.0,
+    "Ingredients": [
+      {
+        "Id": "Log",
+        "Amount": 1
+      },
+      {
+        "Id": "PineResin",
+        "Amount": 2
+      }
+    ],
+    "Products": [
+      {
+        "Id": "TreatedPlank",
+        "Amount": 2
+      }
+    ],
+    "ProducedSciencePoints": 0,
+    "Fuel": "",
+    "CyclesFuelLasts": 0,
+    "FuelCapacity": 0,
+    "CyclesCapacity": 20,
+    "Icon": "Sprites/Goods/TreatedPlankIcon"
+  }
+}

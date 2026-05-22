@@ -494,6 +494,10 @@
     font-size: 14px;
 }
 
+.dropdown-item--none .dropdown-item__text {
+    color: rgb(130, 130, 130);
+}
+
 .camera-action-marker {
     background-image: resource('UI/Images/Core/dragging-icon');
     height: 32px;
@@ -782,4 +786,54 @@
     background-image: resource('UI/Images/Buttons/cross-red');
     width: 18px;
     height: 18px;
+}
+
+.fixed-key-binding__item {
+    width: 14px;
+    height: 14px;
+}
+
+.mouse-left .fixed-key-binding__item--mouse-button {
+    background-image: resource('UI/Images/Core/mouse-left');
+}
+
+.mouse-right .fixed-key-binding__item--mouse-button {
+    background-image: resource('UI/Images/Core/mouse-right');
+}
+
+.mouse-middle .fixed-key-binding__item--mouse-button {
+    background-image: resource('UI/Images/Core/mouse-middle');
+}
+
+.mouse-zoom .fixed-key-binding__item--mouse-button {
+    background-image: resource('UI/Images/Core/mouse-zoom');
+}
+
+.up .fixed-key-binding__item--direction {
+    background-image: resource('UI/Images/Core/arrow-up');
+}
+
+.down .fixed-key-binding__item--direction {
+    background-image: resource('UI/Images/Core/arrow-down');
+}
+
+.left .fixed-key-binding__item--direction {
+    background-image: resource('UI/Images/Core/arrow-left');
+}
+
+.right .fixed-key-binding__item--direction {
+    background-image: resource('UI/Images/Core/arrow-right');
+}
+
+.scroll-up .fixed-key-binding__item--direction {
+    background-image: resource('UI/Images/Core/scroll-up');
+}
+
+.scroll-down .fixed-key-binding__item--direction {
+    background-image: resource('UI/Images/Core/scroll-down');
+}
+
+.game-dropdown {
+    flex-grow: 1;
+    margin: 3px 2px 3px 0;
 }

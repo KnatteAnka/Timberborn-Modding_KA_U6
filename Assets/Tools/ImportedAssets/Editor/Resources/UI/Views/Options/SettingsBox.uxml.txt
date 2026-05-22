@@ -15,8 +15,13 @@
                             <cui:NineSliceButton text="Clear PlayerPrefs" name="ClearPlayerPrefs" focusable="false" class="menu-button" />
                             <cui:NineSliceButton text="Test languages" name="TestLanguages" focusable="false" class="menu-button" />
                             <cui:NineSliceButton text="Test exception" name="TestException" focusable="false" class="menu-button" />
+                            <cui:NineSliceButton text="Show clean log" name="ShowCleanLog" focusable="false" class="menu-button" />
                         </ui:VisualElement>
                     </ui:VisualElement>
+                    <cui:LocalizableLabel text="General" name="GeneralHeader" text-loc-key="Settings.General.Header" class="settings-header" />
+                    <cui:LocalizableToggle text="DisableTutorial" name="DisableTutorial" text-loc-key="Settings.Tutorial.DisableTutorial" focusable="false" class="settings-element settings-toggle settings-text" />
+                    <cui:LocalizableToggle text="AutoSavingOn" name="AutoSavingOn" text-loc-key="Settings.GameSaving.AutoSavingOn" focusable="false" class="settings-element settings-toggle settings-text" />
+                    <cui:LocalizableToggle text="DisableIntro" name="DisableIntro" text-loc-key="Settings.Intro.DisableIntro" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableLabel text="Screen" name="ScreenHeader" text-loc-key="Settings.Screen.ScreenHeader" class="settings-header" />
                     <cui:LocalizableToggle text="FullScreen" name="FullScreen" text-loc-key="Settings.Screen.FullScreen" focusable="false" class="settings-element settings-text settings-toggle" />
                     <Timberborn.DropdownSystem.Dropdown name="ScreenResolution" label-loc-key="Settings.Screen.ScreenResolution" class="settings-element settings-dropdown" />
@@ -24,12 +29,8 @@
                         <cui:LocalizableSliderInt name="Slider" label="ResolutionScale" text-loc-key="Settings.Screen.ResolutionScale" focusable="false" class="settings-slider__slider" />
                         <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
                     </ui:VisualElement>
-                    <Timberborn.DropdownSystem.Dropdown name="FrameRateLimit" label-loc-key="Settings.Screen.FrameRateLimit" class="settings-element settings-dropdown" />
                     <Timberborn.DropdownSystem.Dropdown name="VSync" label-loc-key="Settings.Screen.VSync" class="settings-element settings-dropdown" />
-                    <ui:VisualElement name="Brightness" class="settings-element settings-slider settings-text">
-                        <cui:LocalizableSliderInt name="Slider" label="Brightness" text-loc-key="Settings.Screen.Brightness" focusable="false" class="settings-slider__slider" />
-                        <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
-                    </ui:VisualElement>
+                    <Timberborn.DropdownSystem.Dropdown name="FrameRateLimit" label-loc-key="Settings.Screen.FrameRateLimit" class="settings-element settings-dropdown" />
                     <cui:LocalizableLabel text="Graphics" name="GraphicsHeader" text-loc-key="Settings.Graphics.Header" class="settings-header" />
                     <Timberborn.DropdownSystem.Dropdown name="GraphicsQuality" label-loc-key="Settings.Graphics.OverallGraphicsQuality" class="settings-element settings-dropdown" />
                     <Timberborn.DropdownSystem.Dropdown name="TextureQuality" label-loc-key="Settings.Graphics.TextureQuality" class="settings-element settings-dropdown" />
@@ -55,21 +56,20 @@
                         <cui:LocalizableSliderInt name="Slider" label="UIScaleFactor" text-loc-key="Settings.UI.UIScaleFactor" focusable="false" class="settings-slider__slider" />
                         <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
                     </ui:VisualElement>
-                    <cui:LocalizableLabel text="Tutorial" name="TutorialHeader" text-loc-key="Settings.Tutorial.Header" class="settings-header" />
-                    <cui:LocalizableToggle text="DisableTutorial" name="DisableTutorial" text-loc-key="Settings.Tutorial.DisableTutorial" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableLabel text="Accessibility" name="AccessibilityHeader" text-loc-key="Settings.Accessibility.Header" class="settings-header" />
+                    <ui:VisualElement name="Brightness" class="settings-element settings-slider settings-text">
+                        <cui:LocalizableSliderInt name="Slider" label="Brightness" text-loc-key="Settings.Screen.Brightness" focusable="false" class="settings-slider__slider" />
+                        <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
+                    </ui:VisualElement>
                     <cui:LocalizableToggle text="DisableStarfieldRotation" name="DisableStarfieldRotation" text-loc-key="Settings.Accessibility.DisableStarfieldRotation" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableLabel text="Input" name="InputHeader" text-loc-key="Settings.Input.Header" class="settings-header" />
                     <cui:LocalizableButton text="Key bindings" name="BindingsButton" text-loc-key="Menu.KeyBindings" class="menu-button menu-button--medium menu-button--centered" />
                     <cui:LocalizableToggle text="InvertZoom" name="InvertZoom" text-loc-key="Settings.Input.InvertZoom" focusable="false" class="settings-element settings-toggle settings-text" />
+                    <cui:LocalizableToggle text="UnlockZoom" name="UnlockZoom" text-loc-key="Settings.Input.UnlockZoom" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableToggle text="SwapMouseCameraMovementWithRotation" name="SwapMouseCameraMovementWithRotation" text-loc-key="Settings.Input.SwapMouseCameraMovementWithRotation" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableToggle text="DragCamera" name="DragCamera" text-loc-key="Settings.Input.DragCamera" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableToggle text="LockCursorInWindow" name="LockCursorInWindow" text-loc-key="Settings.Input.LockCursorInWindow" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableToggle text="EdgePanCamera" name="EdgePanCamera" text-loc-key="Settings.Input.EdgePanCamera" focusable="false" class="settings-element settings-toggle settings-text" />
-                    <ui:VisualElement name="EdgePanCameraSpeed" class="settings-element settings-slider settings-text">
-                        <cui:LocalizableSlider name="Slider" label="EdgePanCameraSpeed" text-loc-key="Settings.Input.EdgePanCameraSpeed" focusable="false" class="settings-slider__slider" />
-                        <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
-                    </ui:VisualElement>
                     <ui:VisualElement name="KeyboardCameraMovementSpeed" class="settings-element settings-slider settings-text">
                         <cui:LocalizableSlider name="Slider" label="KeyboardCameraMovementSpeed" text-loc-key="Settings.Input.KeyboardCameraMovementSpeed" focusable="false" class="settings-slider__slider" />
                         <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
@@ -82,8 +82,16 @@
                         <cui:LocalizableSlider name="Slider" label="KeyboardCameraZoomSpeed" text-loc-key="Settings.Input.KeyboardCameraZoomSpeed" focusable="false" class="settings-slider__slider" />
                         <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
                     </ui:VisualElement>
+                    <ui:VisualElement name="MouseCameraRotationSpeed" class="settings-element settings-slider settings-text">
+                        <cui:LocalizableSlider name="Slider" label="MouseCameraRotationSpeed" text-loc-key="Settings.Input.MouseCameraRotationSpeed" focusable="false" class="settings-slider__slider" />
+                        <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
+                    </ui:VisualElement>
                     <ui:VisualElement name="MouseWheelCameraZoomSpeed" class="settings-element settings-slider settings-text">
                         <cui:LocalizableSlider name="Slider" label="MouseWheelCameraZoomSpeed" text-loc-key="Settings.Input.MouseWheelCameraZoomSpeed" focusable="false" class="settings-slider__slider" />
+                        <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="EdgePanCameraSpeed" class="settings-element settings-slider settings-text">
+                        <cui:LocalizableSlider name="Slider" label="EdgePanCameraSpeed" text-loc-key="Settings.Input.EdgePanCameraSpeed" focusable="false" class="settings-slider__slider" />
                         <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
                     </ui:VisualElement>
                     <Timberborn.DropdownSystem.Dropdown name="OnScreenKeyboard" label-loc-key="Settings.Input.OnscreenKeyboard" class="settings-element settings-dropdown" />
@@ -105,13 +113,8 @@
                         <ui:Label name="Value" text="0%" class="settings-slider__end-label" />
                     </ui:VisualElement>
                     <cui:LocalizableToggle text="MuteWhenMinimized" name="MuteWhenMinimized" text-loc-key="Settings.Sound.MuteWhenMinimized" focusable="false" class="settings-element settings-toggle settings-text" />
-                    <cui:LocalizableLabel text="Saving" name="SavingHeader" text-loc-key="Settings.GameSaving.Header" class="settings-header" />
-                    <cui:LocalizableToggle text="AutoSavingOn" name="AutoSavingOn" text-loc-key="Settings.GameSaving.AutoSavingOn" focusable="false" class="settings-element settings-toggle settings-text" />
                     <cui:LocalizableLabel text="Analytics" name="AnalyticsHeader" text-loc-key="Settings.Analytics.Header" class="settings-header" />
-                    <ui:VisualElement class="settings-wrapper bottom-padding--medium">
-                        <cui:LocalizableToggle text="Analytics enabled" name="AnalyticsEnabled" text-loc-key="Settings.Analytics.ConsentToggle" focusable="false" class="settings-element settings-toggle settings-text" />
-                        <cui:LocalizableButton name="DeleteAnalyticsData" text-loc-key="Settings.Analytics.DeleteData" class="menu-button menu-button--medium delete-analytics-data-button" />
-                    </ui:VisualElement>
+                    <cui:LocalizableToggle text="Analytics enabled" name="AnalyticsEnabled" text-loc-key="Settings.Analytics.ConsentToggle" focusable="false" class="settings-element settings-toggle settings-text bottom-padding--medium" />
                 </ui:ScrollView>
             </ui:VisualElement>
         </ui:Instance>

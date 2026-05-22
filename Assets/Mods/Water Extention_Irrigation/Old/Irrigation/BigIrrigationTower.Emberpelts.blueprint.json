@@ -40,17 +40,15 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 4,
         "Y": 4,
         "Z": 8
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -58,26 +56,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
-          "Occupations": "None",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Ground",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
-          "Occupations": "Floor, Bottom, Path",
-          "Stackable": "None",
-          "OccupyAllBelow": false,
-          "Underground": false
-        },
-        {
-          "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -85,8 +63,20 @@
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
+          "Occupations": "Floor, Bottom, Path",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Any",
+          "Occupations": "None",
+          "Stackable": "None",
+          "OccupyAllBelow": false,
+          "Underground": false
+        },
+        {
+          "MatterBelow": "Ground",
           "Occupations": "Floor, Bottom, Path",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -94,35 +84,27 @@
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -130,26 +112,20 @@
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -157,8 +133,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -166,8 +140,6 @@
         },
         {
           "MatterBelow": "Ground",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
           "Occupations": "Floor, Bottom, Path",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -175,8 +147,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -184,8 +154,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -193,8 +161,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -202,8 +168,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -211,8 +175,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -220,8 +182,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -229,8 +189,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -238,26 +196,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -265,8 +217,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -274,26 +224,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -301,8 +245,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -310,8 +252,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -319,8 +259,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -328,8 +266,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -337,8 +273,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -346,8 +280,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -355,8 +287,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -364,8 +294,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -373,8 +301,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -382,26 +308,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -409,8 +329,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -418,26 +336,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -445,8 +357,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -454,8 +364,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -463,8 +371,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -472,8 +378,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -481,8 +385,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -490,8 +392,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -499,8 +399,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -508,8 +406,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -517,8 +413,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -526,26 +420,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -553,8 +441,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -562,26 +448,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -589,8 +469,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -598,8 +476,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -607,8 +483,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -616,8 +490,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "None",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -625,8 +497,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -634,8 +504,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -643,8 +511,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -652,8 +518,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -661,8 +525,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -670,26 +532,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -697,8 +553,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -706,26 +560,20 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Top, Corners",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -733,8 +581,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -742,8 +588,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top, Corners",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -751,8 +595,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "Top, Corners",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -760,8 +602,6 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
           "Occupations": "None",
           "Stackable": "None",
           "OccupyAllBelow": false,
@@ -769,439 +609,342 @@
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         },
         {
           "MatterBelow": "Any",
-          "LegacyOccupation": "Full",
-          "UseNewOccupation": true,
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": true,
       "Coordinates": {
         "X": 3,
@@ -1238,8 +981,8 @@
   "BuildingAccessibleSpec": {
     "LocalAccess": {
       "X": 3.5,
-      "Y": 0.0099999997764825821,
-      "Z": 1.7999999523162842
+      "Y": 0.01,
+      "Z": 1.8
     },
     "ForceOneFinalAccess": false
   },
@@ -1268,7 +1011,7 @@
           "Y": 1,
           "Z": 0
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       },
       {
@@ -1277,7 +1020,7 @@
           "Y": 2,
           "Z": 0
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       },
       {
@@ -1286,7 +1029,7 @@
           "Y": 1,
           "Z": 0
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       },
       {
@@ -1295,7 +1038,7 @@
           "Y": 2,
           "Z": 0
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       },
       {
@@ -1304,7 +1047,7 @@
           "Y": 1,
           "Z": 0
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       }
     ],
@@ -1317,18 +1060,8 @@
   },
   "MechanicalBuildingSpec": {},
   "GoodConsumingBuildingSpec": {
-    "Supply": "Water",
-    "Capacity": 300,
-    "GoodPerHour": 3.7000000476837158
-  },
-  "PoweredGoodConsumingBuilding": {
-    "Started": false,
-    "GoodConsumingBuilding": {
-      "InstanceID": 0
-    },
-    "MechanicalBuilding": {
-      "InstanceID": 0
-    }
+    "FullInventoryWorkHours": 0,
+    "ConsumedGoods": []
   },
   "EnterableSpec": {
     "OperatingState": "Finished",
@@ -1336,12 +1069,6 @@
     "CapacityFinished": 0,
     "LimitedCapacityUnfinished": false,
     "CapacityUnfinished": 0
-  },
-  "GoodAmountTransformHeight": {
-    "TargetName": "#MiscWater.002",
-    "MaxHeight": 7.9499998092651367,
-    "Good": "Water",
-    "NonLinearity": 0.0
   },
   "Children": {
     "#Finished": {
@@ -1430,7 +1157,7 @@
             },
             "Radius": 1.6,
             "Height": 5.0,
-            "Direction": "Y"
+            "Axis": "Y"
           }
         ]
       },

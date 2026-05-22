@@ -44,25 +44,22 @@
     "UnblockedCoordinates": []
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 1,
         "Z": 1
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "GroundOrStackable",
-          "LegacyOccupation": "BottomAndFloor",
-          "UseNewOccupation": true,
           "Occupations": "Bottom, Path, Middle",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,
@@ -100,7 +97,7 @@
     "Effects": [
       {
         "NeedId": "BlockDecoration",
-        "PointsPerHour": 0.20000000298023224,
+        "PointsPerHour": 0.2,
         "SatisfyToMaxValue": false
       }
     ]

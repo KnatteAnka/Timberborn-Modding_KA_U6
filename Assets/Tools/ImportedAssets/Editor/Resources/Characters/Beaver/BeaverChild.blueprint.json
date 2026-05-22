@@ -1,6 +1,12 @@
 {
   "BeaverSpec": {},
   "ChildSpec": {},
+  "NamedEntitySpec": {
+    "IsEditable": true
+  },
+  "CharacterBirthNotifierSpec": {
+    "NotificationLocKey": "Dwelling.Newborn"
+  },
   "CharacterModelSpec": {
     "ModelName": "Model_Preserved"
   },
@@ -20,9 +26,6 @@
   "WalkerSpeedManagerSpec": {
     "BaseWalkingSpeed": 1.35,
     "BaseSlowedSpeed": 0.65
-  },
-  "WellbeingTrackerSpec": {
-    "CountsToPopulationWellbeing": true
   },
   "SleeperSpec": {
     "SleepOutsideEffects": [
@@ -95,15 +98,12 @@
       }
     ]
   },
-  "WellbeingBonusesReceiverSpec": {
+  "WellbeingBonusesSubjectSpec": {
     "Bonuses": [
       "GrowthSpeed",
       "MovementSpeed",
       "LifeExpectancy"
     ]
-  },
-  "CharacterObjectNamerSpec": {
-    "Prefix": "BeaverChild"
   },
   "ZiplineHarnessModelSpec": {
     "AttachmentId": "ZiplineHarness.BeaverChild"

@@ -1,6 +1,12 @@
 {
   "BeaverSpec": {},
   "AdultSpec": {},
+  "NamedEntitySpec": {
+    "IsEditable": true
+  },
+  "CharacterBirthNotifierSpec": {
+    "NotificationLocKey": "Dwelling.Newborn"
+  },
   "CharacterModelSpec": {
     "ModelName": "Model_Preserved"
   },
@@ -32,9 +38,6 @@
     "BaseSlowedSpeed": 1.35
   },
   "TemporalSpec": {},
-  "WellbeingTrackerSpec": {
-    "CountsToPopulationWellbeing": true
-  },
   "SleeperSpec": {
     "SleepOutsideEffects": [
       {
@@ -106,8 +109,8 @@
         "PropertyName": "_BeeSting"
       },
       {
-        "NeedId": "BrokenTeeth",
-        "PropertyName": "_BrokenTeeth"
+        "NeedId": "ChippedTeeth",
+        "PropertyName": "_ChippedTeeth"
       },
       {
         "NeedId": "BadwaterContamination",
@@ -119,7 +122,7 @@
       }
     ]
   },
-  "WellbeingBonusesReceiverSpec": {
+  "WellbeingBonusesSubjectSpec": {
     "Bonuses": [
       "WorkingSpeed",
       "MovementSpeed",
@@ -189,9 +192,6 @@
         ]
       }
     ]
-  },
-  "CharacterObjectNamerSpec": {
-    "Prefix": "BeaverAdult"
   },
   "ZiplineHarnessModelSpec": {
     "AttachmentId": "ZiplineHarness.BeaverAdult"

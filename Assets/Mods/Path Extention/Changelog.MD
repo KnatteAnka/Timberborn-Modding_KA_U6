@@ -1,7 +1,8 @@
-7.0.1
-* Fix Tunnel trought levee for Emberpelts
+1.0.0.9
+* Fix mod for game version 1.0.11.1
+
 
 ---
 MinimumGameVersion: 0.6.4.0
-MaximumGameVersion: 0.7.9.9
+MaximumGameVersion: 1.0.99.9
 ---

@@ -1,7 +1,7 @@
 {
   "TransformSpec": {
     "Position": {
-      "X": 0.1,
+      "X": 0.0,
       "Y": 0.0,
       "Z": 0.0
     },
@@ -53,13 +53,13 @@
     "DisablingFeatureToggle": ""
   },
   "BlockObjectSpec": {
-    "BlocksSpec": {
+    
       "Size": {
         "X": 1,
         "Y": 19,
         "Z": 2
       },
-      "BlockSpecs": [
+      "Blocks": [
         {
           "MatterBelow": "Any",
           "Occupations": "Floor, Bottom, Top, Path, Middle",
@@ -69,7 +69,7 @@
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -181,7 +181,7 @@
         },
         {
           "MatterBelow": "GroundOrStackable",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "None",
           "OccupyAllBelow": false,
           "Underground": false
@@ -202,7 +202,7 @@
         },
         {
           "MatterBelow": "Any",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
@@ -314,7 +314,7 @@
         },
         {
           "MatterBelow": "Any",
-          "Occupations": "-1",
+          "Occupations": "All",
           "Stackable": "BlockObject",
           "OccupyAllBelow": false,
           "Underground": false
@@ -327,8 +327,7 @@
           "Underground": false
         }
       ]
-    },
-    "Entrance": {
+,    "Entrance": {
       "HasEntrance": false,
       "Coordinates": {
         "X": 0,
@@ -372,14 +371,14 @@
     "IsShaft": false
   },
   "TransputProviderSpec": {
-    "TransputSpecs": [
+    "Transputs": [
       {
         "Coordinates": {
           "X": 0,
           "Y": 1,
           "Z": 0
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       },
       {
@@ -388,7 +387,7 @@
           "Y": 17,
           "Z": 0
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       },
       {
@@ -397,7 +396,7 @@
           "Y": 1,
           "Z": 1
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       },
       {
@@ -406,7 +405,7 @@
           "Y": 17,
           "Z": 1
         },
-        "Directions": "-1",
+        "Directions": "All",
         "ReverseRotation": false
       }
     ],
