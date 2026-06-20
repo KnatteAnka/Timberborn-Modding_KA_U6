@@ -992,16 +992,20 @@
     "UnblockedCoordinates": [],
     "BlockedEdges": []
   },
-  "DrivewayModelSpec": {
-    "Driveway": "WideCenter",
-    "HasCustomCoordinates": true,
-    "CustomCoordinates": {
-      "X": 3,
-      "Y": 0,
-      "Z": 0
-    },
-    "CustomDirection": "Down",
-    "DrivewayMode": "Unidirectional"
+  "DrivewayModelsSpec": {
+    "Driveways": [
+      {
+        "Driveway": "WideCenter",
+        "HasCustomCoordinates": true,
+        "CustomCoordinates": {
+          "X": 3,
+          "Y": 0,
+          "Z": 0
+        },
+        "CustomDirection": "Down",
+        "DrivewayMode": "Unidirectional"
+      }
+    ]
   },
   "TransputProviderSpec": {
     "Transputs": [
