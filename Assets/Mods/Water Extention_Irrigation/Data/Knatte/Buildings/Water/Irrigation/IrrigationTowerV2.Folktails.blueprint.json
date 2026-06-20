@@ -258,10 +258,8 @@
   "ModifyGrowableGrowthRangeEffectSpec": {
     "EffectGroup": "ModifyGrowthRate",
     "GrowthRateModifier": 20.0,
-    "ComponentsFilter": [
-      ""
-    ],
-    "PrefabNamesFilter": []
+    "ComponentsFilter": [],
+    "TemplateNamesFilter": []
   },
   "Children": {
     "#Finished": {
