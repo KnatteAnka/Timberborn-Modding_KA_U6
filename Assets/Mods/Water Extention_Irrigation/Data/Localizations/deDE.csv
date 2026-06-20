@@ -2,27 +2,17 @@ ID,Text,Comment
 Knatte.WE_IrrigationExtractFuel.DisplayName,Bewässerung mit Baumwachstumsförderung,
 Knatte.WE_IrrigationFuel.DisplayName,Bewässerung,
 Knatte.IrrigationTower.DisplayName,Bewässerungsturm,-
-Knatte.IrrigationTower.Description,"Bewässert umliegende Fläche. 
-Verbraucht kein Wasser für Flächen, die nicht bewässert werden können.
-Max range: 7",
+Knatte.IrrigationTower.Description,"Bewässert umliegende Fläche.",
 Knatte.IrrigationTower.Header,Irrigation Mode:,untranslated
 Knatte.IrrigationTower.FlavorDescription,"Da weniger als ein Drittel der Erde mit Wasser bedeckt ist, wurde die Bewässerung zu einem Muss.","Das Spiel findet auf der Erde statt, die sich in ein trockenes Ödland verwandelt hat."
 Knatte.IrrigationTowerV2_FT.DisplayName,Effizienter Bewässerungsturm,-
-Knatte.IrrigationTowerV2_FT.Description,"Irrigates More land around it and can boost tree and plant growth with extract.
-Does not use water for tiles that it can't Irrigate 
-Max range: 15",
+Knatte.IrrigationTowerV2_FT.Description,"Irrigates more land around it and can boost tree and plant growth with extract.",
 Knatte.IrrigationTowerV2_IT.DisplayName,Energiebetriebener Bewässerungsturm,-
-Knatte.IrrigationTowerV2_IT.Description,"Bewässert umliegende Fläche, ohne dass ein Arbeiter benötigt wird. Für mehr Wasserverbrauch stoppt es auch Kontaminierung.
-Verbraucht kein Wasser für Flächen, die nicht bewässert werden können. 
-Max range: 17",
+Knatte.IrrigationTowerV2_IT.Description,"Bewässert umliegende Fläche, ohne dass ein Arbeiter benötigt wird. Für mehr Wasserverbrauch stoppt es auch Kontaminierung.",
 Knatte.IrrigationTowerV2.FlavorDescription,"Da weniger als ein Drittel der Erde mit Wasser bedeckt ist, wurde die Bewässerung zu einem Muss.","Das Spiel findet auf der Erde statt, die sich in ein trockenes Ödland verwandelt hat."
 Knatte.BigIrrigationTower.DisplayName,Großer Bewässerungsturm,-
-Knatte.BigIrrigationTowerIT.Description,"Irrigates even More land around it for less Water. 
-Pipes is the starting point of irrigation. 
-Does not use water for tiles that it cant Irrigate
-Max range: 40",
-Knatte.BigIrrigationTowerFT.Description,"Irrigates even More land around it for less Water. 
-Pipes is the starting point of irrigation.
-Does not use water for tiles that it cant Irrigate
-Max range: 40",
+Knatte.BigIrrigationTowerIT.Description,"Irrigates even more land around it with less water.
+Pipes are the starting point of irrigation.",
+Knatte.BigIrrigationTowerFT.Description,"Irrigates even more land around it with less water.
+Pipes are the starting point of irrigation.",
 Knatte.BigIrrigationTower.FlavorDescription,"Tropf, tropf, Wassertropfen.",-
